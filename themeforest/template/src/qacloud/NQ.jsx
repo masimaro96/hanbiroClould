@@ -1,6 +1,8 @@
-import './App.css';
+
 import React from 'react';
 import Grids from './Grids';
+import './App.css';
+
 /* eslint-disable */
 
 function App() {

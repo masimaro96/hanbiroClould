@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from '@/containers/App/App';
-import App from './nqui/App';
+import App from './qacloud/NQ';
 import * as serviceWorker from './serviceWorker';
 /* eslint-disable */
 ReactDOM.render(
