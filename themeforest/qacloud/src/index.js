@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './cloudservices';
-import reportWebVitals from './reportWebVitals';
+// import Grids from './cloud-features';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -14,6 +16,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/* <Grids /> */}
   </React.StrictMode>,
   document.getElementById('root'),
 );

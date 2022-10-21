@@ -116,6 +116,7 @@ export const Button = styled(BootstrapButton)`
   border-radius: ${props => getBorderRadius(props.rounded, props.squared)};
   padding: ${props => getPaddings(props.size)};
   margin-bottom: 20px;
+  margin-Left: 20px;
   transition: all 0.4s;
   font-size: 14px;
   position: relative;
