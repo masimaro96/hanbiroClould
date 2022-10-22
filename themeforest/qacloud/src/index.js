@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './cloudservices';
-// import Grids from './cloud-features';
+import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -16,7 +15,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    {/* <Grids /> */}
   </React.StrictMode>,
   document.getElementById('root'),
 );

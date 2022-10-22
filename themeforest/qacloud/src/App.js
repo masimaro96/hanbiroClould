@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+
+// import './App.css';
+import TopNav from './kimquynh/TopNav';
+import TopNavButton from './kimquynh/TopNavButton';
+import TopNavSlotholder from './kimquynh/TopNavSlotholder';
+import Cloudconsult from './luu/cloudconsult';
+import Grids from './hanh/cloud-features';
+import CloudServices from './nhuquynh/cloudservices';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <TopNav />
+        <TopNavButton />
+        <TopNavSlotholder />
       </header>
+      <body>
+        <CloudServices />
+        <Cloudconsult />
+        <Grids />
+      </body>
+      <footer>
+
+      </footer>
     </div>
   );
 }

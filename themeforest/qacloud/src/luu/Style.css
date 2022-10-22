@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: #F4F4F4;
 }
 
 .App-logo {
@@ -36,4 +35,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.row1-cloudconsult{
+  text-align: center;
+}
+.row2-cloudconsult{
+  text-align: center;
+  margin-bottom: 3%;
+}
+.row3-cloudconsult{
+  text-align: center;
+}
+
+.card1-consults{
+  text-align: center;
+}
+.title-cloudconsult{
+  margin-bottom: 3%;
+}
+
+.icon-cloudconsult{
+  color: #00CCFF;
+  font-size: larger;
+}
+
+.avatar-card-title{
+  width: 18rem;
+  position: relative;
+  text-align: left;
+}
+
+.avatar-card-user{
+  text-align: right;
+  position: absolute;
+  left: 80%;
+  top: 15%;
+ 
+}
+
+.card-cha{
+  border-radius: 10px;
 }
