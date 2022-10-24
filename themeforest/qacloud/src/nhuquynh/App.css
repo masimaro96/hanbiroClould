@@ -88,6 +88,10 @@
   font-size: 16px;
   padding: 10px 15px;
 }
+.home-service-name:hover{
+  cursor: pointer;
+  color: #47a7ff;
+}
 .home-service-description{
   color: #808090;
   font-size: 14px;
