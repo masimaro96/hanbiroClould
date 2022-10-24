@@ -6,6 +6,7 @@ import TopNavSlotholder from './kimquynh/TopNavSlotholder';
 import Cloudconsult from './luu/cloudconsult';
 import Grids from './hanh/cloud-features';
 import CloudServices from './nhuquynh/cloudservices';
+import Footer from './ngoc/Footer';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Grids />
       </body>
       <footer>
-
+        <Footer />
       </footer>
     </div>
   );
