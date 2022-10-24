@@ -4,7 +4,7 @@ import TopNav from './kimquynh/TopNav';
 import TopNavButton from './kimquynh/TopNavButton';
 import TopNavSlotholder from './kimquynh/TopNavSlotholder';
 import Cloudconsult from './luu/cloudconsult';
-import Grids from './hanh/cloud-features';
+import CloudFeatures from './hanh/cloud-features';
 import CloudServices from './nhuquynh/cloudservices';
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
       </header>
       <body>
         <CloudServices />
+        <CloudFeatures />
         <Cloudconsult />
-        <Grids />
       </body>
       <footer>
 
