@@ -1,2 +1,4 @@
 themeforest/template/node_modules/
 themeforest/node_modules/
+*.diff
+
