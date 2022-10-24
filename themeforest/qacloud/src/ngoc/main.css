@@ -44,6 +44,7 @@
 
 .footer-bottom {
     background-color: #252525;
+    --bs-gutter-x: 0;
 }
 
 .footer-bottom p{

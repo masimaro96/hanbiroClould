@@ -87,7 +87,6 @@ const GridCard = styled(Card)`
 
   p {
     margin-bottom: 0;
-    padding: 20px 15px;
   }
 `;
 
