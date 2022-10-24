@@ -1,0 +1,62 @@
+.gray{
+    color: gray;
+    line-height: 2.0;
+}
+
+._2gray{
+    line-height: 2.0;
+}
+
+.title{
+    text-align: left;
+}
+
+img.cloud_image {
+    width: 330px;
+    height: 500px;
+}
+
+.livechat{
+    width: 150px;
+    height: 47px;
+    background-color: #A94545;
+    border-radius: 30px;
+    padding-top: 8px;
+    display: inline-block;
+    position: fixed;
+    bottom: 150px;
+    right: -23px;
+    cursor: pointer;
+}
+
+span.content {
+    padding-left: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.livechat_2.col {
+    width: 156px;
+    height: 47px;
+    background-color: #3a87ad;
+    border-radius: 30px;
+    padding-top: 8px;
+    display: inline-block;
+    position: fixed;
+    bottom: 96px;
+    right: -23px;
+    cursor: pointer;
+}
+
+.button{
+    position: sticky;
+    right: 0;
+    top: 0;
+
+}
+
+.button:hover{
+    background-color: aqua;
+
+}
+
