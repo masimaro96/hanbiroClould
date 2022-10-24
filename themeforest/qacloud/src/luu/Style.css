@@ -41,10 +41,18 @@
 
 .row1-cloudconsult{
   text-align: center;
+  
 }
+
+.title-name-consult{
+  margin-top: 3%;
+}
+
 .row2-cloudconsult{
   text-align: left;
   margin-bottom: 3%;
+  display: flex;
+  align-items: flex-end;
 }
 .row3-cloudconsult{
   text-align: center;
@@ -55,12 +63,13 @@
 }
 .title-cloudconsult{
   margin-bottom: 3%;
+  
 }
 
 .icon-cloudconsult{
   color: #0099FF;
   margin-right: 3%;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 5%;
   border-radius:50%;
   border: solid white 0px;
@@ -69,8 +78,9 @@
 }
 
 .content-consult{
-  margin-left: 18%;
-  margin-top: -10%;
+  margin-left: 24%;
+  margin-top: -12%;
+  
 }
 
 .avatar-card-title{
@@ -90,7 +100,7 @@
   left: 75%;
   right: 5%;
   top: 15%;
-  width: 10%;
+  width: 11%;
   border-radius:50%;
  
 }
@@ -102,5 +112,32 @@
   background:  white;
   border-radius: 10px;
   
+}
+
+/* Mobile & tablet :width <1024px*/
+@media only screen and (max-width: 1023px){
+  .row2-cloudconsult{
+    display: flex;
+  }
+  .content-consult{
+    margin-top: -18%;
+    margin-left: 26%;
+  }
+}
+
+
+@media only screen and (max-width: 767px){
+  .row2-cloudconsult{
+    display: flex;
+  }
+  .content-consult{
+    margin-top: -12%;
+    
+  }
+  .icon-cloudconsult{
+    margin-top:2%;
+    margin-bottom: 2%;
+    
+  }
 }
 

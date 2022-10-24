@@ -20,16 +20,37 @@ function Cloudconsult() {
     <div className='App'>
         <Container >
             <Row className="row1-cloudconsult">
-                <Col sm={12} className="title-cloudconsult"><h2>CLOUD 구축및 운영 컨설팅</h2></Col>
+                <Col sm={12} className="title-cloudconsult"><h2 className="title-name-consult">CLOUD 구축및 운영 컨설팅</h2></Col>
             </Row>
             <Row className="row2-cloudconsult">
                 <Col sm={12} md={4}>
-                <CloudCheckIcon size={45}  className="icon-cloudconsult"/><p className="content-consult">컨터이너를 이용한 컴퓨팅 자원 사용으로 비용절감</p>
+                    
+                    <GridCard>
+                        <GridCardBody>
+                            <Card.Text>
+                                <CloudCheckIcon size={45}  className="icon-cloudconsult"/><p className="content-consult">컨터이너를 이용한 컴퓨팅 자원 사용으로 비용절감</p>
+                            </Card.Text>
+                        </GridCardBody>
+                    </GridCard>
                 </Col>
                 <Col sm={12} md={4}>
-                <CloudCheckIcon size={45}  className="icon-cloudconsult"  /><p className="content-consult"> 마이크로서비스 도입을 위한 개발과 시스템구성 상담</p></Col>
+                    <GridCard>
+                        <GridCardBody>
+                            <Card.Text>
+                                <CloudCheckIcon size={45}  className="icon-cloudconsult"  /><p className="content-consult"> 마이크로서비스 도입을 위한 개발과 시스템구성 상담</p>
+                            </Card.Text>
+                        </GridCardBody>
+                    </GridCard>
+                </Col>    
                 <Col sm={12} md={4}>
-                    <CloudCheckIcon size={45} className="icon-cloudconsult"  /><p className="content-consult">최적의 비용으로 자체 독립 클라우드 구축및 운영지원</p>
+                    
+                    <GridCard>
+                        <GridCardBody>
+                            <Card.Text>
+                                <CloudCheckIcon size={45} className="icon-cloudconsult"  /><p className="content-consult">최적의 비용으로 자체 독립 클라우드 구축및 운영지원</p>
+                            </Card.Text>
+                        </GridCardBody>
+                    </GridCard>
                 </Col>
             </Row>
             <Row className="row3-cloudconsult">
