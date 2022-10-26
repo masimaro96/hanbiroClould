@@ -12,6 +12,32 @@ import {
 
 
 
+
+
+function consultlticoncloud (title) {
+    return(
+        <GridCardBody>
+            <Card.Text className="title-iconcloud">
+                <CloudCheckIcon size={45}  className="icon-cloudconsult"/><text className="content-consult">{title}</text>
+            </Card.Text>
+        </GridCardBody>
+    )
+}
+
+function columnus($username,$imageuser,$phone,$mail){
+    return(
+        <GridCardBody className='col-data-consult'>
+            <Card.Title className="avatar-card-title"><text>{$username}</text></Card.Title>
+            <Card.Img className="avatar-card-user" src={$imageuser} /> 
+            <Card.Text className="avatar-card-title">
+                <h6>{$phone}</h6>
+                <h6>{$mail}</h6>
+                
+            </Card.Text>
+        </GridCardBody>
+    )
+}
+
 /* eslint-disable */
 
 function Cloudconsult() {
@@ -24,106 +50,57 @@ function Cloudconsult() {
             </Row>
             <Row className="row2-cloudconsult">
                 <Col sm={12} md={4}>
-                    
                     <GridCard>
-                        <GridCardBody>
-                            <Card.Text>
-                                <CloudCheckIcon size={45}  className="icon-cloudconsult"/><p className="content-consult">컨터이너를 이용한 컴퓨팅 자원 사용으로 비용절감</p>
-                            </Card.Text>
-                        </GridCardBody>
+                            {consultlticoncloud("컨터이너를 이용한 컴퓨팅 자원 사용으로 비용절감")}
                     </GridCard>
                 </Col>
                 <Col sm={12} md={4}>
                     <GridCard>
-                        <GridCardBody>
-                            <Card.Text>
-                                <CloudCheckIcon size={45}  className="icon-cloudconsult"  /><p className="content-consult"> 마이크로서비스 도입을 위한 개발과 시스템구성 상담</p>
-                            </Card.Text>
-                        </GridCardBody>
+                        {consultlticoncloud("마이크로서비스 도입을 위한 개발과 시스템구성 상담")}
                     </GridCard>
                 </Col>    
                 <Col sm={12} md={4}>
-                    
                     <GridCard>
-                        <GridCardBody>
-                            <Card.Text>
-                                <CloudCheckIcon size={45} className="icon-cloudconsult"  /><p className="content-consult">최적의 비용으로 자체 독립 클라우드 구축및 운영지원</p>
-                            </Card.Text>
-                        </GridCardBody>
+                        {consultlticoncloud("최적의 비용으로 자체 독립 클라우드 구축및 운영지원")}
                     </GridCard>
                 </Col>
             </Row>
             <Row className="row3-cloudconsult">
                 <Col sm={12} md={4} className="card1-consults">
                     <GridCard>
-                        <GridCardBody className='col-data-consult'>
-                            <Card.Title className="avatar-card-title"><p>신윤호 부장</p></Card.Title>
-                            <Card.Img className="avatar-card-user" src="https://www.hanbiro.com/images/support/pic006.jpg" /> 
-                            <Card.Text className="avatar-card-title">
-                                <h6>070-4804-9651</h6>
-                                <h6>kernel@hanbiro.com</h6>
-                            </Card.Text>
-                        </GridCardBody>
+                        {columnus("신윤호 부장","https://www.hanbiro.com/images/support/pic006.jpg","070-4804-9651","kernel@hanbiro.com")}
                     </GridCard>
                 </Col>
-
                 <Col sm={12} md={4} className="card1-consults">
                 <GridCard>
-                    <GridCardBody className='col-data-consult'>
-                        <Card.Title className="avatar-card-title"><p>김정윤 부장</p></Card.Title>
-                        <Card.Img className="avatar-card-user" src="https://www.hanbiro.com/images/support/pic007.jpg" /> 
-                        <Card.Text className="avatar-card-title">
-                            <h6>070-4804-9668</h6>
-                            <h6>linuxdev@hanbiro.com</h6>
-                        </Card.Text>
-                    </GridCardBody>
+                    {columnus("김정윤 부장","https://www.hanbiro.com/images/support/pic007.jpg","070-4804-9668","linuxdev@hanbiro.com")}
                 </GridCard>
                 </Col>
                 <Col sm={12} md={4} className="card1-consults">
                     <GridCard>
-                        <GridCardBody className='col-data-consult'>
-                            <Card.Title className="avatar-card-title"><p>조성학 이사 (해외)</p></Card.Title>
-                            <Card.Img className="avatar-card-user" src="https://www.hanbiro.com/images/support/pic002.jpg" /> 
-                            <Card.Text className="avatar-card-title">
-                                <h6>+84 909 284 160</h6>
-                                <h6>linux@hanbiro.com</h6>
-                            </Card.Text>
-                        </GridCardBody>
+                        {columnus("조성학 이사 (해외)","https://www.hanbiro.com/images/support/pic002.jpg","+84 909 284 160","linux@hanbiro.com")}
                     </GridCard>
                 </Col>
             
             </Row>
             <Row>
-                <Col sm={12} md={4} className="card1-consults">
+                <Col sm={12} md={4} className="card2-consults">
                     <GridCard>
-                        <GridCardBody className='col-data-consult'>
-                            <Card.Title className="avatar-card-title"><p>신상우 부장</p></Card.Title>
-                            <Card.Img className="avatar-card-user" src="https://www.hanbiro.com/images/support/pic003.jpg" /> 
-                            <Card.Text className="avatar-card-title">
-                                <h6>070-4804-9662</h6>
-                                <h6>security@hanbiro.com</h6>
-                            </Card.Text>
-                        </GridCardBody>
+                        {columnus("신상우 부장","https://www.hanbiro.com/images/support/pic003.jpg","070-4804-9662","security@hanbiro.com")}
                     </GridCard>
                 </Col>
-                <Col sm={12} md={4} className="card1-consults">
+                <Col sm={12} md={4} className="card5-consults">
                     <GridCard>
-                        <GridCardBody className='col-data-consult'>
-                            <Card.Title className="avatar-card-title"><p>신경섭 소장</p></Card.Title>
-                            <Card.Img className="avatar-card-user" src="https://www.hanbiro.com/images/support/pic004.jpg" /> 
-                            <Card.Text className="avatar-card-title">
-                                <h6>070-4804-9664</h6>
-                                <h6>windev@hanbiro.com</h6>
-                            </Card.Text>
-                        </GridCardBody>
+                        {columnus("신경섭 소장","https://www.hanbiro.com/images/support/pic004.jpg","070-4804-9664","windev@hanbiro.com")}
                     </GridCard>
                 </Col>
-                <Col sm={12} md={4} className="card1-consults">
+                <Col sm={12} md={4} className="card5-consults">
                     <GridCard>
-                        <p>&nbsp;</p>
+                        <text>&nbsp;</text>
                     </GridCard>
                 </Col>
             </Row>
+            
     </Container>
     </div>
     
@@ -142,6 +119,7 @@ const GridCard = styled(Card)`
 const GridCardBody = styled(CardBody)`
   padding: 0;
   text-align: left;
+  
 `;
 
 
