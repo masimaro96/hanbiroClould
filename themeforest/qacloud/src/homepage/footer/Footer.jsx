@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import '../ngoc/main.css';
+import '../footer/main.css';
 import {
   Container, Row, Col
 } from 'react-bootstrap';
@@ -87,7 +87,6 @@ const GridCard = styled(Card)`
 
   p {
     margin-bottom: 0;
-    padding: 20px 15px;
   }
 `;
 

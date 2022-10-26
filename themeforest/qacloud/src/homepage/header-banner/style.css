@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Box{
+  width: 100%;
+  display: flex;
+  background-color: #47A7FF ;
+  color: white;
+}
+.Container-top{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #47A7FF;
+}
+.top-nav{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.top-nav-right{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: right;
+}
+.item-nav-1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.item-nav{
+  background-color: #3275B2;
+  margin-right: 5px;
+}
+
+.Container-bar{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.bar-item-1{
+  color: #C0C0C0	;
+}
+
+.css-customer{
+
+  margin: auto;
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 15px;
+  
+}
+.css-customer-left{
+  border-right: 1px solid #C0C0C0;
+}
+
+.css-customer h6{
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.css-customer-all{
+  border-right: 1px solid #C0C0C0;
+  border-left: 1px solid #C0C0C0;
+}
+.slotho-bg{
+  background-image: url("https://www.hanbiro.com/images/cloud-banner.jpg");
+  display: flex;
+}
+.slotho-Container-bar{
+  display: flex;
+}
+
+.Container-bar-left{
+  text-align: left;
+  color: white;
+  font-size: 100%;
+  font-weight: 900;
+  width: 50%;
+  margin: auto;
+}
+.Container-bar-right{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.box{
+  background-color: #47A7FF;
+}
+.box-container{
+  font-size: 14px;
+  color: white;
+}
+.bar-home{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.bar-menu{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.bar-logo{
+  display: flex;
+}
+
+.bar-mobile{
+  display: none;
+}
+@media only screen and (max-width: 767px){
+  .top-nav-right{
+    display: none;
+  }
+  .top-nav{
+    margin-left: 25px;
+  }
+  .bar-menu{
+    display: none;
+  }
+  .bar-mobile{
+    display: block;
+  }
+  .bar-logo{
+    margin-left: 80px;
+  }
+  
+}
+.menu-list{
+  width: 80%;
+  margin-top: 10px;
+}
+.css-customer-list{
+  width: 100%;
+}
+.menu{
+  width: 100%;
+  position: absolute;
+  background-color: white;
+}
+.menu-list{
+  display: flex;
+  text-align: left;
+}
+.menu-list-item{
+  padding-left: 15px;
+  width: 50%;
+}
+.boder-left{
+  border-right: 1px solid #C0C0C0;
+}
+.menu-list-item h6{
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.btn-moble-list{
+  display: none;
+  color: white;
+}
+.btn-moble{
+  background-color: black;
+  display: flex;
+  float: right;
+  padding: 10px;
+}
+.mobile-list{
+  margin-top: 10px;
+  text-align: left;
+  display: none;
+}
+.mobile-list div{
+  font-size: 25px;
+  padding: 10px;
+  border-left: 1px solid #C0C0C0;
+  border-bottom: 1px solid #C0C0C0;
+
+}
+.img-logo{
+  width: 60%;
+}
+.img-org{
+  width: 90%;
+  float: right;
+}
+.quynh{
+  display: flex;
+  margin: auto;
+}
+@media only screen and (max-width: 767px){
+  .btn-moble-list{
+    display: block;
+  }
+  .mobile-list{
+    display: block;
+  }
+  .Container-bar-left{
+    text-align: left;
+    color: white;
+    font-size: 45%;
+    font-weight: 900;
+    width: 50%;
+    margin: auto;
+  }
+  .img-org{
+    width: 100%;
+    width: 100%;
+    float: right;
+  }
+}
+
