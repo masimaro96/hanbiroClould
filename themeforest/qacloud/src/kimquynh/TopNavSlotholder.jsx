@@ -15,7 +15,7 @@ function NavButton() {
         <div className='slotho-bg'>
             <Container >
                 <Row>
-                    <Col md={12} sm={12} className="quynh">
+                    <Col md={12} sm={12} className="slotho-list">
                         <div className="Container-bar-left">
                             <div>
                                 <img className="img-logo" src={"https://www.hanbiro.com/cloud/images/main-text.png"} ></img>

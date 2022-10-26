@@ -17,6 +17,7 @@ code {
   display: flex;
   background-color: #47A7FF ;
   color: white;
+  position: relative;
 }
 .Container-top{
   width: 80%;
@@ -39,9 +40,11 @@ code {
 .item-nav-1{
   margin-top: 10px;
   margin-bottom: 10px;
+  
 }
 .item-nav{
   background-color: #3275B2;
+  padding: 2px;
   margin-right: 5px;
 }
 
@@ -54,7 +57,13 @@ code {
 .bar-item-1{
   color: #C0C0C0	;
 }
-
+.bar-item{
+  padding: 10px 20px;
+  border-left: 1px solid #C0C0C0;
+}
+.bar-item-end{
+  border-right: 1px solid #C0C0C0;
+}
 .css-customer{
 
   margin: auto;
@@ -105,14 +114,11 @@ code {
   color: white;
 }
 .bar-home{
-  margin-top: 10px;
-  margin-bottom: 10px;
   position: relative;
 }
 .bar-menu{
   display: flex;
-  justify-content: space-between;
-  margin: auto;
+  justify-content: end;
 }
 .bar-logo{
   display: flex;
@@ -139,10 +145,7 @@ code {
   }
   
 }
-.menu-list{
-  width: 80%;
-  margin-top: 10px;
-}
+
 .css-customer-list{
   width: 100%;
 }
@@ -152,8 +155,11 @@ code {
   background-color: white;
 }
 .menu-list{
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   text-align: left;
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
 }
 .menu-list-item{
   padding-left: 15px;
@@ -195,7 +201,7 @@ code {
   width: 90%;
   float: right;
 }
-.quynh{
+.slotho-list{
   display: flex;
   margin: auto;
 }
@@ -219,5 +225,8 @@ code {
     width: 100%;
     float: right;
   }
+}
+.kimquynhtesst :hover > .kakakak{
+  display: block;
 }
 

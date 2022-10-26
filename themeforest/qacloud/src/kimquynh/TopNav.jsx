@@ -1,7 +1,6 @@
 
 import React , { useState } from "react";
 import './style.css';
-// import './App.css';
 import TopNavButton from './TopNavButton'
 import TopNavSlotholder from './TopNavSlotholder'
 
@@ -15,7 +14,6 @@ function App(){
             <div >
                 <TopNavSlotholder />
             </div>
-           
         </>
         
     
