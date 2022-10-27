@@ -5,7 +5,6 @@ import CloudServices from '../homepage/cloud-services/cloudservices';
 import CloudFeatures from '../homepage/cloud-features/cloud-features';
 import Cloudconsult from '../homepage/consult/cloudconsult';
 import Footer from '../homepage/footer/Footer';
-import Sidebar from '../detailspage/Sidebar/Sidebar';
 
 function App() {
   return (
@@ -14,10 +13,7 @@ function App() {
         <TopNav />
       </header>
       <body>
-        <Sidebar />
-        {/* <CloudServices />
-        <CloudFeatures />
-        <Cloudconsult /> */}
+        test
       </body>
       <footer>
         <Footer />
