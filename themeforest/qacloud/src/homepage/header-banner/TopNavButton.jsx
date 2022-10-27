@@ -42,7 +42,7 @@ function NavButton() {
                             <div className="item-nav"> 한비로 블로그</div>
                             <div className="item-nav-2"> 한국어 <DownloadLockIcon/></div>
                         </div>
-                    </Col >
+                    </Col>
                 </Row>
             </Container>
         </div>
