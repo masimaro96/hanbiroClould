@@ -27,6 +27,7 @@ img.cloud_image {
     bottom: 150px;
     right: -23px;
     cursor: pointer;
+    z-index: 1000;
 }
 
 span.content {
@@ -46,6 +47,7 @@ span.content {
     bottom: 96px;
     right: -23px;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .button{
@@ -55,8 +57,68 @@ span.content {
 
 }
 
-.button:hover{
-    background-color: aqua;
+.big_table {
+    box-shadow: 0px 0px 10px #e7eaf3;
+    height: 230px;
+    border-radius: 5px;
+    /* width: 192px; */
+    
+    /* align-content: center; */
+} 
 
+.small_table {
+    width: 800px;
+
+    height: 80px;
+    padding-top: 54px;
+    margin: 0 23px;
+    color: #DDDDDD;
 }
 
+h2 {
+    padding: 25px;
+}
+
+.second {
+    height: 470px;
+}
+
+td.headline {
+    color: #DDDDDD;
+    background: #393939;
+}
+
+text{
+    color: black;
+}
+
+Table.small_table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    border-radius: 10px 0 0 0
+}
+
+Table.small_table td{
+    padding: 1rem;
+    border: 1px solid;
+}
+
+Table.small_table tr:first-child td{
+    border-top: 0;
+    
+}
+
+Table.small_table tr:first-child td:first-child{
+    border-left: 0;
+    border-radius: 10px 0 0 0;
+}
+
+Table.small_table tr:first-child td:last-child{
+    border-right: 0;
+    border-radius: 0 10px 0 0;
+}
+
+Table.small_table tr:first-child td{
+    border-top: 0;
+    
+}
