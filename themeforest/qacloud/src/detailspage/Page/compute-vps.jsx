@@ -1,5 +1,7 @@
 import React from 'react';
 import NavButton from '../../homepage/header-banner/TopNavButton';
+import ServerPricing from '../../homepage/header-banner/ServerPricing';
+import TrafficFee from '../../homepage/header-banner/TrafficFee';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import Banner from '../../container/Banner';
@@ -22,6 +24,9 @@ function Computevps() {
                     </Col>
                     <Col md={9}>
                         <LuuNgo />
+                        <ServerPricing />
+                        <TrafficFee />
+                        <DetailContent />
                     </Col>
                 </Row>
             </Container>
