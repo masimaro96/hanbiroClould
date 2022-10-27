@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import './Style.css';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -10,14 +11,42 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
 
-function Cardintroducecontent($title1,$title2,$title3,$data1,$data2,$data3,$data4,$data5,$data6,$data7) {
+
+
+
+function columnusdata($data1,$data2,$data3,$data4,$data5,$data6,$data7){
+  return(
+      
+    <GridCardBody2>
+      <CardTitle>
+          <div>{$data1}</div>
+          <div>{$data2}</div>
+      </CardTitle>  
+      <CardText>
+        <div>{$data3}</div>
+        <div>{$data4}</div>
+        <div>{$data5}</div>
+        <div>{$data6}</div>
+        <div>{$data7}</div>
+      </CardText>
+    </GridCardBody2>  
+  
+      
+  )
+}
+
+
+
+
+
+function cardintroducecontent() {
   
   return (
     <>
         <div className='App'>
             <Row>
                 <Col md={12} >
-                  <Box><Titlecloud2>{$title1}</Titlecloud2></Box>
+                  <Box><Titlecloud2>Database 인스턴스(가상서버)</Titlecloud2></Box>
                 </Col>
             </Row>
             <Row>
@@ -25,47 +54,22 @@ function Cardintroducecontent($title1,$title2,$title3,$data1,$data2,$data3,$data
                 <Box>
                   <GridCard>
                     <GridCardBody>
-                      <div>{$title2}</div>
-                      <div>{$title3}</div>
+                      <div>고객별 서버자원의 독립성보장, 안정적인 서비스운영</div>
+                      <div>모든 서비스 고용량 SSD 디스크 제공, 고용량의 메모리 할당</div>
                     </GridCardBody>
                   </GridCard>
                 </Box>
               </Col>
                 
             </Row>
-            <Row>
-              <Col sm={12} md={6}>
-                
-                <GridCard>
-                  <CardText>
-                      <div>{$data3}</div>
-                      <div>{$data4}</div>
-                      <div>{$data5}</div>
-                      <div>{$data6}</div>
-                      <div>{$data7}</div>
-                  </CardText>
-                </GridCard>
-                </Col>
-                <Col sm={12} md={6}>
-                  <GridCard>
-                    <CardText>
-                      <div>{$data3}</div>
-                      <div>{$data4}</div>
-                      <div>{$data5}</div>
-                      <div>{$data6}</div>
-                      <div>{$data7}</div>
-                    </CardText>
-                  </GridCard>
-                </Col>
-                  
-              </Row>
+           
               <Row>
               <Col sm={12} md={12}>
                 
                 <GridCard>
-                  <GridCardBody3>
-                    <CardImage src="https://www.hanbiro.com/cloud/images/concept/vps.gif"></CardImage>
-                  </GridCardBody3>
+                    <GridCardBody3>
+                        <CardImage src="https://www.hanbiro.com/cloud/images/concept/database.gif"></CardImage>
+                    </GridCardBody3>
                   
                 </GridCard>
               </Col>
@@ -106,9 +110,9 @@ const GridCardBody = styled(CardBody)`
 
 
 const GridCardBody2 = styled(CardBody)`
-  border: solid white 2px;
-  background:  white;
-  border-radius: 10px;
+    border: solid white 2px;
+    background:  white;
+    border-radius: 10px;
   
   
   
@@ -163,4 +167,6 @@ const CardImage = styled(Card.Img)`
 
 
 
-export default Cardintroducecontent;
+
+
+export default cardintroducecontent;

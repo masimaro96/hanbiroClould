@@ -9,6 +9,7 @@ import {
   Card, CardBody,
 } from '@/shared/components/Card';
 import { Button, ButtonToolbar } from '@/shared/components/Button';
+import { Grid } from '@mui/material';
 
 
 function CloudFeatures(){
@@ -16,7 +17,7 @@ function CloudFeatures(){
   return (
     <Container >
         <Row>
-            <Col xl={4} md={{display:{md:"none"}}}>
+            <Col xl={4} as={Grid} display={{xs: "none", md: "none", lg: "block"}}>
                 <GridCard>
                     <GridCardBody>
                         <img className='cloud_image' alt='' src='https://www.hanbiro.com/cloud/images/detail/image-01.svg'></img>
@@ -68,10 +69,11 @@ function CloudFeatures(){
                           한비로 <b>Cloud</b> 서비스는 연산을 위한 컴퓨팅자원을 사용할 수 없습니다.<br/>
                           타사에 피해가 발생하는 서비스 및 불법적인 사이트 운영시 동의없이 서비스가 중단될 수 있습니다.<br/>
                           타 고객사 서버에 불법적인 접근 및 이상 트래픽 발생 시 동의 없이 서비스가 중단될 수 있습니다</p>
+                          <br/>
                   </GridCardBody>
               </GridCard>
           </Col>
-          <Col xl={4} md={{display:{md:"none"}}}>
+          <Col xl={4} as={Grid} display={{xs: "none", md: "none", lg: "block"}}>
               <GridCard>
                   <GridCardBody>
                       <img className='cloud_image' alt='' src='https://www.hanbiro.com/cloud/images/detail/image-02.svg'></img>

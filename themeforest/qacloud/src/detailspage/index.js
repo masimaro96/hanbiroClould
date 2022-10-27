@@ -21,33 +21,33 @@ import Storenasstore from './Page/store-nas-store';
 
 
 const Pagedetails = () => {
-    
+
     return (
         <header>
-        <Computevps />
-        <Computebaremetalpage />
-        <Computeautoscale />
-        <Computeloadbalance />
-        <Computedatabase />
+            <Computevps />
+            <Computebaremetalpage />
+            <Computeautoscale />
+            <Computeloadbalance />
+            <Computedatabase />
 
-        <Computems />
-        <Clustercloudelasticsearch />
-        <Clusterkafka />
-        <Clustercloudrabbitmq />
-        <Clustercloudmysqldb />
-        <Clustercloudpostgresqldb />
-        <Clustercloudvitess />
-        <Clustercloudmongodb />
-        <Clustercloudredis />
-        <Clustercloudscylladb />
+            <Computems />
+            <Clustercloudelasticsearch />
+            <Clusterkafka />
+            <Clustercloudrabbitmq />
+            <Clustercloudmysqldb />
+            <Clustercloudpostgresqldb />
+            <Clustercloudvitess />
+            <Clustercloudmongodb />
+            <Clustercloudredis />
+            <Clustercloudscylladb />
 
-        <Clusterclickhouse />
-        <Storeobjectstore />
-        <Storeblockstore />
-        <Storenasstore />
+            <Clusterclickhouse />
+            <Storeobjectstore />
+            <Storeblockstore />
+            <Storenasstore />
 
         </header>
-        
+
 
     );
 };
