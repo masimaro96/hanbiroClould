@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import './Style.css';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -36,14 +37,16 @@ function columnusdata($data1,$data2,$data3,$data4,$data5,$data6,$data7){
 
 
 
-function Cardintroducecontent() {
+
+
+function cardintroducecontent() {
   
   return (
     <>
         <div className='App'>
             <Row>
                 <Col md={12} >
-                  <Box><Titlecloud2>가상서버 (인스턴스)</Titlecloud2></Box>
+                  <Box><Titlecloud2>MS-SQL / Windows 가상서버(인스턴스)</Titlecloud2></Box>
                 </Col>
             </Row>
             <Row>
@@ -63,12 +66,12 @@ function Cardintroducecontent() {
               <Col sm={12} md={6}>
                 
                 <GridCard>
-                    {columnusdata("한비로 Cloud 관리자 콘솔에서 수분내에","서버생성 및 서비스개시","시간단위로 사용요금을 측정하며, 사용한만큼의 비용을","지불할 수 있습니다. 단기간의 서비스나 고용량의","서버가 필요하지 않을 경우 적절한 서비스입니다","관리자 콘솔에서 한번의 클릭으로 수분내에 선택한","운영체재의 서버가 생성됩니다.")}  
+                    {columnusdata("Hanbiro Cloud CMS 에서 수분내에 MS-","SQL 데이터베이스 서버생성및 서비스","MS-SQL 라이센스 비용이며, MS-SQL를 운영하기","위해서는 윈도우운영체제의 비용이 추가됩니다. MS-","SQL 은 2012 ~ 2019 Standard 버전을 지원합니다.","Microsoft SQL 또는 운영체제의 라이센스는 신청시","월단위로 과금됩니다.")}  
                   </GridCard>
                 </Col>
                 <Col sm={12} md={6}>
                   <GridCard>
-                    {columnusdata("쿠버네티스 기반 데이터베이스 및","어플리케이션과 통합 클러스터 플랫폼 구축","한비로는 쿠버네티스와의 통합 Cloud 플랫폼을","운형하고 있으며, 가상서버(인스턴스)는 한비로 Cloud","쿠버네티스 기반 서비스와 연동할 수 있습니다.")}  
+                    {columnusdata("쿠버네티스 기반 데이터베이스 및","어플리케이션과 통합 클러스터 플랫폼 구축","가상서버(인스턴스)는 한비로 Cloud 쿠버네티스 기반","서비스와 연동할 수 있습니다. 한비로는 오픈스택과","쿠버네티스의 통합 Cloud 플랫폼을 운영하고 있습니다.")}  
                   </GridCard>
                 </Col>
                   
@@ -78,7 +81,7 @@ function Cardintroducecontent() {
                 
                 <GridCard>
                   <GridCardBody3>
-                    <CardImage src="https://www.hanbiro.com/cloud/images/concept/vps.gif"></CardImage>
+                    <CardImage src="https://www.hanbiro.com/cloud/images/concept/database.gif"></CardImage>
                   </GridCardBody3>
                   
                 </GridCard>
@@ -177,4 +180,4 @@ const CardImage = styled(Card.Img)`
 
 
 
-export default Cardintroducecontent;
+export default cardintroducecontent;
