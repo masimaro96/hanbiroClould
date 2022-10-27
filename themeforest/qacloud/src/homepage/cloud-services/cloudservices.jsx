@@ -8,320 +8,227 @@ import {
   Card, CardBody,
 } from '@/shared/components/Card';
 import CloudIcon from 'mdi-react/CloudIcon';
+import Box from '@mui/material/Box';
+
 /* eslint-disable */
+
+function CloudServicesGrid ($title,$description) {
+  return (
+    <GridCardBody className='row-box-title-1-3'>
+      <div className='home-service-icon'>
+          <CloudIcon size={35} className="icon-CloudIcon" />
+      </div>
+      <div className='home-service-title'>
+        <TypographyCard>{$title}</TypographyCard>
+        <TypographyCard className='home-service-subtitle'>{$description}</TypographyCard>
+      </div>
+    </GridCardBody>
+  )
+}
+
+function CloudServicesGridBorderNone ($name,$description) {
+  return (
+    <GridCardBody className='row-box-intro'>
+      <div className='home-service-name'>
+        <TypographyCard>{$name}</TypographyCard>
+      </div>
+        <TypographyCard className='home-service-description'>{$description}</TypographyCard>
+    </GridCardBody>
+  )
+}
+
+function CloudServicesGridBorder ($name,$description) {
+  return (
+    <GridCardBody className='col-data-app'>
+      <div className='home-service-name'>
+      <TypographyCard>{$name}</TypographyCard>
+      </div>
+      <TypographyCard  className='home-service-description'>{$description}</TypographyCard>
+    </GridCardBody>
+  )
+}
+
+function CloudServicesGridHidden () {
+  return (
+    <GridCardBody className='col-data-app-hidden'>
+      <TypographyCard> </TypographyCard>
+    </GridCardBody>
+  )
+}
 
 function CloudServices() {
   
   return (
     <div className='App'>
       <Container className='table-cloudservices'>
-        <Row>
-          <Col md={3} sm={12}>
+        <Box mr={3} className='ServerBox'>
+          <Col>
             <GridCard>
-              <GridCardBody className='row-box-title-1-3'>
-                <div className='home-service-icon'>
-                    <CloudIcon size={35} className="icon-CloudIcon" />
-                </div>
-                <div className='home-service-title'>
-                  <p>Server</p>
-                </div>
-              </GridCardBody>
+              {CloudServicesGrid ("Server")}
             </GridCard>
           </Col>
-          <Col md={6} sm={12}>
+          <Col>
             <GridCard>
-              <GridCardBody className='row-box-title'>
-                <div className='home-service-icon'>
-                  <CloudIcon size={35} className="icon-CloudIcon" />
-                </div>
-                <div className='home-service-title'>
-                  <p>Kubernetes Cluster</p>
-                  <p className='home-service-subtitle'>(Database, Application)</p>
-                </div>
-              </GridCardBody>
+              {CloudServicesGridBorderNone ("가상서버 (인스턴스)","Cloud 기반 가상서버")}
             </GridCard>
           </Col>
-          <Col md={3} sm={12}>
+          <Col sm={12}>
             <GridCard>
-              <GridCardBody className='row-box-title-1-3'>
-                <div className='home-service-icon'>
-                  <CloudIcon size={35} className="icon-CloudIcon" />
-                </div>
-                <div className='home-service-title'>
-                  <p>Storage</p>
-                </div>
-              </GridCardBody>
+              {CloudServicesGridBorderNone ("베어메탈 서버 (단독서버)","Cloud 기반 독립서버")}
             </GridCard>
           </Col>
-        </Row>
-        <Row>
-          <Col md={3} sm={12}>
+          <Col sm={12}>
             <GridCard>
-              <GridCardBody className='row-box-intro'>
-                <div className='home-service-name'>
-                  <p>가상서버 (인스턴스)</p>
-                </div>
-                <div className='home-service-description'>Cloud 기반 가상서버</div>
-              </GridCardBody>
+              {CloudServicesGridBorderNone ("오토스케일링","가상서버(인스탄스) 자동확장 서비스")}
             </GridCard>
           </Col>
-          <Col md={3} sm={12}>
+          <Col sm={12}>
             <GridCard>
-              <GridCardBody className='col-data-app'>
-              <div className='home-service-name'>
-                <p>Cloud ElasticSearch</p>
-              </div>
-              <div className='home-service-description'>쿠버네티스 클러스터 검색엔진</div>
-              </GridCardBody>
+              {CloudServicesGridBorderNone ("로드발랜서","클라우드 서버부하분산 서비스")}
             </GridCard>
           </Col>
-          <Col md={3} sm={12}>
+          <Col sm={12}>
             <GridCard>
-              <GridCardBody className='col-data-app'>
-              <div className='home-service-name'>
-                <p>Cloud for MySQL</p>
-              </div>
-              <div className='home-service-description'>컨테이너 MySQL 데이터베이스</div>
-              </GridCardBody>
+              {CloudServicesGridBorderNone ("MS-SQL/Windows","윈도우 기반 가상서버(인스턴스)")}
             </GridCard>
           </Col>
-          <Col md={3} sm={12}>
+          <Col>
             <GridCard>
-              <GridCardBody className='row-box-intro'>
-              <div className='home-service-name'>
-                <p>오브젝트 Storage</p>
-              </div>
-              <div className='home-service-description'>S3, API 전용 분산스토리지</div>
-              </GridCardBody>
+              {CloudServicesGridBorderNone ("Database(인스턴스)","가상서버(인스턴스)기반 데이터베이스")}
             </GridCard>
           </Col>
-        </Row>
-        <Row>
-          <Col md={3} sm={12}>
+          <Col>
             <GridCard>
-              <GridCardBody className='row-box-intro'>
-              <div className='home-service-name'>
-                <p>베어메탈 서버 (단독서버)</p>
-              </div>
-              <div className='home-service-description'>Cloud 기반 독립서버</div>
-              </GridCardBody>
+              {CloudServicesGridHidden ()}
             </GridCard>
           </Col>
-          <Col md={3} sm={12}>
+        </Box>
+        <Box mr={3} className='ClusterTitle'>
+          <Col>
             <GridCard>
-              <GridCardBody className='col-data-app'>
-              <div className='home-service-name'>
-                <p>Cloud Kafka</p>
-              </div>
-              <div className='home-service-description'>실시간 데이터 스트리밍 처리</div>
-              </GridCardBody>
+              {CloudServicesGrid ("Kubernetes Cluster","(Database, Application)")}
             </GridCard>
           </Col>
-          <Col md={3} sm={12}>
+          <Col className='ClusterBox'>
+            <Box mr={1} className='ClusterBox1'>
+              <Col>
+                <GridCard>
+                  {CloudServicesGridBorder ("Cloud ElasticSearch","쿠버네티스 클러스터 검색엔진")}
+                </GridCard>
+              </Col>
+              <Col>
+                <GridCard>
+                {CloudServicesGridBorder ("Cloud Kafka","실시간 데이터 스트리밍 처리")}
+                </GridCard>
+              </Col>
+              <Col>
+                <GridCard>
+                  {CloudServicesGridBorder ("Cloud RabbitMQ","AMQP 메세지 브로커 미들웨어")}
+                </GridCard>
+              </Col>
+              <Col>
+                <GridCard>
+                  {CloudServicesGridHidden ()}
+                </GridCard>
+              </Col>
+              <Col>
+                <GridCard>
+                  {CloudServicesGridHidden ()}
+                </GridCard>
+              </Col>
+              <Col>
+                <GridCard>
+                  {CloudServicesGridHidden ()}
+                </GridCard>
+              </Col>
+              <Col>
+                <GridCard>
+                  {CloudServicesGridHidden ()}
+                </GridCard>
+              </Col>
+            </Box>
+            <Box className='ClusterBox1'>
+              <Col>
+              <GridCard>
+              {CloudServicesGridBorder ("Cloud for MySQL","컨테이너 MySQL 데이터베이스")}
+              </GridCard>
+              </Col>
+              <Col>
+              <GridCard>
+                {CloudServicesGridBorder ("Cloud for PostgreSQL","컨테이너 기반 PostgreSQL Database")}
+               </GridCard>
+              </Col>
+              <Col>
+                <GridCard>
+                  {CloudServicesGridBorder ("Cloud for Vitess","MySQL 호환 데이터베이스 클러스터 엔진")}
+                </GridCard>
+              </Col>
+              <Col>
+                <GridCard>
+                  {CloudServicesGridBorder ("Cloud for MongoDB","컨테이너 기반 NoSQL Database")}
+                </GridCard>
+              </Col>
+              <Col>
+                <GridCard>
+                  {CloudServicesGridBorder ("Cloud for Redis","인메모리기반 고속 NoSQL Database")}
+                </GridCard>
+              </Col>
+              <Col>
+                <GridCard>
+                  {CloudServicesGridBorder ("Cloud for SycllaDB","Cassandra 호환 NoSQL Database")}
+                </GridCard>
+              </Col>
+              <Col>
+                <GridCard>
+                  {CloudServicesGridBorder ("Cloud for ClickHouse","OLAP를 위한 컬럼지향형 DB")}
+                </GridCard>
+              </Col>
+            </Box>
+          </Col>
+        </Box>
+        <Box mr={3} className='StorageBox'>
+          <Col>
             <GridCard>
-              <GridCardBody className='col-data-app'>
-              <div className='home-service-name'>
-                <p>Cloud for PostgreSQL</p>
-              </div>
-                <div className='home-service-description'>컨테이너 기반 PostgreSQL Database</div>
-              </GridCardBody>
+              {CloudServicesGrid ("Server")}
             </GridCard>
           </Col>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='row-box-intro'>
-              <div className='home-service-name'>
-                <p>불록 Storage</p>
-              </div>
-              <div className='home-service-description'>OPENSTACK 블록스토리지</div>
-              </GridCardBody>
+          <Col>
+          <GridCard>
+              {CloudServicesGridBorderNone ("오브젝트 Storage","S3, API 전용 분산스토리지")}
             </GridCard>
           </Col>
-        </Row>
-        <Row>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='row-box-intro'>
-              <div className='home-service-name'>
-                <p>오토스케일링</p>
-              </div>
-              <div className='home-service-description'>가상서버(인스탄스) 자동확장 서비스</div>
-              </GridCardBody>
+          <Col>
+          <GridCard>
+          {CloudServicesGridBorderNone ("불록 Storage","OPENSTACK 블록스토리지")}
             </GridCard>
           </Col>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='col-data-app'>
-              <div className='home-service-name'>
-                <p>Cloud RabbitMQ</p>
-              </div>
-              <div className='home-service-description'>AMQP 메세지 브로커 미들웨어</div>
-              </GridCardBody>
+          <Col>
+          <GridCard>
+              {CloudServicesGridBorderNone ("공유 Storage","클러스터 전용 공유스토리지")}
             </GridCard>
           </Col>
-          <Col md={3} sm={12}>
+          <Col>
             <GridCard>
-              <GridCardBody className='col-data-app'>
-              <div className='home-service-name'>
-                <p>Cloud for Vitess</p>
-              </div>
-              <div className='home-service-description'>MySQL 호환 데이터베이스 클러스터 엔진</div>
-              </GridCardBody>
+              {CloudServicesGridHidden ()}
             </GridCard>
           </Col>
-          <Col md={3} sm={12}>
+          <Col>
             <GridCard>
-              <GridCardBody className='row-box-intro'>
-              <div className='home-service-name'>
-                <p>공유 Storage</p>
-              </div>
-              <div className='home-service-description'>클러스터 전용 공유스토리지</div>
-              </GridCardBody>
+              {CloudServicesGridHidden ()}
             </GridCard>
           </Col>
-        </Row>
-        <Row>
-          <Col md={3} sm={12}>
+          <Col>
             <GridCard>
-              <GridCardBody className='row-box-intro'>
-              <div className='home-service-name'>
-                <p>로드발랜서</p>
-              </div>
-              <div className='home-service-description'>클라우드 서버부하분산 서비스</div>
-              </GridCardBody>
+              {CloudServicesGridHidden ()}
             </GridCard>
           </Col>
-          <Col md={3} sm={12}>
+          <Col>
             <GridCard>
-              <GridCardBody className='col-data-app-hidden'>
-                <p></p>
-              </GridCardBody>
+              {CloudServicesGridHidden ()}
             </GridCard>
           </Col>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='col-data-app'>
-              <div className='home-service-name'>
-                <p>Cloud for MongoDB</p>
-              </div>
-              <div className='home-service-description'>컨테이너 기반 NoSQL Database</div>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='col-data-app-hidden'>
-                <p></p>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='row-box-intro'>
-              <div className='home-service-name'>
-                <p>MS-SQL/Windows</p>
-              </div>
-              <div className='home-service-description'>윈도우 기반 가상서버(인스턴스)</div>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='col-data-app-hidden'>
-                <p></p>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='col-data-app'>
-              <div className='home-service-name'>
-                <p>Cloud for Redis</p>
-              </div>
-              <div className='home-service-description'>인메모리기반 고속 NoSQL Database</div>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='col-data-app-hidden'>
-                <p></p>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='row-box-intro'>
-              <div className='home-service-name'>
-                <p>Database(인스턴스)</p>
-              </div>
-              <div className='home-service-description'>가상서버(인스턴스)기반 데이터베이스</div>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='col-data-app-hidden'> 
-                <p></p>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='col-data-app'>
-              <div className='home-service-name'>
-                <p>Cloud for SycllaDB</p>
-              </div>
-              <div className='home-service-description'>Cassandra 호환 NoSQL Database</div>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='col-data-app-hidden'>
-                <p></p>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='col-data-app-hidden'>
-                <p></p>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='col-data-app-hidden'>
-                <p></p>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='col-data-app'>
-              <div className='home-service-name'>
-                <p>Cloud for ClickHouse</p>
-              </div>
-              <div className='home-service-description'>OLAP를 위한 컬럼지향형 DB</div>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-          <Col md={3} sm={12}>
-            <GridCard>
-              <GridCardBody className='col-data-app-hidden'>
-                <p></p>
-              </GridCardBody>
-            </GridCard>
-          </Col>
-        </Row>
-      </Container>
+        </Box>
+        </Container>
     </div>
   );
 }
@@ -337,6 +244,13 @@ const GridCard = styled(Card)`
 const GridCardBody = styled(CardBody)`
   padding: 0;
   text-align: left;
+`;
+
+const TypographyCard = styled.div`
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+  }
 `;
 
 const GridSmall = styled.p`

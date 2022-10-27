@@ -42,7 +42,7 @@ function NavButton() {
                             <div className="item-nav"> 한비로 블로그</div>
                             <div className="item-nav-2"> 한국어 <DownloadLockIcon/></div>
                         </div>
-                    </Col >
+                    </Col>
                 </Row>
             </Container>
         </div>
@@ -50,7 +50,7 @@ function NavButton() {
             <Container className='bar-home'>
                 <Row>
                     <Col md={3} sm={12}>
-                        <div className="bar-logo">
+                        <div className="bar-logo ">
                             <img src={"https://www.hanbiro.com/cloud/images/logo.png"} style={{width:200,height:50}}></img>
                         </div>
                     </Col>
@@ -65,7 +65,7 @@ function NavButton() {
                             <div className="bar-item ">   
                                 {titleMenu("마이크로서비스 개발","Microservice")}
                             </div>
-                            <div className="bar-item kimquynhtesst"
+                            <div className="bar-item "
                                 onClick={() => setOpen(!open)}
                                 aria-controls="hanbiro-customer"
                                 aria-expanded={open}
@@ -100,7 +100,7 @@ function NavButton() {
                 <Row>
                     <Col md={12} sm={12}>
                         <Collapse in={open} className="menu ">
-                            <div id="hosting" className="menu-list">
+                            <div id="hosting" className="menu-list kakakak">
                                 <div className="menu-list-item boder-left">
                                     <h6 >한비로</h6>
                                     <div> 소개</div>
