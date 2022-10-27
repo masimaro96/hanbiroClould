@@ -4,6 +4,7 @@ import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import Banner from '../../container/Banner';
 import DetailContent from '../../homepage/cloud-features/detail-content';
+import Cardintroducecontent from '../../container/Card';
 import {
     Container, Row, Col
   } from 'react-bootstrap';
@@ -21,13 +22,11 @@ function Computevps(){
                         <Sidebar />
                     </Col>
                     <Col md={9}>
-                        <DetailContent />
+                    <DetailContent />
+
                     </Col>
                 </Row>
-            </Container>
-            
-
-            
+            </Container>         
             <Cloudconsult />
             <Footer />
         </div>
