@@ -16,63 +16,28 @@ function Cardintroducecontent({$title1,$title2,$title3,$data1,$data2,$data3,$dat
     <>
         <div className='cloudservice'>
             <Row>
-                <Col md={12} >
-                  <Box><Titlecloud2>{$title1}</Titlecloud2></Box>
-                </Col>
-            </Row>
-            <Row>
-              <Col md={12}>
-                <Box>
-                  <GridCard>
-                    <GridCardBody>
-                      <div>{$title2}</div>
-                      <div>{$title3}</div>
-                    </GridCardBody>
-                  </GridCard>
-                </Box>
-              </Col>
-                
-            </Row>
-            <Row>
               <Col sm={12} md={6}>
                 
                 <GridCard>
+                <GridCardBody2>
+                  <CardTitle>
+                    <div>{$data1}</div>
+                    <div>{$data2}</div>
+                  </CardTitle>  
                   <CardText>
-                      <div>{$data3}</div>
-                      <div>{$data4}</div>
-                      <div>{$data5}</div>
-                      <div>{$data6}</div>
-                      <div>{$data7}</div>
+                    <div>{$data3}</div>
+                    <div>{$data4}</div>
+                    <div>{$data5}</div>
+                    <div>{$data6}</div>
+                    <div>{$data7}</div>
                   </CardText>
+                </GridCardBody2>  
                 </GridCard>
                 </Col>
-                <Col sm={12} md={6}>
-                  <GridCard>
-                    <CardText>
-                      <div>{$data3}</div>
-                      <div>{$data4}</div>
-                      <div>{$data5}</div>
-                      <div>{$data6}</div>
-                      <div>{$data7}</div>
-                    </CardText>
-                  </GridCard>
-                </Col>
-                  
+               
               </Row>
-              <Row>
-              <Col sm={12} md={12}>
-                
-                <GridCard>
-                  <GridCardBody3>
-                    <CardImage src="https://www.hanbiro.com/cloud/images/concept/vps.gif"></CardImage>
-                  </GridCardBody3>
-                  
-                </GridCard>
-              </Col>
-                
-                  
-              </Row>
-            
+           
+             
         </div>
         
 
