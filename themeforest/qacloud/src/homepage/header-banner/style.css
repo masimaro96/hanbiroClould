@@ -226,7 +226,17 @@ code {
     float: right;
   }
 }
-.kimquynhtesst :hover > .kakakak{
+.bar-home:hover .kakakak{
   display: block;
+  opacity: 1;
+}
+.quynh{
+  border-radius: 10px;
+  margin-top: 20px ;
+  margin-bottom: 20px ;
+  font-size: 20;
+  color: aqua;
+  text-align: center;
+  border: 1px solid #D7E5ED;
 }
 
