@@ -8,6 +8,16 @@ import {
     Container, Row, Col,
 } from 'react-bootstrap';
 
+function titleMenu($Kor,$Eng){
+    return(
+        <>
+            <span> {$Kor} </span> <br/>
+            <span className="bar-item-1">{$Eng}</span>
+        </>
+    )
+}
+
+
 function NavButton() {
   const [open, setOpen] = useState(false);
   const [openhosting, setOpenhosting] = useState(false);
@@ -32,7 +42,7 @@ function NavButton() {
                             <div className="item-nav"> 한비로 블로그</div>
                             <div className="item-nav-2"> 한국어 <DownloadLockIcon/></div>
                         </div>
-                    </Col >
+                    </Col>
                 </Row>
             </Container>
         </div>
@@ -46,69 +56,50 @@ function NavButton() {
                     </Col>
                     <Col md={9} sm={12}>
                         <div className="bar-menu">
-                            <div className="bar-item"
-                                onClick={() => setOpenhosting(!openhosting)}
-                                aria-controls="hosting"
-                                aria-expanded={openhosting}
-                            >
-                                <span> HOME </span> <br/>
-                                <span className="bar-item-1">Welcome</span>
+                            <div className="bar-item btn-home">   
+                                {titleMenu("HOME","Welcome")}
                             </div>
-                            <div className="bar-item"
-                                onClick={() => setOpenhosting(!openhosting)}
-                                aria-controls="hosting"
-                                aria-expanded={openhosting}
-                            >
-                                <span>  클라우드  </span> <br/>
-                                <span className="bar-item-1">Cloud</span>
+                            <div className="bar-item ">
+                                {titleMenu("클라우드","Cloud")}
                             </div>
-                            <div className="bar-item"
-                                onClick={() => setOpenhosting(!openhosting)}
-                                aria-controls="hosting"
-                                aria-expanded={openhosting}
-                            >
-                                <span> 마이크로서비스 개발 </span> <br/>
-                                <span className="bar-item-1">Microservice</span>
+                            <div className="bar-item ">   
+                                {titleMenu("마이크로서비스 개발","Microservice")}
                             </div>
-                            <div className="bar-item "
+                            <div className="bar-item kimquynhtesst"
                                 onClick={() => setOpen(!open)}
                                 aria-controls="hanbiro-customer"
                                 aria-expanded={open}
                             >
-                                <span>  그룹웨어  </span> <br/>
-                                <span className="bar-item-1">Groupware</span>
+                                {titleMenu("그룹웨어","Groupware")}
                             </div>
                             
                             <div className="bar-item"
                                 onClick={() => setOpenhosting(!openhosting)}
                                 aria-controls="hosting"
                                 aria-expanded={openhosting}
-                            >
-                                <span> Vora Works </span> <br/>
-                                <span className="bar-item-1">Vora Works</span>
+                            >   
+                                {titleMenu("Vora Works","Vora Works")}
                             </div>
                             <div className="bar-item"
                                 onClick={() => setOpenhosting(!openhosting)}
                                 aria-controls="hosting"
                                 aria-expanded={openhosting}
-                            >
-                                <span>  호스팅  </span> <br/>
-                                <span className="bar-item-1">Hosting</span>
+                            >   
+                                {titleMenu("호스팅","Hosting")}
                             </div>
-                            <div className="bar-item"
+                            <div className="bar-item bar-item-end "
                                 onClick={() => setOpen(!open)}
                                 aria-controls="hanbiro-customer"
                                 aria-expanded={open}
                             >
-                                <span>  한비로/고객 센터  </span> <br/>
-                                <span className="bar-item-1">Hanbiro/Customers</span>
+                                {titleMenu("한비로/고객 센터","Hanbiro/Customers")} 
                             </div>
                         </div>
                     </Col>
                 </Row>
                 <Row>
                     <Col md={12} sm={12}>
-                        <Collapse in={open} className="menu">
+                        <Collapse in={open} className="menu ">
                             <div id="hosting" className="menu-list">
                                 <div className="menu-list-item boder-left">
                                     <h6 >한비로</h6>
