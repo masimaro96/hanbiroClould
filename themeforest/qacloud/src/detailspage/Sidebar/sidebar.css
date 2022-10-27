@@ -1,4 +1,4 @@
-/* .detail-page {
+.detail-page {
     padding-top: 55px;
 }
 
@@ -51,9 +51,9 @@
 
 @media only screen and (max-width: 1023px) {
     
-} */
+}
 
-.side {
+/* .side {
     margin-top: 15px;
     background-color: #ccc;
     border-radius: 10px;
@@ -73,4 +73,4 @@
     color: black;
     padding: 8px 16px;
     display: inline-block;
-}
+} */
