@@ -2,7 +2,7 @@
 
 import TopNav from '../homepage/header-banner/TopNav';
 import CloudServices from '../homepage/cloud-services/cloudservices';
-import CloudFeatures from '../homepage/cloud-features/cloud-features';
+import DetailContent from '../homepage/cloud-features/detail-content';
 import Cloudconsult from '../homepage/consult/cloudconsult';
 import Footer from '../homepage/footer/Footer';
 
@@ -13,9 +13,10 @@ function App() {
         <TopNav />
       </header>
       <body>
-        <CloudServices />
+        {/* <CloudServices />
         <CloudFeatures />
-        <Cloudconsult />
+        <Cloudconsult /> */}
+        <DetailContent />
       </body>
       <footer>
         <Footer />

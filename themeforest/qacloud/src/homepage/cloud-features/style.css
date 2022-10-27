@@ -62,16 +62,16 @@ span.content {
     height: 230px;
     border-radius: 5px;
     /* width: 192px; */
-    width: 850px;
+    
     /* align-content: center; */
 } 
 
 .small_table {
     width: 800px;
+
     height: 80px;
     padding-top: 54px;
     margin: 0 23px;
-    width: 800px;
     color: #DDDDDD;
 }
 
