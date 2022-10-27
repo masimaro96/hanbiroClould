@@ -1,4 +1,4 @@
-/* .detail-page {
+.detail-page {
     padding-top: 55px;
 }
 
@@ -51,9 +51,9 @@
 
 @media only screen and (max-width: 1023px) {
     
-} */
+}
 
-.side {
+/* .side {
     margin-top: 15px;
     background-color: #ccc;
 }
@@ -66,4 +66,4 @@
 .side .side-menu a {
     text-decoration: none;
     color: black;
-}
+} */

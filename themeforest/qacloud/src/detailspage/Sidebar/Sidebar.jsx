@@ -23,7 +23,7 @@ const SidebarTitle = styled.p `
 function Sidebar() {
   return (
     <Container className='detail-page'>
-        <Row>
+        {/* <Row>
           <Col md={12}>
             <div className='side'>
               <ul className='side-menu'>
@@ -33,10 +33,10 @@ function Sidebar() {
               </ul>
             </div>
           </Col>
-        </Row>
+        </Row> */}
 
         {/* <Row>
-            <Col md={3}>
+            <Col md={3}> */}
               <div className='left-menu'>
                 <SidebarTitle>Server</SidebarTitle>
                 <Mybox className='sidebarlist'>
@@ -90,7 +90,7 @@ function Sidebar() {
                   </ul>
                 </Mybox>
               </div>
-            </Col>
+            {/* </Col>
             <Col md={9}>Sidebar</Col>
         </Row> */}
     </Container>
