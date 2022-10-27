@@ -8,7 +8,7 @@ import {
     Container, Row, Col
   } from 'react-bootstrap';
 import Sidebar from '../Sidebar/Sidebar'
-
+import LuuNgo from '../../homepage/consult/kimquynh'
 function Computevps(){
 
     return (
@@ -22,8 +22,7 @@ function Computevps(){
                     </Col>
 
                     <Col md={9}>
-                        
-                        {Cardintroducecontent()}
+                        <LuuNgo />
                     </Col>
                 </Row>
             </Container>
