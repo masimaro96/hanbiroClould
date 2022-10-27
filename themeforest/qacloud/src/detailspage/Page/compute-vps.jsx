@@ -23,7 +23,7 @@ function Computevps(){
 
                     <Col md={9}>
                         
-                        <Cardintroducecontent />
+                        {Cardintroducecontent()}
                     </Col>
                 </Row>
             </Container>

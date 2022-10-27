@@ -10,40 +10,14 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
 
-
-
-
-function columnusdata($data1,$data2,$data3,$data4,$data5,$data6,$data7){
-  return(
-      
-    <GridCardBody2>
-      <CardTitle>
-        <div>{$data1}</div>
-        <div>{$data2}</div>
-      </CardTitle>  
-      <CardText>
-        <div>{$data3}</div>
-        <div>{$data4}</div>
-        <div>{$data5}</div>
-        <div>{$data6}</div>
-        <div>{$data7}</div>
-      </CardText>
-    </GridCardBody2>  
-  
-      
-  )
-}
-
-
-
-function Cardintroducecontent() {
+function Cardintroducecontent($title1,$title2,$title3,$data1,$data2,$data3,$data4,$data5,$data6,$data7) {
   
   return (
     <>
         <div className='App'>
             <Row>
                 <Col md={12} >
-                  <Box><Titlecloud2>가상서버 (인스턴스)</Titlecloud2></Box>
+                  <Box><Titlecloud2>{$title1}</Titlecloud2></Box>
                 </Col>
             </Row>
             <Row>
@@ -51,8 +25,8 @@ function Cardintroducecontent() {
                 <Box>
                   <GridCard>
                     <GridCardBody>
-                      <div>고객별 서버자원의 독립성보장, 안정적인 서비스운영</div>
-                      <div>모든 서비스 고용량 SSD 디스크 제공, 고용량의 메모리 할당</div>
+                      <div>{$title2}</div>
+                      <div>{$title3}</div>
                     </GridCardBody>
                   </GridCard>
                 </Box>
@@ -63,12 +37,24 @@ function Cardintroducecontent() {
               <Col sm={12} md={6}>
                 
                 <GridCard>
-                    {columnusdata("한비로 Cloud 관리자 콘솔에서 수분내에","서버생성 및 서비스개시","시간단위로 사용요금을 측정하며, 사용한만큼의 비용을","지불할 수 있습니다. 단기간의 서비스나 고용량의","서버가 필요하지 않을 경우 적절한 서비스입니다","관리자 콘솔에서 한번의 클릭으로 수분내에 선택한","운영체재의 서버가 생성됩니다.")}  
-                  </GridCard>
+                  <CardText>
+                      <div>{$data3}</div>
+                      <div>{$data4}</div>
+                      <div>{$data5}</div>
+                      <div>{$data6}</div>
+                      <div>{$data7}</div>
+                  </CardText>
+                </GridCard>
                 </Col>
                 <Col sm={12} md={6}>
                   <GridCard>
-                    {columnusdata("쿠버네티스 기반 데이터베이스 및","어플리케이션과 통합 클러스터 플랫폼 구축","한비로는 쿠버네티스와의 통합 Cloud 플랫폼을","운형하고 있으며, 가상서버(인스턴스)는 한비로 Cloud","쿠버네티스 기반 서비스와 연동할 수 있습니다.")}  
+                    <CardText>
+                      <div>{$data3}</div>
+                      <div>{$data4}</div>
+                      <div>{$data5}</div>
+                      <div>{$data6}</div>
+                      <div>{$data7}</div>
+                    </CardText>
                   </GridCard>
                 </Col>
                   
