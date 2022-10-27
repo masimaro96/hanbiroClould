@@ -19,15 +19,15 @@ function columnusdata($data1,$data2,$data3,$data4,$data5,$data6,$data7){
       
     <GridCardBody2>
       <CardTitle>
-          <TypographyCard>{$data1}</TypographyCard>
-          <TypographyCard>{$data2}</TypographyCard>
+          <div>{$data1}</div>
+          <div>{$data2}</div>
       </CardTitle>  
       <CardText>
-          <TypographyCard>{$data3}</TypographyCard>
-          <TypographyCard>{$data4}</TypographyCard>
-          <TypographyCard>{$data5}</TypographyCard>
-          <TypographyCard>{$data6}</TypographyCard>
-          <TypographyCard>{$data7}</TypographyCard>
+        <div>{$data3}</div>
+        <div>{$data4}</div>
+        <div>{$data5}</div>
+        <div>{$data6}</div>
+        <div>{$data7}</div>
       </CardText>
     </GridCardBody2>  
   
@@ -43,10 +43,10 @@ function cardintroducecontent() {
   
   return (
     <>
-        <div>
+        <div className='App'>
             <Row>
                 <Col md={12} >
-                  <Box><Titlecloud2><TypographyCard>가상서버 (인스턴스)</TypographyCard></Titlecloud2></Box>
+                  <Box><Titlecloud2>오토스케일링</Titlecloud2></Box>
                 </Col>
             </Row>
             <Row>
@@ -54,8 +54,7 @@ function cardintroducecontent() {
                 <Box>
                   <GridCard>
                     <GridCardBody>
-                      <TypographyCard>고객별 서버자원의 독립성보장, 안정적인 서비스운영</TypographyCard>
-                      <TypographyCard>모든 서비스 고용량 SSD 디스크 제공, 고용량의 메모리 할당</TypographyCard>
+                      <div>오토스케일링서비스 무료로 제공 / 증설된 가상서버(인스턴스)의 요금적용</div>
                     </GridCardBody>
                   </GridCard>
                 </Box>
@@ -66,12 +65,12 @@ function cardintroducecontent() {
               <Col sm={12} md={6}>
                 
                 <GridCard>
-                    {columnusdata("한비로 Cloud 관리자 콘솔에서 수분내에","서버생성 및 서비스개시","시간단위로 사용요금을 측정하며, 사용한만큼의 비용을","지불할 수 있습니다. 단기간의 서비스나 고용량의","서버가 필요하지 않을 경우 적절한 서비스입니다","관리자 콘솔에서 한번의 클릭으로 수분내에 선택한","운영체재의 서버가 생성됩니다.")}  
+                    {columnusdata("유동적인 서버확장과 축소, 클러스터","시스템구축","가상서버(인스턴스)의 증가시 로드발랜서가 자동으로","확장된 서버의 부하분산을 구현합니다.")}  
                   </GridCard>
                 </Col>
                 <Col sm={12} md={6}>
                   <GridCard>
-                    {columnusdata("쿠버네티스 기반 데이터베이스 및","어플리케이션과 통합 클러스터 플랫폼 구축","한비로는 쿠버네티스와의 통합 Cloud 플랫폼을","운형하고 있으며, 가상서버(인스턴스)는 한비로 Cloud","쿠버네티스 기반 서비스와 연동할 수 있습니다.")}  
+                    {columnusdata("관리자 콘솔에서 트래픽의 증가와 감소, 서버의 CPU 및","메모리 사용량의 증가와 감소 임계치를 설정한후","임계치값의 초과시 가상서버를 증가시키며, 임계치값","미만시 가상서버를 감소시킵니다.")}  
                   </GridCard>
                 </Col>
                   
@@ -80,7 +79,10 @@ function cardintroducecontent() {
               <Col sm={12} md={12}>
                 
                 <GridCard>
-                  <CardImage src="https://www.hanbiro.com/cloud/images/concept/vps.gif"></CardImage>
+                    <GridCardBody3>
+                        <CardImage src="https://www.hanbiro.com/cloud/images/concept/single_DB_web_autoscale.gif"></CardImage>
+                    </GridCardBody3>
+                  
                 </GridCard>
               </Col>
                 
@@ -110,28 +112,33 @@ const GridCard = styled(Card)`
 const GridCardBody = styled(CardBody)`
   padding: 10;
   text-align: center;
-  background-color:#F3F5F9;
+  background-color:#e5e5e5;
   font-weight: bold;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 18px;
   
 `;
 
 
 
 const GridCardBody2 = styled(CardBody)`
-  border: solid #F3F5F9 3px;
-  background-color:  write;
-  border-radius: 5px;
+    border: solid white 2px;
+    background:  white;
+    border-radius: 10px;
   
   
   
 `;
 
+const GridCardBody3 = styled(CardBody)`
+    border: solid white 2px;
+    background:  white;
+`;
+
 
 const Titlecloud2 = styled.div`
   font-weight: bold;
-  font-size:34px;
+  font-size:28px;
     
 `;
 
@@ -139,7 +146,7 @@ const CardTitle = styled(Card.Title)`
   padding: 0;
   text-align: left;
   font-weight: bold;
-  font-size:20px;
+  font-size:18px;
 `;
 
 
@@ -157,7 +164,7 @@ const CardText = styled(Card.Text)`
     margin-bottom: 6%;
     margin-top: 4%;
     color:gray;
-  
+    font-size:14px;
   
 `;
 
@@ -169,6 +176,8 @@ const CardImage = styled(Card.Img)`
     
   
 `;
+
+
 
 
 

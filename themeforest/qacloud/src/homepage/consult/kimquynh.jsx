@@ -19,15 +19,15 @@ function columnusdata($data1,$data2,$data3,$data4,$data5,$data6,$data7){
       
     <GridCardBody2>
       <CardTitle>
-          <TypographyCard>{$data1}</TypographyCard>
-          <TypographyCard>{$data2}</TypographyCard>
+        <div>{$data1}</div>
+        <div>{$data2}</div>
       </CardTitle>  
       <CardText>
-          <TypographyCard>{$data3}</TypographyCard>
-          <TypographyCard>{$data4}</TypographyCard>
-          <TypographyCard>{$data5}</TypographyCard>
-          <TypographyCard>{$data6}</TypographyCard>
-          <TypographyCard>{$data7}</TypographyCard>
+        <div>{$data3}</div>
+        <div>{$data4}</div>
+        <div>{$data5}</div>
+        <div>{$data6}</div>
+        <div>{$data7}</div>
       </CardText>
     </GridCardBody2>  
   
@@ -43,10 +43,10 @@ function cardintroducecontent() {
   
   return (
     <>
-        <div>
+        <div className='App'>
             <Row>
                 <Col md={12} >
-                  <Box><Titlecloud2><TypographyCard>가상서버 (인스턴스)</TypographyCard></Titlecloud2></Box>
+                  <Box><Titlecloud2>가상서버 (인스턴스)</Titlecloud2></Box>
                 </Col>
             </Row>
             <Row>
@@ -54,8 +54,8 @@ function cardintroducecontent() {
                 <Box>
                   <GridCard>
                     <GridCardBody>
-                      <TypographyCard>고객별 서버자원의 독립성보장, 안정적인 서비스운영</TypographyCard>
-                      <TypographyCard>모든 서비스 고용량 SSD 디스크 제공, 고용량의 메모리 할당</TypographyCard>
+                      <div>고객별 서버자원의 독립성보장, 안정적인 서비스운영</div>
+                      <div>모든 서비스 고용량 SSD 디스크 제공, 고용량의 메모리 할당</div>
                     </GridCardBody>
                   </GridCard>
                 </Box>
@@ -80,7 +80,10 @@ function cardintroducecontent() {
               <Col sm={12} md={12}>
                 
                 <GridCard>
-                  <CardImage src="https://www.hanbiro.com/cloud/images/concept/vps.gif"></CardImage>
+                  <GridCardBody3>
+                    <CardImage src="https://www.hanbiro.com/cloud/images/concept/vps.gif"></CardImage>
+                  </GridCardBody3>
+                  
                 </GridCard>
               </Col>
                 
@@ -110,28 +113,33 @@ const GridCard = styled(Card)`
 const GridCardBody = styled(CardBody)`
   padding: 10;
   text-align: center;
-  background-color:#F3F5F9;
+  background-color:#e5e5e5;
   font-weight: bold;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 18px;
   
 `;
 
 
 
 const GridCardBody2 = styled(CardBody)`
-  border: solid #F3F5F9 3px;
-  background-color:  write;
-  border-radius: 5px;
+  border: solid white 2px;
+  background:  white;
+  border-radius: 10px;
   
   
   
 `;
 
+const GridCardBody3 = styled(CardBody)`
+    border: solid white 2px;
+    background:  white;
+`;
+
 
 const Titlecloud2 = styled.div`
   font-weight: bold;
-  font-size:34px;
+  font-size:28px;
     
 `;
 
@@ -139,7 +147,7 @@ const CardTitle = styled(Card.Title)`
   padding: 0;
   text-align: left;
   font-weight: bold;
-  font-size:20px;
+  font-size:18px;
 `;
 
 
@@ -157,7 +165,7 @@ const CardText = styled(Card.Text)`
     margin-bottom: 6%;
     margin-top: 4%;
     color:gray;
-  
+    font-size:14px;
   
 `;
 

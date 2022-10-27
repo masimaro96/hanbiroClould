@@ -12,22 +12,20 @@ import Typography from '@mui/material/Typography'
 
 
 
-
-
 function columnusdata($data1,$data2,$data3,$data4,$data5,$data6,$data7){
   return(
       
     <GridCardBody2>
-      <CardTitle>
-          <TypographyCard>{$data1}</TypographyCard>
-          <TypographyCard>{$data2}</TypographyCard>
+       <CardTitle>
+        <div>{$data1}</div>
+        <div>{$data2}</div>
       </CardTitle>  
       <CardText>
-          <TypographyCard>{$data3}</TypographyCard>
-          <TypographyCard>{$data4}</TypographyCard>
-          <TypographyCard>{$data5}</TypographyCard>
-          <TypographyCard>{$data6}</TypographyCard>
-          <TypographyCard>{$data7}</TypographyCard>
+        <div>{$data3}</div>
+        <div>{$data4}</div>
+        <div>{$data5}</div>
+        <div>{$data6}</div>
+        <div>{$data7}</div>
       </CardText>
     </GridCardBody2>  
   
@@ -37,16 +35,14 @@ function columnusdata($data1,$data2,$data3,$data4,$data5,$data6,$data7){
 
 
 
-
-
 function cardintroducecontent() {
   
   return (
     <>
-        <div>
+        <div className='App'>
             <Row>
                 <Col md={12} >
-                  <Box><Titlecloud2><TypographyCard>가상서버 (인스턴스)</TypographyCard></Titlecloud2></Box>
+                  <Box><Titlecloud2>베어메탈 서버</Titlecloud2></Box>
                 </Col>
             </Row>
             <Row>
@@ -54,8 +50,8 @@ function cardintroducecontent() {
                 <Box>
                   <GridCard>
                     <GridCardBody>
-                      <TypographyCard>고객별 서버자원의 독립성보장, 안정적인 서비스운영</TypographyCard>
-                      <TypographyCard>모든 서비스 고용량 SSD 디스크 제공, 고용량의 메모리 할당</TypographyCard>
+                        <div>베어메탈 서버는 일반 코로케이션 서버의 상품과 가격이 동일</div>
+                      <Card.Link href="#"><Typography> https://www.hanbiro.com/hosting/product-list.html </Typography></Card.Link>
                     </GridCardBody>
                   </GridCard>
                 </Box>
@@ -66,12 +62,12 @@ function cardintroducecontent() {
               <Col sm={12} md={6}>
                 
                 <GridCard>
-                    {columnusdata("한비로 Cloud 관리자 콘솔에서 수분내에","서버생성 및 서비스개시","시간단위로 사용요금을 측정하며, 사용한만큼의 비용을","지불할 수 있습니다. 단기간의 서비스나 고용량의","서버가 필요하지 않을 경우 적절한 서비스입니다","관리자 콘솔에서 한번의 클릭으로 수분내에 선택한","운영체재의 서버가 생성됩니다.")}  
+                    {columnusdata("클라우드 환경내에서 고성능의 물리서버를","단독으로 이용","서비스 운영체제를 물리서버에 직접 설치해서 운영하는","서버입니다. 고객이 원하는 하드웨어 구성할 수 있으며,","고성능 대용량 서비스에 적합합니다.")}  
                   </GridCard>
                 </Col>
                 <Col sm={12} md={6}>
                   <GridCard>
-                    {columnusdata("쿠버네티스 기반 데이터베이스 및","어플리케이션과 통합 클러스터 플랫폼 구축","한비로는 쿠버네티스와의 통합 Cloud 플랫폼을","운형하고 있으며, 가상서버(인스턴스)는 한비로 Cloud","쿠버네티스 기반 서비스와 연동할 수 있습니다.")}  
+                    {columnusdata("대용량의 입출력이 필요하거나 응답속도가","빠른 서비스에 적합","서버의 하드웨어자원을 공유하지 않고, 독립적으로","사용되는 서버입니다. 일반적인 Co-location 서버와","동일한 방식으로 운영할 수 있으며, 높은 응답속도와","대용량의 입출력이 요구되는 서비스에 적합합니다.")}  
                   </GridCard>
                 </Col>
                   
@@ -80,7 +76,10 @@ function cardintroducecontent() {
               <Col sm={12} md={12}>
                 
                 <GridCard>
-                  <CardImage src="https://www.hanbiro.com/cloud/images/concept/vps.gif"></CardImage>
+                    <GridCardBody3>
+                        <CardImage src="https://www.hanbiro.com/cloud/images/concept/baremetal.gif"></CardImage>
+                    </GridCardBody3>
+                  
                 </GridCard>
               </Col>
                 
@@ -110,28 +109,31 @@ const GridCard = styled(Card)`
 const GridCardBody = styled(CardBody)`
   padding: 10;
   text-align: center;
-  background-color:#F3F5F9;
+  background-color:#e5e5e5;
   font-weight: bold;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 18px;
   
 `;
 
 
 
 const GridCardBody2 = styled(CardBody)`
-  border: solid #F3F5F9 3px;
-  background-color:  write;
-  border-radius: 5px;
+    border: solid white 2px;
+    background:  white;
+    border-radius: 10px;
   
-  
-  
+`;
+
+const GridCardBody3 = styled(CardBody)`
+    border: solid white 2px;
+    background:  white;
 `;
 
 
 const Titlecloud2 = styled.div`
   font-weight: bold;
-  font-size:34px;
+  font-size:28px;
     
 `;
 
@@ -139,7 +141,7 @@ const CardTitle = styled(Card.Title)`
   padding: 0;
   text-align: left;
   font-weight: bold;
-  font-size:20px;
+  font-size:18px;
 `;
 
 
@@ -157,7 +159,7 @@ const CardText = styled(Card.Text)`
     margin-bottom: 6%;
     margin-top: 4%;
     color:gray;
-  
+    font-size:14px;
   
 `;
 

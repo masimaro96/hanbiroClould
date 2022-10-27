@@ -39,93 +39,10 @@
 
 
 
-.row1-cloudconsult{
-  text-align: center;
-  
-}
-
-.title-name-consult{
-  padding-top: 3%;
-}
-
-.title-iconcloud{
-  display: flex;
-}
 
 
 
-.row2-cloudconsult{
-  text-align: left;
-  padding-top: 1%;
-  display: flex;
-  
-}
-.row3-cloudconsult{
-  text-align: center;
-}
 
-.card1-consults{
-  text-align: center;
-}
-
-.card2-consults{
-  text-align: center;
-}
-
-.card5-consults{
-  text-align: center;
-}
-
-.title-cloudconsult{
-  padding-bottom: 3%;
-  
-}
-
-.icon-cloudconsult{
-  color: #0099FF;
-  border-radius:50%;
-  border: solid white 0px;
-  background-color:#99CCFF;
-  padding: 8px;
-  
-}
-
-.content-consult{
-  padding-left: 4%;
-}
-
-
-
-.avatar-card-title{
-  width: 18rem;
-  position: relative;
-  text-align: left;
-  font-weight: bold;
-  margin-bottom: 6%;
-  margin-left: 5%;
-  margin-top: 5%;
-  
-}
-
-.avatar-card-user{
-  text-align: right;
-  position: absolute;
-  left: 75%;
-  right: 5%;
-  top: 15%;
-  width: 11%;
-  border-radius:50%;
- 
-}
-
-
-
-.col-data-consult{
-  border: solid white 2px;
-  background:  white;
-  border-radius: 10px;
-  
-}
 
 
 
@@ -135,6 +52,9 @@
     display: flex;
   }
   
+  .iconstyle{
+    border-radius:30%;
+  }
   
 }
 
@@ -150,6 +70,7 @@
   .card5-consults{
     margin-top: -5%;
   }
+  
  
 }
 
