@@ -10,13 +10,9 @@ import {
     Container, Row, Col
 } from 'react-bootstrap';
 import Sidebar from '../../container/Sidebar/Sidebar'
-import {
-    Container, Row, Col
-} from 'react-bootstrap';
-import Sidebar from '../Sidebar/Sidebar'
-import Titlecloudcompute from "../../container/Titlecloudcompute"
-import Contentcloudcompute from "../../container/Contentcloudcompute"
-import Imagecloudcompute from "../../container/Imagecloudcompute"
+import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute"
+import Imagecloudcompute from "../../container/Card/Components/Imagecloudcompute"
+import Contentcloudcompute from "../../container/Card/Components/Contentcloudcompute"
 
 
 function Computeloadbalance(){

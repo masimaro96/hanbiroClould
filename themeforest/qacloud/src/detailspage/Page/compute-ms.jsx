@@ -10,13 +10,10 @@ import {
     Container, Row, Col
 } from 'react-bootstrap';
 import Sidebar from '../../container/Sidebar/Sidebar'
-import {
-    Container, Row, Col
-} from 'react-bootstrap';
-import Titlecloudcompute from "../../container/Titlecloudcompute"
-import Contentcloudcompute from "../../container/Contentcloudcompute"
-import Contentcloudcard from "../../container/Contentcloudcard"
-import Imagecloudcompute from "../../container/Imagecloudcompute"
+import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute"
+import Contentcloudcompute from "../../container/Card/Components/Contentcloudcompute"
+import Contentcloudcard from "../../container/Card/Components/Contentcloudcard"
+import Imagecloudcompute from "../../container/Card/Components/Imagecloudcompute"
 
 
 function Computems(){
