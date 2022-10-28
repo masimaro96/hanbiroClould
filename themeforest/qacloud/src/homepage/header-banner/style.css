@@ -115,6 +115,7 @@ code {
 }
 .bar-home{
   position: relative;
+  z-index: 1;
 }
 .bar-menu{
   display: flex;
@@ -238,5 +239,9 @@ code {
   color: aqua;
   text-align: center;
   border: 1px solid #D7E5ED;
+  height: 10px;
+  font-weight: 700;
+  height: 16px;
+ 
 }
 

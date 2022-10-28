@@ -1,4 +1,4 @@
-
+import React from 'react';
 import HomePage from "../homepage";
 import Pagedetails from "../detailspage";
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <HomePage />
-      <Pagedetails />
+      {/* <Pagedetails /> */}
     </div>
   );
 
