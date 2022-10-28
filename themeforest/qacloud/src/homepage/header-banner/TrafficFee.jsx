@@ -1,12 +1,6 @@
 
-import { Diversity1Outlined } from '@mui/icons-material';
+
 import React from 'react';
-import {
-  Container, Row, Col,
-} from 'react-bootstrap';
-
-
-
 
 function TrafficFee() {
   return (
@@ -21,12 +15,12 @@ function TrafficFee() {
           <table width="100%">
             <tbody >
               <tr style={StySpecification.Header}>
-                <td  width="30%" style={StySpecification.BorLeft}>구분	</td>
+                <td  width="30%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}>구분</div></td>
                 <td  width="40%" >구간	</td>
-                <td  width="30%" style={StySpecification.BorRight}>요금 (GB/월)</td>
+                <td  width="30%" style={StySpecification.BorRight}>요금 (GB/월) </td>
               </tr>
               <tr>
-                <td  style={StySpecification.TextLeft}>한비로 Cloud 서비스통신구간		</td>
+                <td  style={StySpecification.TextLeft}>한비로 Cloud 서비스통신구간 </td>
                 <td style={StySpecification.BorAll}></td>
                 <td style={StySpecification.BorAll}>무료</td>
               </tr>
@@ -42,25 +36,30 @@ function TrafficFee() {
               </tr>
               
               <tr>
-                <td rowSpan={5} style={StySpecification.TextLeft}><text>국내망 아웃바운드 트래픽 (초과사용)</text></td>
+                <td rowSpan={5} style={StySpecification.TextLeft}><text>국내망 아웃바운드 트래픽 <br/>(초과사용)</text></td>
                 <td style={StySpecification.BorAll}>1 G ~ 1,000 G</td>
                 <td style={StySpecification.BorAll}>70 원</td>
               </tr>
               <tr>
-                <td style={StySpecification.BorAll}>1 G ~ 1,000 G</td>
-                <td style={StySpecification.BorAll}>70 원</td>
+                <td style={StySpecification.BorAll}>1,001 G ~ 2,000 G</td>
+                <td style={StySpecification.BorAll}>60 원</td>
               </tr>
               <tr>
-                <td style={StySpecification.BorAll}>1 G ~ 1,000 G</td>
-                <td style={StySpecification.BorAll}>70 원</td>
+                <td style={StySpecification.BorAll}>2,001 G ~ 3,000 G</td>
+                <td style={StySpecification.BorAll}>50 원</td>
               </tr>
               <tr>
-                <td style={StySpecification.BorAll}>1 G ~ 1,000 G</td>
-                <td style={StySpecification.BorAll}>70 원</td>
+                <td style={StySpecification.BorAll}>3,001 G ~ 4,000 G</td>
+                <td style={StySpecification.BorAll}>40 원</td>
               </tr>
               <tr>
-                <td style={StySpecification.BorAll}>1 G ~ 1,000 G</td>
-                <td style={StySpecification.BorAll}>70 원</td>
+                <td style={StySpecification.BorAll}>4,001 G ~</td>
+                <td style={StySpecification.BorAll}>30 원</td>
+              </tr>
+              <tr>
+                <td  style={StySpecification.TextLeft}>해외망 아웃바운드 트래픽 <br/>(초과사용)</td>
+                <td style={StySpecification.BorAll}>국내망과 동일	</td>
+                <td style={StySpecification.BorAll}></td>
               </tr>
 
             </tbody>
@@ -79,9 +78,10 @@ const StySpecification = {
     border: "1px solid #D7E5ED",
     borderRadius: "8px",
     padding: 20,
+    marginTop:30
   },
   ListProduct:{
-    fontSize: 17,
+    fontSize: 18,
   },
  
   Title:{
@@ -90,6 +90,10 @@ const StySpecification = {
   Header:{
     color: "white",
     background: "#393939",
+  },
+  TextTitle:{
+    paddingTop: 8,
+    paddingBottom: 8,
   },
   BorLeft:{
     borderTopLeftRadius: "8px",
@@ -108,7 +112,7 @@ const StySpecification = {
     borderLeft:"2px solid #DDDDDD",
     borderRight:"2px solid #DDDDDD",
     borderBottom:"2px solid #DDDDDD",
-    fontWeight: "bold",
+    fontWeight: 600,
     textAlign: "left",
     paddingLeft:"10px"
   }
