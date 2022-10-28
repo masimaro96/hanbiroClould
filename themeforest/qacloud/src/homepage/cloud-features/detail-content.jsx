@@ -78,6 +78,7 @@ function DetailContent(){
           </table>
         </div>
       </div>
+      <br/>
     </div>
 
 
@@ -90,6 +91,8 @@ const StySpecification = {
     boxShadow: "0px 0px 10px #e7eaf3",
     borderRadius: "8px",
     padding: 20,
+    marginBottom:30,
+    marginTop: 30,
   },
   ListProduct:{
     fontSize: 17,
