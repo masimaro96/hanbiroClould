@@ -1,19 +1,19 @@
-import React from 'react';
+﻿import React from 'react';
 import NavButton from '../../homepage/header-banner/TopNavButton';
 import ServerPricing from '../../homepage/header-banner/ServerPricing';
 import TrafficFee from '../../homepage/header-banner/TrafficFee';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
-import Banner from '../../container/Banner';
+import Banner from '../../container/Banner/Banner';
 import DetailContent from '../../homepage/cloud-features/detail-content';
 import {
     Container, Row, Col
 } from 'react-bootstrap';
-import Sidebar from '../Sidebar/Sidebar'
-import Titlecloudcompute from "../../container/Titlecloudcompute"
-import Contentcloudcompute from "../../container/Contentcloudcompute"
-import Contentcloudcard from "../../container/Contentcloudcard"
-import Imagecloudcompute from "../../container/Imagecloudcompute"
+import Sidebar from '../../container/Sidebar/Sidebar'
+import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute"
+import Contentcloudcompute from "../../container/Card/Components/Contentcloudcompute"
+import Contentcloudcard from "../../container/Card/Components/Contentcloudcard"
+import Imagecloudcompute from "../../container/Card/Components/Imagecloudcompute"
 
 
 function Clusterclickhouse(){

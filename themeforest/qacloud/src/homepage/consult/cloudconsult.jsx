@@ -54,7 +54,7 @@ function columnus($username,$imageuser,$phone,$mail){
 function Cloudconsult() {
   
   return (
-    <div className='App'>
+    <div className='coloruserdata'>
         <Container >
             <Row>
                 <Col sm={12}>
@@ -143,7 +143,7 @@ const GridCardBody = styled(CardBody)`
 
 const GridCardBody2 = styled(CardBody)`
   
-  border: solid white 2px;
+  border: solid gray 1px;
   background:  white;
   border-radius: 10px;
   
