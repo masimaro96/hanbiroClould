@@ -37,7 +37,7 @@ const Pagedetails = () => {
         <Clustercloudmysqldb />
         <Clustercloudpostgresqldb />
         <Clustercloudvitess />
-        <Clustercloudmongodb />
+        <Clustercloudmongodb /> 
         <Clustercloudredis />
         <Clustercloudscylladb />
 

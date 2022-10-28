@@ -59,7 +59,7 @@ function CloudServicesGridHidden () {
 function CloudServices() {
   
   return (
-    <div className='App'>
+    <div className='cloudservice'>
       <Container className='table-cloudservices'>
         <Box mr={3} className='ServerBox'>
           <Col>

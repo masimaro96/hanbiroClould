@@ -1,0 +1,23 @@
+.introduce-content{
+    padding-top: 20px;
+
+}
+
+.Box1{
+    border: 1px solid #ebebeb;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.intro-title{
+    font-weight: 800;
+    font-size: 15pt;
+    padding-bottom: 25px;
+}
+
+.intro-description{
+    color: gray;
+}
