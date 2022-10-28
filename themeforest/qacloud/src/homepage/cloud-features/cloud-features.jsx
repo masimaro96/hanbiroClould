@@ -83,11 +83,11 @@ function CloudFeatures(){
       </Row>
       <Col className='livechat'>
         <img alt='' src='https://www.hanbiro.com/images/ico-livechat.png' style={{width:30,height:30}}></img>
-        <span className='content'>1:1 상담</span>
+        <text className='content'>1:1 상담</text>
       </Col>
       <Col className='livechat_2'>
         <img alt='' src='https://www.hanbiro.com/images/ico-demo.png' style={{width:30,height:30}}></img>
-        <span className='content'>데모 신청</span>
+        <text className='content'>데모 신청</text>
       </Col>
       
     </Container>
