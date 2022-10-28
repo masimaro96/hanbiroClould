@@ -1,4 +1,4 @@
-
+import React from 'react';
 import HomePage from "../homepage";
 import Pagedetails from "../detailspage";
 
