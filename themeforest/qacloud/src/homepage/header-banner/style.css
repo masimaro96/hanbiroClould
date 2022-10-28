@@ -115,6 +115,7 @@ code {
 }
 .bar-home{
   position: relative;
+  z-index: 1;
 }
 .bar-menu{
   display: flex;
