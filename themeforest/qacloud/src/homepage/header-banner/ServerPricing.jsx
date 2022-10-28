@@ -1,9 +1,6 @@
 
-import { Diversity1Outlined } from '@mui/icons-material';
+
 import React from 'react';
-import {
-  Container, Row, Col,
-} from 'react-bootstrap';
 
 
 const ProtitleNew = (params) => {
@@ -11,7 +8,7 @@ const ProtitleNew = (params) => {
 
         <div style={params.classNameWrapper}>
           <div style={params.classNameItem}>
-            <text >{params.Title} </text>
+            <text style={StySpecification.ColorText}>{params.Title} </text>
           </div>
           <div style={params.PadPro}>
             <p><text>{params.Core}</text></p>
@@ -46,7 +43,7 @@ function ServerPricing() {
             classNameWrapper: StySpecification.InfPro,
             classNameItem: StySpecification.ProTitleLeft,
             PadPro : StySpecification.PadPro,
-            Title: "소호형 상품",
+            Title: "hi",
             Core: "CPU",
             G: "Memory",
             SD:"Storage",
@@ -118,6 +115,7 @@ const StySpecification = {
     border: "1px solid #D7E5ED",
     borderRadius: "8px",
     padding: 20,
+    marginTop:30,
   },
   StylesTitle: {
     textAlign: "center",
@@ -126,12 +124,14 @@ const StySpecification = {
     fontWeight: "bold",
   },
   Text:{
-    fontWeight: "bold",
+    fontWeight: 600,
     fontSize: 20,
+  },
+  ColorText:{
+    color: "white",
   },
   ProductTitle:{
     background: "#393939",
-    color: "white",
     fontWeight: "bold",
     borderTopLeftRadius: "8px",
     borderTopRightRadius: "8px",
@@ -140,30 +140,27 @@ const StySpecification = {
 
   },
   ProTitleLeft:{
-
-    color: "white",
-    fontWeight: "bold",
+    fontWeight: 500,
     paddingTop: 8,
     paddingBottom: 8,
-
   },
   InfProduct:{
     borderRadius: "8px",
-    width: "19%",
-    margin:10,
+    width: "20%",
+    marginLeft:20,
     border: "1px solid #D7E5ED",
   },
   InfPro:{
     borderRadius: "8px",
+    width: "20%",
+    marginRight:10,
     textAlign: "right",
-    width: "12%",
-    margin:10,
-    fontWeight: "bold",
+    fontWeight: 700,
   },
 
   ListProduct:{
     display: "flex",
-    fontSize: 17,
+    fontSize: 18,
     justifyContent: "center",
   },
   PadPro:{
