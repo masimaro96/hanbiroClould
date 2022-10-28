@@ -72,7 +72,7 @@ const GridCard = styled(Card)`
 
 
 const GridCardBody2 = styled(CardBody)`
-  border: solid white 2px;
+  border: solid gray 1px;
   background:  white;
   border-radius: 10px;
   
