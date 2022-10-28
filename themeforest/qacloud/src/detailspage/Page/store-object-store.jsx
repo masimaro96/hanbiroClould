@@ -9,7 +9,8 @@ import {
     Container, Row, Col
 } from 'react-bootstrap';
 import Sidebar from '../../container/Sidebar/Sidebar'
-import DetailContent from '../../homepage/cloud-features/detail-content';
+import DetailContent from '../../container/Table/Components/detail-content';
+import LiveChat from '../../container/Table/Components/live-chat';
 import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute"
 import Contentcloudcompute from "../../container/Card/Components/Contentcloudcompute"
 import Contentcloudcard from "../../container/Card/Components/Contentcloudcard"
@@ -37,6 +38,7 @@ function Storeobjectstore(){
                         <ServerPricing />
                         <TrafficFee />
                         <DetailContent />
+                        <LiveChat />
                     </Col>
                 </Row>
             </Container>
