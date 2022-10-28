@@ -10,34 +10,25 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
 
-function Cardintroducecontent($data1,$data2,$data3,$data4,$data5,$data6,$data7) {
+
+
+
+function Imagecloudcompute($imagecloud) {
   
   return (
     <>
         <div className='App'>
-            <Row>
-              <Col sm={12} md={6}>
-                
-                <GridCard>
-                <GridCardBody2>
-                  <CardTitle>
-                    <div>{$data1}</div>
-                    <div>{$data2}</div>
-                  </CardTitle>  
-                  <CardText>
-                    <div>{$data3}</div>
-                    <div>{$data4}</div>
-                    <div>{$data5}</div>
-                    <div>{$data6}</div>
-                    <div>{$data7}</div>
-                  </CardText>
-                </GridCardBody2>  
-                </GridCard>
+              <Row>
+                <Col sm={12} md={12}>
+                    <GridCard>
+                        <GridCardBody3>
+                            <CardImage src={$imagecloud}></CardImage>
+                        </GridCardBody3>
+                        
+                    </GridCard>
                 </Col>
-               
               </Row>
-           
-             
+            
         </div>
         
 
@@ -128,4 +119,4 @@ const CardImage = styled(Card.Img)`
 
 
 
-export default Cardintroducecontent;
+export default Imagecloudcompute;

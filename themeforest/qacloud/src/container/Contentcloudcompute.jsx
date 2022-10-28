@@ -10,33 +10,42 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
 
-function Cardintroducecontent($data1,$data2,$data3,$data4,$data5,$data6,$data7) {
+
+
+function Contentcloudcompute($data1,$data2,$data3,$data4) {
   
   return (
     <>
         <div className='App'>
+           
             <Row>
               <Col sm={12} md={6}>
                 
                 <GridCard>
-                <GridCardBody2>
-                  <CardTitle>
-                    <div>{$data1}</div>
-                    <div>{$data2}</div>
-                  </CardTitle>  
-                  <CardText>
-                    <div>{$data3}</div>
-                    <div>{$data4}</div>
-                    <div>{$data5}</div>
-                    <div>{$data6}</div>
-                    <div>{$data7}</div>
-                  </CardText>
-                </GridCardBody2>  
-                </GridCard>
+                    <GridCardBody2>
+                        <CardTitle>
+                            <div>{$data1}</div>
+                        </CardTitle>  
+                        <CardText>
+                            <div>{$data2}</div>
+                        </CardText>
+                    </GridCardBody2>  
+                  </GridCard>
                 </Col>
-               
+                <Col sm={12} md={6}>
+                  <GridCard>
+                    <GridCardBody2>
+                            <CardTitle>
+                                <div>{$data3}</div>
+                            </CardTitle>  
+                            <CardText>
+                                <div>{$data4}</div>
+                            </CardText>
+                        </GridCardBody2>  
+                  </GridCard>
+                </Col>
+                  
               </Row>
-           
              
         </div>
         
@@ -58,15 +67,7 @@ const GridCard = styled(Card)`
   
 `;
 
-const GridCardBody = styled(CardBody)`
-  padding: 10;
-  text-align: center;
-  background-color:#e5e5e5;
-  font-weight: bold;
-  border-radius: 10px;
-  font-size: 18px;
-  
-`;
+
 
 
 
@@ -79,17 +80,7 @@ const GridCardBody2 = styled(CardBody)`
   
 `;
 
-const GridCardBody3 = styled(CardBody)`
-    border: solid white 2px;
-    background:  white;
-`;
 
-
-const Titlecloud2 = styled.div`
-  font-weight: bold;
-  font-size:28px;
-    
-`;
 
 const CardTitle = styled(Card.Title)`
   padding: 0;
@@ -128,4 +119,4 @@ const CardImage = styled(Card.Img)`
 
 
 
-export default Cardintroducecontent;
+export default Contentcloudcompute;

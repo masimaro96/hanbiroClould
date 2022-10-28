@@ -41,7 +41,7 @@ const Pagedetails = () => {
             <Clustercloudredis />
             <Clustercloudscylladb />
 
-            <Clusterclickhouse />
+            {/* <Clusterclickhouse /> */}
             <Storeobjectstore />
             <Storeblockstore />
             <Storenasstore />
