@@ -36,18 +36,15 @@
     font-weight: bold;
 }
 
-.sidebarlist ul li a:hover {
+.sidebarlist ul li a:hover,
+.sidebarlist ul li.active a {
     color: #237ff0;
 }
 
 .sidebarlist ul li.active {
-    color: #237ff0;
     background-color: #47a7ff44;
 }
 
-.sidebarlist ul li.active a {
-    color: #237ff0;
-}
 
 @media only screen and (max-width: 1023px) {
     

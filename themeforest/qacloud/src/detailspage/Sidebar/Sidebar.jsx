@@ -3,8 +3,13 @@ import {
     Container, Row, Col
   } from 'react-bootstrap';
 import styled from 'styled-components';
-import { Box } from '@mui/material';
-import '../Sidebar/sidebar.css'
+import { Box, Typography } from '@mui/material';
+import '../Sidebar/sidebar.css';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ChevronDownIcon from 'mdi-react/ChevronDownIcon';
+
 
 const Mybox = styled(Box) ({
   backgroundColor: 'rgba(243, 245, 249, 0.8)',
@@ -25,18 +30,80 @@ function Sidebar() {
     <Container className='detail-page'>
         {/* <Row>
           <Col md={12}>
-            <div className='side'>
-              <ul className='side-menu'>
-                <li className='side-menu-item'><a href="">SERVER</a></li>
-                <li className='side-menu-item'><a href="">KUBERNETES CLUSTER</a></li>
-                <li className='side-menu-item'><a href="">STORAGE</a></li>
-              </ul>
-            </div>
+            <Accordion className='box-detail'>
+              <AccordionSummary>
+              <SidebarTitle>Server</SidebarTitle>
+                <ChevronDownIcon className='menu-icon'/>
+              </AccordionSummary>
+              <AccordionDetails>
+                <div className='left-menu'>
+                  <Mybox className='sidebarlist'>
+                      <ul>
+                        <li className='listitem active'><a href="#">가상서버 (인스턴스)</a></li>
+                        <li className='listitem'><a href="">베어메탈 서버 (단독서버)</a></li>
+                        <li className='listitem'><a href="">오토스케일링</a></li>
+                        <li className='listitem'><a href="">로드발랜서</a></li>
+                        <li className='listitem'><a href="">데이터베이스 (인스턴스)</a></li>
+                        <li className='listitem'><a href="">MS-SQL / Windows</a></li>
+                    </ul>
+                  </Mybox>
+                </div>
+              </AccordionDetails>
+            </Accordion>
+
+            <Accordion>
+              <AccordionSummary>
+              <SidebarTitle>Kubernetes Cluster</SidebarTitle>
+                <ChevronDownIcon />
+              </AccordionSummary>
+              <AccordionDetails>
+                <Accordion>
+                <AccordionSummary>
+                  <Typography>STORAGE</Typography>
+                  <ChevronDownIcon />
+                </AccordionSummary>
+                <AccordionDetails>
+                  <ul>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                  </ul>
+                </AccordionDetails>
+              </Accordion>
+
+              <Accordion>
+                <AccordionSummary>
+                  <Typography>STORAGE</Typography>
+                  <ChevronDownIcon />
+                </AccordionSummary>
+                <AccordionDetails>
+                  <ul>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                  </ul>
+                </AccordionDetails>
+              </Accordion>
+              </AccordionDetails>
+            </Accordion>
+
+            <Accordion>
+              <AccordionSummary>
+              <SidebarTitle>Storage</SidebarTitle>
+                <ChevronDownIcon />
+              </AccordionSummary>
+              <AccordionDetails>
+                <ul>
+                  <li>test</li>
+                  <li>test</li>
+                  <li>test</li>
+                </ul>
+              </AccordionDetails>
+            </Accordion>
           </Col>
         </Row> */}
 
-        {/* <Row>
-            <Col md={3}> */}
+        
               <div className='left-menu'>
                 <SidebarTitle>Server</SidebarTitle>
                 <Mybox className='sidebarlist'>
@@ -90,9 +157,7 @@ function Sidebar() {
                   </ul>
                 </Mybox>
               </div>
-            {/* </Col>
-            <Col md={9}>Sidebar</Col>
-        </Row> */}
+            
     </Container>
     
   )
