@@ -9,6 +9,7 @@ import {
 } from '@/shared/components/Card';
 import CloudIcon from 'mdi-react/CloudIcon';
 import Box from '@mui/material/Box';
+import { Link, Route } from "react-router-dom";
 
 /* eslint-disable */
 
@@ -26,26 +27,34 @@ function CloudServicesGrid ($title,$description) {
   )
 }
 
-function CloudServicesGridBorderNone ($name,$description) {
+function CloudServicesGridBorderNone($key, $name, $description) {
   return (
-    <GridCardBody className='row-box-intro'>
-      <div className='home-service-name'>
-        <TypographyCard>{$name}</TypographyCard>
+    <GridCardBody className="row-box-intro">
+      <div className="home-service-name">
+        <Link to={`/${$key}`}>
+          <TypographyCard>{$name}</TypographyCard>
+        </Link>
       </div>
-        <TypographyCard className='home-service-description'>{$description}</TypographyCard>
+      <TypographyCard className="home-service-description">
+        {$description}
+      </TypographyCard>
     </GridCardBody>
-  )
+  );
 }
 
-function CloudServicesGridBorder ($name,$description) {
+function CloudServicesGridBorder($key, $name, $description) {
   return (
-    <GridCardBody className='col-data-app'>
-      <div className='home-service-name'>
-      <TypographyCard>{$name}</TypographyCard>
+    <GridCardBody className="col-data-app">
+      <div className="home-service-name">
+        <Link to={`/${$key}`}>
+          <TypographyCard>{$name}</TypographyCard>
+        </Link>
       </div>
-      <TypographyCard  className='home-service-description'>{$description}</TypographyCard>
+      <TypographyCard className="home-service-description">
+        {$description}
+      </TypographyCard>
     </GridCardBody>
-  )
+  );
 }
 
 function CloudServicesGridHidden () {
@@ -69,32 +78,32 @@ function CloudServices() {
           </Col>
           <Col>
             <GridCard>
-              {CloudServicesGridBorderNone ("가상서버 (인스턴스)","Cloud 기반 가상서버")}
+              {CloudServicesGridBorderNone ("compute-vps","가상서버 (인스턴스)","Cloud 기반 가상서버")}
             </GridCard>
           </Col>
           <Col sm={12}>
             <GridCard>
-              {CloudServicesGridBorderNone ("베어메탈 서버 (단독서버)","Cloud 기반 독립서버")}
+              {CloudServicesGridBorderNone ("compute-bare-metal","베어메탈 서버 (단독서버)","Cloud 기반 독립서버")}
             </GridCard>
           </Col>
           <Col sm={12}>
             <GridCard>
-              {CloudServicesGridBorderNone ("오토스케일링","가상서버(인스탄스) 자동확장 서비스")}
+              {CloudServicesGridBorderNone ("compute-auto-scale","오토스케일링","가상서버(인스탄스) 자동확장 서비스")}
             </GridCard>
           </Col>
           <Col sm={12}>
             <GridCard>
-              {CloudServicesGridBorderNone ("로드발랜서","클라우드 서버부하분산 서비스")}
+              {CloudServicesGridBorderNone ("compute-load-balance","로드발랜서","클라우드 서버부하분산 서비스")}
             </GridCard>
           </Col>
           <Col sm={12}>
             <GridCard>
-              {CloudServicesGridBorderNone ("MS-SQL/Windows","윈도우 기반 가상서버(인스턴스)")}
+              {CloudServicesGridBorderNone ("compute-ms","MS-SQL/Windows","윈도우 기반 가상서버(인스턴스)")}
             </GridCard>
           </Col>
           <Col>
             <GridCard>
-              {CloudServicesGridBorderNone ("Database(인스턴스)","가상서버(인스턴스)기반 데이터베이스")}
+              {CloudServicesGridBorderNone ("compute-database","Database(인스턴스)","가상서버(인스턴스)기반 데이터베이스")}
             </GridCard>
           </Col>
           <Col>
@@ -113,17 +122,17 @@ function CloudServices() {
             <Box mr={1} className='ClusterBox1'>
               <Col>
                 <GridCard>
-                  {CloudServicesGridBorder ("Cloud ElasticSearch","쿠버네티스 클러스터 검색엔진")}
+                  {CloudServicesGridBorder ("cluster-cloud-elastic-search","Cloud ElasticSearch","쿠버네티스 클러스터 검색엔진")}
                 </GridCard>
               </Col>
               <Col>
                 <GridCard>
-                {CloudServicesGridBorder ("Cloud Kafka","실시간 데이터 스트리밍 처리")}
+                {CloudServicesGridBorder ("cluster-kafka","Cloud Kafka","실시간 데이터 스트리밍 처리")}
                 </GridCard>
               </Col>
               <Col>
                 <GridCard>
-                  {CloudServicesGridBorder ("Cloud RabbitMQ","AMQP 메세지 브로커 미들웨어")}
+                  {CloudServicesGridBorder ("cluster-cloud-rabbitmq","Cloud RabbitMQ","AMQP 메세지 브로커 미들웨어")}
                 </GridCard>
               </Col>
               <Col>
@@ -150,37 +159,37 @@ function CloudServices() {
             <Box className='ClusterBox1'>
               <Col>
               <GridCard>
-              {CloudServicesGridBorder ("Cloud for MySQL","컨테이너 MySQL 데이터베이스")}
+              {CloudServicesGridBorder ("cluster-cloud-mysql-db","Cloud for MySQL","컨테이너 MySQL 데이터베이스")}
               </GridCard>
               </Col>
               <Col>
               <GridCard>
-                {CloudServicesGridBorder ("Cloud for PostgreSQL","컨테이너 기반 PostgreSQL Database")}
+                {CloudServicesGridBorder ("cluster-cloud-postgresql-db","Cloud for PostgreSQL","컨테이너 기반 PostgreSQL Database")}
                </GridCard>
               </Col>
               <Col>
                 <GridCard>
-                  {CloudServicesGridBorder ("Cloud for Vitess","MySQL 호환 데이터베이스 클러스터 엔진")}
+                  {CloudServicesGridBorder ("cluster-cloud-vitess","Cloud for Vitess","MySQL 호환 데이터베이스 클러스터 엔진")}
                 </GridCard>
               </Col>
               <Col>
                 <GridCard>
-                  {CloudServicesGridBorder ("Cloud for MongoDB","컨테이너 기반 NoSQL Database")}
+                  {CloudServicesGridBorder ("cluster-cloud-mongodb","Cloud for MongoDB","컨테이너 기반 NoSQL Database")}
                 </GridCard>
               </Col>
               <Col>
                 <GridCard>
-                  {CloudServicesGridBorder ("Cloud for Redis","인메모리기반 고속 NoSQL Database")}
+                  {CloudServicesGridBorder ("cluster-cloud-redis","Cloud for Redis","인메모리기반 고속 NoSQL Database")}
                 </GridCard>
               </Col>
               <Col>
                 <GridCard>
-                  {CloudServicesGridBorder ("Cloud for SycllaDB","Cassandra 호환 NoSQL Database")}
+                  {CloudServicesGridBorder ("cluster-cloud-scylladb","Cloud for SycllaDB","Cassandra 호환 NoSQL Database")}
                 </GridCard>
               </Col>
               <Col>
                 <GridCard>
-                  {CloudServicesGridBorder ("Cloud for ClickHouse","OLAP를 위한 컬럼지향형 DB")}
+                  {CloudServicesGridBorder ("cluster-clickhouse","Cloud for ClickHouse","OLAP를 위한 컬럼지향형 DB")}
                 </GridCard>
               </Col>
             </Box>
@@ -194,17 +203,17 @@ function CloudServices() {
           </Col>
           <Col>
           <GridCard>
-              {CloudServicesGridBorderNone ("오브젝트 Storage","S3, API 전용 분산스토리지")}
+              {CloudServicesGridBorderNone ("store-object-store","오브젝트 Storage","S3, API 전용 분산스토리지")}
             </GridCard>
           </Col>
           <Col>
           <GridCard>
-          {CloudServicesGridBorderNone ("불록 Storage","OPENSTACK 블록스토리지")}
+          {CloudServicesGridBorderNone ("store-block-store","불록 Storage","OPENSTACK 블록스토리지")}
             </GridCard>
           </Col>
           <Col>
           <GridCard>
-              {CloudServicesGridBorderNone ("공유 Storage","클러스터 전용 공유스토리지")}
+              {CloudServicesGridBorderNone ("store-nas-store","공유 Storage","클러스터 전용 공유스토리지")}
             </GridCard>
           </Col>
           <Col>
