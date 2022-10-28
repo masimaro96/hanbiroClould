@@ -21,7 +21,12 @@ function Titlecloudcompute($title1) {
         <div className='App'>
             <Row>
                 <Col md={12} >
-                  <Box><Titlecloud2>{$title1}</Titlecloud2></Box>
+                  <Box>
+                    <GridCard>
+                        <GridCardBody><Titlecloud2>{$title1}</Titlecloud2></GridCardBody>
+                    </GridCard>
+                    
+                  </Box>
                 </Col>
             </Row>
             
