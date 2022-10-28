@@ -14,25 +14,22 @@ import Typography from '@mui/material/Typography'
 
 
 
-function Contentcloudcard($title2,$title3) {
+function Titlecloudcompute($title1) {
   
   return (
     <>
         <div className='App'>
-            
             <Row>
-              <Col md={12}>
-                <Box>
-                  <GridCard>
-                    <GridCardBody>
-                      <div>{$title2}</div>
-                      <div>{$title3}</div>
-                    </GridCardBody>
-                  </GridCard>
-                </Box>
-              </Col>
-                
+                <Col md={12} >
+                  <Box>
+                    <GridCard>
+                        <GridCardBody><Titlecloud2>{$title1}</Titlecloud2></GridCardBody>
+                    </GridCard>
+                    
+                  </Box>
+                </Col>
             </Row>
+            
             
             
         </div>
@@ -71,6 +68,8 @@ const GridCardBody = styled(CardBody)`
 const Titlecloud2 = styled.div`
   font-weight: bold;
   font-size:28px;
+  padding-top:6%;
+  padding-bottom:2%
     
 `;
 
@@ -95,4 +94,4 @@ const TypographyCard = styled.div`
 
 
 
-export default Contentcloudcard;
+export default Titlecloudcompute;

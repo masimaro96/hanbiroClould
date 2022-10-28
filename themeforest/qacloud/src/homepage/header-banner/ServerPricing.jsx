@@ -160,7 +160,7 @@ const StySpecification = {
 
   ListProduct:{
     display: "flex",
-    fontSize: 18,
+    fontSize: "110%",
     justifyContent: "center",
   },
   PadPro:{

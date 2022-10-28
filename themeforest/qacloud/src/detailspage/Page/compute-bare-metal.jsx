@@ -1,5 +1,6 @@
 import React from 'react';
 import NavButton from '../../homepage/header-banner/TopNavButton';
+import TrafficFee from '../../homepage/header-banner/TrafficFee';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import DetailContent from '../../container/Table/Components/detail-content';
@@ -35,6 +36,7 @@ function Computebaremetal(){
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/baremetal.gif")}
                         <DetailContent />
                         <LiveChat />
+                        <TrafficFee />
                     </Col>
                 </Row>
             </Container>

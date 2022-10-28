@@ -115,6 +115,7 @@ code {
 }
 .bar-home{
   position: relative;
+  z-index: 1;
 }
 .bar-menu{
   display: flex;
@@ -241,5 +242,6 @@ code {
   height: 10px;
   font-weight: 700;
   height: 16px;
+ 
 }
 
