@@ -10,7 +10,7 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
 
-function Cardintroducecontent($title1,$title2,$title3,$data1,$data2,$data3,$data4,$data5,$data6,$data7) {
+function Cardintroducecontent({$title1,$title2,$title3,$data3,$data4,$data5,$data6,$data7}) {
   
   return (
     <>
