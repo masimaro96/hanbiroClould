@@ -35,9 +35,6 @@ function Computevps() {
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/vps.gif")}
 
                         <BoxCard />
-                        <DetailContent />
-                        
-
                         <ServerPricing />
                         <TrafficFee />
                         <DetailContent />

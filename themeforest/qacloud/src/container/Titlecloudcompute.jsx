@@ -24,9 +24,6 @@ function Titlecloudcompute($title1) {
                   <Box><Titlecloud2>{$title1}</Titlecloud2></Box>
                 </Col>
             </Row>
-            
-            
-            
         </div>
         
 
