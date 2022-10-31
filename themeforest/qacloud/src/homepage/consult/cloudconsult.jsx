@@ -9,7 +9,7 @@ import CloudCheckIcon from 'mdi-react/CloudCheckIcon';
 import {
     Card, CardBody,
 }from '@/shared/components/Card';
-
+import { Box } from '@mui/material';
 
 
 
