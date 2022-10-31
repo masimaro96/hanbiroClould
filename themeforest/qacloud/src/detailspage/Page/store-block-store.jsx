@@ -5,7 +5,8 @@ import TrafficFee from '../../homepage/header-banner/TrafficFee';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import Banner from '../../container/Banner/Banner';
-import DetailContent from '../../homepage/cloud-features/detail-content';
+import DetailContent from '../../container/Table/Components/detail-content';
+import LiveChat from '../../container/Table/Components/live-chat';
 import {
     Container, Row, Col
 } from 'react-bootstrap';
@@ -35,9 +36,10 @@ function Storeblockstore(){
 	                    "스냅샷기능을 제공하며, 3 Replica 블록 Storage 운영",
 	                    "스냅샷 기능을 제공하며, 볼륨의 백업및 복제와 복원시에 사용됩니다. 블록 Storage 의 볼륨을 3 replica SET 으로 운영합니다.")}
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/hanbiro_storage.gif")}
-                        <ServerPricing />
+                        
                         <TrafficFee />
                         <DetailContent />
+                        <LiveChat />
                     </Col>
                 </Row>
             </Container>

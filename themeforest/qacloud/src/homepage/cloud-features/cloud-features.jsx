@@ -16,6 +16,7 @@ function CloudFeatures(){
 
   return (
     <Container >
+        <br/>
         <Row>
             <Col xl={4} as={Grid} display={{xs: "none", md: "none", lg: "block"}}>
                 <GridCard>
@@ -24,10 +25,10 @@ function CloudFeatures(){
                     </GridCardBody>
                 </GridCard>
             </Col>
+
             <Col xl={8} md={12}>
                 <GridCard>
                     <GridCardBody>
-                        <br/>
                         <h2 className='title'><b>한비로 CLOUD 서비스 특징</b></h2><br/>
                         <p><b 
                         >고성능의 스토리지와 하드웨어 자원 독립운영</b></p>
@@ -81,15 +82,18 @@ function CloudFeatures(){
               </GridCard>
           </Col>
       </Row>
-      <Col className='livechat'>
+
+      <div >
+      <div className='livechat'>
         <img alt='' src='https://www.hanbiro.com/images/ico-livechat.png' style={{width:30,height:30}}></img>
-        <text className='content'>1:1 상담</text>
-      </Col>
-      <Col className='livechat_2'>
+        <text className='content d-none d-lg-inline'>1:1 상담</text>
+      </div>
+      <div className='livechat_2'>
         <img alt='' src='https://www.hanbiro.com/images/ico-demo.png' style={{width:30,height:30}}></img>
-        <text className='content'>데모 신청</text>
-      </Col>
-      
+        <text className='content d-none d-lg-inline'>데모 신청</text>
+      </div>
+    </div>
+    
     </Container>
     
   );

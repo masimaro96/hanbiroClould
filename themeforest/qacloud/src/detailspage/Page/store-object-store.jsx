@@ -9,7 +9,8 @@ import {
     Container, Row, Col
 } from 'react-bootstrap';
 import Sidebar from '../../container/Sidebar/Sidebar'
-import DetailContent from '../../homepage/cloud-features/detail-content';
+import DetailContent from '../../container/Table/Components/detail-content';
+import LiveChat from '../../container/Table/Components/live-chat';
 import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute"
 import Contentcloudcompute from "../../container/Card/Components/Contentcloudcompute"
 import Contentcloudcard from "../../container/Card/Components/Contentcloudcard"
@@ -34,9 +35,10 @@ function Storeobjectstore(){
 	                        "쿠버네티스 기반 데이터베이스 및 어플리케이션과 통합 클러스터 플랫폼 구축",
 	                        "한비로는 쿠버네티스와의 통합 Cloud 플랫폼을 운형하고 있으며, 가상서버(인스턴스)는 한비로 Cloud 쿠버네티스 기반 서비스와 연동할 수 있습니다.")}
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/hanbiro_storage.gif")}
-                        <ServerPricing />
+                        
                         <TrafficFee />
                         <DetailContent />
+                        <LiveChat />
                     </Col>
                 </Row>
             </Container>

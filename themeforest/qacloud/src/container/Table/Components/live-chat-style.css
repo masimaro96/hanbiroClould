@@ -1,0 +1,35 @@
+.livechat{
+    height: 47px;
+    background-color: #A94545;
+    border-radius: 30px;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-right: 30px;
+    display: inline-block;
+    position: fixed;
+    bottom: 150px;
+    right: -23px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+text.content {
+    padding-left: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.livechat_2 {
+    height: 47px;
+    background-color: #3a87ad;
+    border-radius: 30px;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-right: 30px;
+    display: inline-block;
+    position: fixed;
+    bottom: 96px;
+    right: -23px;
+    cursor: pointer;
+    z-index: 1000;
+}
