@@ -16,7 +16,6 @@ import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute
 import Contentcloudcompute from "../../container/Card/Components/Contentcloudcompute"
 import Contentcloudcard from "../../container/Card/Components/Contentcloudcard"
 import Imagecloudcompute from "../../container/Card/Components/Imagecloudcompute"
-import Ngoctesst from '../../container/Sidebar/Ngoctesst';
 
 // Titlecloudcompute
 function Computevps() {
@@ -27,8 +26,7 @@ function Computevps() {
             <Container>
                 <Row>
                     <Col md={3} xs={12}>
-                        <Ngoctesst />
-                        {/* <Sidebar /> */}
+                        <Sidebar />
                     </Col>
                     <Col md={9} xs={12}>
                         {Titlecloudcompute("가상서버 (인스턴스)")}
