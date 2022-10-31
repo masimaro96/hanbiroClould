@@ -31,10 +31,7 @@ function Storenasstore(){
                     <Col md={9}>
                         {Titlecloudcompute("공유 Storage")}
                         {Contentcloudcard("프라이빗 공유 Storage 구축 별도문의")}
-                        {Contentcloudcompute("공유 Storage (Openstack Manila Project)",
- 	                    "한비로 Cloud 관리자콘솔에서 공유 Storage 의 생성및 제어를 처리할 수 있습니다. Openstack 의 Manila Project 로 구성, NFS 지원하는 모든 운영체제에서 사용할 수 있습니다.",
-	                    "한비로 Cloud 의 클러스터 구축을 위한 공유스토리지",
-	                    "한비로 Cloud 플랫폼의 클러스터 구축시 공유데이터를 위한 스토리지로 운영하며, 또한, Kubernetes 클러스터의 공유데이터를 위한 스토리지로 운영됩니다.")}
+                        {Contentcloudcompute("공유 Storage (Openstack Manila", "Project)","한비로 Cloud 의 클러스터 구축을 위한","공유스토리지","한비로 Cloud 관리자콘솔에서 공유 Storage 의 생성및","제어를 처리할 수 있습니다. Openstack 의 Manila","Project 로 구성, NFS 지원하는 모든 운영체제에서","사용할 수 있습니다.","한비로 Cloud 플랫폼의 클러스터 구축시 공유데이터를","한비로 Cloud 플랫폼의 클러스터 구축시 공유데이터를","위한 스토리지로 운영하며, 또한, Kubernetes","클러스터의 공유데이터를 위한 스토리지로 운영됩니다.","")}
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/hanbiro_storage.gif")}
                         <ServerPricing />
                         <TrafficFee />

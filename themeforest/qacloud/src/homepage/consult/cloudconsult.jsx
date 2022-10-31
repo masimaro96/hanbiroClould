@@ -143,7 +143,7 @@ const GridCardBody = styled(CardBody)`
 
 const GridCardBody2 = styled(CardBody)`
   
-  border: solid gray 1px;
+  border: solid #E7EAF3 1px;
   background:  white;
   border-radius: 10px;
   
