@@ -110,8 +110,8 @@ const CardText = styled(Card.Text)`
 
 const CardImage = styled(Card.Img)`
     text-align: center;
-    padding-left:5%;
-    padding-right:5%;
+    padding-left:1%;
+    padding-right:1%;
 `;
 
 
