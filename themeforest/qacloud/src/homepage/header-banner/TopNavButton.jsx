@@ -9,6 +9,8 @@ import {
 } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import Sidebar from '../../container/Sidebar/Sidebar';
+import Ngoctesst from '../../container/Sidebar/Ngoctesst';
 
 
 function titleMenu($Kor,$Eng){
@@ -30,28 +32,11 @@ function OffCanvasExample({ name, ...props }) {
         <div variant="primary" onClick={handleShow} className="me-2">
           {name}
         </div>
-        <Offcanvas show={show} onHide={handleClose} {...props} className='quynh'>
+        <Offcanvas show={show} onHide={handleClose} {...props} className='sidebar-detail'>
           <Offcanvas.Header closeButton >
             
           </Offcanvas.Header>
-          <div>
-            Test
-          </div>
-          <div>
-            Test
-          </div>
-          <div>
-            Test
-          </div>
-          <div>
-            Test
-          </div>
-          <div>
-            Test
-          </div>
-          <div>
-            Test
-          </div>
+          <Ngoctesst />
           
         </Offcanvas>
       </>

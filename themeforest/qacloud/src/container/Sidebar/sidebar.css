@@ -1,4 +1,4 @@
-.detail-page {
+.sidebardesk {
     padding-top: 55px;
 }
 
@@ -45,29 +45,12 @@
     background-color: #47a7ff44;
 }
 
+@media only screen and (max-width: 767px){
+    .sidebardesk{
+      display: none;
+    }
 
-@media only screen and (max-width: 1023px) {
-    
+    .sidebarlist {
+        background-color: transparent;
+    }
 }
-
-/* .side {
-    margin-top: 15px;
-    background-color: #ccc;
-    border-radius: 10px;
-}
-
-.side .side-menu {
-    list-style-type: none;
-    text-align: left;
-}
-
-.side-menu-item {
-    display: inline-block;
-}
-
-.side .side-menu a {
-    text-decoration: none;
-    color: black;
-    padding: 8px 16px;
-    display: inline-block;
-} */
