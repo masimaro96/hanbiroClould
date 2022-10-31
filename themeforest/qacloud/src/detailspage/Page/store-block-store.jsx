@@ -1,6 +1,6 @@
 import React from 'react';
 import NavButton from '../../homepage/header-banner/TopNavButton';
-import ServerPricing from '../../homepage/header-banner/ServerPricing';
+import Blockstore from '../../homepage/header-banner/Blockstore';
 import TrafficFee from '../../homepage/header-banner/TrafficFee';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
@@ -36,7 +36,7 @@ function Storeblockstore(){
 	                    "스냅샷기능을 제공하며, 3 Replica 블록 Storage 운영",
 	                    "스냅샷 기능을 제공하며, 볼륨의 백업및 복제와 복원시에 사용됩니다. 블록 Storage 의 볼륨을 3 replica SET 으로 운영합니다.")}
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/hanbiro_storage.gif")}
-                        
+                        <Blockstore title={"블록 Storage 요금안내"} />
                         <TrafficFee />
                         <DetailContent />
                         <LiveChat />

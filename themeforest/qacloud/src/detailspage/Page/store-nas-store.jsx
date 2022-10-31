@@ -1,6 +1,6 @@
 import React from 'react';
 import NavButton from '../../homepage/header-banner/TopNavButton';
-import ServerPricing from '../../homepage/header-banner/ServerPricing';
+import Blockstore from '../../homepage/header-banner/Blockstore';
 import TrafficFee from '../../homepage/header-banner/TrafficFee';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
@@ -37,7 +37,7 @@ function Storenasstore(){
 	                    "한비로 Cloud 의 클러스터 구축을 위한 공유스토리지",
 	                    "한비로 Cloud 플랫폼의 클러스터 구축시 공유데이터를 위한 스토리지로 운영하며, 또한, Kubernetes 클러스터의 공유데이터를 위한 스토리지로 운영됩니다.")}
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/hanbiro_storage.gif")}
-                        
+                        <Blockstore title={"공유 Storage 요금안내"} />
                         <TrafficFee />
                         <DetailContent />
                         <LiveChat />
