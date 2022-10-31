@@ -35,7 +35,7 @@ function Clusterclickhouse(){
 	                    "데이터를 Shard에 분산저장하며, 비동기 멀티 마스터 지원",
 	                    "Multi-master 비동기 복제를 지원하며, 복제된 임의의 노드에서 데이터수집합니다. 데이터를 Shard 에 분산저장하며, 연산결과를 병렬로 실행하며 병합합니다.")}
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/clickhouse.jpeg")}
-                        <ServerPricing />
+                        
                         <TrafficFee />
                         <DetailContent />
                     </Col>

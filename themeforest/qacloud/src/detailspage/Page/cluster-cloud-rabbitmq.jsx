@@ -1,6 +1,6 @@
 import React from 'react';
 import NavButton from '../../homepage/header-banner/TopNavButton';
-import ServerPricing from '../../homepage/header-banner/ServerPricing';
+import RabbitMQ from '../../homepage/header-banner/RabbitMQ';
 import TrafficFee from '../../homepage/header-banner/TrafficFee';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
@@ -34,7 +34,7 @@ function Clustercloudrabbitmq(){
                         "고성능의 Persistant Volume 운영, I/O 최적의 성능구현",
                         "SSD 기반의 PV 볼륨으로 운영되고 있으며, 3개의 replica 컨테이너(POD)가 하나의 서비스단위입니다. 워커노드의 하드웨어 장애시에도 타 워커노드의 replica 컨테이너(POD)에서 서비스가 진행됩니다.")}
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/rabbitmq_cluster.gif")}
-                        <ServerPricing />
+                        <RabbitMQ />
                         <TrafficFee />
                         <DetailContent />
                     </Col>
