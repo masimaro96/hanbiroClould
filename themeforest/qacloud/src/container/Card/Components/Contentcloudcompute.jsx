@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography'
 
 
 
-function Contentcloudcompute($data1,$data2,$data3,$data4) {
+function Contentcloudcompute($data1,$data2,$data3,$data4,$data5,$data6,$data7,$data8,$data9,$data10,$data11,$data12,$data13,$data14) {
   
   return (
     <>
@@ -25,9 +25,14 @@ function Contentcloudcompute($data1,$data2,$data3,$data4) {
                     <GridCardBody2>
                         <CardTitle>
                             <div>{$data1}</div>
+                            <div>{$data2}</div>
                         </CardTitle>  
                         <CardText>
-                            <div>{$data2}</div>
+                            <Typography>{$data5}</Typography>
+                            <Typography>{$data6}</Typography>
+                            <Typography>{$data7}</Typography>
+                            <Typography>{$data8}</Typography>
+                            <Typography>{$data9}</Typography>
                         </CardText>
                     </GridCardBody2>  
                   </GridCard>
@@ -36,10 +41,15 @@ function Contentcloudcompute($data1,$data2,$data3,$data4) {
                   <GridCard>
                     <GridCardBody2>
                             <CardTitle>
-                                <div>{$data3}</div>
+                              <div>{$data3}</div>
+                              <div>{$data4}</div>
                             </CardTitle>  
                             <CardText>
-                                <div>{$data4}</div>
+                              <Typography>{$data10}</Typography>
+                              <Typography>{$data11}</Typography>
+                              <Typography>{$data12}</Typography>
+                              <Typography>{$data13}</Typography>
+                              <Typography>{$data14}</Typography>
                             </CardText>
                         </GridCardBody2>  
                   </GridCard>
@@ -72,9 +82,9 @@ const GridCard = styled(Card)`
 
 
 const GridCardBody2 = styled(CardBody)`
-  border: solid gray 1px;
+  border: solid #E7EAF3 1px;
   background:  white;
-  border-radius: 10px;
+  border-radius: 3px;
   
   
   
@@ -116,6 +126,7 @@ const CardImage = styled(Card.Img)`
     
   
 `;
+
 
 
 
