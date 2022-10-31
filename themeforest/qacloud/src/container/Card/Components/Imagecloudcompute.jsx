@@ -112,9 +112,6 @@ const CardImage = styled(Card.Img)`
     text-align: center;
     padding-left:5%;
     padding-right:5%;
-    
-    
-  
 `;
 
 

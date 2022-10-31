@@ -9,6 +9,7 @@ import {
     Container, Row, Col
 } from 'react-bootstrap';
 import Sidebar from '../../container/Sidebar/Sidebar'
+import BoxCard from '../../container/Box/Components/Box'
 import DetailContent from '../../homepage/cloud-features/detail-content';
 import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute"
 import Contentcloudcompute from "../../container/Card/Components/Contentcloudcompute"
@@ -34,6 +35,7 @@ function Storeobjectstore(){
 	                        "쿠버네티스 기반 데이터베이스 및 어플리케이션과 통합 클러스터 플랫폼 구축",
 	                        "한비로는 쿠버네티스와의 통합 Cloud 플랫폼을 운형하고 있으며, 가상서버(인스턴스)는 한비로 Cloud 쿠버네티스 기반 서비스와 연동할 수 있습니다.")}
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/hanbiro_storage.gif")}
+                        {BoxCard("객체단위 파일저장, 파일단위 권한설정","버킷 또는 파일단위의 권한관리가 가능합니다, 파일단위로 여러사용자에게 권한을 부여할 수 있습니다. 접근권한이 있는 사용자는 HTTPS 프로토콜로 파일에 직접 접근할 수 있습니다.")}
                         <ServerPricing />
                         <TrafficFee />
                         <DetailContent />

@@ -10,6 +10,7 @@ import {
     Container, Row, Col
 } from 'react-bootstrap';
 import Sidebar from '../../container/Sidebar/Sidebar'
+import BoxCard from '../../container/Box/Components/Box'
 import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute"
 import Contentcloudcompute from "../../container/Card/Components/Contentcloudcompute"
 import Contentcloudcard from "../../container/Card/Components/Contentcloudcard"
@@ -36,6 +37,7 @@ function Storenasstore(){
 	                    "한비로 Cloud 의 클러스터 구축을 위한 공유스토리지",
 	                    "한비로 Cloud 플랫폼의 클러스터 구축시 공유데이터를 위한 스토리지로 운영하며, 또한, Kubernetes 클러스터의 공유데이터를 위한 스토리지로 운영됩니다.")}
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/hanbiro_storage.gif")}
+                        {BoxCard("프라이빗 Cloud 시스템 구축지원","기업자체 Private 클라우드 시스템 구축을 지원합니다. 공유 스토리지를 포함한 Cloud 플랫폼과 Kubernetes 클러스터 시스템 구축할 수 있습니다.")}
                         <ServerPricing />
                         <TrafficFee />
                         <DetailContent />
