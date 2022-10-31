@@ -15,30 +15,20 @@ const ProtitleNew = (params) => {
             <p><text>{params.G}</text></p>
             <p><text>{params.SD}</text></p>
             <p><text>{params.SG}</text></p>
-            <p><text>{params.원}</text></p>
           </div>
         </div>
-
     )
 }
 
-function ServerPricing({title, content ,content1 }) {
+function ServerPricing() {
   return (
     <Box>
       <div >
         <div style={StySpecification.StylesContainer}>
           <div >
             <div >
-              <h2 style={StySpecification.Title}>{title}</h2>
-              {(content && content1) && <> 
-              <p style={StySpecification.Text}>
-                <text>{content}
-                </text>
-                <br/>
-                <text>{content1}</text>
-              </p>
-              </>
-              }
+              <h2 style={StySpecification.Title}>MS-SQL (Windows) 데이터베이스 요금안내</h2>
+              
             </div>
           </div>
           <div style={StySpecification.ListProduct}>
@@ -48,11 +38,10 @@ function ServerPricing({title, content ,content1 }) {
               classNameItem: StySpecification.ProTitleLeft,
               PadPro : StySpecification.PadPro,
               Title: "hi",
-              Core: "CPU",
-              G: "Memory",
-              SD:"Storage",
-              SG:"Traffic 전송량(월)",
-              원:"서비스비용(월)"
+              Core: "상세정보",
+              G: "Core 수",
+              SD:"가격 (VAT별도/월)",
+              SG:"비고",
 
             })}
 
@@ -60,50 +49,35 @@ function ServerPricing({title, content ,content1 }) {
               classNameWrapper: StySpecification.InfProduct,
               classNameItem: StySpecification.ProductTitle,
               PadPro : StySpecification.PadPro,
-              Title: "소호형 상품",
-              Core: "1 Core",
-              G: "4G",
-              SD:"SSD 50G",
-              SG:"900G",
-              원:"17,500 원"
+              Title: "Microsoft SQL Server",
+              Core: "2012 ~2019 Standard",
+              G: "4",
+              SD:"320,000원",
+              SG:"4 Core 단위 1 Copy",
 
+            })}
+           
+            {ProtitleNew({
+              classNameWrapper: StySpecification.InfProduct,
+              classNameItem: StySpecification.ProductTitle,
+              PadPro : StySpecification.PadPro,
+              Title: "SQL server 2019",
+              Core: "Express (제공예정)",
+              G: "4",
+              SD:"무료",
+              SG:"최대 4 Core",
+            
             })}
             {ProtitleNew({
               classNameWrapper: StySpecification.InfProduct,
               classNameItem: StySpecification.ProductTitle,
               PadPro : StySpecification.PadPro,
-              Title: "스탠다드 상품",
-              Core: "2 Core",
-              G: "8G",
-              SD:"SSD 100G",
-              SG:"900G",
-              원:"35,000 원"
-
-            })}
-            {ProtitleNew({
-              classNameWrapper: StySpecification.InfProduct,
-              classNameItem: StySpecification.ProductTitle,
-              PadPro : StySpecification.PadPro,
-              Title: "비지니스",
-              Core: "4 Core",
-              G: "16G",
-              SD:"SSD 200G",
-              SG:"900G",
-              원:"70,000 원"
-
-            })}
-
-            {ProtitleNew({
-              classNameWrapper: StySpecification.InfProduct,
-              classNameItem: StySpecification.ProductTitle,
-              PadPro : StySpecification.PadPro,
-              Title: "엔터프라이즈형",
-              Core: "8 Core",
-              G: "32G",
-              SD:"SSD 400G",
-              SG:"900G",
-              원:"150,000 원"
-
+              Title: "Windows Server",
+              Core: "2012 ~ 2019 server",
+              G: "-",
+              SD:"30,000원",
+              SG:"Windows Server 1대",
+              
             })} 
           </div>
         </div>
@@ -150,13 +124,13 @@ const StySpecification = {
   },
   InfProduct:{
     borderRadius: "8px",
-    width: "20%",
+    width: "25%",
     marginLeft:20,
     border: "1px solid #D7E5ED",
   },
   InfPro:{
     borderRadius: "8px",
-    width: "20%",
+    width: "25%",
     marginRight:10,
     textAlign: "right",
     fontWeight: 700,

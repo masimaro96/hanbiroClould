@@ -10,7 +10,8 @@ import {
 } from 'react-bootstrap';
 import Sidebar from '../../container/Sidebar/Sidebar'
 import BoxCard from '../../container/Box/Components/Box'
-import DetailContent from '../../homepage/cloud-features/detail-content';
+import DetailContent from '../../container/Table/Components/detail-content';
+import LiveChat from '../../container/Table/Components/live-chat';
 import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute"
 import Contentcloudcompute from "../../container/Card/Components/Contentcloudcompute"
 import Contentcloudcard from "../../container/Card/Components/Contentcloudcard"
@@ -30,15 +31,13 @@ function Storeobjectstore(){
                     <Col md={9}>
                         {Titlecloudcompute("오브젝트 Storage")}
                         {Contentcloudcard("프라이빗 오브젝트 Storage 구축 별도문의")}
-                        {Contentcloudcompute("한비로 Cloud 관리자 콘솔에서 수분내에 서버생성 및 서비스개시",
- 	                        "시간단위로 사용요금을 측정하며, 사용한만큼의 비용을 지불할 수 있습니다. 단기간의 서비스나 고용량의 서버가 필요하지 않을 경우 적절한 서비스입니다. 관리자 콘솔에서 한번의 클릭으로 수분내에 선택한 운영체재의 서버가 생성됩니다.",
-	                        "쿠버네티스 기반 데이터베이스 및 어플리케이션과 통합 클러스터 플랫폼 구축",
-	                        "한비로는 쿠버네티스와의 통합 Cloud 플랫폼을 운형하고 있으며, 가상서버(인스턴스)는 한비로 Cloud 쿠버네티스 기반 서비스와 연동할 수 있습니다.")}
+                        {Contentcloudcompute("Amazone S3 호환되며, HTTPS, Restful", "API 를 지원","대용량의 데이터를 무제한으로 저장"," ","","Amazone S3 및 Swift 와 호환되며, Restful API를","지원합니다. 데이터를 오브젝트 단위로 저장하고,","고유식별자와 메타데이터를 부여 빠른검색을","구현합니다.","","파일크기와 상관없이 대용량의 데이터를 무제한으로","저장할 수 있습니다. 다수의 가상서버(인스턴스)에서","동시에 사용할 수 있으며, 운영체제의 제한이 없습니다.","")}
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/hanbiro_storage.gif")}
                         {BoxCard("객체단위 파일저장, 파일단위 권한설정","버킷 또는 파일단위의 권한관리가 가능합니다, 파일단위로 여러사용자에게 권한을 부여할 수 있습니다. 접근권한이 있는 사용자는 HTTPS 프로토콜로 파일에 직접 접근할 수 있습니다.")}
                         <ServerPricing />
                         <TrafficFee />
                         <DetailContent />
+                        <LiveChat />
                     </Col>
                 </Row>
             </Container>

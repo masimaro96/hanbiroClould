@@ -1,5 +1,6 @@
 
 
+import { padding } from '@mui/system';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -15,30 +16,25 @@ const ProtitleNew = (params) => {
             <p><text>{params.G}</text></p>
             <p><text>{params.SD}</text></p>
             <p><text>{params.SG}</text></p>
-            <p><text>{params.원}</text></p>
+            <p><text>{params.data5}</text></p>
+            <p><text>{params.data6}</text></p>
           </div>
         </div>
-
     )
 }
 
-function ServerPricing({title, content ,content1 }) {
+function ServerPricing() {
   return (
     <Box>
-      <div >
+      <div style={StySpecification.StylesAll}>
         <div style={StySpecification.StylesContainer}>
           <div >
             <div >
-              <h2 style={StySpecification.Title}>{title}</h2>
-              {(content && content1) && <> 
+              <h2 style={StySpecification.Title}>Kubernetes for RabbitMQ 요금안내</h2>
               <p style={StySpecification.Text}>
-                <text>{content}
+                <text>리플리카구성 및 Failover 시스템, 대용량 고가용성 분산 RabbitMQ 메세지 브로커 미들웨어
                 </text>
-                <br/>
-                <text>{content1}</text>
               </p>
-              </>
-              }
             </div>
           </div>
           <div style={StySpecification.ListProduct}>
@@ -52,7 +48,8 @@ function ServerPricing({title, content ,content1 }) {
               G: "Memory",
               SD:"Storage",
               SG:"Traffic 전송량(월)",
-              원:"서비스비용(월)"
+              data5:"컨테이너최소수량",
+              data6:"서비스비용(월)"
 
             })}
 
@@ -60,14 +57,74 @@ function ServerPricing({title, content ,content1 }) {
               classNameWrapper: StySpecification.InfProduct,
               classNameItem: StySpecification.ProductTitle,
               PadPro : StySpecification.PadPro,
-              Title: "소호형 상품",
+              Title: "스탠다드 상품",
               Core: "1 Core",
               G: "4G",
-              SD:"SSD 50G",
+              SD:"SSD 100G",
               SG:"900G",
-              원:"17,500 원"
+              data5:"3 POD, 1 LB",
+              data6:"72,500"
 
             })}
+           
+            {ProtitleNew({
+              classNameWrapper: StySpecification.InfProduct,
+              classNameItem: StySpecification.ProductTitle,
+              PadPro : StySpecification.PadPro,
+              Title: "비지니스",
+              Core: "2 Core",
+              G: "8G",
+              SD:"SSD 100G",
+              SG:"900G",
+              data5:"3 POD, 1 LB",
+              data6:"125,000"
+            
+            })}
+            {ProtitleNew({
+              classNameWrapper: StySpecification.InfProduct,
+              classNameItem: StySpecification.ProductTitle,
+              PadPro : StySpecification.PadPro,
+              Title: "엔터프라이즈형",
+              Core: "4 Core",
+              G: "16G",
+              SD:"SSD 100G",
+              SG:"900G",
+              data5:"3 POD, 1 LB",
+              data6:"230,000"
+            })} 
+          </div>
+          <div style={StySpecification.TextContent}>
+            
+          오토스케일링으로 확장된 클러스터는 확장된 컨테이너의 수량만큼 추가 과금됩니다.<br/>
+
+          클러스터 구성단위 컨테이너의 하드웨어를 별도로 지정할 수 있습니다.<br/>
+
+          - 예&#10089; RabbitMQ 스테이트풀셋 0.5 Core 컨테이너 3 개로 구성시<br/>
+
+          - (17,500 원 x 1/2 x 3) + 20,000원 = 46,250원 / 월<br/>
+
+          시스템 엔지니어와 상담을 통해서 다양한 방식으로 쿠베네티스 클러스터 시스템을 구축할 수 있습니다.
+         
+          
+          </div>
+          <div style={StySpecification.BoxCenter}>
+            <text style={StySpecification.TextCenter}>가상서버(인스턴스) 기반 단독 RabbitMQ 메세지브로커 미들웨어</text>
+          </div>
+          <div style={StySpecification.ListProduct}>
+
+            {ProtitleNew({
+              classNameWrapper: StySpecification.InfPro,
+              classNameItem: StySpecification.ProTitleLeft,
+              PadPro : StySpecification.PadPro,
+              Title: "hi",
+              Core: "CPU",
+              G: "Memory",
+              SD:"Storage",
+              SG:"Traffic 전송량(월)",
+              data6:"서비스비용(월)"
+
+            })}
+
             {ProtitleNew({
               classNameWrapper: StySpecification.InfProduct,
               classNameItem: StySpecification.ProductTitle,
@@ -77,9 +134,10 @@ function ServerPricing({title, content ,content1 }) {
               G: "8G",
               SD:"SSD 100G",
               SG:"900G",
-              원:"35,000 원"
+              data6:"35,000"
 
             })}
+           
             {ProtitleNew({
               classNameWrapper: StySpecification.InfProduct,
               classNameItem: StySpecification.ProductTitle,
@@ -89,10 +147,9 @@ function ServerPricing({title, content ,content1 }) {
               G: "16G",
               SD:"SSD 200G",
               SG:"900G",
-              원:"70,000 원"
-
+              data6:"70,000"
+            
             })}
-
             {ProtitleNew({
               classNameWrapper: StySpecification.InfProduct,
               classNameItem: StySpecification.ProductTitle,
@@ -102,11 +159,12 @@ function ServerPricing({title, content ,content1 }) {
               G: "32G",
               SD:"SSD 400G",
               SG:"900G",
-              원:"150,000 원"
-
+              data6:"150,000"
             })} 
           </div>
         </div>
+        
+        
       </div>
     </Box>
 
@@ -115,7 +173,11 @@ function ServerPricing({title, content ,content1 }) {
 
 
 const StySpecification = {
+  StylesAll:{
+    display: "flex",
+  },
   StylesContainer: {
+    width: "100%",
     border: "1px solid #D7E5ED",
     borderRadius: "8px",
     padding: 20,
@@ -124,8 +186,23 @@ const StySpecification = {
   StylesTitle: {
     textAlign: "center",
   },
+  TextCenter:{
+    padding:10,
+    fontWeight: 600,
+    margin:"auto"
+  },
+  BoxCenter:{
+    background:"#F3F5F9",
+    width: "100%",
+    display: "flex",
+    marginBottom:40,
+    borderRadius: "10px",
+    padding:8,
+   
+  },
   Title:{
     fontWeight: "bold",
+    borderRadius: "20px",
   },
   Text:{
     fontWeight: 600,
@@ -133,6 +210,16 @@ const StySpecification = {
   },
   ColorText:{
     color: "white",
+  },
+  TextContent :{
+    width: "75%",
+    float: "right",
+    textAlign: "left",
+    paddingLeft:15,
+    fontSize: 15,
+    color: "gray",
+    marginTop:15,
+    marginBottom:30
   },
   ProductTitle:{
     background: "#393939",
@@ -150,13 +237,13 @@ const StySpecification = {
   },
   InfProduct:{
     borderRadius: "8px",
-    width: "20%",
+    width: "25%",
     marginLeft:20,
     border: "1px solid #D7E5ED",
   },
   InfPro:{
     borderRadius: "8px",
-    width: "20%",
+    width: "25%",
     marginRight:10,
     textAlign: "right",
     fontWeight: 700,

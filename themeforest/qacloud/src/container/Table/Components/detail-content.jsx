@@ -1,16 +1,5 @@
 import React from 'react';
 // import './App.css';
-import './style.css';
-import styled from 'styled-components';
-import {
-  Container, Row, Col,
-} from 'react-bootstrap';
-import {
-  Card, CardBody,
-} from '@/shared/components/Card';
-import { Table } from '@/shared/components/TableElements';
-import { WheelchairPickupTwoTone } from '@mui/icons-material';
-import { lightBlue } from '@mui/material/colors';
 
 function DetailContent(){
 
@@ -26,7 +15,7 @@ function DetailContent(){
           <table width="100%">
             <tbody >
               <tr style={StySpecification.Header}>
-                <td  width="30%" style={StySpecification.BorLeft}>구분	</td>
+                <td  width="30%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}>구분</div></td>
                 <td  width="40%" >내용	</td>
                 <td  width="30%" style={StySpecification.BorRight}>요금 (/월)</td>
               </tr>
@@ -50,7 +39,7 @@ function DetailContent(){
           <table width="100%">
             <tbody >
               <tr style={StySpecification.Header}>
-                <td  width="30%" style={StySpecification.BorLeft}>구분	</td>
+                <td  width="30%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}>구분</div></td>
                 <td  width="50%" >종류	</td>
                 <td  width="20%" style={StySpecification.BorRight}>요금</td>
               </tr>
@@ -78,6 +67,7 @@ function DetailContent(){
           </table>
         </div>
       </div>
+      <br/>
     </div>
 
 
@@ -90,17 +80,25 @@ const StySpecification = {
     boxShadow: "0px 0px 10px #e7eaf3",
     borderRadius: "8px",
     padding: 20,
+    marginBottom:30,
+    marginTop: 30,
   },
   ListProduct:{
-    fontSize: 17,
+    fontSize: 18,
+    paddingBottom: 20,
   },
- 
   Title:{
     fontWeight: "bold",
+    paddingBottom: 20,
+    paddingTop: 10,
   },
   Header:{
     color: "white",
     background: "#393939",
+  },
+  TextTitle:{
+    paddingTop: 8,
+    paddingBottom: 8,
   },
   BorLeft:{
     borderTopLeftRadius: "8px",
@@ -114,13 +112,14 @@ const StySpecification = {
     borderLeft:"2px solid #DDDDDD",
     borderRight:"2px solid #DDDDDD",
     borderBottom:"2px solid #DDDDDD",
-    paddingLeft:"10px",
+    paddingTop: 8,
+    paddingBottom: 8,
   },
   TextLeft:{
     borderLeft:"2px solid #DDDDDD",
     borderRight:"2px solid #DDDDDD",
     borderBottom:"2px solid #DDDDDD",
-    fontWeight: "bold",
+    fontWeight: 600,
     textAlign: "left",
     paddingLeft:"10px"
   }

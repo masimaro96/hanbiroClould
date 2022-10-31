@@ -19,6 +19,9 @@ code {
   color: white;
   position: relative;
 }
+.gmail{
+  color: white;
+}
 .Container-top{
   width: 80%;
   margin: auto;
@@ -28,8 +31,9 @@ code {
 }
 .top-nav{
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .top-nav-right{
   display: flex;
@@ -80,6 +84,10 @@ code {
   font-weight: 800;
   margin-bottom: 15px;
 }
+.menu-list-item div {
+  padding-top:4px ;
+  padding-bottom:4px ;
+}
 .css-customer-all{
   border-right: 1px solid #C0C0C0;
   border-left: 1px solid #C0C0C0;
@@ -115,6 +123,7 @@ code {
 }
 .bar-home{
   position: relative;
+  z-index: 1;
 }
 .bar-menu{
   display: flex;
@@ -127,25 +136,37 @@ code {
 .bar-mobile{
   display: none;
 }
+.quynh{
+  margin-bottom: 50%;
+  width: 70%;
+  
+}
 @media only screen and (max-width: 767px){
+  .mb-top-nav{
+    display: flex;
+    margin: auto;
+  }
   .top-nav-right{
     display: none;
   }
-  .top-nav{
-    margin-left: 25px;
-  }
+  
   .bar-menu{
     display: none;
   }
   .bar-mobile{
     display: block;
   }
-  .bar-logo{
-    margin-left: 80px;
+  .bar-home-list{
+    display: none;
   }
-  
+  .gmail{
+    display: none;
+  }
 }
-
+.product-list{
+  display: flex;
+  text-align: left;
+}
 .css-customer-list{
   width: 100%;
 }
@@ -153,12 +174,12 @@ code {
   width: 100%;
   position: absolute;
   background-color: white;
+  border-top: 1px solid #C0C0C0;
+  font-size: 14px;
 }
 .menu-list{
   padding-top: 20px;
   padding-bottom: 20px;
-  display: flex;
-  text-align: left;
   box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
 }
 .menu-list-item{
@@ -170,17 +191,19 @@ code {
 }
 .menu-list-item h6{
   font-weight: 900;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 .btn-moble-list{
   display: none;
-  color: white;
+  
 }
 .btn-moble{
-  background-color: black;
+  
   display: flex;
   float: right;
-  padding: 10px;
+  padding: 15px;
+  font-size: 13px;
 }
 .mobile-list{
   margin-top: 10px;
@@ -189,9 +212,10 @@ code {
 }
 .mobile-list div{
   font-size: 25px;
-  padding: 10px;
-  border-left: 1px solid #C0C0C0;
-  border-bottom: 1px solid #C0C0C0;
+  padding: 5px;
+  /* border-left: 1px solid #C0C0C0;
+  border-bottom: 1px solid #C0C0C0; */
+  border: 1px solid #C0C0C0;
 
 }
 .img-logo{
@@ -204,6 +228,9 @@ code {
 .slotho-list{
   display: flex;
   margin: auto;
+}
+.menu-mobile{
+  display: none;
 }
 @media only screen and (max-width: 767px){
   .btn-moble-list{
@@ -225,21 +252,12 @@ code {
     width: 100%;
     float: right;
   }
+  .menu-mobile{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+  }
 }
-.bar-home:hover .kakakak{
-  display: block;
-  opacity: 1;
-}
-.quynh{
-  border-radius: 10px;
-  margin-top: 20px ;
-  margin-bottom: 20px ;
-  font-size: 20;
-  color: aqua;
-  text-align: center;
-  border: 1px solid #D7E5ED;
-  height: 10px;
-  font-weight: 700;
-  height: 16px;
-}
+
+
 
