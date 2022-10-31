@@ -1,0 +1,109 @@
+.CardButtonWhite, .CardButtonGray{
+    margin-bottom: 60px;
+}
+
+.img-data{
+    width: 20%;
+}
+
+.img-data img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.data-content-box{
+    box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%) !important;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+.data-content-box-gray{
+    background-color: #F3F5F9;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+.Card-White{
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 26px;
+    align-items: center;
+}
+.Card-Gray{
+    background-color: #F3F5F9;
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 26px;
+    align-items: center;
+}
+
+.ButtonRight{
+    justify-content: flex-end !important;
+    margin-right: 20px;
+    margin-top: -25px !important;
+    background-color: none !important;
+    
+}
+
+.ButtonRight-Gray{
+    background-color: #F3F5F9 !important;
+    justify-content: flex-end !important;
+    margin-right: 20px;
+    margin-top: -25px !important;
+    background-color: none !important;
+}
+
+.ButtonLeft-Gray{
+    background-color: #F3F5F9 !important;
+}
+
+.Buttonstyle{
+    margin-bottom: 0 !important;
+    background-color: #47a7ff44 !important;
+}
+.Buttonstyle::before{
+    background-color: #377dff !important; 
+    -webkit-transition: none !important;
+    transition: none !important;
+    top: -12px !important;
+}
+.Buttonstyle:hover a{
+    color: white !important;
+}
+.Buttonstyle a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+.iconButton{
+    color: #377dff !important;
+}
+
+.data-content-title{
+    text-align: left;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    padding-bottom: 15px;
+}
+.data-content-description{
+    text-align: left;
+    line-height: 34px;
+    font-size: 18px;
+}
+
+.data-content-title-right{
+    text-align: right;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    padding-bottom: 15px;
+}
+
+.data-content-description-right{
+    text-align: right;
+    line-height: 34px;
+    font-size: 18px;
+}
+

@@ -62,7 +62,7 @@ const GridCardBody = styled(CardBody)`
 
 
 const GridCardBody2 = styled(CardBody)`
-  border: solid white 2px;
+  border: solid #E7EAF3 1px;
   background:  white;
   border-radius: 10px;
   
@@ -71,7 +71,7 @@ const GridCardBody2 = styled(CardBody)`
 `;
 
 const GridCardBody3 = styled(CardBody)`
-    border: solid white 2px;
+    border: solid #FAFBFB 1px;
     background:  white;
 `;
 
@@ -110,11 +110,8 @@ const CardText = styled(Card.Text)`
 
 const CardImage = styled(Card.Img)`
     text-align: center;
-    padding-left:5%;
-    padding-right:5%;
-    
-    
-  
+    padding-left:1%;
+    padding-right:1%;
 `;
 
 

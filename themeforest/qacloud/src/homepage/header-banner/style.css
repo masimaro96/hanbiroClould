@@ -143,17 +143,20 @@ code {
 .bar-mobile{
   display: none;
 }
-.quynh{
-  margin-bottom: 50%;
-  width: 70%;
-  
+
+.sidebar-detail {
+  width: 100%;
+  height: -webkit-fill-available;
 }
 
+<<<<<<< HEAD
 .menu-list-item :hover {
   background-color: #47A7FF;
   color: white;
 }
 
+=======
+>>>>>>> 4e47cc1d7d0ca648b92614e209204af8077fbc3e
 @media only screen and (max-width: 767px){
   .mb-top-nav{
     display: flex;
