@@ -2,6 +2,7 @@ import React from 'react';
 import NavButton from '../../homepage/header-banner/TopNavButton';
 import MySql from '../../homepage/header-banner/MySql';
 import TrafficFee from '../../homepage/header-banner/TrafficFee';
+import ServerPricing from '../../homepage/header-banner/ServerPricing';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import Banner from '../../container/Banner/Banner';

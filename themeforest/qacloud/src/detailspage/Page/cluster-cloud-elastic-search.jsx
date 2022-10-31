@@ -1,5 +1,6 @@
 import React from 'react';
 import NavButton from '../../homepage/header-banner/TopNavButton';
+import ServerPricing from '../../homepage/header-banner/ServerPricing';
 import ElasticSearch from '../../homepage/header-banner/ElasticSearch';
 import TrafficFee from '../../homepage/header-banner/TrafficFee';
 import Footer from '../../homepage/footer/Footer'
