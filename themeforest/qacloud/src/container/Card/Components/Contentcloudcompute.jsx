@@ -97,8 +97,9 @@ const CardTitle = styled(Card.Title)`
   padding: 0px;
   text-align: left;
   font-weight: bold;
-  font-size:18px;
-  padding-bottom:5%
+  font-size:15pt;
+  padding-bottom:5%;
+  line-height:1.5em;
 `;
 
 
