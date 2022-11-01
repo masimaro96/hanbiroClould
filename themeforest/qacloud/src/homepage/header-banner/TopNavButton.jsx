@@ -90,7 +90,7 @@ function OffCanvasExample({ name, ...props }) {
           <Offcanvas.Header closeButton >
             
           </Offcanvas.Header>
-          
+          <Ngoctesst />
           
         </Offcanvas>
       </>
