@@ -59,7 +59,9 @@ function titleMenu($Kor,$Eng){
 function titlePop($data){
     return(
         <>
+           
             <div > <AiOutlineRight className="icon-right"/>{$data}</div>
+            
         </>
     )
 }
@@ -344,7 +346,7 @@ function NavButton() {
                                             {titlePop ("신청하러 가기")}
 
                                         </div>
-                                        <div className="menu-list-item boder-left">
+                                        <div className="menu-list-item ">
                                             <h6>베트남 호스팅</h6>
                                             {titlePop ("상품 구성")}
                                             {titlePop ("IDC 소개")}
@@ -393,7 +395,7 @@ function NavButton() {
                                             {titlePop ("IPMI 서비스")}
 
                                         </div>
-                                        <div className="menu-list-item boder-left">
+                                        <div className="menu-list-item ">
                                             
                                             <div> &nbsp;</div>
                                             

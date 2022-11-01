@@ -112,8 +112,9 @@ const StySpecification = {
     display: "flex",
   },
   StylesContainer: {
+    boxShadow: "0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%)",
+    border: "1px solid #E7EAF3",
     width: "100%",
-    border: "1px solid #D7E5ED",
     borderRadius: "8px",
     padding: 20,
     marginTop:30,
