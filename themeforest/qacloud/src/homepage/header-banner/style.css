@@ -17,7 +17,7 @@ code {
   display: flex;
   background-color: #47A7FF ;
   color: white;
-  position: relative;
+  /* position: relative; */
 }
 .gmail{
   color: white;
@@ -80,9 +80,9 @@ code {
   border-right: 1px solid #C0C0C0;
 }
 
-.css-customer h6{
-  font-weight: 800;
-  margin-bottom: 15px;
+.menu-name{
+  font-size: 15px;
+  padding-top: 10px;
 }
 .menu-list-item div {
   padding-top:4px ;
@@ -113,6 +113,10 @@ code {
   margin-bottom: 20px;
   width: 50%;
 }
+.icon-right{
+  font-size: 15px;
+  padding-bottom: 4px;
+}
 
 .box{
   background-color: #47A7FF;
@@ -131,8 +135,11 @@ code {
 }
 .bar-logo{
   display: flex;
+  margin: auto;
 }
-
+.list-logo{
+ margin-top: 9px;
+}
 .bar-mobile{
   display: none;
 }
@@ -142,6 +149,14 @@ code {
   height: -webkit-fill-available;
 }
 
+<<<<<<< HEAD
+.menu-list-item :hover {
+  background-color: #47A7FF;
+  color: white;
+}
+
+=======
+>>>>>>> 4e47cc1d7d0ca648b92614e209204af8077fbc3e
 @media only screen and (max-width: 767px){
   .mb-top-nav{
     display: flex;
@@ -164,6 +179,39 @@ code {
     display: none;
   }
 }
+.groupware{
+  position: absolute;
+  text-align: left;
+  left: 60%;
+  background-color: white;
+  padding: 15px;
+}
+.groupware div {
+  padding-top:4px ;
+  padding-bottom:4px ;
+}
+.groupware :hover {
+  background-color: #47A7FF;
+  color: white;
+}
+
+.vora{
+  position: absolute;
+  text-align: left;
+  left: 69%;
+  background-color: white;
+  padding: 15px;
+}
+.vora div {
+  padding-top:4px ;
+  padding-bottom:4px ;
+}
+.vora :hover {
+  background-color: #47A7FF;
+  color: white;
+
+}
+
 .product-list{
   display: flex;
   text-align: left;
@@ -199,12 +247,17 @@ code {
   display: none;
   
 }
+.btn-moble-2{
+  float: right;
+  padding: 15px;
+  font-size: 30px;
+}
 .btn-moble{
   
   display: flex;
   float: right;
   padding: 15px;
-  font-size: 13px;
+  font-size: 30px;
 }
 .mobile-list{
   margin-top: 10px;
@@ -216,8 +269,15 @@ code {
   padding: 5px;
   /* border-left: 1px solid #C0C0C0;
   border-bottom: 1px solid #C0C0C0; */
-  border: 1px solid #C0C0C0;
+  border-left: 1px solid #C0C0C0;
+  border-top: 1px solid #C0C0C0;
+  border-right: 1px solid #C0C0C0;
 
+
+}
+.mobile-list-item{
+  display: flex;
+  justify-content: space-between;
 }
 .img-logo{
   width: 60%;
