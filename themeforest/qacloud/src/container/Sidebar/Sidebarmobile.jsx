@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Collapse from 'react-bootstrap/Collapse';
+import React from 'react';
 import styled from 'styled-components';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import '../Sidebar/sidebar.css';
+import { useHistory, NavLink } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import Accordion from 'react-bootstrap/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ChevronDownIcon from 'mdi-react/ChevronDownIcon';
+
 
 
 const Mybox = styled(Box) ({
@@ -25,7 +22,7 @@ const SidebarTitle = styled.p `
   margin-bottom: 0;
 `
 
-function Ngoctesst() {
+function Sidebarmobile() {
   return (
     <Accordion defaultActiveKey="0" className='detailpage'>
       <Accordion.Item eventKey="0">
@@ -90,4 +87,4 @@ function Ngoctesst() {
 }
 
 
-export default Ngoctesst
+export default Sidebarmobile
