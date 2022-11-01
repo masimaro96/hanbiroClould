@@ -71,6 +71,7 @@ const GridCardBody = styled(CardBody)`
 const Titlecloud2 = styled.div`
   font-weight: bold;
   font-size:20px; 
+  
 `;
 
 const CardTitle = styled(Card.Title)`

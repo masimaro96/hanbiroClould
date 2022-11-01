@@ -88,19 +88,17 @@ const GridCardBody2 = styled(CardBody)`
   background-color: #fff;
   box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%) !important;
   
-   
-  
-  
   
 `;
 
 
 
 const CardTitle = styled(Card.Title)`
-  padding: 0;
+  padding: 0px;
   text-align: left;
   font-weight: bold;
   font-size:18px;
+  padding-bottom:5%
 `;
 
 
