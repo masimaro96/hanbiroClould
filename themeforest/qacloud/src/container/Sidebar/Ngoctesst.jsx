@@ -34,13 +34,13 @@ function Ngoctesst() {
         </Accordion.Header>
         <Accordion.Body>
           <ul>
-              <li className='listitem active'><a href="#">가상서버 (인스턴스)</a></li>
-              <li className='listitem'><a href="">베어메탈 서버 (단독서버)</a></li>
-              <li className='listitem'><a href="">오토스케일링</a></li>
-              <li className='listitem'><a href="">로드발랜서</a></li>
-              <li className='listitem'><a href="">데이터베이스 (인스턴스)</a></li>
-              <li className='listitem'><a href="">MS-SQL / Windows</a></li>
-          </ul>
+            <li className='listitem active'><Link to="/compute-vps">가상서버 (인스턴스)</Link></li>
+            <li className='listitem'><Link to="/compute-bare-metal">베어메탈 서버 (단독서버)</Link></li>
+            <li className='listitem'><Link to="/compute-auto-scale">오토스케일링</Link></li>
+            <li className='listitem'><Link to="/compute-load-balance">로드발랜서</Link></li>
+            <li className='listitem'><Link to="/compute-database">데이터베이스 (인스턴스)</Link></li>
+            <li className='listitem'><Link to="/compute-ms">MS-SQL / Windows</Link></li>
+        </ul>
         </Accordion.Body>
       </Accordion.Item>
 
