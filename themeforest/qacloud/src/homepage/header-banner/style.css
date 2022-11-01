@@ -156,7 +156,9 @@ code {
   background-color: #47A7FF;
   color: white;
 }
-
+.navbar {
+  padding: 0;
+}
 
 @media only screen and (max-width: 1023px){
   .navbar {
