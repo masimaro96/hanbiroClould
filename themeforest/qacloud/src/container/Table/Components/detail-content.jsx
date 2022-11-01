@@ -16,9 +16,9 @@ function DetailContent(){
             <table width="100%">
               <tbody >
                 <tr style={StySpecification.Header}>
-                  <td  width="30%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}>구분</div></td>
-                  <td  width="40%" >내용	</td>
-                  <td  width="30%" style={StySpecification.BorRight}>요금 (/월)</td>
+                  <td  width="32%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}>구분</div></td>
+                  <td  width="36%" >내용	</td>
+                  <td  width="32%" style={StySpecification.BorRight}>요금 (/월)</td>
                 </tr>
                 <tr>
                   <td  style={StySpecification.TextLeft}>아이피추가		</td>
@@ -40,29 +40,29 @@ function DetailContent(){
             <table width="100%">
               <tbody >
                 <tr style={StySpecification.Header}>
-                  <td  width="30%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}>구분</div></td>
-                  <td  width="50%" >종류	</td>
-                  <td  width="20%" style={StySpecification.BorRight}>요금</td>
+                  <td  width="32%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}>구분</div></td>
+                  <td  width="45%" >종류	</td>
+                  <td  width="23%" style={StySpecification.BorRight}>요금</td>
                 </tr>
                 <tr>
                   <td  style={StySpecification.TextLeft}>리눅스		</td>
-                  <td style={StySpecification.BorAll}>CentOS, Rocky Linux, Ubuntu, Debian		</td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.KindLeft}>CentOS, Rocky Linux, Ubuntu, Debian</div></td>
                   <td rowSpan="4" style={StySpecification.BorAll}>Microsoft<br/>라이센스<br/>요금정책별도</td>
                 </tr>
                 <tr>
                   <td  style={StySpecification.TextLeft}>윈도우		</td>
-                  <td style={StySpecification.BorAll}>Windows 2012~2019 Server (64비트)<br/>
-                                                      MS-SQL 2012 ~ 2019 Standard (64비트)</td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.KindLeft}>Windows 2012~2019 Server (64비트)<br/>
+                                                      MS-SQL 2012 ~ 2019 Standard (64비트)</div></td>
                 </tr>
                 <tr>
                   <td  style={StySpecification.TextLeft}>데이터베이스</td>
-                  <td style={StySpecification.BorAll}>MySQL, PostgreSQL, Redis, MongoDB<br/>
-                                                      scyllaDB, Vitess, ClickHouse</td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.KindLeft}>MySQL, PostgreSQL, Redis, MongoDB<br/>
+                                                      scyllaDB, Vitess, ClickHouse</div></td>
                 </tr>
                 <tr>
                   <td  style={StySpecification.TextLeft}>쿠버네티스 클러스터	</td>
-                  <td style={StySpecification.BorAll}>Nginx, Kong, Envoy, Kafka, ELK stack<br/>
-                                                      Kubernetes Database Cluster</td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.KindLeft}>Nginx, Kong, Envoy, Kafka, ELK stack<br/>
+                                                      Kubernetes Database Cluster</div></td>
                 </tr>
               </tbody>
             </table>
@@ -79,7 +79,8 @@ function DetailContent(){
 
 const StySpecification = {
   StylesContainer: {
-    boxShadow: "0px 0px 10px #e7eaf3",
+    boxShadow: "0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%)",
+    border: "1px solid #E7EAF3",
     borderRadius: "8px",
     padding: 20,
     marginBottom:30,
@@ -116,6 +117,9 @@ const StySpecification = {
     borderBottom:"2px solid #DDDDDD",
     paddingTop: 8,
     paddingBottom: 8,
+  },
+  KindLeft:{
+    textAlign: "left",
   },
   TextLeft:{
     borderLeft:"2px solid #DDDDDD",
