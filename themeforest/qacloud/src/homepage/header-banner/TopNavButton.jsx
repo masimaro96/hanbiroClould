@@ -3,13 +3,13 @@ import Collapse from 'react-bootstrap/Collapse';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import {
-    Container, Row, Col,
-} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 import { AiFillCaretDown,AiOutlineRight ,AiOutlineMenu} from 'react-icons/ai';
 import {CiCircleMore } from 'react-icons/ci';
+import Sidebar from '../../container/Sidebar/Sidebar';
+import Ngoctesst from '../../container/Sidebar/Ngoctesst';
 
 
 
@@ -415,7 +415,6 @@ function NavButton() {
                         <div className="btn-moble-list">
                             <div className="menu-mobile">
                                 <div className="btn-moble"
-                                    
                                 >
                                     {[''].map((placement, idx) => (
                                             <OffCanvasExample key={idx} placement={placement} name={placement} />

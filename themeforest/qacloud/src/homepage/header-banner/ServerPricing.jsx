@@ -126,10 +126,13 @@ const StySpecification = {
   },
   Title:{
     fontWeight: "bold",
+    marginTop:"20px",
+    marginBottom:"30px"
   },
   Text:{
     fontWeight: 600,
     fontSize: 20,
+    marginBottom:"30px"
   },
   ColorText:{
     color: "white",
