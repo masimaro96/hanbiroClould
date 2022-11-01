@@ -120,6 +120,7 @@ const StySpecification = {
   },
   KindLeft:{
     textAlign: "left",
+    paddingLeft: 10,
   },
   TextLeft:{
     borderLeft:"2px solid #DDDDDD",
