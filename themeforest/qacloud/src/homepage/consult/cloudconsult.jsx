@@ -19,7 +19,7 @@ function consultlticoncloud (title) {
         <Titlecloudrow2>
              <GridCardBody>
                 <MyCardText>
-                    <Myiconcard><CloudCheckIcon className="iconstyle" size={35} /></Myiconcard>
+                    <Myiconcard><CloudCheckIcon className="iconstyle" size={30} /></Myiconcard>
                     <CardTitleIcon><TypographyCard>{title}</TypographyCard></CardTitleIcon>
                 </MyCardText>
             
@@ -168,8 +168,9 @@ const Myiconcard = styled.div`
     border-radius:50%;
     border: solid white 0px;
     background-color:#99CCFF;
-    padding: 8px;
+    padding:3%;
     
+
 `;
 
 

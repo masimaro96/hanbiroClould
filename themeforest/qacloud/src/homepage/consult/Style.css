@@ -42,6 +42,8 @@
 
 
 
+
+
 .coloruserdata{
   background-color:#F3F5F9;
 }
@@ -65,12 +67,10 @@
   .row2-cloudconsult{
     display: flex;
   }
-  .card1-consults{
-    margin-top: -5%;
-  }
-  
-  .card5-consults{
-    margin-top: -5%;
+ 
+  .iconstyle{
+    size: 20;
+    padding: 0%;
   }
   
  
