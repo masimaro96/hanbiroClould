@@ -20,7 +20,7 @@ function consultlticoncloud (title) {
              <GridCardBody>
                 <MyCardText>
                     <Myiconcard><CloudCheckIcon className="iconstyle" size={30} /></Myiconcard>
-                    <CardTitleIcon><TypographyCard>{title}</TypographyCard></CardTitleIcon>
+                    <CardTitleIcon ><TypographyCard>{title}</TypographyCard></CardTitleIcon>
                 </MyCardText>
             
             </GridCardBody>
@@ -160,6 +160,8 @@ const TypographyCard = styled.div`
 
 const MyCardText = styled(Card.Text)`
     display: flex;
+    justify-items: center;
+    align-items: center;
 `;
 
 
