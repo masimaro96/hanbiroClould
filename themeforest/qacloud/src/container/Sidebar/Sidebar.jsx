@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
-import {
-    Container, Row, Col
-  } from 'react-bootstrap';
+import React from 'react';
 import styled from 'styled-components';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import '../Sidebar/sidebar.css';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ChevronDownIcon from 'mdi-react/ChevronDownIcon';
+import { useHistory, NavLink } from "react-router-dom";
 import { Link } from 'react-router-dom';
-import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
 
@@ -29,21 +22,21 @@ const SidebarTitle = styled.p `
   font-size: 20px;;
 `
 
-function Sidebar({ name, ...props }) {
-  
+const Sidebar = (props) => {
+  const currentRoute = useHistory().location.pathname.toLowerCase();
   return (
     <>
-      <div  className="sidebardesk">
+      <div className="sidebardesk">
         <div className='left-menu'>
           <SidebarTitle>Server</SidebarTitle>
           <Mybox className='sidebarlist'>
               <ul>
-                <li className='listitem active'><Link to="/compute-vps">가상서버 (인스턴스)</Link></li>
-                <li className='listitem'><Link to="/compute-bare-metal">베어메탈 서버 (단독서버)</Link></li>
-                <li className='listitem'><Link to="/compute-auto-scale">오토스케일링</Link></li>
-                <li className='listitem'><Link to="/compute-load-balance">로드발랜서</Link></li>
-                <li className='listitem'><Link to="/compute-database">데이터베이스 (인스턴스)</Link></li>
-                <li className='listitem'><Link to="/compute-ms">MS-SQL / Windows</Link></li>
+                <li className={currentRoute.includes("compute-vps") ? "tab active" : "tab"} active><Link to="/compute-vps">가상서버 (인스턴스)</Link></li>
+                <li className={currentRoute.includes("compute-bare-metal") ? "tab active" : "tab"}><Link to="/compute-bare-metal">베어메탈 서버 (단독서버)</Link></li>
+                <li className={currentRoute.includes("compute-auto-scale") ? "tab active" : "tab"}><Link to="/compute-auto-scale">오토스케일링</Link></li>
+                <li className={currentRoute.includes("compute-load-balance") ? "tab active" : "tab"}><Link to="/compute-load-balance">로드발랜서</Link></li>
+                <li className={currentRoute.includes("compute-database") ? "tab active" : "tab"}><Link to="/compute-database">데이터베이스 (인스턴스)</Link></li>
+                <li className={currentRoute.includes("compute-ms") ? "tab active" : "tab"}><NavLink to="/compute-ms">MS-SQL / Windows</NavLink></li>
             </ul>
           </Mybox>
         </div>
@@ -54,9 +47,9 @@ function Sidebar({ name, ...props }) {
           <Mybox className='sidebarlist'>
             <p className='sidebarlist-title'>Application</p>
               <ul>
-                <li className='listitem'><Link to="/cluster-cloud-elastic-search">Elastic Search</Link></li>
-                <li className='listitem'><Link to="/cluster-kafka">Kafka</Link></li>
-                <li className='listitem'><Link to="/cluster-cloud-rabbitmq">RabbitMQ</Link></li>
+                <li className={currentRoute.includes("cluster-cloud-elastic-search") ? "tab active" : "tab"}><Link to="/cluster-cloud-elastic-search">Elastic Search</Link></li>
+                <li className={currentRoute.includes("cluster-kafka") ? "tab active" : "tab"}><Link to="/cluster-kafka">Kafka</Link></li>
+                <li className={currentRoute.includes("cluster-cloud-rabbitmq") ? "tab active" : "tab"}><Link to="/cluster-cloud-rabbitmq">RabbitMQ</Link></li>
             </ul>
           </Mybox>
           </div>
@@ -65,13 +58,13 @@ function Sidebar({ name, ...props }) {
             <Mybox className='sidebarlist'>
             <p className='sidebarlist-title'>Database</p>
               <ul>
-                <li className='listitem'><Link to="/cluster-cloud-mysql-db">MySQL</Link></li>
-                <li className='listitem'><Link to="/cluster-cloud-postgresql-db">PostgreSQL</Link></li>
-                <li className='listitem'><Link to="/cluster-cloud-vitess">Vitess</Link></li>
-                <li className='listitem'><Link to="/cluster-cloud-mongodb">MongoDB</Link></li>
-                <li className='listitem'><Link to="/cluster-cloud-redis">Redis</Link></li>
-                <li className='listitem'><Link to="/cluster-cloud-scylladb">ScyllaDB</Link></li>
-                <li className='listitem'><Link to="/cluster-clickhouse">ClickHouse</Link></li>
+                <li className={currentRoute.includes("cluster-cloud-mysql-db") ? "tab active" : "tab"}><Link to="/cluster-cloud-mysql-db">MySQL</Link></li>
+                <li className={currentRoute.includes("cluster-cloud-postgresql-db") ? "tab active" : "tab"}><Link to="/cluster-cloud-postgresql-db">PostgreSQL</Link></li>
+                <li className={currentRoute.includes("cluster-cloud-vitess") ? "tab active" : "tab"}><Link to="/cluster-cloud-vitess">Vitess</Link></li>
+                <li className={currentRoute.includes("cluster-cloud-mongodb") ? "tab active" : "tab"}><Link to="/cluster-cloud-mongodb">MongoDB</Link></li>
+                <li className={currentRoute.includes("cluster-cloud-redis") ? "tab active" : "tab"}><Link to="/cluster-cloud-redis">Redis</Link></li>
+                <li className={currentRoute.includes("cluster-cloud-scylladb") ? "tab active" : "tab"}><Link to="/cluster-cloud-scylladb">ScyllaDB</Link></li>
+                <li className={currentRoute.includes("cluster-clickhouse") ? "tab active" : "tab"}><Link to="/cluster-clickhouse">ClickHouse</Link></li>
             </ul>
           </Mybox>
           </div>
@@ -81,9 +74,9 @@ function Sidebar({ name, ...props }) {
           <SidebarTitle>Storage</SidebarTitle>
           <Mybox className='sidebarlist'>
               <ul>
-                <li className='listitem'><Link to="/store-object-store">오브젝트 Storage</Link></li>
-                <li className='listitem'><Link to="/store-block-store">불록 Storage</Link></li>
-                <li className='listitem'><Link to="/store-nas-store">공유 Storage</Link></li>
+                <li className={currentRoute.includes("store-object-store") ? "tab active" : "tab"}><Link to="/store-object-store">오브젝트 Storage</Link></li>
+                <li className={currentRoute.includes("store-block-store") ? "tab active" : "tab"}><Link to="/store-block-store">불록 Storage</Link></li>
+                <li className={currentRoute.includes("store-nas-store") ? "tab active" : "tab"}><Link to="/store-nas-store">공유 Storage</Link></li>
             </ul>
           </Mybox>
         </div>
@@ -91,100 +84,5 @@ function Sidebar({ name, ...props }) {
     </>
   );
 }
-
-// function Sidebar() {
-//    return (
-//      <div className="sidebartest">
-//       <Accordion className='box-detail'>
-//       <AccordionSummary>  
-//       <SidebarTitle>Server</SidebarTitle>
-//         <ChevronDownIcon className='menu-icon'/>
-//       </AccordionSummary>
-//       <AccordionDetails>
-//         <div className='left-menu'>
-//           <Mybox className='sidebarlist'>
-//               <ul>
-//                 <li className='listitem active'><a href="#">가상서버 (인스턴스)</a></li>
-//                 <li className='listitem'><a href="">베어메탈 서버 (단독서버)</a></li>
-//                 <li className='listitem'><a href="">오토스케일링</a></li>
-//                 <li className='listitem'><a href="">로드발랜서</a></li>
-//                 <li className='listitem'><a href="">데이터베이스 (인스턴스)</a></li>
-//                 <li className='listitem'><a href="">MS-SQL / Windows</a></li>
-//             </ul>
-//           </Mybox>
-//         </div>
-//       </AccordionDetails>
-//     </Accordion>
-
-//     <Accordion className='box-detail'>
-//       <AccordionSummary>  
-//       <SidebarTitle>Kubernetes Cluster</SidebarTitle>
-//         <ChevronDownIcon className='menu-icon'/>
-//       </AccordionSummary>
-//       <AccordionDetails>
-//         <Accordion className='box-detail'>
-//           <AccordionSummary>  
-//           <SidebarTitle>Application</SidebarTitle>
-//             <ChevronDownIcon className='menu-icon'/>
-//           </AccordionSummary>
-//           <AccordionDetails>
-//             <div className='left-menu'>
-//               <Mybox className='sidebarlist'>
-//                   <ul>
-//                     <li className='listitem'><Link to="/cluster-cloud-elastic-search">Elastic Search</Link></li>
-//                     <li className='listitem'><Link to="/cluster-kafka">Kafka</Link></li>
-//                     <li className='listitem'><Link to="/cluster-cloud-rabbitmq">RabbitMQ</Link></li>
-//                 </ul>
-//               </Mybox>
-//             </div>
-//           </AccordionDetails>
-//         </Accordion>
-
-//         <Accordion className='box-detail'>
-//           <AccordionSummary>  
-//           <SidebarTitle>Database</SidebarTitle>
-//             <ChevronDownIcon className='menu-icon'/>
-//           </AccordionSummary>
-//           <AccordionDetails>
-//             <div className='left-menu'>
-//               <Mybox className='sidebarlist'>
-//                 <ul>
-//                   <li className='listitem'><Link to="/cluster-cloud-mysql-db">MySQL</Link></li>
-//                   <li className='listitem'><Link to="/cluster-cloud-postgresql-db">PostgreSQL</Link></li>
-//                   <li className='listitem'><Link to="/cluster-cloud-vitess">Vitess</Link></li>
-//                   <li className='listitem'><Link to="/cluster-cloud-mongodb">MongoDB</Link></li>
-//                   <li className='listitem'><Link to="/cluster-cloud-redis">Redis</Link></li>
-//                   <li className='listitem'><Link to="/cluster-cloud-scylladb">ScyllaDB</Link></li>
-//                   <li className='listitem'><Link to="/cluster-clickhouse">ClickHouse</Link></li>
-//               </ul>
-//             </Mybox>
-//             </div>
-//           </AccordionDetails>
-//         </Accordion>
-//       </AccordionDetails>
-//     </Accordion>
-
-//     <Accordion className='box-detail'>
-//       <AccordionSummary>  
-//       <SidebarTitle>Server</SidebarTitle>
-//         <ChevronDownIcon className='menu-icon'/>
-//       </AccordionSummary>
-//       <AccordionDetails>
-//         <div className='left-menu'>
-//         <Mybox className='sidebarlist'>
-//             <ul>
-//               <li className='listitem'><Link to="/store-object-store">오브젝트 Storage</Link></li>
-//               <li className='listitem'><Link to="/store-block-store">불록 Storage</Link></li>
-//               <li className='listitem'><Link to="/store-nas-store">공유 Storage</Link></li>
-//           </ul>
-//         </Mybox>
-//         </div>
-//       </AccordionDetails>
-//     </Accordion>
-
-//     </div>
-    
-//   )
-// }
 
 export default Sidebar
