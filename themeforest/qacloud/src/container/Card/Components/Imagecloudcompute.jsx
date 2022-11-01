@@ -73,6 +73,7 @@ const GridCardBody2 = styled(CardBody)`
 const GridCardBody3 = styled(CardBody)`
     border: solid #FAFBFB 1px;
     background:  white;
+    box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%) !important;
 `;
 
 
