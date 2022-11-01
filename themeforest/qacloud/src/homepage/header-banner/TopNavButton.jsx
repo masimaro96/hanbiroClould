@@ -7,7 +7,7 @@ import {
     Container, Row, Col,
 } from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-<<<<<<< HEAD
+
 import { AiFillCaretDown,AiOutlineRight ,AiOutlineMenu} from 'react-icons/ai';
 import {CiCircleMore } from 'react-icons/ci';
 
@@ -43,10 +43,9 @@ class OutsideClickHandler extends React.Component {
     return <div ref={this.wrapperRef}>{children}</div>;
   }
 };
-=======
-import Sidebar from '../../container/Sidebar/Sidebar';
-import Ngoctesst from '../../container/Sidebar/Ngoctesst';
->>>>>>> 4e47cc1d7d0ca648b92614e209204af8077fbc3e
+
+
+
 
 
 function titleMenu($Kor,$Eng){
@@ -91,7 +90,7 @@ function OffCanvasExample({ name, ...props }) {
           <Offcanvas.Header closeButton >
             
           </Offcanvas.Header>
-          <Ngoctesst />
+          
           
         </Offcanvas>
       </>
