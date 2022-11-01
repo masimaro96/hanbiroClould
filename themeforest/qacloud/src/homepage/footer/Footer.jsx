@@ -16,7 +16,6 @@ import EmailIcon from 'mdi-react/EmailIcon';
 import PhoneIcon from 'mdi-react/PhoneIcon';
 import FaxIcon from 'mdi-react/FaxIcon';
 import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon';
-
 function Footer() {
 
   return (
@@ -53,12 +52,12 @@ function Footer() {
                             <CardBody>
                             <h4>Explore</h4>
                             <List>
-                                <li><p><ChevronRightIcon /> 클라우드</p></li>
-                                <li><p><ChevronRightIcon /> 그룹웨어</p></li>
-                                <li><p><ChevronRightIcon /> Vora Works</p></li>
-                                <li><p><ChevronRightIcon /> 호스팅</p></li>
-                                <li><p><ChevronRightIcon /> 한비로</p></li>
-                                <li><p><ChevronRightIcon /> 고객 센터</p></li>
+                                <li><a href='https://hanbiro.com/cloud/'><ChevronRightIcon /> 클라우드</a></li>
+                                <li><a href='https://hanbiro.com/software/overview-video.html'><ChevronRightIcon /> 그룹웨어</a></li>
+                                <li><a href='https://hanbiro.com/software/vora-email-features.html'><ChevronRightIcon /> Vora Works</a></li>
+                                <li><a href='https://hanbiro.com/management/management-outline.html'><ChevronRightIcon /> 호스팅</a></li>
+                                <li><a href='https://hanbiro.com/hanbiro/about.html'><ChevronRightIcon /> 한비로</a></li>
+                                <li><a href='https://hanbiro.com/customer/inquiry.html'><ChevronRightIcon /> 고객 센터</a></li>
                             </List>
                             </CardBody>
                         </Card>

@@ -27,6 +27,16 @@
     padding-bottom: 0;
 }
 
+.spaced a{
+    text-decoration: none;
+    color: #777;
+}
+
+.spaced a:hover{
+    color: #AD5251;
+    cursor: pointer;
+}
+
 .spaced h4{
     color: white;
     font-weight: 400;
