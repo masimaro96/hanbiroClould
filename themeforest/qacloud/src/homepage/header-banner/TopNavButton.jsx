@@ -11,8 +11,6 @@ import {CiCircleMore } from 'react-icons/ci';
 import Sidebar from '../../container/Sidebar/Sidebar';
 import Sidebarmobile from '../../container/Sidebar/Sidebarmobile';
 
-
-
 class OutsideClickHandler extends React.Component {
   wrapperRef = createRef();
 
@@ -29,6 +27,7 @@ class OutsideClickHandler extends React.Component {
   }
 
   handleClickOutside = (event) => {
+    console.log(this.wrapperRef.current);
     if (
       this.wrapperRef.current &&
       !this.wrapperRef.current.contains(event.target)
@@ -44,10 +43,6 @@ class OutsideClickHandler extends React.Component {
   }
 };
 
-
-
-
-
 function titleMenu($Kor,$Eng){
     return(
         <>
@@ -56,13 +51,12 @@ function titleMenu($Kor,$Eng){
         </>
     )
 }
-function titlePop($link,$data){
+function titlePop(link,data){
     return(
-        <>
-           
-            <div ><a href={$link}> <AiOutlineRight className="icon-right"/>{$data}</a></div>
-            
-        </>
+        
+        // <div onClick={handleClick}> <a href="#" onClick={handleClick}> <AiOutlineRight className="icon-right"/>{data}</a></div>
+        <div onClick={() => {console.log(1123123213);window.open(link, "_blank") }}><AiOutlineRight className="icon-right"/>{data}</div>
+        
     )
 }
 function MenuName($data){
@@ -79,7 +73,6 @@ function MenuName($data){
 
 function OffCanvasExample({ name, ...props }) {
     const [show, setShow] = useState(false);
-  
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
   
@@ -102,6 +95,7 @@ function OffCanvasExample({ name, ...props }) {
 function NavButton() {
   
   const [openmobile, setOpenmobile] = useState(false);
+  const [openEng, setOpenEng] = useState(false);
   const [isShown, setIsShown] = useState(false);
   const [isShownHos, setIsShownHos] = useState(false);
   const [isShownVora, setIsShownVora] = useState(false);
@@ -131,7 +125,18 @@ function NavButton() {
                             <div className="item-nav"> 웹호스팅 고객</div>
                             <div className="item-nav"> Sectigo(COMODO) SSL</div>
                             <div className="item-nav"> 한비로 블로그</div>
-                            <div className="item-nav-2"> 한국어 <AiFillCaretDown /></div>
+                            <div className="item-nav-2"
+                                onClick={() => setOpenEng(!openEng)}
+                                aria-controls="hosting"
+                                aria-expanded={openEng}
+                            > <a href='#' className="navbar-link">한국어 <AiFillCaretDown  /></a>
+
+                                <Collapse in={openEng} >
+                                    <div className="English">
+                                        English
+                                    </div>
+                                </Collapse>
+                            </div>
                         </div>
                     </Col>
                 </Row>
@@ -164,7 +169,7 @@ function NavButton() {
                            
                             <OutsideClickHandler
                                 onOutsideClick={() => {
-                                    setIsShownGw(false)
+                                    // setIsShownGw(true)
                                 }}
                                 >
                                    <div className="bar-item"
@@ -182,7 +187,7 @@ function NavButton() {
                         
                             <OutsideClickHandler
                                 onOutsideClick={() => {
-                                    setIsShownVora(false)
+                                    // setIsShownVora(false)
                                 }}
                                 >
                                    <div className="bar-item"
@@ -202,7 +207,7 @@ function NavButton() {
                            
                             <OutsideClickHandler
                                 onOutsideClick={() => {
-                                    setIsShownHos(false)
+                                    // setIsShownHos(false)
                                 }}
                                 >
                                    <div className="bar-item"
@@ -220,17 +225,16 @@ function NavButton() {
                             </OutsideClickHandler>
 
                             <OutsideClickHandler
-                                onOutsideClick={() => {
-                                    setIsShown(false)
+                                onOutsideClick={() =>{
+                                    // setIsShown(false)
                                 }}
                                 >
                                   <div className="bar-item bar-item-end "
-                                    onMouseEnter={() => {
+                                    onMouseEnter={() =>{
                                     setIsShown(true);
                                     setIsShownHos(false);
                                     setIsShownVora(false);
                                     setIsShownGw(false);
-                                   
                                 }
                                 }
                                  >   
@@ -242,9 +246,9 @@ function NavButton() {
                         </div>
                     </Col>
                     <Col md={12} sm={12}>
+                   
                         {isShownGw && (
                         <div className="groupware">
-                            
                             {titlePop ("https://hanbiro.com/software/groupware-price.html"," 가격표")}
                             {titlePop ("https://hanbiro.com/software/groupware-free-trial.html?SM=SPCMAKO"," 신청하기")}
                             {titlePop ("https://hanbiro.com/software/overview-video.html"," 한비로 그룹웨어에 대해")}
@@ -266,14 +270,11 @@ function NavButton() {
                         )}
                         {isShownVora && (
                         <div className="vora">
-                            
                             {titlePop ("https://hanbiro.com/software/vora-email-features.html","Vora Email")}
                             {titlePop ("https://hanbiro.com/software/vora-hr-52-hour-work-week.html","Vora HR")}
                             {titlePop ("https://hanbiro.com/software/vora-project-new.html","Vora Project")}
                             {titlePop ("https://hanbiro.com/software/vora-call-summary.html","Vora Call")}
                             {titlePop ("https://hanbiro.com/software/vora-cloud-disk-outline.html","Vora CloudDisk")}
-                               
-
                         </div>
                         )}
 
@@ -396,10 +397,7 @@ function NavButton() {
 
                                         </div>
                                         <div className="menu-list-item ">
-                                            
                                             <div> &nbsp;</div>
-                                            
-                                            
                                         </div>
                                     </div>
 
