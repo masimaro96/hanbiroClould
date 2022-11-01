@@ -97,9 +97,10 @@ const CardTitle = styled(Card.Title)`
   padding: 0px;
   text-align: left;
   font-weight: bold;
-  font-size:14pt;
+  font-size:15pt;
   padding-bottom:5%;
   line-height:1.5em;
+  padding-right:4%;
 `;
 
 
@@ -114,8 +115,8 @@ const TypographyCard = styled.div`
 const CardText = styled(Card.Text)`
     
     text-align: left;
-    margin-bottom: 6%;
-    margin-top: 4%;
+    padding-bottom: 6%;
+    padding-top:4%;
     color:gray;
     font-size:14px;
   
