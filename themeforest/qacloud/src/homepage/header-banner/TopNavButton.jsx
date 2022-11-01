@@ -147,7 +147,7 @@ function NavButton() {
                             </div>
                         </div>
                     </Col>
-                    <Col md={9} sm={12}>
+                    <Col md={9} sm={12} >
                         <div className="bar-menu">
                            
                             <div className="bar-item btn-home">   
@@ -411,7 +411,7 @@ function NavButton() {
                     </Col>
                 </Row>
                 
-                <Row>
+                <Row className="navbar">
                    
                     <Col md={10} sm={12}>
                         <div className="btn-moble-list">

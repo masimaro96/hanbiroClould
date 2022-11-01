@@ -12,6 +12,8 @@ code {
     monospace;
 }
 
+
+
 .Box{
   width: 100%;
   display: flex;
@@ -157,6 +159,10 @@ code {
 
 
 @media only screen and (max-width: 1023px){
+  .navbar {
+    display: flex;
+    justify-content: center !important;
+  }
   .mb-top-nav{
     display: flex;
     margin: auto;

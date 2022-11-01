@@ -49,6 +49,41 @@
     display: none;
 }
 
+@media only screen and (max-width: 1023px){
+    .sidebardesk{
+      display: none;
+    }
+
+    .sidebar-detail, .fade {
+        display: block;
+    }
+
+    .accordion-body ul li {
+        list-style-type: none;
+        padding: 5px 10px;
+    }
+
+    .accordion-body ul li:hover {
+        background-color: #F2F2F2;
+        border-radius: 10px;
+    }
+
+    .accordion-body ul {
+        padding: 0;
+    }
+
+    .accordion-body li a {
+        text-decoration: none;
+        color: #000;
+        line-height: 30px;
+    }
+
+    .accordion-body li:hover a {
+        color: #237ff0;
+    }
+    
+}
+
 @media only screen and (max-width: 767px){
     .sidebardesk{
       display: none;
