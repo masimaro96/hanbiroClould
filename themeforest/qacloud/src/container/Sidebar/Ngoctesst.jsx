@@ -27,7 +27,7 @@ const SidebarTitle = styled.p `
 
 function Ngoctesst() {
   return (
-    <Accordion defaultActiveKey="0">
+    <Accordion defaultActiveKey="0" className='detailpage'>
       <Accordion.Item eventKey="0">
         <Accordion.Header>
           <h5>Server</h5>
