@@ -9,7 +9,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { AiFillCaretDown,AiOutlineRight ,AiOutlineMenu} from 'react-icons/ai';
 import {CiCircleMore } from 'react-icons/ci';
 import Sidebar from '../../container/Sidebar/Sidebar';
-import Ngoctesst from '../../container/Sidebar/Ngoctesst';
+import Sidebarmobile from '../../container/Sidebar/Sidebarmobile';
 
 
 
@@ -92,7 +92,7 @@ function OffCanvasExample({ name, ...props }) {
           <Offcanvas.Header closeButton >
             
           </Offcanvas.Header>
-          <Ngoctesst />
+          <Sidebarmobile />
           
         </Offcanvas>
       </>
