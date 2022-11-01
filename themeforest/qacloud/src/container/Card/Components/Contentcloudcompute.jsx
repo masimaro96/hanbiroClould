@@ -11,7 +11,6 @@ import Typography from '@mui/material/Typography'
 
 
 
-
 function Contentcloudcompute($data1,$data2,$data3,$data4,$data5,$data6,$data7,$data8,$data9,$data10,$data11,$data12,$data13,$data14) {
   
   return (
@@ -58,6 +57,7 @@ function Contentcloudcompute($data1,$data2,$data3,$data4,$data5,$data6,$data7,$d
               </Row>
              
         </div>
+      
         
 
     </>
@@ -97,8 +97,9 @@ const CardTitle = styled(Card.Title)`
   padding: 0px;
   text-align: left;
   font-weight: bold;
-  font-size:18px;
-  padding-bottom:5%
+  font-size:15pt;
+  padding-bottom:5%;
+  line-height:1.5em;
 `;
 
 
