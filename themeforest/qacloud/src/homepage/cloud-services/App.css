@@ -150,11 +150,23 @@
   }
 }
 
-@media only screen and (min-width: 767px){
+/* @media only screen and (min-width: 767px){
   .table-cloudservices{
     display: flex;
   }
   .ClusterBox{
+    display: flex;
+  }
+  .ClusterTitle{
+    width:650px;
+  }
+  .StorageBox, .ServerBox, .ClusterBox1{
+    width:350px;
+  }
+} */
+
+@media only screen and (max-width: 320px){
+  .table-cloudservices{
     display: flex;
   }
   .ClusterTitle{
