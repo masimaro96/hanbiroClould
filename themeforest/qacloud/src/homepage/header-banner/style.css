@@ -183,11 +183,11 @@ code {
   text-align: left;
   left: 60%;
   background-color: white;
-  padding: 15px;
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
 }
 .groupware div {
-  padding-top:4px ;
-  padding-bottom:4px ;
+  padding:6px 15px;
+  border-bottom: 1px solid #C0C0C0;
 }
 .groupware :hover {
   background-color: #47A7FF;
@@ -199,11 +199,11 @@ code {
   text-align: left;
   left: 69%;
   background-color: white;
-  padding: 15px;
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
 }
 .vora div {
-  padding-top:4px ;
-  padding-bottom:4px ;
+  padding:6px 15px;
+  border-bottom: 1px solid #C0C0C0;
 }
 .vora :hover {
   background-color: #47A7FF;

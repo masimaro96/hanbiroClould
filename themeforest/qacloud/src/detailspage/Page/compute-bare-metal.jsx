@@ -37,8 +37,6 @@ function Computebaremetal(){
                         <TrafficFee />
                         <DetailContent />
                         <LiveChat />
-                        
-
                     </Col>
                 </Row>
             </Container>
