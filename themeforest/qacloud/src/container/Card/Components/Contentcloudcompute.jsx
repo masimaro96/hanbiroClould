@@ -71,6 +71,7 @@ function Contentcloudcompute($data1,$data2,$data3,$data4,$data5,$data6,$data7,$d
 const GridCard = styled(Card)`
   padding-bottom: 20px;
   
+  
   p {
     margin-bottom: 0;
   }
@@ -83,8 +84,11 @@ const GridCard = styled(Card)`
 
 const GridCardBody2 = styled(CardBody)`
   border: solid #E7EAF3 1px;
-  background:  white;
   border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%) !important;
+  
+   
   
   
   
