@@ -71,14 +71,22 @@
 .Buttonstyle:hover a{
     color: white !important;
 }
+.Buttonstyle:hover .iconButton{
+    color: white !important;
+}
 .Buttonstyle a{
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
 }
-.iconButton{
-    color: #377dff !important;
+.svg{
+    /* fill: #377dff !important; */
+    width: 22px !important;
+    height: 30px !important;
+    margin-top: -5px;
+    transition: none !important;
 }
+
 
 .data-content-title{
     text-align: left;

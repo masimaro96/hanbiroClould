@@ -4,6 +4,7 @@
 }
 .introduce-content-card{
     border: 1px solid #ebebeb;
+    box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%) !important;
     margin-left: 5px;
     border-radius: 5px;
     padding: 20px;

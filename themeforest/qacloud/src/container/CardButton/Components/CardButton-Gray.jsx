@@ -26,7 +26,7 @@ function CardButtonGray($title1,$description1,$description2,$description3,$descr
                     </div>
                 </div>
                 <ButtonToolbar className='ButtonLeft-Gray'>
-                    <Button className='Buttonstyle'><Link to={$link1}>{$link2}</Link><ChevronRightIcon size={30} className='iconButton' /></Button>
+                    <Button className='Buttonstyle'><Link to={$link1}>{$link2}<ChevronRightIcon size={30} className='iconButton' /></Link></Button>
                 </ButtonToolbar>
             </Box>
             <Box className="data-content-box-gray">  
@@ -41,7 +41,7 @@ function CardButtonGray($title1,$description1,$description2,$description3,$descr
                         </div>
                     </div>
                     <ButtonToolbar className='ButtonRight-Gray'>
-                        <Button className='Buttonstyle'><Link to="/compute-vps">가상서버(인스턴스) 요금 확인하기</Link><ChevronRightIcon size={30} className='iconButton' /></Button>
+                        <Button className='Buttonstyle'><Link to="/compute-vps">가상서버(인스턴스) 요금 확인하기<ChevronRightIcon size={30} className='iconButton' /></Link></Button>
                     </ButtonToolbar>
                 </div>
             </Box>

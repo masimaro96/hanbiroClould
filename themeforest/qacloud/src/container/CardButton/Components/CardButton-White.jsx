@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import '../../CardButton/Components/CardButtonLeft-RightStyle.css'
 import { Box } from '@mui/material'
 import { Button, ButtonToolbar } from '@/shared/components/Button';
-import { IoIosArrowForward } from "react-icons/io";
+import ChevronRightIcon from 'mdi-react/ChevronRightIcon';
 import { Link } from 'react-router-dom';
 
 
@@ -26,7 +26,7 @@ function CardButtonWhite($title1,$description1,$description2,$description3,$desc
                     </div>
                 </div>
                 <ButtonToolbar>
-                    <Button className='Buttonstyle'><Link to={$link1}>{$link2}<IoIosArrowForward size={30} className='iconButton' /></Link></Button>
+                    <Button className='Buttonstyle'><Link to={$link1}>{$link2}<ChevronRightIcon size={30} className='iconButton' /></Link></Button>
                 </ButtonToolbar>
             </Box>
             <Box className="data-content-box">  
@@ -41,7 +41,7 @@ function CardButtonWhite($title1,$description1,$description2,$description3,$desc
                         </div>
                     </div>
                     <ButtonToolbar className='ButtonRight'>
-                        <Button className='Buttonstyle'><Link to="/cluster-cloud-mysql-db">가상서버(인스턴스) 요금 확인하기</Link><IoIosArrowForward size={30} className='iconButton' /></Button>
+                        <Button className='Buttonstyle'><Link to="/cluster-cloud-mysql-db">가상서버(인스턴스) 요금 확인하기<ChevronRightIcon size={30} className='iconButton' /></Link></Button>
                     </ButtonToolbar>
                 </div> 
             </Box>
