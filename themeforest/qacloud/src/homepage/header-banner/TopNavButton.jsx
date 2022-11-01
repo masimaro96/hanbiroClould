@@ -11,8 +11,6 @@ import {CiCircleMore } from 'react-icons/ci';
 import Sidebar from '../../container/Sidebar/Sidebar';
 import Ngoctesst from '../../container/Sidebar/Ngoctesst';
 
-
-
 class OutsideClickHandler extends React.Component {
   wrapperRef = createRef();
 
@@ -44,10 +42,6 @@ class OutsideClickHandler extends React.Component {
   }
 };
 
-
-
-
-
 function titleMenu($Kor,$Eng){
     return(
         <>
@@ -59,9 +53,7 @@ function titleMenu($Kor,$Eng){
 function titlePop($data){
     return(
         <>
-           
             <div > <AiOutlineRight className="icon-right"/>{$data}</div>
-            
         </>
     )
 }
@@ -79,7 +71,6 @@ function MenuName($data){
 
 function OffCanvasExample({ name, ...props }) {
     const [show, setShow] = useState(false);
-  
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
   
@@ -102,6 +93,7 @@ function OffCanvasExample({ name, ...props }) {
 function NavButton() {
   
   const [openmobile, setOpenmobile] = useState(false);
+  const [openEng, setOpenEng] = useState(false);
   const [isShown, setIsShown] = useState(false);
   const [isShownHos, setIsShownHos] = useState(false);
   const [isShownVora, setIsShownVora] = useState(false);
@@ -131,7 +123,8 @@ function NavButton() {
                             <div className="item-nav"> 웹호스팅 고객</div>
                             <div className="item-nav"> Sectigo(COMODO) SSL</div>
                             <div className="item-nav"> 한비로 블로그</div>
-                            <div className="item-nav-2"> 한국어 <AiFillCaretDown /></div>
+                            <div className="item-nav-2"> 한국어 <AiFillCaretDown  />
+                            </div>
                         </div>
                     </Col>
                 </Row>
@@ -220,17 +213,16 @@ function NavButton() {
                             </OutsideClickHandler>
 
                             <OutsideClickHandler
-                                onOutsideClick={() => {
+                                onOutsideClick={() =>{
                                     setIsShown(false)
                                 }}
                                 >
                                   <div className="bar-item bar-item-end "
-                                    onMouseEnter={() => {
+                                    onMouseEnter={() =>{
                                     setIsShown(true);
                                     setIsShownHos(false);
                                     setIsShownVora(false);
                                     setIsShownGw(false);
-                                   
                                 }
                                 }
                                  >   
@@ -266,7 +258,7 @@ function NavButton() {
                         )}
                         {isShownVora && (
                         <div className="vora">
-                            
+                            <div > <a href="https://www.hanbiro.com/software/vora-email-features.html" target="_blank"><AiOutlineRight className="icon-right"/>KimQuynh </a></div>
                             {titlePop ("Vora Email")}
                             {titlePop ("Vora HR")}
                             {titlePop ("Vora Project")}
