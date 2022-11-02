@@ -42,6 +42,7 @@
 
 
 
+
 .coloruserdata{
   background-color:#F3F5F9;
 }
@@ -52,25 +53,26 @@
 @media only screen and (max-width: 1023px){
   .row2-cloudconsult{
     display: flex;
+    
   }
   
   .iconstyle{
-    border-radius:30%;
+    border-radius:15%;
+    padding:0.5%;
   }
+ 
   
 }
+
 
 
 @media only screen and (max-width: 767px){
   .row2-cloudconsult{
     display: flex;
   }
-  .card1-consults{
-    margin-top: -5%;
-  }
-  
-  .card5-consults{
-    margin-top: -5%;
+ 
+  .iconstyle{
+    border-radius:30%;
   }
   
  

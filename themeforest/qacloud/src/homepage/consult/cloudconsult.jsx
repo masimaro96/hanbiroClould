@@ -19,8 +19,8 @@ function consultlticoncloud (title) {
         <Titlecloudrow2>
              <GridCardBody>
                 <MyCardText>
-                    <Myiconcard><CloudCheckIcon className="iconstyle" size={35} /></Myiconcard>
-                    <CardTitleIcon><TypographyCard>{title}</TypographyCard></CardTitleIcon>
+                    <Myiconcard><CloudCheckIcon className="iconstyle" size={30} /></Myiconcard>
+                    <CardTitleIcon ><TypographyCard>{title}</TypographyCard></CardTitleIcon>
                 </MyCardText>
             
             </GridCardBody>
@@ -80,20 +80,20 @@ function Cloudconsult() {
                 </Col>
             </Row>
             <Row>
-                <Col sm={12} md={4} >
+                <Col sm={12} md={12} lg={4} >
                     
                     <GridCard>
                         {columnus("신윤호 부장","https://www.hanbiro.com/images/support/pic006.jpg","070-4804-9651","kernel@hanbiro.com")}
                     
                     </GridCard>
                 </Col>
-                <Col sm={12} md={4} >
+                <Col sm={12} md={12} lg={4} >
                 <GridCard>
                         {columnus("김정윤 부장","https://www.hanbiro.com/images/support/pic007.jpg","070-4804-9668","linuxdev@hanbiro.com")}
                     
                 </GridCard>
                 </Col>
-                <Col sm={12} md={4}>
+                <Col sm={12} md={12} lg={4}>
                     <GridCard>
                         {columnus("조성학 이사 (해외)","https://www.hanbiro.com/images/support/pic002.jpg","+84 909 284 160","linux@hanbiro.com")}
                     </GridCard>
@@ -101,17 +101,17 @@ function Cloudconsult() {
             
             </Row>
             <Row>
-                <Col sm={12} md={4} >
+                <Col sm={12} md={12} lg={4} >
                     <GridCard>
                         {columnus("신상우 부장","https://www.hanbiro.com/images/support/pic003.jpg","070-4804-9662","security@hanbiro.com")}
                     </GridCard>
                 </Col>
-                <Col sm={12} md={4}>
+                <Col sm={12} md={12} lg={4}>
                     <GridCard>
                         {columnus("신경섭 소장","https://www.hanbiro.com/images/support/pic004.jpg","070-4804-9664","windev@hanbiro.com")}
                     </GridCard>
                 </Col>
-                <Col sm={12} md={4}>
+                <Col sm={12} md={12} lg={4}>
                     <GridCard>
                         <p>&nbsp;</p>
                     </GridCard>
@@ -160,6 +160,8 @@ const TypographyCard = styled.div`
 
 const MyCardText = styled(Card.Text)`
     display: flex;
+    justify-items: center;
+    align-items: center;
 `;
 
 
@@ -168,8 +170,9 @@ const Myiconcard = styled.div`
     border-radius:50%;
     border: solid white 0px;
     background-color:#99CCFF;
-    padding: 8px;
+    padding:3%;
     
+
 `;
 
 
@@ -178,10 +181,8 @@ const CardTitle = styled(Card.Title)`
     position: relative;
     text-align: left;
     font-weight: bold;
-    margin-bottom: 6%;
-    margin-left: 2%;
-    margin-top: 5%;
     font-size:17px;
+    
     
 `;
 
@@ -191,9 +192,8 @@ const CardText = styled(Card.Text)`
     position: relative;
     text-align: left;
     font-weight: bold;
-    margin-bottom: 6%;
-    margin-left: 5%;
-    margin-top: 5%;
+    
+    
   
   
 `;
@@ -204,6 +204,7 @@ const CardImage = styled(Card.Img)`
     left: 75%;
     right: 5%;
     top: 15%;
+    
     width: 11%;
     border-radius:50%;
   
