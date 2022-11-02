@@ -105,7 +105,7 @@ code {
 .Container-bar-left{
   text-align: left;
   color: white;
-  font-size: 100%;
+  font-size: 22px;
   font-weight: 900;
   width: 50%;
   margin: auto;
@@ -162,25 +162,30 @@ code {
   color: white;
   text-decoration: none;
 }
-.navbar-link :hover{
+.navbar-link:hover{
   color: white;
   text-decoration: solid;
 }
-.item-nav-2 a :hover{
+.item-nav-2 a:hover{
   color: white;
   text-decoration: solid;
   position: relative;
 }
 
-.menu-list-item :hover {
+.menu-list-item div:hover {
   background-color: #47A7FF;
   color: white;
+  cursor: pointer;
+  
 }
 .navbar {
   padding: 0;
 }
 
 @media only screen and (max-width: 1023px){
+  .mb-top-nav-list{
+    width: 100%;
+  }
   .navbar {
     display: flex;
     justify-content: center !important;
@@ -188,6 +193,8 @@ code {
   .mb-top-nav{
     display: flex;
     margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .top-nav-right{
     display: none;
@@ -220,6 +227,7 @@ code {
 .groupware :hover {
   background-color: #47A7FF;
   color: white;
+  cursor: pointer;
 }
 
 .vora{
@@ -236,6 +244,7 @@ code {
 .vora :hover {
   background-color: #47A7FF;
   color: white;
+  cursor: pointer;
 
 }
 .item-nav-2 a:hover{
@@ -259,12 +268,12 @@ code {
   font-size: 14px;
 }
 .menu-list{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  
   box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
 }
 .menu-list-item{
   padding-left: 15px;
+  padding-right: 15px;
   width: 50%;
 }
 .boder-left{
