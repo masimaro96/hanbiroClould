@@ -26,6 +26,7 @@ function Contentcloudcompute($data1,$data2,$data3,$data4,$data5,$data6,$data7,$d
                             <div>{$data1}</div>
                             <div>{$data2}</div>
                         </CardTitle>  
+                        
                         <CardText>
                             <Typography>{$data5}</Typography>
                             <Typography>{$data6}</Typography>
@@ -94,13 +95,14 @@ const GridCardBody2 = styled(CardBody)`
 
 
 const CardTitle = styled(Card.Title)`
-  padding: 0px;
+  
   text-align: left;
   font-weight: bold;
   font-size:15pt;
   padding-bottom:5%;
   line-height:1.5em;
   padding-right:4%;
+  height:22%;
 `;
 
 
@@ -116,9 +118,10 @@ const CardText = styled(Card.Text)`
     
     text-align: left;
     padding-bottom: 6%;
-    padding-top:4%;
+    padding-top:5%;
     color:gray;
     font-size:14px;
+    
   
 `;
 
