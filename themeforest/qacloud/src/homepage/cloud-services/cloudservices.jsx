@@ -198,7 +198,7 @@ function CloudServices() {
         <Box mr={3} className='StorageBox'>
           <Col>
             <GridCard>
-              {CloudServicesGrid ("Server")}
+              {CloudServicesGrid ("Storage")}
             </GridCard>
           </Col>
           <Col>
