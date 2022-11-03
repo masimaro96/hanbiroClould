@@ -150,6 +150,11 @@ code {
   width: 100%;
   height: -webkit-fill-available;
 }
+
+.sidebar-detail.offcanvas.offcanvas-top {
+  min-height: 100vh;
+}
+
 .English{
  position: absolute;
  padding: 10px 20px;
