@@ -26,7 +26,7 @@ function Titlecloudcompute($content1,$content2,$content3) {
                         <GridCardBody>
                             <Titlecloud2>{$content1}</Titlecloud2>
                             <Titlecloud2>{$content2}</Titlecloud2>
-                            <Card.Link href="#">{$content3}</Card.Link>
+                            <Card.Link href="https://www.hanbiro.com/hosting/product-list.html">{$content3}</Card.Link>
                         </GridCardBody>
                     </GridCard>
                   </Box>
