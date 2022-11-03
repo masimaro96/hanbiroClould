@@ -213,6 +213,7 @@ const CardImage = styled(Card.Img)`
 
 const CardTitleIcon = styled(Card.Title)`
     padding-left: 4%;
+    font-size:12pt;
 `;
 
 const Titlecloud = styled.div`

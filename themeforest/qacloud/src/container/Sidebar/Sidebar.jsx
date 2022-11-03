@@ -30,13 +30,14 @@ const Sidebar = (props) => {
         <div className='left-menu'>
           <SidebarTitle>Server</SidebarTitle>
           <Mybox className='sidebarlist'>
-              <ul>
+              <ul >
                 <li className={currentRoute.includes("compute-vps") ? "tab active" : "tab"} active><Link to="/compute-vps">가상서버 (인스턴스)</Link></li>
                 <li className={currentRoute.includes("compute-bare-metal") ? "tab active" : "tab"}><Link to="/compute-bare-metal">베어메탈 서버 (단독서버)</Link></li>
                 <li className={currentRoute.includes("compute-auto-scale") ? "tab active" : "tab"}><Link to="/compute-auto-scale">오토스케일링</Link></li>
                 <li className={currentRoute.includes("compute-load-balance") ? "tab active" : "tab"}><Link to="/compute-load-balance">로드발랜서</Link></li>
                 <li className={currentRoute.includes("compute-database") ? "tab active" : "tab"}><Link to="/compute-database">데이터베이스 (인스턴스)</Link></li>
                 <li className={currentRoute.includes("compute-ms") ? "tab active" : "tab"}><NavLink to="/compute-ms">MS-SQL / Windows</NavLink></li>
+                
             </ul>
           </Mybox>
         </div>
