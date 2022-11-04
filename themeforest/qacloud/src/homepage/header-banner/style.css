@@ -164,7 +164,7 @@ code {
 
 .bar-menu {
   display: flex;
-  justify-content: end;
+  /* justify-content: end; */
 }
 
 .bar-logo {
