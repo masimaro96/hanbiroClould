@@ -98,7 +98,7 @@ function OffCanvasExample({ name, ...props }) {
             <div variant="primary" onClick={handleShow} className="me-2">
                 {name} <AiOutlineMenu />
             </div>
-            <Offcanvas show={show} onHide={handleClose} {...props} className='sidebar-detail'>
+            <Offcanvas show={show} onHide={handleClose} placement="top" className='sidebar-detail'>
                 <Offcanvas.Header closeButton >
 
                 </Offcanvas.Header>
