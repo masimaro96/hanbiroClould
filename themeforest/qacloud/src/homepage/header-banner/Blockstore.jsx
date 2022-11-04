@@ -26,7 +26,7 @@ function TrafficFee({title }) {
                   <td  style={StySpecification.TextLeft}><div style={StySpecification.TextContent}>블록 Storage</div> </td>
                   <td style={StySpecification.BorAll}>50G	</td>
                   <td style={StySpecification.BorAll}>2T	</td>
-                  <td style={StySpecification.BorAll}>1.5원 (1G)	</td>
+                  <td style={StySpecification.BorAll}>1.5원 (1G)</td>
                   <td style={StySpecification.BorAll}>45원 (1G)</td>
                 </tr>
                 <tr>

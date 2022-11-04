@@ -14,135 +14,170 @@ code {
 
 
 
-.Box{
+.Box {
   width: 100%;
   display: flex;
-  background-color: #47A7FF ;
+  background-color: #47A7FF;
   color: white;
   /* position: relative; */
 }
-.gmail{
+
+.gmail {
   color: white;
 }
-.Container-top{
+
+.Container-top {
   width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   background-color: #47A7FF;
 }
-.top-nav{
+
+.top-nav {
   display: flex;
   margin: auto;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.top-nav-right{
+
+.top-nav-right {
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
   float: right;
 }
-.item-nav-1{
+
+.item-nav-1 {
   margin-top: 10px;
   margin-bottom: 10px;
-  
+
 }
-.item-nav{
+
+.item-nav {
   background-color: #3275B2;
   padding: 2px;
   margin-right: 5px;
 }
 
-.Container-bar{
+.Container-bar {
   width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
-.bar-item-1{
-  color: #C0C0C0	;
+
+.bar-item-1 {
+  color: #C0C0C0;
 }
-.bar-item{
+
+.bar-item {
   padding: 10px 20px;
   border-left: 1px solid #C0C0C0;
+  cursor: pointer;
 }
-.bar-item-end{
+
+.bar-item-end {
   border-right: 1px solid #C0C0C0;
 }
-.css-customer{
+
+.css-customer {
 
   margin: auto;
   text-align: left;
   margin-top: 10px;
   padding-left: 15px;
-  
+
 }
-.css-customer-left{
+
+.css-customer-left {
   border-right: 1px solid #C0C0C0;
 }
 
-.menu-name{
+.menu-name {
   font-size: 15px;
   padding-top: 10px;
 }
+
 .menu-list-item div {
-  padding-top:4px ;
-  padding-bottom:4px ;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
-.css-customer-all{
+
+.css-customer-all {
   border-right: 1px solid #C0C0C0;
   border-left: 1px solid #C0C0C0;
 }
-.slotho-bg{
+
+.slotho-bg {
   background-image: url("https://www.hanbiro.com/images/cloud-banner.jpg");
-  display: flex;
-}
-.slotho-Container-bar{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: relative;
   display: flex;
 }
 
-.Container-bar-left{
+.slotho-Container-bar {
+  display: flex;
+}
+
+.Container-bar-left {
   text-align: left;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 900;
   width: 50%;
   margin: auto;
 }
-.Container-bar-right{
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+.Container-bar-left div {
+  margin-bottom: 10px;
+}
+
+.Container-bar-right {
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: 50%;
 }
-.icon-right{
+
+.icon-right {
   font-size: 15px;
   padding-bottom: 4px;
 }
 
-.box{
+.box {
   background-color: #47A7FF;
 }
-.box-container{
+
+.box-container {
   font-size: 14px;
   color: white;
 }
-.bar-home{
+
+.bar-home {
   position: relative;
   z-index: 1;
 }
-.bar-menu{
+
+.bar-menu {
   display: flex;
   justify-content: end;
 }
-.bar-logo{
+
+.bar-logo {
   display: flex;
   margin: auto;
 }
-.list-logo{
- margin-top: 9px;
+
+.list-logo {
+  margin-top: 9px;
 }
-.bar-mobile{
+
+.bar-mobile {
   display: none;
 }
 
@@ -151,27 +186,26 @@ code {
   height: -webkit-fill-available;
 }
 
-.sidebar-detail.offcanvas.offcanvas-top {
-  min-height: 100vh;
+.English {
+  position: absolute;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.4);
+  z-index: 9999
 }
 
-.English{
- position: absolute;
- padding: 10px 20px;
- background-color: white;
- color: black;
- box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.4);
- z-index : 9999
-}
-.navbar-link{
+.navbar-link {
   color: white;
   text-decoration: none;
 }
-.navbar-link:hover{
+
+.navbar-link:hover {
   color: white;
   text-decoration: solid;
 }
-.item-nav-2 a:hover{
+
+.item-nav-2 a:hover {
   color: white;
   text-decoration: solid;
   position: relative;
@@ -181,190 +215,244 @@ code {
   background-color: #47A7FF;
   color: white;
   cursor: pointer;
-  
+
 }
+
 .navbar {
   padding: 0;
 }
 
-@media only screen and (max-width: 1023px){
-  .mb-top-nav-list{
-    width: 100%;
-  }
-  .navbar {
-    display: flex;
-    justify-content: center !important;
-  }
-  .mb-top-nav{
-    display: flex;
-    margin: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .top-nav-right{
-    display: none;
-  }
-  
-  .bar-menu{
-    display: none;
-  }
-  .bar-mobile{
-    display: block;
-  }
-  .bar-home-list{
-    display: none;
-  }
-  .gmail{
-    display: none;
-  }
+.mobile-link {
+  text-decoration: none;
+  color: black;
 }
-.groupware{
+.mobile-link:hover {
+  color: black;
+}
+
+.groupware {
   position: absolute;
   text-align: left;
   left: 60%;
   background-color: white;
   box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
 }
+
 .groupware div {
-  padding:6px 15px;
+  padding: 6px 15px;
   border-bottom: 1px solid #C0C0C0;
 }
+
 .groupware :hover {
   background-color: #47A7FF;
   color: white;
   cursor: pointer;
 }
 
-.vora{
+.vora {
   position: absolute;
   text-align: left;
   left: 69%;
   background-color: white;
   box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
 }
+
 .vora div {
-  padding:6px 15px;
+  padding: 6px 15px;
   border-bottom: 1px solid #C0C0C0;
 }
+
 .vora :hover {
   background-color: #47A7FF;
   color: white;
   cursor: pointer;
 
 }
-.item-nav-2 a:hover{
+
+.item-nav-2 a:hover {
 
   color: white;
   text-decoration: solid;
 
 }
-.product-list{
+
+.product-list {
   display: flex;
   text-align: left;
 }
-.css-customer-list{
+
+.css-customer-list {
   width: 100%;
 }
-.menu{
+
+.menu {
   width: 100%;
   position: absolute;
   background-color: white;
   border-top: 1px solid #C0C0C0;
   font-size: 14px;
 }
-.menu-list{
-  
+
+.menu-list {
+
   box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
 }
-.menu-list-item{
+
+.menu-list-item {
   padding-left: 15px;
   padding-right: 15px;
   width: 50%;
 }
-.boder-left{
+
+.boder-left {
   border-right: 1px solid #C0C0C0;
 }
-.menu-list-item h6{
+
+.menu-list-item h6 {
   font-weight: 900;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.btn-moble-list{
+
+.btn-moble-list {
   display: none;
-  
+
 }
-.btn-moble-2{
+
+.btn-moble-2 {
   float: right;
   padding: 15px;
   font-size: 30px;
 }
-.btn-moble{
-  
+
+.btn-moble {
+
   display: flex;
   float: right;
   padding: 15px;
   font-size: 30px;
 }
-.mobile-list{
+
+.mobile-list {
   margin-top: 10px;
   text-align: left;
   display: none;
 }
-.mobile-list div{
+
+.mobile-list div {
   font-size: 25px;
   padding: 5px;
-  /* border-left: 1px solid #C0C0C0;
-  border-bottom: 1px solid #C0C0C0; */
   border-left: 1px solid #C0C0C0;
   border-top: 1px solid #C0C0C0;
   border-right: 1px solid #C0C0C0;
 
 
 }
-.mobile-list-item{
+
+.mobile-list-item {
   display: flex;
   justify-content: space-between;
 }
-.img-logo{
+
+.img-logo {
   width: 60%;
+  margin-bottom: 20px;
 }
-.img-org{
+
+.img-org {
   width: 90%;
-  float: right;
+  float: left;
 }
-.slotho-list{
+
+.slotho-list {
   display: flex;
   margin: auto;
 }
-.menu-mobile{
+
+.menu-mobile {
   display: none;
 }
-@media only screen and (max-width: 1023px){
-  .btn-moble-list{
+
+.slotho-list-list {
+  float: right;
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1200px){
+  .bar-home-list.row {
+    flex-direction: column;
+  }
+  .bar-menu{
+    justify-content: unset;
+  }
+
+}
+
+@media only screen and (max-width: 1023px) {
+  .bar-home-list.row {
+    flex-direction: column;
+  }
+  .btn-moble-list {
     display: block;
   }
-  .mobile-list{
+
+  .mobile-list {
     display: block;
   }
-  .Container-bar-left{
+
+  .Container-bar-left {
     text-align: left;
     color: white;
     font-size: 45%;
     font-weight: 900;
     width: 50%;
     margin: auto;
-  }
-  .img-org{
-    width: 100%;
-    width: 100%;
     float: right;
   }
-  .menu-mobile{
+
+  .img-org {
+    width: 100%;
+    width: 100%;
+    text-align: left;
+  }
+
+  .menu-mobile {
     display: flex;
     margin: auto;
     justify-content: space-between;
   }
+  .mb-top-nav-list {
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .mb-top-nav {
+    display: flex;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .top-nav-right {
+    display: none;
+  }
+
+  .bar-menu {
+    display: none;
+  }
+
+  .bar-mobile {
+    display: block;
+  }
+
+  .bar-home-list {
+    display: none;
+  }
+
+  .gmail {
+    display: none;
+  }
 }
-
-
-
