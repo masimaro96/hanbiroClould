@@ -23,6 +23,7 @@ import Computeloadbalance  from "../../detailspage/Page/compute-load-balance";
 import MSA1 from "../../microservice/container/msa-1";
 import MSA2 from "../../microservice/container/msa-2";
 
+
 const RouteQaCloud = () => (
   <Switch>
     <Route exact path="/" component={App} />
@@ -56,6 +57,7 @@ const RouteQaCloud = () => (
     <Route path="/msa" component={MSA1} />
     <Route path="/msa1" component={MSA1} />
     <Route path="/msa2" component={MSA2} />
+
   </Switch>
 );
 
