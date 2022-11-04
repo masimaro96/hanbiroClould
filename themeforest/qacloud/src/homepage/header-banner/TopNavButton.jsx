@@ -95,6 +95,7 @@ function MenuLink($data, link) {
   );
 }
 
+
 function OffCanvasExample({ name, ...props }) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -195,16 +196,21 @@ function NavButton() {
 
             <Col>
               <div className="bar-menu">
-                <div className="bar-item btn-home">
+                <div className="bar-item btn-home"
+                  onClick={() => {
+                    window.open("https://en.hanbiro.com/", "_self");
+                  }}
+                >
                   {titleMenu("HOME", "Welcome")}
                 </div>
                 <div className="bar-item ">
                   {titleMenu("클라우드", "Cloud")}
                 </div>
-                <div className="bar-item ">
-                  {titleMenu("마이크로서비스 개발", "Microservice")}
-                </div>
-
+                <Link to="/msa" className="mobile-link">
+                    <div className="bar-item ">
+                    {titleMenu("마이크로서비스 개발", "Microservice")}
+                    </div>
+                </Link>
                 <OutsideClickHandler
                   onOutsideClick={() => {
                     setIsShownGw(false);
