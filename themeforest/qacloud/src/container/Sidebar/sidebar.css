@@ -51,9 +51,9 @@
     color: #237ff0;
 }
 
-/* .sidebar-detail, .fade {
+.sidebar-detail, .fade {
     display: none;
-} */
+}
 
 @media only screen and (max-width: 1023px){
     .sidebardesk{
@@ -72,6 +72,17 @@
     .accordion-body ul li:hover {
         background-color: #F2F2F2;
         border-radius: 10px;
+    }
+    
+    .accordion-body ul .tab.active {
+        display: block;
+        padding: 5px 15px;
+        border-radius: 10px;
+        background-color: #F2F2F2;
+    }
+    
+    .accordion-body ul .tab.active a {
+        color: #237ff0;
     }
 
     .accordion-body ul {
