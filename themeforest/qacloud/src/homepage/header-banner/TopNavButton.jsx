@@ -10,6 +10,7 @@ import { AiFillCaretDown, AiOutlineRight, AiOutlineMenu } from 'react-icons/ai';
 import { CiCircleMore } from 'react-icons/ci';
 import Sidebar from '../../container/Sidebar/Sidebar';
 import Sidebarmobile from '../../container/Sidebar/Sidebarmobile';
+import { Link } from 'react-router-dom';
 
 class OutsideClickHandler extends React.Component {
     wrapperRef = createRef();
@@ -38,7 +39,6 @@ class OutsideClickHandler extends React.Component {
 
     render() {
         const { children } = this.props;
-
         return <div ref={this.wrapperRef}>{children}</div>;
     }
 };
@@ -53,8 +53,6 @@ function titleMenu($Kor, $Eng) {
 }
 function titlePop(link, data) {
     return (
-
-        // <div onClick={handleClick}> <a href="#" onClick={handleClick}> <AiOutlineRight className="icon-right"/>{data}</a></div>
         <div onClick={() => {
             window.open(link, "_blank")
         }}><AiOutlineRight className="icon-right" />{data}
@@ -62,13 +60,29 @@ function titlePop(link, data) {
 
     )
 }
-function MenuName($data) {
+function MenuName($data,link) {
     return (
         <>
-            <div className="mobile-list-item">
+            <div className="mobile-list-item"
+            onClick={() => {
+                window.open(link, "_self")
+            }}
+            >
                 <text className='menu-name'> {$data} </text>
                 <text><AiOutlineRight className="icon-right" /></text>
             </div>
+        </>
+    )
+}
+function MenuLink($data,link) {
+    return (
+        <> 
+            <Link to={link} className="mobile-link">
+                <div className="mobile-list-item">
+                    <text className='menu-name'> {$data} </text>
+                    <text><AiOutlineRight className="icon-right" /></text>
+                </div>
+            </Link>
         </>
     )
 }
@@ -153,14 +167,14 @@ function NavButton() {
             <div>
                 <Container className='bar-home'>
                     <Row className="bar-home-list">
-                        <Col md={3} sm={12}>
+                        <Col   lg={3} md={12} sm={12}>
                             <div className="list-logo">
                                 <div className="bar-logo ">
                                     <img src={"https://www.hanbiro.com/cloud/images/logo.png"} style={{ width: 200, height: 50 }}></img>
                                 </div>
                             </div>
                         </Col>
-                        <Col md={9} sm={12} >
+                        <Col   lg={9} md={12} sm={12}>
                             <div className="bar-menu">
 
                                 <div className="bar-item btn-home">
@@ -200,11 +214,10 @@ function NavButton() {
                                 >
                                     <div className="bar-item"
                                         onMouseEnter={() => {
-                                            setIsShownVora(true);
-                                            setIsShownGw(false);
+                                            setIsShownVora(true)
+                                            setIsShownGw(false)
                                             setIsShown(false)
                                             setIsShownHos(false)
-
                                         }
                                         }
                                     >
@@ -239,10 +252,10 @@ function NavButton() {
                                 >
                                     <div className="bar-item bar-item-end "
                                         onMouseEnter={() => {
-                                            setIsShown(true);
-                                            setIsShownHos(false);
-                                            setIsShownVora(false);
-                                            setIsShownGw(false);
+                                            setIsShown(true)
+                                            setIsShownHos(false)
+                                            setIsShownVora(false)
+                                            setIsShownGw(false)
                                         }
                                         }
                                     >
@@ -447,19 +460,19 @@ function NavButton() {
                         <Col md={12} sm={12}>
                             <Collapse in={openmobile} >
                                 <div id="hanbiro-customer" className="mobile-list">
-                                    {MenuName("HOME")}
+                                    {MenuName("HOME","https://en.hanbiro.com/")}
 
-                                    {MenuName("클라우드")}
+                                    {MenuLink("클라우드","/compute-vps")}
 
-                                    {MenuName("마이크로서비스 개발")}
+                                    {MenuLink("마이크로서비스 개발","/compute-vps")}
 
-                                    {MenuName("그룹웨어")}
+                                    {MenuLink("그룹웨어","/compute-vps")}
 
-                                    {MenuName("Vora Works")}
+                                    {MenuLink("Vora Works","/compute-vps")}
 
-                                    {MenuName("호스팅")}
+                                    {MenuLink("호스팅","/compute-vps")}
 
-                                    {MenuName("한비로/고객 센터")}
+                                    {MenuLink("한비로/고객 센터","/compute-vps")}
 
                                 </div>
                             </Collapse>
