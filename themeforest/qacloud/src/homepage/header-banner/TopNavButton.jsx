@@ -177,17 +177,24 @@ function NavButton() {
                         <Col   lg={9} md={12} sm={12}>
                             <div className="bar-menu">
 
-                                <div className="bar-item btn-home">
+                                <div className="bar-item btn-home"
+                                onClick={() => {
+                                    window.open("https://en.hanbiro.com/", "_self")
+                                }}
+                                >
                                     {titleMenu("HOME", "Welcome")}
                                 </div>
+                                
                                 <div className="bar-item ">
                                     {titleMenu("클라우드", "Cloud")}
                                 </div>
-                                <div className="bar-item "
-                                >
-                                    {titleMenu("마이크로서비스 개발", "Microservice")}
-                                </div>
-
+                                
+                                <Link to="/msa-1" className="mobile-link">
+                                    <div className="bar-item "
+                                    >
+                                        {titleMenu("마이크로서비스 개발", "Microservice")}
+                                    </div>
+                                </Link>
 
                                 <OutsideClickHandler
                                     onOutsideClick={() => {

@@ -74,6 +74,7 @@ code {
 .bar-item {
   padding: 10px 20px;
   border-left: 1px solid #C0C0C0;
+  cursor: pointer;
 }
 
 .bar-item-end {
@@ -225,10 +226,9 @@ code {
   text-decoration: none;
   color: black;
 }
-
-/* .bar-home-list.row {
-  flex-direction: column;
-}  */
+.mobile-link:hover {
+  color: black;
+}
 
 .groupware {
   position: absolute;
