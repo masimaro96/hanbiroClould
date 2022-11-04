@@ -1,0 +1,23 @@
+.gray{
+    color: gray;
+    line-height: 2.0;
+}
+
+._2gray{
+    line-height: 2.0;
+}
+
+.title{
+    text-align: left;
+}
+
+img.cloud_image {
+    width: 330px;
+    height: 500px;
+}
+
+
+
+
+
+

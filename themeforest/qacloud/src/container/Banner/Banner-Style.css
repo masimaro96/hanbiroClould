@@ -1,0 +1,37 @@
+.banner{
+    background-image: url("https://hanbiro.com/cloud/images/cluster-banner.png");
+    display: flex;
+    height: 175px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailpage-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 0.6px;
+    text-shadow: #3d3e42 1px 1px 10px;
+}
+
+.detailpage-description{
+    font-weight: 500;
+    font-size: 30px;
+    text-shadow: #3d3e42 1px 1px 10px;
+}
+
+@media only screen and (max-width: 320px){
+    .detailpage-title{
+        font-weight: 800;
+        font-size: 20px;
+    }
+    
+    .detailpage-description{
+        font-weight: 500;
+        font-size: 15px;
+        text-shadow: #3d3e42 1px 1px 10px;
+    }
+  }
