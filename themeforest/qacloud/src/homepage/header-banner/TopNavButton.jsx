@@ -192,9 +192,7 @@ function NavButton() {
                 </div>
               </div>
             </Col>
-          </Row>
 
-          <Row className="mt-3">
             <Col>
               <div className="bar-menu">
                 <div className="bar-item btn-home">
