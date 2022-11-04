@@ -185,7 +185,11 @@ function NavButton() {
                     <Row className="bar-home-list">
                         <Col lg={3} md={12} sm={12}>
                             <div className="list-logo">
-                                <div className="bar-logo ">
+                                <div className="bar-logo "
+                                    onClick={() => {
+                                        window.open("https://en.hanbiro.com/", "_blank");
+                                    }}
+                                >
                                     <img
                                         src={"https://www.hanbiro.com/cloud/images/logo.png"}
                                         style={{ width: 200, height: 50 }}
@@ -210,7 +214,7 @@ function NavButton() {
 
                                     </div>
                                 </Link>
-                                <Link to="/msa" className="mobile-link">
+                                <Link to="/msa1" className="mobile-link">
                                     <div className="bar-item ">
                                         {titleMenu("마이크로서비스 개발", "Microservice")}
                                     </div>
@@ -727,15 +731,15 @@ function NavButton() {
 
                                     {MenuLink("클라우드", "/qacloud")}
 
-                                    {MenuLink("마이크로서비스 개발", "/msa")}
+                                    {MenuLink("마이크로서비스 개발", "/msa1")}
 
-                                    {MenuLink("그룹웨어", "/msa")}
+                                    {MenuLink("그룹웨어", "/msa1")}
 
-                                    {MenuLink("Vora Works", "/msa")}
+                                    {MenuLink("Vora Works", "/msa1")}
 
-                                    {MenuLink("호스팅", "/msa")}
+                                    {MenuLink("호스팅", "/msa1")}
 
-                                    {MenuLink("한비로/고객 센터","/msa")}
+                                    {MenuLink("한비로/고객 센터","/msa1")}
                                 </div>
                             </Collapse>
                         </Col>

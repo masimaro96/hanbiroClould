@@ -171,6 +171,7 @@ code {
 .bar-logo {
   display: flex;
   margin: auto;
+  cursor: pointer;
 }
 
 .list-logo {
