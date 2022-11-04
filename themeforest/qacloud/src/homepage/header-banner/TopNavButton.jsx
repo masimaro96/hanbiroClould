@@ -198,8 +198,9 @@ function NavButton() {
                             <div className="bar-menu">
                                 <div className="bar-item btn-home"
                                     onClick={() => {
-                                        window.open("https://en.hanbiro.com/", "_self");
+                                        window.open("https://en.hanbiro.com/", "_blank");
                                     }}
+                                    
                                 >
                                     {titleMenu("HOME", "Welcome")}
                                 </div>
@@ -724,17 +725,17 @@ function NavButton() {
                                 <div id="hanbiro-customer" className="mobile-list">
                                     {MenuName("HOME", "https://en.hanbiro.com/")}
 
-                                    {MenuLink("클라우드", "/compute-vps")}
+                                    {MenuLink("클라우드", "/qacloud")}
 
-                                    {MenuLink("마이크로서비스 개발", "/compute-vps")}
+                                    {MenuLink("마이크로서비스 개발", "/msa")}
 
-                                    {MenuLink("그룹웨어", "/compute-vps")}
+                                    {MenuLink("그룹웨어", "/msa")}
 
-                                    {MenuLink("Vora Works", "/compute-vps")}
+                                    {MenuLink("Vora Works", "/msa")}
 
-                                    {MenuLink("호스팅", "/compute-vps")}
+                                    {MenuLink("호스팅", "/msa")}
 
-                                    {MenuLink("한비로/고객 센터", "/compute-vps")}
+                                    {MenuLink("한비로/고객 센터","/msa")}
                                 </div>
                             </Collapse>
                         </Col>
