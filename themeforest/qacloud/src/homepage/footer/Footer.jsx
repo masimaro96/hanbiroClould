@@ -53,11 +53,11 @@ function Footer() {
                             <h4>Explore</h4>
                             <List>
                                 <li><a href='https://hanbiro.com/cloud/'><ChevronRightIcon /> 클라우드</a></li>
-                                <li><a href='https://hanbiro.com/software/overview-video.html'><ChevronRightIcon /> 마이크로서비스 개발</a></li>
-                                <li><a href='https://hanbiro.com/software/vora-email-features.html'><ChevronRightIcon /> 그룹웨어</a></li>
-                                <li><a href='https://hanbiro.com/management/management-outline.html'><ChevronRightIcon /> Vora Works</a></li>
-                                <li><a href='https://hanbiro.com/hanbiro/about.html'><ChevronRightIcon /> 호스팅</a></li>
-                                <li><a href='https://hanbiro.com/customer/inquiry.html'><ChevronRightIcon /> 고객센터</a></li>
+                                <li><a href='https://hanbiro.com/software/overview-video.html'><ChevronRightIcon /> 그룹웨어</a></li>
+                                <li><a href='https://hanbiro.com/software/vora-email-features.html'><ChevronRightIcon /> Vora Works</a></li>
+                                <li><a href='https://hanbiro.com/management/management-outline.html'><ChevronRightIcon /> 호스팅</a></li>
+                                <li><a href='https://hanbiro.com/hanbiro/about.html'><ChevronRightIcon /> 한비로</a></li>
+                                <li><a href='https://hanbiro.com/customer/inquiry.html'><ChevronRightIcon /> 고객 센터</a></li>
                             </List>
                             </CardBody>
                         </Card>

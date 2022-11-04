@@ -20,8 +20,9 @@ import Computedatabase  from "../../detailspage/Page/compute-database";
 import Computevps  from "../../detailspage/Page/compute-vps";
 import Computems  from "../../detailspage/Page/compute-ms";
 import Computeloadbalance  from "../../detailspage/Page/compute-load-balance";
-import MSA2 from "../../microservice/container/msa-2";
 import MSA1 from "../../microservice/container/msa-1";
+import MSA2 from "../../microservice/container/msa-2";
+
 
 const RouteQaCloud = () => (
   <Switch>
@@ -53,8 +54,10 @@ const RouteQaCloud = () => (
     <Route path="/compute-database" component={Computedatabase} />    
     {/* ----------- */}
     {/* Microservice */}
+    <Route path="/msa" component={MSA1} />
     <Route path="/msa1" component={MSA1} />
     <Route path="/msa2" component={MSA2} />
+
   </Switch>
 );
 
