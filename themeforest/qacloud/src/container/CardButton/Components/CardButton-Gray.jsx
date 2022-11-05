@@ -2,7 +2,8 @@ import React from "react";
 import styled from 'styled-components';
 import '../../CardButton/Components/CardButtonLeft-RightStyle.css'
 import { Box } from '@mui/material'
-import { Button, ButtonToolbar } from '@/shared/components/Button';
+import { ButtonToolbar } from '@/shared/components/Button';
+import Button from '@mui/material/Button';
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon';
 import { Link } from 'react-router-dom';
 

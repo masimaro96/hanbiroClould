@@ -2,7 +2,8 @@ import React from "react";
 import styled from 'styled-components';
 import '../../CardButton/Components/CardButtonLeft-RightStyle.css'
 import { Box } from '@mui/material'
-import { Button, ButtonToolbar } from '@/shared/components/Button';
+import { ButtonToolbar } from '@/shared/components/Button';
+import Button from '@mui/material/Button';
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon';
 import { Link } from 'react-router-dom';
 
@@ -25,7 +26,7 @@ function CardButtonWhite($title1,$description1,$description2,$description3,$desc
                         <img src={$imagedata1}></img>
                     </div>
                 </div>
-                <ButtonToolbar>
+                <ButtonToolbar className='ButtonLeft-White'>
                     <Button className='Buttonstyle'><Link to={$link1}>{$link2}<ChevronRightIcon size={30} className='iconButton' /></Link></Button>
                 </ButtonToolbar>
             </Box>
