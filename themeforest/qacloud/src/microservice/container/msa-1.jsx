@@ -32,10 +32,10 @@ function MSA1() {
             {Banner("Hanbiro", "Microservice architecture")}
             <Container>
                 <Row>
-                    <Col md={3} xs={12}>
+                    <Col lg={3} md={12} xs={12}>
                         <MicroSidebar />
                     </Col>
-                    <Col md={9} xs={12}>
+                    <Col lg={9} md={12} xs={12}>
                         {Titlecloudcompute("마이크로서비스 개발의 필수 요소들")}
                         <BoxContent>
                             <BoxText>• 마이크로서비스란 소프트웨어를 구축하는 아키텍처이자 접근 방식</BoxText>
