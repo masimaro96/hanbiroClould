@@ -92,7 +92,7 @@ const CardTitle = styled(Card.Title)`
   padding-bottom:5%;
   line-height:1.5em;
   padding-right:4%;
-  height:22%;
+  height:25%;
 `;
 
 
