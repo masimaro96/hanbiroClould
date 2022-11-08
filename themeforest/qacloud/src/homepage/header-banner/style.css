@@ -12,7 +12,14 @@ code {
     monospace;
 }
 
-
+.table-scroll {
+	position:relative;
+	width: 100%;
+	margin:auto;
+	overflow:hidden;
+  
+	
+}
 
 .Box {
   width: 100%;
@@ -31,7 +38,7 @@ code {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  background-color: #47A7FF;
+  background-color: #47A7FF ;
 }
 
 .top-nav {
@@ -167,7 +174,13 @@ code {
   display: flex;
   justify-content: end;
 }
+.ex3{
+  
+  background-color: lightblue;
 
+  overflow-x: auto;
+  
+}
 .bar-logo {
   display: flex;
   margin: auto;
@@ -287,7 +300,7 @@ code {
 }
 
 .menu {
-  width: 100%;
+  width: 98%;
   position: absolute;
   background-color: white;
   border-top: 1px solid #C0C0C0;
@@ -378,7 +391,24 @@ code {
   float: right;
 }
 
+
+/* @media only screen and (max-width: 1023px){
+  .ex1 {
+    background-color: lightblue;
+    overflow-x: auto !important;
+    width: 100%;
+    font-size: 30px;
+
+
+    
+}
+} */
+
+
 @media only screen and (min-width: 1023px) and (max-width: 1200px){
+  .bar-item {
+    border-top: 1px solid #C0C0C0;
+  }
   .bar-home-list.row {
     flex-direction: column;
   }
@@ -389,6 +419,8 @@ code {
 }
 
 @media only screen and (max-width: 1023px) {
+ 
+
   .bar-home-list.row {
     flex-direction: column;
   }

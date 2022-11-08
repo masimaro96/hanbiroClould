@@ -5,12 +5,14 @@ import "./style.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { Container, Row, Col } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
-
 import { AiFillCaretDown, AiOutlineRight, AiOutlineMenu } from "react-icons/ai";
 import { CiCircleMore } from "react-icons/ci";
 import Sidebar from "../../container/Sidebar/Sidebar";
 import Sidebarmobile from "../../container/Sidebar/Sidebarmobile";
 import { Link } from "react-router-dom";
+import OverflowScrolling from 'react-overflow-scrolling';
+
+
 
 class OutsideClickHandler extends React.Component {
     wrapperRef = createRef();
@@ -136,7 +138,7 @@ function NavButton() {
             <div className="box">
                 <Container className="box-container">
                     <Row>
-                        <Col md={5} sm={12} className="mb-top-nav-list">
+                        <Col md={4} sm={12} className="mb-top-nav-list">
                             <div className="mb-top-nav">
                                 <div className="top-nav">
                                     <div>
@@ -146,7 +148,7 @@ function NavButton() {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={7}>
+                        <Col md={8}>
                             <div className="top-nav-right">
                                 <div className="item-nav"> 원격 지원 </div>
                                 <div className="item-nav"> 서버호스팅 고객</div>
@@ -183,7 +185,7 @@ function NavButton() {
             <div>
                 <Container className="bar-home">
                     <Row className="bar-home-list">
-                        <Col lg={3} md={12} sm={12}>
+                        <Col lg={2} md={12} sm={12}>
                             <div className="list-logo">
                                 <div className="bar-logo "
                                     onClick={() => {
@@ -204,7 +206,7 @@ function NavButton() {
                                     onClick={() => {
                                         window.open("https://en.hanbiro.com/", "_blank");
                                     }}
-                                    
+
                                 >
                                     {titleMenu("HOME", "Welcome")}
                                 </div>
@@ -739,7 +741,7 @@ function NavButton() {
 
                                     {MenuLink("호스팅", "/msa1")}
 
-                                    {MenuLink("한비로/고객 센터","/msa1")}
+                                    {MenuLink("한비로/고객 센터", "/msa1")}
                                 </div>
                             </Collapse>
                         </Col>

@@ -5,22 +5,22 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ProtitleNew = (params) => {
-    return(
+  return (
 
-        <div style={params.classNameWrapper}>
-          <div style={params.classNameItem}>
-            <text style={StySpecification.ColorText}>{params.Title} </text>
-          </div>
-          <div style={params.PadPro}>
-            <p><text>{params.Core}</text></p>
-            <p><text>{params.G}</text></p>
-            <p><text>{params.SD}</text></p>
-            <p><text>{params.SG}</text></p>
-            <p><text>{params.data5}</text></p>
-            <p><text>{params.data6}</text></p>
-          </div>
-        </div>
-    )
+    <div style={params.classNameWrapper}>
+      <div style={params.classNameItem}>
+        <text style={StySpecification.ColorText}>{params.Title} </text>
+      </div>
+      <div style={params.PadPro}>
+        <p><text>{params.Core}</text></p>
+        <p><text>{params.G}</text></p>
+        <p><text>{params.SD}</text></p>
+        <p><text>{params.SG}</text></p>
+        <p><text>{params.data5}</text></p>
+        <p><text>{params.data6}</text></p>
+      </div>
+    </div>
+  )
 }
 
 function ServerPricing() {
@@ -36,132 +36,140 @@ function ServerPricing() {
               </p>
             </div>
           </div>
-          <div style={StySpecification.ListProduct}>
+          <div style={StySpecification.TableScroll}>
+            <div style={StySpecification.TableWrap}>
+              <div style={StySpecification.ListProduct}>
 
-            {ProtitleNew({
-              classNameWrapper: StySpecification.InfPro,
-              classNameItem: StySpecification.ProTitleLeft,
-              PadPro : StySpecification.PadPro,
-              Title: "hi",
-              Core: "CPU",
-              G: "Memory",
-              SD:"Storage",
-              SG:"Traffic 전송량(월)",
-              data5:"컨테이너최소수량",
-              data6:"서비스비용(월)"
+                {ProtitleNew({
+                  classNameWrapper: StySpecification.InfPro,
+                  classNameItem: StySpecification.ProTitleLeft,
+                  PadPro: StySpecification.PadPro,
+                  Title: "hi",
+                  Core: "CPU",
+                  G: "Memory",
+                  SD: "Storage",
+                  SG: "Traffic 전송량(월)",
+                  data5: "컨테이너최소수량",
+                  data6: "서비스비용(월)"
 
-            })}
+                })}
 
-            {ProtitleNew({
-              classNameWrapper: StySpecification.InfProduct,
-              classNameItem: StySpecification.ProductTitle,
-              PadPro : StySpecification.PadPro,
-              Title: "스탠다드 상품",
-              Core: "1 Core",
-              G: "4G",
-              SD:"SSD 100G",
-              SG:"900G",
-              data5:"12 POD, 1 LB",
-              data6:"230,000"
+                {ProtitleNew({
+                  classNameWrapper: StySpecification.InfProduct,
+                  classNameItem: StySpecification.ProductTitle,
+                  PadPro: StySpecification.PadPro,
+                  Title: "스탠다드 상품",
+                  Core: "1 Core",
+                  G: "4G",
+                  SD: "SSD 100G",
+                  SG: "900G",
+                  data5: "12 POD, 1 LB",
+                  data6: "230,000"
 
-            })}
-           
-            {ProtitleNew({
-              classNameWrapper: StySpecification.InfProduct,
-              classNameItem: StySpecification.ProductTitle,
-              PadPro : StySpecification.PadPro,
-              Title: "비지니스",
-              Core: "2 Core",
-              G: "18G",
-              SD:"SSD 100G",
-              SG:"900G",
-              data5:"12 POD, 1 LB",
-              data6:"440,000"
-            
-            })}
-            {ProtitleNew({
-              classNameWrapper: StySpecification.InfProduct,
-              classNameItem: StySpecification.ProductTitle,
-              PadPro : StySpecification.PadPro,
-              Title: "엔터프라이즈형",
-              Core: "4 Core",
-              G: "16G",
-              SD:"SSD 100G",
-              SG:"900G",
-              data5:"12 POD, 1 LB",
-              data6:"920,000"
-            })} 
+                })}
+
+                {ProtitleNew({
+                  classNameWrapper: StySpecification.InfProduct,
+                  classNameItem: StySpecification.ProductTitle,
+                  PadPro: StySpecification.PadPro,
+                  Title: "비지니스",
+                  Core: "2 Core",
+                  G: "18G",
+                  SD: "SSD 100G",
+                  SG: "900G",
+                  data5: "12 POD, 1 LB",
+                  data6: "440,000"
+
+                })}
+                {ProtitleNew({
+                  classNameWrapper: StySpecification.InfProduct,
+                  classNameItem: StySpecification.ProductTitle,
+                  PadPro: StySpecification.PadPro,
+                  Title: "엔터프라이즈형",
+                  Core: "4 Core",
+                  G: "16G",
+                  SD: "SSD 100G",
+                  SG: "900G",
+                  data5: "12 POD, 1 LB",
+                  data6: "920,000"
+                })}
+              </div>
+            </div>
           </div>
           <div style={StySpecification.TextContent}>
-            
-            클러스터 구성단위 컨테이너의 하드웨어를 별도로 지정할 수 있습니다.<br/>
+
+            클러스터 구성단위 컨테이너의 하드웨어를 별도로 지정할 수 있습니다.<br />
 
             시스템 엔지니어와 상담을 통해서 다양한 방식으로 쿠베네티스 클러스터 시스템을 구축할 수 있습니다.
-         
-          
+
+
           </div>
           <div style={StySpecification.BoxCenter}>
             <text style={StySpecification.TextCenter}>가상서버(인스턴스) 기반 단독 MongoDB 데이터베이스 (최소 가상서버 2대로 구성)</text>
           </div>
+          <div style={StySpecification.TableScroll}>
+            <div style={StySpecification.TableWrap}>
           <div style={StySpecification.ListProduct}>
 
             {ProtitleNew({
               classNameWrapper: StySpecification.InfPro,
               classNameItem: StySpecification.ProTitleLeft,
-              PadPro : StySpecification.PadPro,
+              PadPro: StySpecification.PadPro,
               Title: "hi",
               Core: "CPU",
               G: "Memory",
-              SD:"Storage",
-              SG:"Traffic 전송량(월)",
-              data5:"가상서버최소수량",
-              data6:"서비스비용(월)"
+              SD: "Storage",
+              SG: "Traffic 전송량(월)",
+              data5: "가상서버최소수량",
+              data6: "서비스비용(월)"
 
             })}
 
             {ProtitleNew({
               classNameWrapper: StySpecification.InfProduct,
               classNameItem: StySpecification.ProductTitle,
-              PadPro : StySpecification.PadPro,
+              PadPro: StySpecification.PadPro,
               Title: "스탠다드 상품",
               Core: "2 Core",
               G: "8G",
-              SD:"SSD 100G",
-              SG:"900G", 
-              data5:"2 가상서버",
-              data6:"70,000"
+              SD: "SSD 100G",
+              SG: "900G",
+              data5: "2 가상서버",
+              data6: "70,000"
 
             })}
-           
+
             {ProtitleNew({
               classNameWrapper: StySpecification.InfProduct,
               classNameItem: StySpecification.ProductTitle,
-              PadPro : StySpecification.PadPro,
+              PadPro: StySpecification.PadPro,
               Title: "비지니스",
               Core: "4 Core",
               G: "16G",
-              SD:"SSD 200G",
-              SG:"900G",
-              data5:"2 가상서버",
-              data6:"140,000"
-            
+              SD: "SSD 200G",
+              SG: "900G",
+              data5: "2 가상서버",
+              data6: "140,000"
+
             })}
             {ProtitleNew({
               classNameWrapper: StySpecification.InfProduct,
               classNameItem: StySpecification.ProductTitle,
-              PadPro : StySpecification.PadPro,
+              PadPro: StySpecification.PadPro,
               Title: "엔터프라이즈형",
               Core: "8 Core",
               G: "32G",
-              SD:"SSD 400G",
-              SG:"9030G",
-              data5:"2 가상서버",
-              data6:"300,000"
-            })} 
+              SD: "SSD 400G",
+              SG: "9030G",
+              data5: "2 가상서버",
+              data6: "300,000"
+            })}
+          </div>
+          </div>
           </div>
         </div>
-        
-        
+
+
       </div>
     </Box>
 
@@ -170,7 +178,7 @@ function ServerPricing() {
 
 
 const StySpecification = {
-  StylesAll:{
+  StylesAll: {
     display: "flex",
   },
   StylesContainer: {
@@ -179,50 +187,50 @@ const StySpecification = {
     border: "1px solid #E7EAF3",
     borderRadius: "8px",
     padding: 20,
-    marginTop:30,
+    marginTop: 30,
   },
   StylesTitle: {
     textAlign: "center",
   },
-  TextCenter:{
-    padding:10,
+  TextCenter: {
+    padding: 10,
     fontWeight: 600,
-    margin:"auto"
+    margin: "auto"
   },
-  BoxCenter:{
-    background:"#F3F5F9",
+  BoxCenter: {
+    background: "#F3F5F9",
     width: "100%",
     display: "flex",
-    marginBottom:40,
+    marginBottom: 40,
     borderRadius: "10px",
-    padding:8,
-   
+    padding: 8,
+
   },
-  Title:{
+  Title: {
     fontWeight: "bold",
     borderRadius: "20px",
-    marginTop:"20px",
-    marginBottom:"30px"
+    marginTop: "20px",
+    marginBottom: "30px"
   },
-  Text:{
+  Text: {
     fontWeight: 600,
     fontSize: 20,
-    marginBottom:"30px"
+    marginBottom: "30px"
   },
-  ColorText:{
+  ColorText: {
     color: "white",
   },
-  TextContent :{
+  TextContent: {
     width: "75%",
     float: "right",
     textAlign: "left",
-    paddingLeft:15,
+    paddingLeft: 15,
     fontSize: 15,
     color: "gray",
-    marginTop:15,
-    marginBottom:30
+    marginTop: 15,
+    marginBottom: 30
   },
-  ProductTitle:{
+  ProductTitle: {
     background: "#393939",
     fontWeight: "bold",
     borderTopLeftRadius: "8px",
@@ -231,34 +239,49 @@ const StySpecification = {
     paddingBottom: 8,
 
   },
-  ProTitleLeft:{
+  ProTitleLeft: {
     fontWeight: 500,
     paddingTop: 8,
     paddingBottom: 8,
   },
-  InfProduct:{
+  InfProduct: {
     borderRadius: "8px",
     width: "25%",
-    marginLeft:20,
+    marginLeft: 20,
     border: "1px solid #D7E5ED",
+    whiteSpace: "nowrap",
+    minWidth: "170px",
   },
-  InfPro:{
+  InfPro: {
     borderRadius: "8px",
     width: "25%",
-    marginRight:10,
+    marginRight: 10,
     textAlign: "right",
     fontWeight: 700,
+    whiteSpace: "nowrap",
+    minWidth: "130px",
   },
 
-  ListProduct:{
+  ListProduct: {
     display: "flex",
     fontSize: "110%",
-    justifyContent: "center",
+    
   },
-  PadPro:{
+  PadPro: {
     paddingTop: 10,
+  },
+  TableScroll:{
+    position:"relative",
+    width: "100%",
+    margin:"auto",
+    overflow:"hidden", 
+    whiteSpace: "nowrap",
+  },
+  TableWrap:{
+    width:"100%",
+    overflow:"auto",
   }
- 
+
 }
 
 const Box = styled.div`

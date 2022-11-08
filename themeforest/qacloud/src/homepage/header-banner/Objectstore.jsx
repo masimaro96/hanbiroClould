@@ -15,34 +15,38 @@ function TrafficFee() {
               </p>
             </div>
           </div>
-          <div style={StySpecification.ListProduct}>
-            <table width="100%">
-              <tbody >
-                <tr style={StySpecification.Header}>
-                  <td  width="21%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}>구분</div></td>
-                  <td  width="21%" >서비스비용(일)</td>
-                  <td  width="21%" >서비스비용(월)</td>
-                  <td  width="37%" style={StySpecification.BorRight}>비고</td>
-                </tr>
-                <tr>
-                  <td  style={StySpecification.TextLeft}><div style={StySpecification.TextContent}>저장용량	</div> </td>
-                  <td style={StySpecification.BorAll}>15원 (1G)	</td>
-                  <td style={StySpecification.BorAll}>450원 (1G)	</td>
-                  <td style={StySpecification.BorAll}></td>
-                </tr>
-                <tr>
-                  <td  style={StySpecification.TextLeft}><div style={StySpecification.TextContent}>API 요청수 (전체)		</div> </td>
-                  <td style={StySpecification.BorAll} colSpan={2}>무료 (이벤트기간)		</td>
-                  <td style={StySpecification.BorAll}>모든 API EndPoint</td>
-                </tr>
-                <tr>
-                  <td  style={StySpecification.TextLeft}><div style={StySpecification.TextContent}>트래픽		</div> </td>
-                  <td style={StySpecification.BorAll}>30G 까지 무료	</td>
-                  <td style={StySpecification.BorAll}>900G 까지 무료 </td>
-                  <td style={StySpecification.BorAll}>기본제공초과시 구간트래픽요금적용</td>
-                </tr>
-              </tbody>
-            </table>
+          <div style={StySpecification.TableScroll}>
+            <div style={StySpecification.TableWrap}>
+              <div style={StySpecification.ListProduct}>
+                <table width="100%">
+                  <tbody >
+                    <tr style={StySpecification.Header}>
+                      <td width="21%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}>구분</div></td>
+                      <td width="21%" >서비스비용(일)</td>
+                      <td width="21%" >서비스비용(월)</td>
+                      <td width="37%" style={StySpecification.BorRight}>비고</td>
+                    </tr>
+                    <tr>
+                      <td style={StySpecification.TextLeft}><div style={StySpecification.TextContent}>저장용량	</div> </td>
+                      <td style={StySpecification.BorAll}>15원 (1G)	</td>
+                      <td style={StySpecification.BorAll}>450원 (1G)	</td>
+                      <td style={StySpecification.BorAll}></td>
+                    </tr>
+                    <tr>
+                      <td style={StySpecification.TextLeft}><div style={StySpecification.TextContent}>API 요청수 (전체)		</div> </td>
+                      <td style={StySpecification.BorAll} colSpan={2}>무료 (이벤트기간)		</td>
+                      <td style={StySpecification.BorAll}>모든 API EndPoint</td>
+                    </tr>
+                    <tr>
+                      <td style={StySpecification.TextLeft}><div style={StySpecification.TextContent}>트래픽		</div> </td>
+                      <td style={StySpecification.BorAll}>30G 까지 무료	</td>
+                      <td style={StySpecification.BorAll}>900G 까지 무료 </td>
+                      <td style={StySpecification.BorAll}>기본제공초과시 구간트래픽요금적용</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -58,49 +62,61 @@ const StySpecification = {
     border: "1px solid #E7EAF3",
     borderRadius: "8px",
     padding: 20,
-    marginTop:30
+    marginTop: 30
   },
-  ListProduct:{
+  ListProduct: {
     fontSize: "110%",
   },
- 
-  Title:{
+
+  Title: {
     fontWeight: "bold",
-    marginTop:"20px",
-    marginBottom:"30px"
+    marginTop: "20px",
+    marginBottom: "30px"
   },
-  Header:{
+  Header: {
     color: "white",
     background: "#393939",
   },
-  TextTitle:{
+  TextTitle: {
     paddingTop: 8,
     paddingBottom: 8,
   },
-  TextContent:{
+  TextContent: {
     paddingTop: 7,
     paddingBottom: 7,
   },
-  BorLeft:{
+  BorLeft: {
     borderTopLeftRadius: "8px",
-    borderRight:"2px solid #F4F4F4",
+    borderRight: "2px solid #F4F4F4",
   },
-  BorRight:{
+  BorRight: {
     borderTopRightRadius: "8px",
-    borderLeft:"2px solid #F4F4F4",
+    borderLeft: "2px solid #F4F4F4",
   },
-  BorAll:{
-    borderLeft:"2px solid #DDDDDD",
-    borderRight:"2px solid #DDDDDD",
-    borderBottom:"2px solid #DDDDDD",
+  BorAll: {
+    borderLeft: "2px solid #DDDDDD",
+    borderRight: "2px solid #DDDDDD",
+    borderBottom: "2px solid #DDDDDD",
   },
-  TextLeft:{
-    borderLeft:"2px solid #DDDDDD",
-    borderRight:"2px solid #DDDDDD",
-    borderBottom:"2px solid #DDDDDD",
+  TextLeft: {
+    borderLeft: "2px solid #DDDDDD",
+    borderRight: "2px solid #DDDDDD",
+    borderBottom: "2px solid #DDDDDD",
     fontWeight: 600,
     textAlign: "left",
-    paddingLeft:"10px"
+    paddingLeft: "10px"
+  },
+
+  TableScroll: {
+    position: "relative",
+    width: "100%",
+    margin: "auto",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
+  },
+  TableWrap: {
+    width: "100%",
+    overflow: "auto",
   }
 }
 const Box = styled.div`
