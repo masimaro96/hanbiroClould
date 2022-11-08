@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography'
 
 
 
-function Contentcloudcompute($data1,$data2,$data3,$data4,$data5,$data6,$data7,$data8,$data9,$data10,$data11,$data12,$data13,$data14) {
+function Contentcloudcompute($data1,$data2,$data3,$data4) {
   
   return (
     <>
@@ -23,16 +23,11 @@ function Contentcloudcompute($data1,$data2,$data3,$data4,$data5,$data6,$data7,$d
                 <GridCard>
                     <GridCardBody2>
                         <CardTitle>
-                            <div>{$data1}</div>
-                            <div>{$data2}</div>
+                            <div>{$data1}</div>                            
                         </CardTitle>  
                         
                         <CardText>
-                            <Typography>{$data5}</Typography>
-                            <Typography>{$data6}</Typography>
-                            <Typography>{$data7}</Typography>
-                            <Typography>{$data8}</Typography>
-                            <Typography>{$data9}</Typography>
+                            <Typography>{$data2}</Typography>                          
                         </CardText>
                     </GridCardBody2>  
                   </GridCard>
@@ -42,14 +37,9 @@ function Contentcloudcompute($data1,$data2,$data3,$data4,$data5,$data6,$data7,$d
                     <GridCardBody2>
                             <CardTitle>
                               <div>{$data3}</div>
-                              <div>{$data4}</div>
                             </CardTitle>  
                             <CardText>
-                              <Typography>{$data10}</Typography>
-                              <Typography>{$data11}</Typography>
-                              <Typography>{$data12}</Typography>
-                              <Typography>{$data13}</Typography>
-                              <Typography>{$data14}</Typography>
+                              <Typography>{$data4}</Typography>
                             </CardText>
                         </GridCardBody2>  
                   </GridCard>
@@ -102,7 +92,7 @@ const CardTitle = styled(Card.Title)`
   padding-bottom:5%;
   line-height:1.5em;
   padding-right:4%;
-  height:22%;
+  height:25%;
 `;
 
 
