@@ -10,7 +10,6 @@ import { CiCircleMore } from "react-icons/ci";
 import Sidebar from "../../container/Sidebar/Sidebar";
 import Sidebarmobile from "../../container/Sidebar/Sidebarmobile";
 import { Link } from "react-router-dom";
-import OverflowScrolling from 'react-overflow-scrolling';
 
 
 
