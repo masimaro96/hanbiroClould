@@ -6,7 +6,6 @@ import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import Banner from '../../container/Banner/Banner';
 import DetailContent from '../../container/Table/Components/detail-content';
-import LiveChat from '../../container/Table/Components/live-chat';
 import {
     Container, Row, Col
 } from 'react-bootstrap';
@@ -37,7 +36,6 @@ function Clustercloudredis(){
                         <Redis />
                         <TrafficFee />
                         <DetailContent />
-                        <LiveChat />
                     </Col>
                 </Row>
             </Container>
