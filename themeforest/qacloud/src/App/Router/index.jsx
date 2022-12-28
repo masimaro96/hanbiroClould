@@ -27,7 +27,7 @@ import MSA2 from "../../microservice/container/msa-2";
 const RouteQaCloud = () => (
   <Switch>
     <Route exact path="/" component={App} />
-    <Route exact path="/qacloud" component={App} />
+    <Route exact path="/cloud" component={App} />
     {/* Cloud */}
     <Route path="/cluster-cloud-elastic-search" component={Clustercloudelasticsearch} />
     <Route path="/cluster-kafka" component={Clusterkafka} />

@@ -18,7 +18,7 @@
 
 .ClusterBox1 {
   flex: 1;
-  margin-right: 0 !important;
+  
 }
 
 .StorageBox {
@@ -204,10 +204,10 @@
   }
   .StorageBox, .ServerBox, .ClusterBox1{
     width:350px;
-  }
-  .ClusterBox{
-    display: flex;
-  } */
+  }*/
+  .ClusterBox1{
+    margin-right: 0 !important;
+  } 
 }
 
 @media only screen and (max-width: 767px){
