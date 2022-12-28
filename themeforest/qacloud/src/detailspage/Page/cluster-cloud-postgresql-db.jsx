@@ -7,7 +7,6 @@ import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import Banner from '../../container/Banner/Banner';
 import DetailContent from '../../container/Table/Components/detail-content';
-import LiveChat from '../../container/Table/Components/live-chat';
 import {
     Container, Row, Col
 } from 'react-bootstrap';
@@ -40,7 +39,6 @@ function Clustercloudpostgresqldb(){
                         <MySql title={"PostgreSQL"} content={"PostgreSQL"} content1={"PostgreSQL"}/>
                         <TrafficFee />
                         <DetailContent />
-                        <LiveChat />
                     </Col>
                 </Row>
             </Container>

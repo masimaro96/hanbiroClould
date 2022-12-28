@@ -1,3 +1,34 @@
+.table-cloudservices {
+  display: flex;
+}
+
+.ServerBox {
+  flex: 1;
+}
+
+.ClusterTitle {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.ClusterBox {
+  display: flex;
+}
+
+.ClusterBox1 {
+  flex: 1;
+  margin-right: 0 !important;
+}
+
+.StorageBox {
+  flex: 1;
+}
+
+
+
+
+/* ------------------------------------------------- */
 .cloudservice {
   text-align: center;
   background-color: #F4F4F4;
@@ -102,7 +133,8 @@
   font-size: 14px;
   font-weight: 500;
   padding-left: 15px;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
+  min-height: 80px;
 }
 
 .row-box-intro{
@@ -135,8 +167,36 @@
   font-size: 13px;
 }
 /* Mobile & tablet :width <1024px*/
-@media only screen and (min-width: 1023px){
-  .table-cloudservices{
+@media only screen and (max-width: 1023px){
+  .table-cloudservices {
+    display: flex;
+  }
+  
+  .ServerBox {
+    flex: 1;
+  }
+  
+  .ClusterTitle {
+    flex: 1;
+  }
+  
+  .ClusterBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-service-title{
+    font-size: 15px;
+  }
+  .home-service-subtitle{
+    display: none;
+  }
+
+  .col-data-app, .row-box-intro{
+    min-height: 120px;
+  }
+  
+  /* .table-cloudservices{
     display: flex;
   }
   .ClusterTitle{
@@ -147,14 +207,43 @@
   }
   .ClusterBox{
     display: flex;
-  }
+  } */
 }
 
-/* @media only screen and (min-width: 767px){
-  .table-cloudservices{
+@media only screen and (max-width: 767px){
+  .table-cloudservices {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ServerBox, .ClusterTitle, .StorageBox {
+    margin-right: 0 !important;
+  }
+
+  .home-service-title{
+    font-size: 20px;
+  }
+  .home-service-subtitle{
+    display: none;
+  }
+  
+  
+  /* .table-cloudservices{
     display: flex;
   }
   .ClusterBox{
+    display: flex;
+  }
+  .ClusterTitle{
+    width:650px;
+  }
+  .StorageBox, .ServerBox, .ClusterBox1{
+    width:350px;
+  } */
+}
+
+/* @media only screen and (max-width: 320px){
+  .table-cloudservices{
     display: flex;
   }
   .ClusterTitle{
@@ -165,14 +254,5 @@
   }
 } */
 
-@media only screen and (max-width: 320px){
-  .table-cloudservices{
-    display: flex;
-  }
-  .ClusterTitle{
-    width:650px;
-  }
-  .StorageBox, .ServerBox, .ClusterBox1{
-    width:350px;
-  }
-}
+
+

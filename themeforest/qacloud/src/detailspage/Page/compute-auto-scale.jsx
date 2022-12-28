@@ -6,7 +6,6 @@ import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import Banner from '../../container/Banner/Banner';
 import DetailContent from '../../container/Table/Components/detail-content';
-import LiveChat from '../../container/Table/Components/live-chat';
 import {
     Container, Row, Col
 } from 'react-bootstrap';
@@ -38,7 +37,6 @@ function Computeautoscale(){
                         <ServerPricing title={"오토스케일링(증설된 가상서버) 요금안내"}/>
                         <TrafficFee />
                         <DetailContent />
-                        <LiveChat />
                     </Col>
                 </Row>
             </Container>
