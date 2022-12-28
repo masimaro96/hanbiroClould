@@ -83,16 +83,6 @@ function CloudFeatures(){
           </Col>
       </Row>
 
-      <div >
-      <div className='livechat'>
-        <img alt='' src='https://www.hanbiro.com/images/ico-livechat.png' style={{width:30,height:30}}></img>
-        <text className='content d-none d-lg-inline'>1:1 상담</text>
-      </div>
-      <div className='livechat_2'>
-        <img alt='' src='https://www.hanbiro.com/images/ico-demo.png' style={{width:30,height:30}}></img>
-        <text className='content d-none d-lg-inline'>데모 신청</text>
-      </div>
-    </div>
     
     </Container>
     

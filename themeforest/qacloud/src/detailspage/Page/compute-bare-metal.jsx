@@ -4,7 +4,6 @@ import TrafficFee from '../../homepage/header-banner/TrafficFee';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import DetailContent from '../../container/Table/Components/detail-content';
-import LiveChat from '../../container/Table/Components/live-chat';
 import Banner from '../../container/Banner/Banner';
 import {
     Container, Row, Col
@@ -36,7 +35,6 @@ function Computebaremetal(){
                         {BoxCard("Kubernetes 데이터베이스 또는 어플리케이션 클러스터와 연동지원","한비로 Cloud 플랫폼의 쿠버네티스 어플리케이션및 데이터베이스 서비스와 연동해서 클러스터 시스템을 구현할 수 있습니다.")}
                         <TrafficFee />
                         <DetailContent />
-                        <LiveChat />
                     </Col>
                 </Row>
             </Container>

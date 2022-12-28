@@ -11,7 +11,6 @@ import {
 import Sidebar from '../../container/Sidebar/Sidebar'
 import BoxCard from '../../container/Box/Components/Box'
 import DetailContent from '../../container/Table/Components/detail-content';
-import LiveChat from '../../container/Table/Components/live-chat';
 import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute"
 import Contentcloudcompute from "../../container/Card/Components/Contentcloudcompute"
 import Contentcloudcard from "../../container/Card/Components/Contentcloudcard"
@@ -37,7 +36,6 @@ function Storeobjectstore(){
                         <Objectstore />
                         <TrafficFee />
                         <DetailContent />
-                        <LiveChat />
                     </Col>
                 </Row>
             </Container>
