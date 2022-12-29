@@ -182,7 +182,116 @@ function NavButton() {
                 </Container>
             </div>
             <div>
-                
+                <Row className="bar-home-list">
+                    <Col lg={3} md={3} className="quynh">
+                        <div className="list-logo">
+                            <div className="bar-logo">
+                                <Link to="/cloud" className="mobile-link">
+                                    <img
+                                        src={"https://www.hanbiro.com/cloud/images/logo.png"}
+                                        style={{ width: 200, height: 50 }}
+                                    ></img>
+                                </Link>
+
+                            </div>
+
+                        </div>
+                    </Col>
+                    <Col lg={9} md={9} className="hoa">
+                        <div className="bar-menu">
+                            <div className="bar-item btn-home"
+                                onClick={() => {
+                                    window.open("https://en.hanbiro.com/", "_blank");
+                                }}
+
+                            >
+                                {titleMenu("HOME", "Welcome")}
+                            </div>
+                            <Link to="/cloud" className="mobile-link">
+                                <div className="bar-item ">
+                                    {titleMenu("클라우드", "Cloud")}
+
+                                </div>
+                            </Link>
+                            <Link to="/msa1" className="mobile-link">
+                                <div className="bar-item ">
+                                    {titleMenu("마이크로서비스 개발", "Microservice")}
+                                </div>
+                            </Link>
+                            <OutsideClickHandler
+                                onOutsideClick={() => {
+                                    setIsShownGw(false);
+                                }}
+                            >
+                                <div
+                                    className="bar-item"
+                                    onMouseEnter={() => {
+                                        setIsShownGw(true);
+                                        setIsShown(false);
+                                        setIsShownHos(false);
+                                        setIsShownVora(false);
+                                    }}
+                                >
+                                    {titleMenu("그룹웨어", "Groupware")}
+                                </div>
+                            </OutsideClickHandler>
+
+                            <OutsideClickHandler
+                                onOutsideClick={() => {
+                                    setIsShownVora(false);
+                                }}
+                            >
+                                <div
+                                    className="bar-item"
+                                    onMouseEnter={() => {
+                                        setIsShownVora(true);
+                                        setIsShownGw(false);
+                                        setIsShown(false);
+                                        setIsShownHos(false);
+                                    }}
+                                >
+                                    {titleMenu("Vora Works", "Vora Works")}
+                                </div>
+                            </OutsideClickHandler>
+
+                            <OutsideClickHandler
+                                onOutsideClick={() => {
+                                    setIsShownHos(false);
+                                }}
+                            >
+                                <div
+                                    className="bar-item"
+                                    onMouseEnter={() => {
+                                        setIsShownHos(true);
+                                        setIsShownVora(false);
+                                        setIsShownGw(false);
+                                        setIsShown(false);
+                                    }}
+                                >
+                                    {titleMenu("호스팅", "Hosting")}
+                                </div>
+                            </OutsideClickHandler>
+
+                            <OutsideClickHandler
+                                onOutsideClick={() => {
+                                    setIsShown(false);
+                                }}
+                            >
+                                <div
+                                    className="bar-item bar-item-end "
+                                    onMouseEnter={() => {
+                                        setIsShown(true);
+                                        setIsShownHos(false);
+                                        setIsShownVora(false);
+                                        setIsShownGw(false);
+                                    }}
+                                >
+                                    {titleMenu("한비로/고객 센터", "Hanbiro/Customers")}
+                                </div>
+                            </OutsideClickHandler>
+                        </div>
+                    </Col>
+                </Row>
                 <Container className="bar-home">
                     <Row className="bar-home-list">
                         <Col lg={3} md={12} sm={12}>
@@ -647,15 +756,15 @@ function NavButton() {
 
                                 {MenuLink("클라우드", "/cloud")}
 
-                                {MenuLink("마이크로서비스 개발", "")}
+                                {MenuLink("마이크로서비스 개발", "/msa1")}
 
-                                {MenuLink("그룹웨어", "")}
+                                {MenuLink("그룹웨어", "/msa1")}
 
-                                {MenuLink("Vora Works", "")}
+                                {MenuLink("Vora Works", "/msa1")}
 
-                                {MenuLink("호스팅", "")}
+                                {MenuLink("호스팅", "/msa1")}
 
-                                {MenuLink("한비로/고객 센터", "")}
+                                {MenuLink("한비로/고객 센터", "/msa1")}
                             </div>
                         </Collapse>
                     </div>

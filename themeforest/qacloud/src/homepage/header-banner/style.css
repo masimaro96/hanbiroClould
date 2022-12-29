@@ -65,6 +65,7 @@ code {
   background-color: #3275B2;
   padding: 2px;
   margin-right: 5px;
+  font-size: 14px !important;
 }
 
 .Container-bar {
@@ -105,7 +106,34 @@ code {
   font-size: 15px;
   padding-top: 10px;
 }
+.menu-list-product-item{
+  padding-bottom: 20px;
+}
+.menu-list-product-item div {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.menu-list-product-item div:hover {
+  background-color: #47A7FF;
+  color: white;
+  cursor: pointer;
 
+}
+.menu-list-product-item h6{
+  padding-top: 20px;
+  font-weight: 600;
+}
+.par-bar-menu{
+  padding-right: unset !important;
+  padding-left: unset !important;
+  width: 100%;
+}
+.quynh{
+  background-color: red;
+}
+.hoa{
+  background-color: aqua;
+}
 .menu-list-item div {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -172,7 +200,7 @@ code {
 
 .bar-menu {
   display: flex;
-  justify-content: end;
+  justify-content: space-between !important;
 }
 .ex3{
   
@@ -234,6 +262,7 @@ code {
 
 .navbar {
   padding: 0;
+  width: 100%;
 }
 
 .mobile-link {
@@ -251,7 +280,13 @@ code {
   background-color: white;
   box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
 }
-
+.menu-list-product{
+  text-align: left;
+  border-right: 1px solid #C0C0C0;
+}
+.menu-list-product-left{
+  text-align: left;
+}
 .groupware div {
   padding: 6px 15px;
   border-bottom: 1px solid #C0C0C0;
@@ -356,11 +391,13 @@ code {
 .mobile-list div {
   font-size: 25px;
   padding: 5px;
-  border-left: 1px solid #C0C0C0;
   border-top: 1px solid #C0C0C0;
-  border-right: 1px solid #C0C0C0;
+  
 
 
+}
+.mobi-product-list{
+  width: 100%;
 }
 
 .mobile-list-item {
@@ -390,36 +427,36 @@ code {
 .slotho-list-list {
   float: right;
 }
-
-
-/* @media only screen and (max-width: 1023px){
-  .ex1 {
-    background-color: lightblue;
-    overflow-x: auto !important;
-    width: 100%;
-    font-size: 30px;
-
-
-    
+.bar-home-list{
+  padding-left: unset !important ;
+  padding-right: unset !important ;
 }
-} */
+.bar-home-list-hos{
+  background-color: white;
+  border-top: 1px solid #C0C0C0;
+  font-size: 14px;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
+}
 
+@media only screen and (max-width: 2000px){
+  
+  .bar-home-list{
+    font-size: 14px !important;
+  }
+
+}
 
 @media only screen and (min-width: 1023px) and (max-width: 1200px){
-  .bar-item {
-    border-top: 1px solid #C0C0C0;
-  }
-  .bar-home-list.row {
-    flex-direction: column;
-  }
+  
   .bar-menu{
+    border-top: 1px solid #C0C0C0;
     justify-content: unset;
   }
-
 }
 
-@media only screen and (max-width: 1023px) {
- 
+@media only screen and (max-width: 1024px) {
 
   .bar-home-list.row {
     flex-direction: column;
@@ -460,6 +497,8 @@ code {
   .navbar {
     display: flex;
     justify-content: center !important;
+    padding-left: unset !important;
+    padding-right: unset !important;
   }
 
   .mb-top-nav {
