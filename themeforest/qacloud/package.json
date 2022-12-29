@@ -1,8 +1,8 @@
 {
-  "name": "qacloud",
+  "name": "cloud",
   "version": "4.0.0",
   "private": true,
-  "homepage": "/qacloud",
+  "homepage": "/cloud",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",

@@ -16,7 +16,10 @@ img.cloud_image {
     height: 500px;
 }
 
-
+.row {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 
 

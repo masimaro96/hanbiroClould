@@ -135,22 +135,22 @@ function CloudServices() {
                   {CloudServicesGridBorder ("cluster-cloud-rabbitmq","Cloud RabbitMQ","AMQP 메세지 브로커 미들웨어")}
                 </GridCard>
               </Col>
-              <Col>
+              <Col className='Card-Hidden'>
                 <GridCard>
                   {CloudServicesGridHidden ()}
                 </GridCard>
               </Col>
-              <Col>
+              <Col className='Card-Hidden'>
                 <GridCard>
                   {CloudServicesGridHidden ()}
                 </GridCard>
               </Col>
-              <Col>
+              <Col className='Card-Hidden'>
                 <GridCard>
                   {CloudServicesGridHidden ()}
                 </GridCard>
               </Col>
-              <Col>
+              <Col className='Card-Hidden'>
                 <GridCard>
                   {CloudServicesGridHidden ()}
                 </GridCard>

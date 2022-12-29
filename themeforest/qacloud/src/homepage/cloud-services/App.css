@@ -18,7 +18,7 @@
 
 .ClusterBox1 {
   flex: 1;
-  margin-right: 0 !important;
+  
 }
 
 .StorageBox {
@@ -133,6 +133,7 @@
   font-size: 14px;
   font-weight: 500;
   padding-left: 15px;
+  padding-right: 15px;
   /* padding-bottom: 40px; */
   min-height: 80px;
 }
@@ -166,6 +167,7 @@
   font-weight: bold;
   font-size: 13px;
 }
+
 /* Mobile & tablet :width <1024px*/
 @media only screen and (max-width: 1023px){
   .table-cloudservices {
@@ -193,21 +195,15 @@
   }
 
   .col-data-app, .row-box-intro{
-    min-height: 120px;
+    min-height: 125px;
   }
   
-  /* .table-cloudservices{
-    display: flex;
+  .ClusterBox1{
+    margin-right: 0 !important;
+  } 
+  .Card-Hidden{
+    display: none;
   }
-  .ClusterTitle{
-    width:650px;
-  }
-  .StorageBox, .ServerBox, .ClusterBox1{
-    width:350px;
-  }
-  .ClusterBox{
-    display: flex;
-  } */
 }
 
 @media only screen and (max-width: 767px){
@@ -226,33 +222,10 @@
   .home-service-subtitle{
     display: none;
   }
-  
-  
-  /* .table-cloudservices{
-    display: flex;
+  .Card-Hidden{
+    display: none;
   }
-  .ClusterBox{
-    display: flex;
-  }
-  .ClusterTitle{
-    width:650px;
-  }
-  .StorageBox, .ServerBox, .ClusterBox1{
-    width:350px;
-  } */
 }
-
-/* @media only screen and (max-width: 320px){
-  .table-cloudservices{
-    display: flex;
-  }
-  .ClusterTitle{
-    width:650px;
-  }
-  .StorageBox, .ServerBox, .ClusterBox1{
-    width:350px;
-  }
-} */
 
 
 

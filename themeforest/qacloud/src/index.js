@@ -10,7 +10,7 @@ import RouteQaCloud from './App/Router/index'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename='/qacloud'>
+    <Router basename='/cloud'>
       <RouteQaCloud />
     </Router>
     {/* <App /> */}
