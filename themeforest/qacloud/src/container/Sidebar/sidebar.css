@@ -63,8 +63,7 @@
     .sidebar-detail {
         height: auto !important;
         overflow-y: scroll;
-    }
-
+    }    
     .sidebar-detail, .fade {
         display: block;
     }
