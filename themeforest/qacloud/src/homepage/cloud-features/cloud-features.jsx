@@ -1,5 +1,4 @@
 import React from 'react';
-// import './App.css';
 import './style.css';
 import styled from 'styled-components';
 import {
@@ -8,7 +7,6 @@ import {
 import {
   Card, CardBody,
 } from '@/shared/components/Card';
-import { Button, ButtonToolbar } from '@/shared/components/Button';
 import { Grid } from '@mui/material';
 
 
