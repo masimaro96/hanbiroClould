@@ -15,7 +15,7 @@ function CloudFeatures(){
   return (
     <Container >
         <br/>
-        <Row>
+        <Row className='row_cloud'>
             <Col xl={4} as={Grid} display={{xs: "none", md: "none", lg: "block"}}>
                 <GridCard>
                     <GridCardBody>
@@ -49,7 +49,7 @@ function CloudFeatures(){
       </Row>
       <hr></hr>
       <br/>
-      <Row>
+        <Row className='row_cloud'>
           <Col xl={8} md={12}>
               <GridCard>
                   <GridCardBody>
