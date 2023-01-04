@@ -97,7 +97,7 @@
   color: white;
   font-size: 24px;
   font-weight: 500;
-  padding-left: 15px;
+  padding-left: 5px;
   margin: 5px;
 }
 .home-service-subtitle{
@@ -152,8 +152,7 @@
 }
 
 .col-data-app-hidden{
-  background: #F4F4F4;
-  border: none;
+  display: none;
 }
 
 .title-En{
@@ -224,6 +223,12 @@
   }
   .Card-Hidden{
     display: none;
+  }
+  .detailpage-description{
+    font-size: 25px;
+  }
+  .detailpage-description{
+    font-size: 35px;
   }
 }
 
