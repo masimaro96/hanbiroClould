@@ -19,7 +19,7 @@ function MSA2() {
             {Banner("Hanbiro", "Microservice architecture")}
             <Container>
                 <Row>
-                    <Col lg={3} md={12} xs={12} className="right-content">
+                    <Col lg={3} md={12} xs={12}>
                         <MicroSidebar />
                     </Col>
                     <Col lg={9} md={12} xs={12} className="right-content">
