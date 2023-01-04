@@ -64,6 +64,8 @@ function titlePop(link, data) {
         </div>
     );
 }
+
+
 function MenuName($data, link) {
     return (
         <>
@@ -120,8 +122,307 @@ function OffCanvasExample({ name, ...props }) {
     );
 }
 
+function Groupware($data) {
+    return (
+
+        <div className={$data}>
+            {titlePop(
+                "https://hanbiro.com/software/groupware-price.html",
+                " 가격표"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/groupware-free-trial.html?SM=SPCMAKO",
+                " 신청하기"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/overview-video.html",
+                " 한비로 그룹웨어에 대해"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/business-email-software.html",
+                " 구성 메뉴와 특징"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/big-data-email-features.html",
+                " 메일"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/hanbiro-hr-52-hour-work-week.html",
+                " HR"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/messenger-outline.html",
+                " 메신저"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/cloud-disk-outline.html",
+                " CloudDisk"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/about-crm.html",
+                " CRM"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/groupware-features.html",
+                " 모바일앱"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/manual-video-groupware.html",
+                " 동영상 도움말"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/backup.html",
+                " 외부 백업"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/hanbiro-groupware-screenshots.html",
+                " 스크린샷"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/service-type-guide.html",
+                " 서비스 안내"
+            )}
+            {titlePop(
+                "https://hanbiro.com/software/send-a-message.html",
+                " 문의하기"
+            )}
+        </div>
+
+    );
+}
+function VoRa($data) {
+    return (
+        <>
+            <div className={$data}>
+                {titlePop(
+                    "https://hanbiro.com/software/vora-email-features.html",
+                    "Vora Email"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/software/vora-hr-52-hour-work-week.html",
+                    "Vora HR"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/software/vora-project-new.html",
+                    "Vora Project"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/software/vora-call-summary.html",
+                    "Vora Call"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/software/vora-cloud-disk-outline.html",
+                    "Vora CloudDisk"
+                )}
+            </div>
+        </>
+    );
+}
+function HostingColumn1($data) {
+    return (
+        <>
+            <div className={$data}>
+                <h6>관리 운영 서버 호스팅이란?</h6>
+                {titlePop(
+                    "https://hanbiro.com/management/management-outline.html",
+                    "소개"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/management/management-necessity.html",
+                    "필요성"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/management/management-details.html",
+                    "관리 내역"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/management/management-difference.html",
+                    "서버 호스팅과의 차이점"
+                )}
+            </div>
+        </>
+    );
+}
+function HostingColumn2($data) {
+    return (
+        <>
+            <div className={$data}>
+                <h6>관리 운영 서버 서비스 종류와 가격</h6>
+                {titlePop(
+                    "https://hanbiro.com/management/product-list.html",
+                    "상품 구성"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/management/customer.html",
+                    "관리형 코로케이션"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/management/event-manage.html",
+                    "단기 임대 서버 호스팅"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/management/remote-manage.html",
+                    "원격 서버 관리 운영"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/management/price-comparison.html",
+                    "클라우드 서비스와의 가격 비교"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/application/index.html?Manage=mt1",
+                    "신청하기"
+                )}
+            </div>
+        </>
+    );
+}
+function HostingColumn3($data) {
+    return (
+        <>
+            <div className={$data}>
+                <h6> 서버 호스팅</h6>
+                {titlePop(
+                    "https://hanbiro.com/hosting/product-list.html",
+                    "상품 구성"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hosting/customer.html",
+                    "코로케이션"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hosting/event-manage.html",
+                    "단기 임대 서버 호스팅"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hosting/price-comparison.html",
+                    "클라우드 서비스와의 가격 비교"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hosting/serverhosting-support-outline.html",
+                    "유료 기술 지원"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/application/index.html?Manage=mt2",
+                    "신청하기"
+                )}
+            </div>
+        </>
+    );
+}
+
+function HostingColumn4($data) {
+    return (
+        <>
+            <div className={$data}>
+                <h6>웹 호스팅</h6>
+                {titlePop(
+                    "https://hanbiro.com/hosting/webhosting-linux.html",
+                    "리눅스"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hosting/webhosting-windows.html",
+                    "윈도우"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hosting/webhosting-drm.html",
+                    "DRM 스트리밍 호스팅"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hosting/webhosting-optional-service.html",
+                    "부가 서비스"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hosting/webhosting-support1.html",
+                    "유료 기술 지원"
+                )}
+                {titlePop(
+                    "https://mypage.hanbiro.com/",
+                    "신청하러 가기"
+                )}
+            </div>
+        </>
+    );
+}
+function CustomerColumn1($data) {
+    return (
+        <>
+            <div className={$data}>
+                <h6> 한비로</h6>
+                {titlePop(
+                    "https://hanbiro.com/hanbiro/about.html",
+                    "소개"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hanbiro/ceo.html",
+                    "CEO 인사말"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hanbiro/brand.html",
+                    "Brand"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hanbiro/history.html",
+                    "연혁"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hanbiro/organization.html",
+                    "한비로 사람들"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hanbiro/authentication.html",
+                    "회원증 및 인증서"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/hanbiro/contact-us.html",
+                    "오시는 길"
+                )}
+                {titlePop(
+                    "https://blog.naver.com/hanbiro1999",
+                    "블로그"
+                )}
+            </div>
+        </>
+    );
+}
+function CustomerColumn2($data) {
+    return (
+        <>
+            <div className={$data}>
+                <h6> 고객센터</h6>
+                {titlePop(
+                    "https://hanbiro.com/customer/inquiry.html",
+                    "고객 문의 및 서버 점검 의뢰"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/customer/bank.html",
+                    "결제 안내"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/customer/idc-visit.html",
+                    "IDC 방문 신청"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/customer/complain.html",
+                    "불편 사항 접수"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/customer/name-server.html",
+                    "네임 서버 정보"
+                )}
+                {titlePop(
+                    "https://hanbiro.com/customer/set-pop-livemail.html",
+                    "메일 POP / 모바일 POP 설정"
+                )}
+            </div>
+        </>
+    );
+}
 function NavButton() {
     const [openmobile, setOpenmobile] = useState(false);
+    const [openmobileGw, setOpenmobileGw] = useState(false);
+    const [openmobileVr, setOpenmobileVr] = useState(false);
+    const [openmobileHo, setOpenmobileHo] = useState(false);
+    const [openmobileCs, setOpenmobileCs] = useState(false);
     const [openEng, setOpenEng] = useState(false);
     const [isShown, setIsShown] = useState(false);
     const [isShownHos, setIsShownHos] = useState(false);
@@ -182,24 +483,25 @@ function NavButton() {
                 </Container>
             </div>
             <div>
+
                 <Container className="bar-home">
                     <Row className="bar-home-list">
-                        <Col lg={2} md={12} sm={12}>
+                        <Col lg={3} md={12} sm={12}>
                             <div className="list-logo">
-                                <div className="bar-logo "
-                                    onClick={() => {
-                                        window.open("https://en.hanbiro.com/", "_blank");
-                                    }}
-                                >
-                                    <img
-                                        src={"https://www.hanbiro.com/cloud/images/logo.png"}
-                                        style={{ width: 200, height: 50 }}
-                                    ></img>
+                                <div className="bar-logo">
+                                    <Link to="/cloud" className="mobile-link">
+                                        <img
+                                            src={"https://www.hanbiro.com/cloud/images/logo.png"}
+                                            style={{height: 50 }}
+                                        ></img>
+                                    </Link>
+
                                 </div>
+
                             </div>
                         </Col>
 
-                        <Col>
+                        <Col className="par-bar-menu">
                             <div className="bar-menu">
                                 <div className="bar-item btn-home"
                                     onClick={() => {
@@ -209,7 +511,7 @@ function NavButton() {
                                 >
                                     {titleMenu("HOME", "Welcome")}
                                 </div>
-                                <Link to="/qacloud" className="mobile-link">
+                                <Link to="/cloud" className="mobile-link">
                                     <div className="bar-item ">
                                         {titleMenu("클라우드", "Cloud")}
 
@@ -293,406 +595,93 @@ function NavButton() {
                                 </OutsideClickHandler>
                             </div>
                         </Col>
-                        <Col md={12} sm={12}>
-                            {isShownGw && (
-                                <div className="groupware">
-                                    {titlePop(
-                                        "https://hanbiro.com/software/groupware-price.html",
-                                        " 가격표"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/groupware-free-trial.html?SM=SPCMAKO",
-                                        " 신청하기"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/overview-video.html",
-                                        " 한비로 그룹웨어에 대해"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/business-email-software.html",
-                                        " 구성 메뉴와 특징"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/big-data-email-features.html",
-                                        " 메일"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/hanbiro-hr-52-hour-work-week.html",
-                                        " HR"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/messenger-outline.html",
-                                        " 메신저"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/cloud-disk-outline.html",
-                                        " CloudDisk"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/about-crm.html",
-                                        " CRM"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/groupware-features.html",
-                                        " 모바일앱"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/manual-video-groupware.html",
-                                        " 동영상 도움말"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/backup.html",
-                                        " 외부 백업"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/hanbiro-groupware-screenshots.html",
-                                        " 스크린샷"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/service-type-guide.html",
-                                        " 서비스 안내"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/send-a-message.html",
-                                        " 문의하기"
-                                    )}
-                                </div>
-                            )}
-                            {isShownVora && (
-                                <div className="vora">
-                                    {titlePop(
-                                        "https://hanbiro.com/software/vora-email-features.html",
-                                        "Vora Email"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/vora-hr-52-hour-work-week.html",
-                                        "Vora HR"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/vora-project-new.html",
-                                        "Vora Project"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/vora-call-summary.html",
-                                        "Vora Call"
-                                    )}
-                                    {titlePop(
-                                        "https://hanbiro.com/software/vora-cloud-disk-outline.html",
-                                        "Vora CloudDisk"
-                                    )}
-                                </div>
-                            )}
-
-                            {isShown && (
-                                <div className="menu">
-                                    <div className="menu-list ">
-                                        <div className="product-list">
-                                            <div className="menu-list-item boder-left">
-                                                <h6> 한비로</h6>
-                                                {titlePop(
-                                                    "https://hanbiro.com/hanbiro/about.html",
-                                                    "소개"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hanbiro/ceo.html",
-                                                    "CEO 인사말"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hanbiro/brand.html",
-                                                    "Brand"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hanbiro/history.html",
-                                                    "연혁"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hanbiro/organization.html",
-                                                    "한비로 사람들"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hanbiro/authentication.html",
-                                                    "회원증 및 인증서"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hanbiro/contact-us.html",
-                                                    "오시는 길"
-                                                )}
-                                                {titlePop(
-                                                    "https://blog.naver.com/hanbiro1999",
-                                                    "블로그"
-                                                )}
-                                            </div>
-                                            <div className="menu-list-item">
-                                                <h6> 고객센터</h6>
-                                                {titlePop(
-                                                    "https://hanbiro.com/customer/inquiry.html",
-                                                    "고객 문의 및 서버 점검 의뢰"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/customer/bank.html",
-                                                    "결제 안내"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/customer/idc-visit.html",
-                                                    "IDC 방문 신청"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/customer/complain.html",
-                                                    "불편 사항 접수"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/customer/name-server.html",
-                                                    "네임 서버 정보"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/customer/set-pop-livemail.html",
-                                                    "메일 POP / 모바일 POP 설정"
-                                                )}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
-                            {isShownHos && (
-                                <div className="menu">
-                                    <div className="menu-list">
-                                        <div className="product-list">
-                                            <div className="menu-list-item boder-left">
-                                                <h6>관리 운영 서버 호스팅이란?</h6>
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/management-outline.html",
-                                                    "소개"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/management-necessity.html",
-                                                    "필요성"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/management-details.html",
-                                                    "관리 내역"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/management-difference.html",
-                                                    "서버 호스팅과의 차이점"
-                                                )}
-                                            </div>
-                                            <div className="menu-list-item boder-left">
-                                                <h6>관리 운영 서버 서비스 종류와 가격</h6>
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/product-list.html",
-                                                    "상품 구성"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/customer.html",
-                                                    "관리형 코로케이션"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/event-manage.html",
-                                                    "단기 임대 서버 호스팅"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/remote-manage.html",
-                                                    "원격 서버 관리 운영"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/price-comparison.html",
-                                                    "클라우드 서비스와의 가격 비교"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/application/index.html?Manage=mt1",
-                                                    "신청하기"
-                                                )}
-                                            </div>
-                                            <div className="menu-list-item boder-left">
-                                                <h6> 서버 호스팅</h6>
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/product-list.html",
-                                                    "상품 구성"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/customer.html",
-                                                    "코로케이션"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/event-manage.html",
-                                                    "단기 임대 서버 호스팅"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/price-comparison.html",
-                                                    "클라우드 서비스와의 가격 비교"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/serverhosting-support-outline.html",
-                                                    "유료 기술 지원"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/application/index.html?Manage=mt2",
-                                                    "신청하기"
-                                                )}
-                                            </div>
-                                            <div className="menu-list-item boder-left">
-                                                <h6>웹 호스팅</h6>
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/webhosting-linux.html",
-                                                    "리눅스"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/webhosting-windows.html",
-                                                    "윈도우"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/webhosting-drm.html",
-                                                    "DRM 스트리밍 호스팅"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/webhosting-optional-service.html",
-                                                    "부가 서비스"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/webhosting-support1.html",
-                                                    "유료 기술 지원"
-                                                )}
-                                                {titlePop(
-                                                    "https://mypage.hanbiro.com/",
-                                                    "신청하러 가기"
-                                                )}
-                                            </div>
-                                            <div className="menu-list-item ">
-                                                <h6>베트남 호스팅</h6>
-                                                {titlePop(
-                                                    "https://hanbiro.com/overseas/vietnam-product-list.html",
-                                                    "상품 구성"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/overseas/vietnam-idc.html",
-                                                    "IDC 소개"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/overseas/vietnam-network.html",
-                                                    "네트워크 구성"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/application/index.html?Manage=mt4&Country=vt",
-                                                    "신청하기"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/overseas/vietnam-office.html",
-                                                    "베트남 사무실"
-                                                )}
-                                            </div>
-                                        </div>
-                                        <div className="product-list">
-                                            <div className="menu-list-item boder-left">
-                                                <h6>DDos</h6>
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/ddos-outline.html",
-                                                    "한비로 IPS 소개"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/ddos-defend.html",
-                                                    "방어 능력"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/ddos-attack-type.html",
-                                                    "공격 유형과 차단"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/hosting/ddos-admin.html",
-                                                    "고객 관리자 페이지"
-                                                )}
-                                            </div>
-                                            <div className="menu-list-item boder-left">
-                                                <h6>네트워크 구성도 및 트래픽</h6>
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/network-component.html",
-                                                    "네트워크 구성도"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/network-traffic.html",
-                                                    "네트워크와 트래픽"
-                                                )}
-                                            </div>
-                                            <div className="menu-list-item boder-left">
-                                                <h6>부가 서비스</h6>
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/ms.html",
-                                                    "MS-ASP 라이선스"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/backup.html",
-                                                    "서버 구축 및 운영"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/sys-monitor.html",
-                                                    "서버 관제 서비스"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/security.html",
-                                                    "보안 서비스"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/vpn.html",
-                                                    "네트워크"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/groupware.html",
-                                                    "소프트웨어"
-                                                )}
-                                                {titlePop("https://en.hanbiro.com/", "기타")}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/free-optional-services.html",
-                                                    "무료 부가 서비스"
-                                                )}
-                                            </div>
-                                            <div className="menu-list-item boder-left">
-                                                <h6>기술 인프라</h6>
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/clustering-type.html",
-                                                    "로드밸런싱 / 클러스터링"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/mysql-cluster.html",
-                                                    "DB 클러스터링"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/data-dual-processor.html",
-                                                    "데이터 이중화 서비스"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/iscsi-storage.html",
-                                                    "스토리지 시스템"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/drm.html",
-                                                    "Windows DRM"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/webcaching.html",
-                                                    "웹 캐싱 서비스"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/db-secure.html",
-                                                    "DB 암호화 시스템 구축"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/recovery.html",
-                                                    "DR(재해 복구) 시스템 구축"
-                                                )}
-                                                {titlePop(
-                                                    "https://hanbiro.com/management/recovery.html",
-                                                    "IPMI 서비스"
-                                                )}
-                                            </div>
-                                            <div className="menu-list-item ">
-                                                <div> &nbsp;</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
-                        </Col>
                     </Row>
 
+                    {isShownGw && (
+                        <Row className="bar-home-list-1">
+                            <Col md={6} sm={6}>
+                                {isShownGw && (
+                                    <div >
+                                        {Groupware("groupware")}
+                                    </div>
+                                )}
+
+                            </Col>
+                            <Col md={6} sm={6}>
+                            </Col>
+
+                        </Row>
+                    )}
+                    {isShownVora && (
+                        <Row className="bar-home-list-1">
+                            <Col md={6} sm={6}>
+                                {isShownVora && (
+                                    <div >
+                                        {Groupware("vora")}
+                                    </div>
+                                )}
+
+                            </Col>
+                            <Col md={6} sm={6}>
+                            </Col>
+
+                        </Row>
+                    )}
+                    {isShown && (
+                        <Row className="bar-home-list-hos">
+                            <Col md={6} sm={6} className="par-list-pro">
+                                <div className="menu-list-product">
+                                    <div >
+                                        {CustomerColumn1("menu-list-product-item")}
+                                    </div>
+
+                                </div>
+                            </Col>
+                            <Col md={6} sm={6} >
+                                <div className="menu-list-product-left">
+                                    <div >
+                                        {CustomerColumn2("menu-list-product-item")}
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+                    )}
+                    {isShownHos && (
+                        <Row className="bar-home-list-hos">
+                            <Col md={3} sm={3} className="par-list-pro">
+                                <div className="menu-list-product">
+                                    <div >
+                                        {HostingColumn1("menu-list-product-item")}
+                                    </div>
+
+                                </div>
+                            </Col>
+                            <Col md={3} sm={3} className="par-list-pro">
+                                <div className="menu-list-product">
+                                    <div >
+                                        {HostingColumn2("menu-list-product-item")}
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col md={3} sm={3} className="par-list-pro">
+                                <div className="menu-list-product">
+                                    <div >
+                                        {HostingColumn3("menu-list-product-item")}
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col md={3} sm={3} >
+                                <div className="menu-list-product-left">
+                                    <div >
+                                        {HostingColumn4("menu-list-product-item")}
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+                    )}
+
+                </Container>
+                <>
                     <Row className="navbar">
                         <Col md={10} sm={12}>
                             <div className="btn-moble-list">
@@ -707,10 +696,13 @@ function NavButton() {
                                         ))}
                                     </div>
                                     <div className="bar-logo ">
-                                        <img
-                                            src={"https://www.hanbiro.com/cloud/images/logo.png"}
-                                            style={{ width: 150, height: 50 }}
-                                        ></img>
+                                        <Link to="/cloud" className="mobile-link">
+                                            <img
+                                                src={"https://www.hanbiro.com/cloud/images/logo.png"}
+                                                style={{eight: 50 }}
+                                            ></img>
+                                        </Link>
+
                                     </div>
                                     <div
                                         className="btn-moble-2"
@@ -724,28 +716,121 @@ function NavButton() {
                             </div>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col md={12} sm={12}>
-                            <Collapse in={openmobile}>
-                                <div id="hanbiro-customer" className="mobile-list">
-                                    {MenuName("HOME", "https://en.hanbiro.com/")}
+                    <div className="mobi-product-list">
+                        <Collapse in={openmobile}>
+                            <div id="hanbiro-customer" className="mobile-list">
+                                {MenuName("HOME", "https://en.hanbiro.com/")}
 
-                                    {MenuLink("클라우드", "/qacloud")}
+                                {MenuLink("클라우드", "/cloud")}
 
-                                    {MenuLink("마이크로서비스 개발", "/msa1")}
+                                {MenuLink("마이크로서비스 개발", "/msa1")}
 
-                                    {MenuLink("그룹웨어", "/msa1")}
-
-                                    {MenuLink("Vora Works", "/msa1")}
-
-                                    {MenuLink("호스팅", "/msa1")}
-
-                                    {MenuLink("한비로/고객 센터", "/msa1")}
+                                <div
+                                    className="mobile-list-item"
+                                    onClick={() => setOpenmobileGw(!openmobileGw)}
+                                    aria-controls="hosting"
+                                    aria-expanded={openmobileGw}
+                                >
+                                    <text className="menu-name"> 그룹웨어 </text>
+                                    <text>
+                                        <AiOutlineRight className="icon-right" />
+                                    </text>
                                 </div>
-                            </Collapse>
-                        </Col>
-                    </Row>
-                </Container>
+                                <div >
+                                    <Collapse in={openmobileGw}>
+                                        <div >
+                                            {Groupware("list-groupware")}
+                                        </div>
+                                    </Collapse>
+                                </div>
+                                <div
+                                    className="mobile-list-item"
+                                    onClick={() => setOpenmobileVr(!openmobileVr)}
+                                    aria-controls="hosting"
+                                    aria-expanded={openmobileVr}
+                                >
+                                    <text className="menu-name"> Vora Works </text>
+                                    <text>
+                                        <AiOutlineRight className="icon-right" />
+                                    </text>
+                                </div>
+                                <div >
+                                    <Collapse in={openmobileVr}>
+                                        <div >
+                                            {VoRa("list-groupware")}
+                                        </div>
+                                    </Collapse>
+                                </div>
+                                <div
+                                    className="mobile-list-item"
+                                    onClick={() => setOpenmobileHo(!openmobileHo)}
+                                    aria-controls="hosting"
+                                    aria-expanded={openmobileHo}
+                                >
+                                    <text className="menu-name"> 호스팅 </text>
+                                    <text>
+                                        <AiOutlineRight className="icon-right" />
+                                    </text>
+                                </div>
+                                <div >
+                                    <Collapse in={openmobileHo}>
+                                        <div >
+                                            {HostingColumn1("list-groupware")}
+                                        </div>
+                                    </Collapse>
+                                </div>
+                                <div >
+                                    <Collapse in={openmobileHo}>
+                                        <div >
+                                            {HostingColumn2("list-groupware")}
+                                        </div>
+                                    </Collapse>
+                                </div>
+                                <div >
+                                    <Collapse in={openmobileHo}>
+                                        <div >
+                                            {HostingColumn3("list-groupware")}
+                                        </div>
+                                    </Collapse>
+                                </div>
+                                <div >
+                                    <Collapse in={openmobileHo}>
+                                        <div >
+                                            {HostingColumn4("list-groupware")}
+                                        </div>
+                                    </Collapse>
+                                </div>
+                                <div
+                                    className="mobile-list-item"
+                                    onClick={() => setOpenmobileCs(!openmobileCs)}
+                                    aria-controls="hosting"
+                                    aria-expanded={openmobileCs}
+                                >
+                                    <text className="menu-name"> 한비로/고객 센터 </text>
+                                    <text>
+                                        <AiOutlineRight className="icon-right" />
+                                    </text>
+                                </div>
+                                <div >
+                                    <Collapse in={openmobileCs}>
+                                        <div >
+                                            {CustomerColumn1("list-groupware")}
+                                        </div>
+                                    </Collapse>
+                                </div>
+                                <div >
+                                    <Collapse in={openmobileCs}>
+                                        <div >
+                                            {CustomerColumn2("list-groupware")}
+                                        </div>
+                                    </Collapse>
+                                </div>
+
+                            </div>
+                        </Collapse>
+                    </div>
+
+                </>
             </div>
         </>
     );

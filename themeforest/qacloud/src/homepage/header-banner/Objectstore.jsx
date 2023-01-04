@@ -28,8 +28,8 @@ function TrafficFee() {
                     </tr>
                     <tr>
                       <td style={StySpecification.TextLeft}><div style={StySpecification.TextContent}>저장용량	</div> </td>
-                      <td style={StySpecification.BorAll}>15원 (1G)	</td>
-                      <td style={StySpecification.BorAll}>450원 (1G)	</td>
+                      <td style={StySpecification.BorAll}>1.5원 (1G)	</td>
+                      <td style={StySpecification.BorAll}>45원 (1G)	</td>
                       <td style={StySpecification.BorAll}></td>
                     </tr>
                     <tr>
