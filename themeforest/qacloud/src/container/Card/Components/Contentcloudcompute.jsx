@@ -23,11 +23,11 @@ function Contentcloudcompute($data1,$data2,$data3,$data4) {
                 <GridCard>
                     <GridCardBody2>
                         <CardTitle>
-                            <div>{$data1}</div>                            
+                            <div className="sizetitle2">{$data1}</div>                            
                         </CardTitle>  
                         
                         <CardText>
-                            <Typography>{$data2}</Typography>                          
+                            <Typography className="sizetitle2">{$data2}</Typography>                          
                         </CardText>
                     </GridCardBody2>  
                   </GridCard>
@@ -36,10 +36,10 @@ function Contentcloudcompute($data1,$data2,$data3,$data4) {
                   <GridCard>
                     <GridCardBody2>
                             <CardTitle>
-                              <div>{$data3}</div>
+                              <div className="sizetitle2">{$data3}</div>
                             </CardTitle>  
                             <CardText>
-                              <Typography>{$data4}</Typography>
+                              <Typography className="sizetitle2">{$data4}</Typography>
                             </CardText>
                         </GridCardBody2>  
                   </GridCard>

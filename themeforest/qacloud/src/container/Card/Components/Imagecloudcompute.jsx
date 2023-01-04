@@ -22,7 +22,7 @@ function Imagecloudcompute($imagecloud) {
                 <Col sm={12} md={12}>
                     <GridCard>
                         <GridCardBody3>
-                            <CardImage src={$imagecloud}></CardImage>
+                            <CardImage className="sizeimage" src={$imagecloud}></CardImage>
                         </GridCardBody3>
                         
                     </GridCard>
