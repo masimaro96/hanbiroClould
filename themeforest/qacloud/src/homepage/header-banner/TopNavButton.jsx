@@ -514,7 +514,6 @@ function NavButton() {
                                 <Link to="/cloud" className="mobile-link">
                                     <div className="bar-item ">
                                         {titleMenu("클라우드", "Cloud")}
-
                                     </div>
                                 </Link>
                                 <Link to="/msa1" className="mobile-link">
