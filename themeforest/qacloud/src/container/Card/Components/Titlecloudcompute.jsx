@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import '../../Card/Components/Contenttitlecard.css'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -21,7 +22,7 @@ function Titlecloudcompute($title1) {
         <div className='App'>
             <Row>
                 <Col md={12} >
-                  <Box><Titlecloud2>{$title1}</Titlecloud2></Box>
+                  <Box ><Titlecloud2 className="sizetitle">{$title1}</Titlecloud2></Box>
                 </Col>
             </Row>
         </div>

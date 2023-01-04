@@ -104,7 +104,6 @@ code {
 
 .menu-name {
   font-size: 15px;
-  padding-top: 10px;
 }
 .menu-list-product-item{
   padding-bottom: 20px;
@@ -128,12 +127,7 @@ code {
   padding-left: unset !important;
   width: 100%;
 }
-.quynh{
-  background-color: red;
-}
-.hoa{
-  background-color: aqua;
-}
+
 .menu-list-item div {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -282,6 +276,9 @@ code {
 }
 .menu-list-product{
   text-align: left;
+  /* border-right: 1px solid #C0C0C0; */
+}
+.par-list-pro{
   border-right: 1px solid #C0C0C0;
 }
 .menu-list-product-left{
@@ -380,6 +377,7 @@ code {
   float: right;
   padding: 15px;
   font-size: 30px;
+  margin-left: 15px;
 }
 
 .mobile-list {
@@ -388,14 +386,11 @@ code {
   display: none;
 }
 
-.mobile-list div {
+/* .mobile-list div {
   font-size: 25px;
-  padding: 5px;
+  padding: 5px 15px;
   border-top: 1px solid #C0C0C0;
-  
-
-
-}
+} */
 .mobi-product-list{
   width: 100%;
 }
@@ -403,8 +398,19 @@ code {
 .mobile-list-item {
   display: flex;
   justify-content: space-between;
-}
+  border-top: 1px solid #C0C0C0;
+  padding: 10px 10px;
 
+}
+.list-groupware div {
+  padding: 6px 0px 6px 30px;
+  font-size: 14px !important;
+}
+.list-groupware h6 {
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 0px 0px 30px;
+}
 .img-logo {
   width: 60%;
   margin-bottom: 20px;
@@ -495,10 +501,12 @@ code {
   }
 
   .navbar {
+    
     display: flex;
     justify-content: center !important;
     padding-left: unset !important;
     padding-right: unset !important;
+   
   }
 
   .mb-top-nav {
