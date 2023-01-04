@@ -699,7 +699,7 @@ function NavButton() {
                                         <Link to="/cloud" className="mobile-link">
                                             <img
                                                 src={"https://www.hanbiro.com/cloud/images/logo.png"}
-                                                style={{eight: 50 }}
+                                                style={{height: 50 }}
                                             ></img>
                                         </Link>
 
