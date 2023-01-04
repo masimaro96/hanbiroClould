@@ -11,7 +11,7 @@ import BoxCard from '../../container/Box/Components/DefaultBox';
 import {
     Container, Row, Col
 } from 'react-bootstrap';
-import './sidebar.css';
+//import './sidebar.css';
 import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute";
 import Contentcloudcompute from "../../container/Card/Components/Contentcloudcompute";
 import Contentcloudcard from "../../container/Card/Components/Contentcloudcard";
@@ -23,6 +23,9 @@ import CardBox from '../components/CardBox';
 
 import TrafficTable from '../components/TableThreeColumns';
 
+import Sidebar from '../../container/Sidebar/Sidebar'
+import '../../container/Sidebar/sidebar.css'
+
 // Titlecloudcompute
 function MSA1() {
     return (
@@ -31,10 +34,10 @@ function MSA1() {
             {Banner("Hanbiro", "Microservice architecture")}
             <Container>
                 <Row>
-                    <Col lg={3} md={12} xs={12}>
-                        <MicroSidebar />
+                    <Col lg={3} md={12} xs={12} className="right-content">
+                        <Sidebar />
                     </Col>
-                    <Col lg={9} md={12} xs={12}>
+                    <Col lg={9} md={12} xs={12} className="right-content">
                         {Titlecloudcompute("마이크로서비스 개발의 필수 요소들")}
                         <BoxContent>
                             <BoxText>• 마이크로서비스란 소프트웨어를 구축하는 아키텍처이자 접근 방식</BoxText>
