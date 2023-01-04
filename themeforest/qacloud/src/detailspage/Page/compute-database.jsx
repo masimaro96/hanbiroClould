@@ -10,6 +10,7 @@ import {
     Container, Row, Col
 } from 'react-bootstrap';
 import Sidebar from '../../container/Sidebar/Sidebar'
+import '../../container/Sidebar/sidebar.css'
 import CardButtonWhite from '../../container/CardButton/Components/CardButton-White'
 import CardButtonGray from '../../container/CardButton/Components/CardButton-Gray'
 import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute"
@@ -27,7 +28,7 @@ function Computedatabase(){
                     <Col md={12} lg={3}>
                         <Sidebar />
                     </Col>
-                    <Col md={12} lg={9}>
+                    <Col md={12} lg={9} className="right-content">
                         {Titlecloudcompute("Database 인스턴스(가상서버)")}
                         {Contentcloudcard("고객별 서버자원의 독립성보장, 안정적인 서비스운영","모든 서비스 고용량 SSD 디스크 제공, 고용량의 메모리 할당")}
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/database.gif")}

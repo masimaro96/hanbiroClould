@@ -10,6 +10,7 @@ import {
     Container, Row, Col
 } from 'react-bootstrap';
 import Sidebar from '../../container/Sidebar/Sidebar'
+import '../../container/Sidebar/sidebar.css'
 import BoxCard from '../../container/Box/Components/Box'
 import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute"
 import Contentcloudcompute from "../../container/Card/Components/Contentcloudcompute"
@@ -28,7 +29,7 @@ function Computeautoscale(){
                     <Col md={12} lg={3}>
                         <Sidebar />
                     </Col>
-                    <Col md={12} lg={9}>
+                    <Col md={12} lg={9} className="right-content">
                         {Titlecloudcompute("오토스케일링")}
                         {Contentcloudcard("오토스케일링서비스 무료로 제공 / 증설된 가상서버(인스턴스)의 요금적용")}
                         {Contentcloudcompute("유동적인 서버확장과 축소, 클러스터 시스템구축", "가상서버(인스턴스)의 증가시 로드발랜서가 자동으로 확장된 서버의 부하분산을 구현합니다.","트래픽및 하드웨어사용량에 따라서 가상서버(인스턴스)를 자동으로 확대 축소","관리자 콘솔에서 트래픽의 증가와 감소, 서버의 CPU 및 메모리 사용량의 증가와 감소 임계치를 설정한후 임계치값의 초과시 가상서버를 증가시키며, 임계치값 미만시 가상서버를 감소시킵니다.")}

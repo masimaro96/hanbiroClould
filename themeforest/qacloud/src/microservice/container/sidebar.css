@@ -59,6 +59,10 @@
     .sidebardesk{
       display: none;
     }
+    
+    .right-content {
+        width: 100% !important;
+    }
 
     .sidebar-detail, .fade {
         display: block;

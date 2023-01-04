@@ -9,6 +9,7 @@ import {
     Container, Row, Col
 } from 'react-bootstrap';
 import Sidebar from '../../container/Sidebar/Sidebar'
+import '../../container/Sidebar/sidebar.css'
 import BoxCard from '../../container/Box/Components/Box'
 import DetailContent from '../../container/Table/Components/detail-content';
 import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute"
@@ -27,7 +28,7 @@ function Storeobjectstore(){
                     <Col md={12} lg={3}>
                         <Sidebar />
                     </Col>
-                    <Col md={12} lg={9}>
+                    <Col md={12} lg={9} className="right-content">
                         {Titlecloudcompute("오브젝트 Storage")}
                         {Contentcloudcard("프라이빗 오브젝트 Storage 구축 별도문의")}
                         {Contentcloudcompute("Amazone S3 호환되며, HTTPS, Restful API 를 지원", "Amazone S3 및 Swift 와 호환되며, Restful API를 지원합니다. 데이터를 오브젝트 단위로 저장하고, 고유식별자와 메타데이터를 부여 빠른검색을 구현합니다.","대용량의 데이터를 무제한으로 저장","파일크기와 상관없이 대용량의 데이터를 무제한으로 저장할 수 있습니다. 다수의 가상서버(인스턴스)에서 동시에 사용할 수 있으며, 운영체제의 제한이 없습니다.")}
