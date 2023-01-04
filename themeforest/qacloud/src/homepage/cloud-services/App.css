@@ -225,10 +225,10 @@
     display: none;
   }
   .detailpage-description{
-    font-size: 25px;
+    font-size: 25px !important;
   }
-  .detailpage-description{
-    font-size: 35px;
+  .detailpage-title{
+    font-size: 35px !important;
   }
 }
 
