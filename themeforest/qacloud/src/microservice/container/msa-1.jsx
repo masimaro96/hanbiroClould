@@ -23,9 +23,6 @@ import CardBox from '../components/CardBox';
 
 import TrafficTable from '../components/TableThreeColumns';
 
-import Sidebar from '../../container/Sidebar/Sidebar'
-import '../../container/Sidebar/sidebar.css'
-
 // Titlecloudcompute
 function MSA1() {
     return (
@@ -34,8 +31,8 @@ function MSA1() {
             {Banner("Hanbiro", "Microservice architecture")}
             <Container>
                 <Row>
-                    <Col lg={3} md={12} xs={12} className="right-content">
-                        <Sidebar />
+                    <Col lg={3} md={12} xs={12}>
+                        <MicroSidebar />
                     </Col>
                     <Col lg={9} md={12} xs={12} className="right-content">
                         {Titlecloudcompute("마이크로서비스 개발의 필수 요소들")}
