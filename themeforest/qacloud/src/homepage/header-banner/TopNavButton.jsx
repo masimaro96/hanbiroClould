@@ -47,7 +47,7 @@ class OutsideClickHandler extends React.Component {
 function titleMenu($Kor, $Eng) {
     return (
         <>
-            <span> {$Kor} </span> <br />
+            <span className="bar-item-Ko"> {$Kor} </span>
             <span className="bar-item-1">{$Eng}</span>
         </>
     );
@@ -486,18 +486,17 @@ function NavButton() {
 
                 <Container className="bar-home">
                     <Row className="bar-home-list">
-                        <Col lg={3} md={12} sm={12}>
+                        <Col lg={3} md={12} sm={12} className="bar-home-list-item">
                             <div className="list-logo">
                                 <div className="bar-logo">
                                     <Link to="/cloud" className="mobile-link">
                                         <img
                                             src={"https://www.hanbiro.com/cloud/images/logo.png"}
-                                            style={{height: 50 }}
+                                            style={{ height: 50 }}
                                         ></img>
                                     </Link>
 
                                 </div>
-
                             </div>
                         </Col>
 
@@ -682,40 +681,37 @@ function NavButton() {
 
                 </Container>
                 <>
-                    <Row className="navbar">
-                        <Col md={10} sm={12}>
-                            <div className="btn-moble-list">
-                                <div className="menu-mobile">
-                                    <div className="btn-moble">
-                                        {[""].map((placement, idx) => (
-                                            <OffCanvasExample
-                                                key={idx}
-                                                placement={placement}
-                                                name={placement}
-                                            />
-                                        ))}
-                                    </div>
-                                    <div className="bar-logo ">
-                                        <Link to="/cloud" className="mobile-link">
-                                            <img
-                                                src={"https://www.hanbiro.com/cloud/images/logo.png"}
-                                                style={{height: 50 }}
-                                            ></img>
-                                        </Link>
-
-                                    </div>
-                                    <div
-                                        className="btn-moble-2"
-                                        onClick={() => setOpenmobile(!openmobile)}
-                                        aria-controls="hosting"
-                                        aria-expanded={openmobile}
-                                    >
-                                        <CiCircleMore />
-                                    </div>
-                                </div>
+                    
+                    <div className="btn-moble-list">
+                        <div className="btn-moble-item">
+                            <div className="btn-moble-sever">
+                                {[""].map((placement, idx) => (
+                                    <OffCanvasExample
+                                        key={idx}
+                                        placement={placement}
+                                        name={placement}
+                                    />
+                                ))}
                             </div>
-                        </Col>
-                    </Row>
+                        </div>
+                        <div>
+                            <Link to="/cloud" className="mobile-link">
+                                <img
+                                    src={"https://www.hanbiro.com/cloud/images/logo.png"}
+                                    style={{ height: 50 }}
+                                ></img>
+                            </Link>
+                        </div>
+                        <div className="btn-moble-item">
+                            <div className="btn-moble-more"
+                                onClick={() => setOpenmobile(!openmobile)}
+                                aria-controls="hosting"
+                                aria-expanded={openmobile}
+                            >
+                                <CiCircleMore />
+                            </div>
+                        </div>
+                    </div>
                     <div className="mobi-product-list">
                         <Collapse in={openmobile}>
                             <div id="hanbiro-customer" className="mobile-list">
