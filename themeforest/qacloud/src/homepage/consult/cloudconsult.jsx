@@ -11,6 +11,8 @@ import {
 }from '@/shared/components/Card';
 import { Box } from '@mui/material';
 
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 
 
@@ -37,8 +39,10 @@ function columnus($username,$imageuser,$phone,$mail){
             <CardTitle><TypographyCard>{$username}</TypographyCard></CardTitle> 
             <CardImage src={$imageuser}></CardImage>
             <CardText>
-                <h6>{$phone}</h6>
-                <h6>{$mail}</h6>
+                <LocalPhoneIcon sx={{ fontSize: 13 }} /><span href="">&nbsp;&nbsp;{$phone}</span>
+            </CardText>
+            <CardText>
+                <MailOutlineIcon sx={{ fontSize: 13 }} /><span href="">&nbsp;&nbsp;{$mail}</span>
             </CardText>
             
             </GridCardBody2>
@@ -69,12 +73,12 @@ function Cloudconsult() {
                     </GridCard>
                 </Col>
                 <Col sm={12} md={12} lg={4}>
-                    <GridCard>
+                    <GridCard >
                         {consultlticoncloud("마이크로서비스 도입을 위한 개발과 시스템구성 상담")}
                     </GridCard>
                 </Col>    
                 <Col sm={12} md={12} lg={4}>
-                    <GridCard>
+                    <GridCard >
                         {consultlticoncloud("최적의 비용으로 자체 독립 클라우드 구축및 운영지원")}
                     </GridCard>
                 </Col>
@@ -191,9 +195,7 @@ const CardText = styled(Card.Text)`
     width: 18rem;
     position: relative;
     text-align: left;
-    font-weight: bold;
-    
-    
+    font-size: 13px;
   
   
 `;

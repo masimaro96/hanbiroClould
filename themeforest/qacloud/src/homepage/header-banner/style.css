@@ -476,6 +476,22 @@ code {
     cursor: pointer;
   }
 }
+@media only screen and (max-width: 280px){
+  
+  .mobile-link img{
+    padding: 9px 5px;
+  }
+  
+}
+@media only screen and (min-width: 1180px) and (max-width: 1368px){
+  
+  .bar-home-list{
+    font-size: 12px !important;
+  }
+  .mobile-link img{
+    padding: 9px 5px;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   .btn-moble-item{
