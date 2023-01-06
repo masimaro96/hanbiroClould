@@ -17,14 +17,12 @@
     text-align: left;
 }
 
-.logo-footer{
-    padding-top: 40px;
+.logo-footer-img {
+    margin-bottom: 10px;
 }
 
 .spaced {
     padding: 60px 15px;
-    font-size: 14px;
-    padding-bottom: 0;
 }
 
 .spaced a{
@@ -37,9 +35,20 @@
     cursor: pointer;
 }
 
-.spaced h4{
+.spaced h5{
     color: white;
     font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.right-icon {
+    width: 17px;
+    height: 20px;
+}
+
+.spaced li {
+    margin-bottom: 0 !important;
+    padding: 3px 0;
 }
 
 .spaced li:hover{
@@ -47,9 +56,12 @@
     cursor: pointer;
 }
 
-.logo-footer-detail p {
-    line-height: 30px;
-    margin: 0;
+.typography-message {
+    margin-bottom: 20px;
+}
+
+.logo-footer-detail {
+    padding: 40px 15px;
 }
 
 .footer-bottom {
@@ -59,13 +71,24 @@
 
 .footer-bottom p{
     color: #777;
-    padding: 20px 0;
+    padding: 20px 15px;
     margin: 0;
     font-size: 12px;
+    line-height: 16px;
 }
 
 .text-color {
+    text-decoration: none;
     color: #47a7ff;
+}
+
+.text-color.external-link {
+    font-size: 10px;
+}
+
+.icon-text.icon-external-link {
+    width: 12px;
+    height: 12px;
 }
 
 .text-color:hover {
@@ -77,4 +100,14 @@
 .icon-text {
     width: 14px;
     height: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+    .spaced {
+        padding: 20px 15px;
+    }
+    .footer-body {
+        margin: 0;
+        max-width: 100%;
+    }
 }
