@@ -15,7 +15,6 @@ import Contentcloudcompute from "../../container/Card/Components/Contentcloudcom
 import Contentcloudcard from "../../container/Card/Components/Contentcloudcard"
 import Imagecloudcompute from "../../container/Card/Components/Imagecloudcompute"
 
-
 function Clusterclickhouse(){
 
     return (

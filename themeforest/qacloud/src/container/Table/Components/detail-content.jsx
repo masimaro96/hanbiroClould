@@ -5,8 +5,9 @@ function DetailContent(){
 
   return (
     <Box >
+      <br/>
       <div>
-        <div style={StySpecification.StylesContainer}>
+        <div >
           <div >
             <div >
               <h2 style={StySpecification.Title}>아이피 사용요금안내</h2>
@@ -29,8 +30,8 @@ function DetailContent(){
             </table>
           </div>
         </div>
-
-        <div style={StySpecification.StylesContainer}>
+        <br/>
+        <div >
           <div >
             <div >
               <h2 style={StySpecification.Title}>운영체제 및 데이터베이스 지원</h2>
