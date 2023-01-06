@@ -7,46 +7,44 @@ function TableTwoColumns() {
   return (
     <Box >
       <div>
-        <div style={StySpecification.StylesContainer}>
           <div style={StySpecification.ListProduct}>
             <table width="100%">
               <tbody >
                 <tr style={StySpecification.Header}>
                   <td  width="30%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}>구분</div></td>
-                  <td  width="70%" style={StySpecification.BorRight}>내용</td>
+                  <td  width="70%" style={StySpecification.BorRight}><div style={StySpecification.TextTitle}>내용</div></td>
                 </tr>
                 <tr>
-                  <td style={StySpecification.BorAll}>API</td>
-                  <td style={StySpecification.BorAll}>gRPC / GraphQL / Rest API /Web RPC / Web Socket</td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}><b>API</b></div></td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}>gRPC / GraphQL / Rest API /Web RPC / Web Socket</div></td>
                 </tr>
                 <tr>
-                  <td style={StySpecification.BorAll}>Back-end 개발언어</td>
-                  <td style={StySpecification.BorAll}>주요개발언어 : GoLang<br />기타개발언어 : PHP / Python / C / C++ / Ruby</td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}><b>Back-end 개발언어</b></div></td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}>주요개발언어 : GoLang<br />기타개발언어 : PHP / Python / C / C++ / Ruby</div></td>
                 </tr>
                 <tr>
-                  <td style={StySpecification.BorAll}>Front-end 개발언어</td>
-                  <td style={StySpecification.BorAll}>주요개발언어 : ReactJS / TypeScript<br />기타개발언어 : VueJS / AngularJS / Javascript</td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}><b>Front-end 개발언어</b></div></td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}>주요개발언어 : ReactJS / TypeScript<br />기타개발언어 : VueJS / AngularJS / Javascript</div></td>
                 </tr>
                 <tr>
-                  <td style={StySpecification.BorAll}>Mobile (iOS/Android)</td>
-                  <td style={StySpecification.BorAll}>Flutter (Cross-Platform)</td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}><b>Mobile (iOS/Android)</b></div></td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}>Flutter (Cross-Platform)</div></td>
                 </tr>
                 <tr>
-                  <td style={StySpecification.BorAll}>Desktop (MS/Mac/Linux)</td>
-                  <td style={StySpecification.BorAll}>Electron (Cross-Platform)</td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}><b>Desktop (MS/Mac/Linux)</b></div></td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}>Electron (Cross-Platform)</div></td>
                 </tr>
                 <tr>
-                  <td style={StySpecification.BorAll}>Database</td>
-                  <td style={StySpecification.BorAll}>주요 DB) MongoDB / Vitess / ClickHouse / RabbitMQ / Redis<br />기타 DB) MySQL / Scylla / Cassandra / PostgreSQL</td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}><b>Database</b></div></td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}>주요 DB) MongoDB / Vitess / ClickHouse / RabbitMQ / Redis<br />기타 DB) MySQL / Scylla / Cassandra / PostgreSQL</div></td>
                 </tr>
                 <tr>
-                  <td style={StySpecification.BorAll}>Application</td>
-                  <td style={StySpecification.BorAll}>Kafka / Elastic Search</td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}><b>Application</b></div></td>
+                  <td style={StySpecification.BorAll}><div style={StySpecification.Text}>Kafka / Elastic Search</div></td>
                 </tr>
               </tbody>
             </table>
           </div>
-        </div>
       </div>
     </Box>
 
@@ -67,18 +65,19 @@ const StySpecification = {
     fontSize: "110%",
     paddingBottom: 20,
   },
-  Title:{
+  TextTitle:{
+    paddingTop: 8,
+    paddingBottom: 8,
+    textAlign: "center",
     fontWeight: "bold",
-    paddingBottom: 20,
-    paddingTop: 10,
+  },
+  Text: {
+    marginLeft: "10px",
+    marginRight: "10px",
   },
   Header:{
     color: "white",
     background: "#393939",
-  },
-  TextTitle:{
-    paddingTop: 8,
-    paddingBottom: 8,
   },
   BorLeft:{
     borderTopLeftRadius: "8px",
