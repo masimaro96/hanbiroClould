@@ -20,9 +20,10 @@ function consultlticoncloud (title) {
     return(
         <Titlecloudrow2>
              <GridCardBody>
-                <MyCardText>
-                    <Myiconcard><CloudCheckIcon className="iconstyle" size={30} /></Myiconcard>
-                    <CardTitleIcon ><TypographyCard>{title}</TypographyCard></CardTitleIcon>
+                <MyCardText >
+                    <Myiconcard className="icon-shape"><CloudCheckIcon className="iconstyle" size={24} /></Myiconcard>
+                    {/* <CardTitleIcon className="font-content-cloud" ><TypographyCard className="font-title-cloud">{title}</TypographyCard></CardTitleIcon> */}
+                    <TypographyCard className="font-title-cloud">{title}</TypographyCard>
                 </MyCardText>
             
             </GridCardBody>
@@ -30,6 +31,16 @@ function consultlticoncloud (title) {
        
     )
 }
+
+function formatPhone($phone) {
+     return 'tel:' + $phone
+    }
+
+function formatMail($mail) {
+     return 'mailto:' + $mail
+    }
+
+
 
 function columnus($username,$imageuser,$phone,$mail){
     return(
@@ -39,10 +50,10 @@ function columnus($username,$imageuser,$phone,$mail){
             <CardTitle><TypographyCard>{$username}</TypographyCard></CardTitle> 
             <CardImage src={$imageuser}></CardImage>
             <CardText>
-                <LocalPhoneIcon sx={{ fontSize: 13 }} /><span href="">&nbsp;&nbsp;{$phone}</span>
+                <LocalPhoneIcon sx={{ fontSize: 13 }} /><a className="phoneline"  href={formatPhone($phone)}>&nbsp;&nbsp;{$phone}</a>
             </CardText>
             <CardText>
-                <MailOutlineIcon sx={{ fontSize: 13 }} /><span href="">&nbsp;&nbsp;{$mail}</span>
+                <MailOutlineIcon sx={{ fontSize: 13 }} /><a className="mailline" href={formatMail($mail)} >&nbsp;&nbsp;{$mail}</a>
             </CardText>
             
             </GridCardBody2>
@@ -68,7 +79,7 @@ function Cloudconsult() {
             <Row >
                 <Col sm={12} md={12} lg={4}>
                     <GridCard >
-                        {consultlticoncloud("컨터이너를 이용한 컴퓨팅 자원 사용으로 비용절감")} 
+                        {consultlticoncloud("컨터 이너를 이용한 컴퓨팅 자원 사용으로 비용절감")} 
                             
                     </GridCard>
                 </Col>
@@ -235,8 +246,7 @@ const Card1cloudrow3 = styled.div`
 `;
 
 
-
-
+;
 
 
 
