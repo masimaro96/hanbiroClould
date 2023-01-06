@@ -42,8 +42,10 @@ function MSA1() {
                             <BoxText>• 필요한 기능에 따른 다양한 API를 사용하기 때문에 개발자는 코드를 작성할 필요없이 기능 개발이 가능하여 개발주기 단축</BoxText>
                             <BoxText>• 서비스 활동이 급증하는 경우에 가용성 보장</BoxText>
                             <BoxText>• 독립적인 모듈식 소프트웨어를 구축하는 접근방식</BoxText>
+                            <BoxText>&nbsp;</BoxText>
+                            <TableTwoColumns />
                         </BoxContent>
-                        <TableTwoColumns />
+                        
                         
                         {Titlecloudcompute("한비로의 개발 상황과 프로그래밍 언어")}
                         <BoxContent>
@@ -51,8 +53,9 @@ function MSA1() {
                             <BoxText>• 24년동안의 서버/소프트웨어 개발 경험이 클라우드와 마이크로서비스 개발로 발전하여 지속됩니다.</BoxText>
                             <BoxText>• 한비로는 마이크로서비스용 API들을 자체 개발하여 고객에 저렴하게 제공합니다.</BoxText>
                             <BoxText>• 한비로는 어플리케이션의 컨설팅, 개발, 클라우드, 유지보수 통합서비스를 제공합니다.</BoxText>
+                            <BoxText>&nbsp;</BoxText>
+                            <TableThreeColumns />
                         </BoxContent>
-                        <TableThreeColumns />
                     </Col>
                 </Row>
             </Container>

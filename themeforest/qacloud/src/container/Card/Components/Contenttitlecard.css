@@ -1,10 +1,18 @@
 @media only screen and (max-width: 767px){
     .sizetitle{
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .sizetitle2{
+        font-size: 20px !important;
+    }
+
+    .sizetitle3{
         font-size: 18px !important;
+    }
+
+    .sizetitle4{
+        font-size: 16px !important;
     }
 
     .sizeimage{
@@ -14,12 +22,21 @@
 
 @media only screen and (max-width: 1023px){
     .sizetitle{
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .sizetitle2{
+        font-size: 20px !important;
+    }
+
+    .sizetitle3{
         font-size: 18px !important;
     }
+
+    .sizetitle4{
+        font-size: 16px !important;
+    }
+
 
     .sizeimage{
         width: 100% !important;

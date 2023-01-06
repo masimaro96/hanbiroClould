@@ -1,6 +1,8 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import DetailContent from '../../container/Table/Components/detail-content';
+
 function TrafficFee() {
   return (
     <Box>
@@ -69,9 +71,13 @@ function TrafficFee() {
               </div>
             </div>
           </div>
+          <DetailContent />
         </div>
       </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6f21b5aeec68fe8fc85d29afe2485f5305d7b9d0
     </Box>
 
   );
