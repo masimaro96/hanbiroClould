@@ -21,10 +21,10 @@ function TrafficFee() {
                 <table width="100%">
                   <tbody >
                     <tr style={StySpecification.Header}>
-                      <td width="21%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}>구분</div></td>
-                      <td width="21%" >서비스비용(일)</td>
-                      <td width="21%" >서비스비용(월)</td>
-                      <td width="37%" style={StySpecification.BorRight}>비고</td>
+                      <td width="21%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}><b>구분</b></div></td>
+                      <td width="21%" ><b>서비스비용(일)</b></td>
+                      <td width="21%" ><b>서비스비용(월)</b></td>
+                      <td width="37%" style={StySpecification.BorRight}><b>비고</b></td>
                     </tr>
                     <tr>
                       <td style={StySpecification.TextLeft}><div style={StySpecification.TextContent}>저장용량	</div> </td>

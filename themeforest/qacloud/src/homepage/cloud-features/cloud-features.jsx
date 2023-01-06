@@ -15,10 +15,21 @@ function CloudFeatures(){
   return (
     <Container >
         <br/>
-        <Row className='row_cloud'>
-            <Col xl={4} as={Grid} display={{xs: "none", md: "none", lg: "block"}}>
+        <Row className='row_cloud' >
+            <Col xl={4} as={Grid} display={{xs: "none", md: "none", lg: "block", xl: "block"}}>
                 <GridCard>
-                    <GridCardBody>
+                    <GridCardBody >
+                        <img className='cloud_image' alt='' src='https://www.hanbiro.com/cloud/images/detail/image-01.svg'></img>
+                    </GridCardBody>
+                </GridCard>
+            </Col>
+
+
+            <Col xl={4} as={Grid} display={{xs: "block", md: "block", lg: "none", xl: "none"}}>
+                <GridCard>
+                    <GridCardBody >
+                        <h2 className='title' ><b>한비로 CLOUD 서비스 특징</b></h2>
+                        <br/>
                         <img className='cloud_image' alt='' src='https://www.hanbiro.com/cloud/images/detail/image-01.svg'></img>
                     </GridCardBody>
                 </GridCard>
@@ -27,9 +38,8 @@ function CloudFeatures(){
             <Col xl={8} md={12}>
                 <GridCard>
                     <GridCardBody>
-                        <h2 className='title'><b>한비로 CLOUD 서비스 특징</b></h2><br/>
-                        <p><b 
-                        >고성능의 스토리지와 하드웨어 자원 독립운영</b></p>
+                        <h2 className='title_main' ><b>한비로 CLOUD 서비스 특징</b></h2>
+                        <p><b>고성능의 스토리지와 하드웨어 자원 독립운영</b></p>
                         <p className='gray'>서버자원의 독립성을 보장하며, 안정적인 서비스를 운영할 수 있습니다.</p>
                         <br/>
                         <p><b>한비로 쿠버네티스기반의 데이터베이스클러스터와 연동</b></p>
@@ -49,13 +59,45 @@ function CloudFeatures(){
       </Row>
       <hr></hr>
       <br/>
-        <Row className='row_cloud'>
-          <Col xl={8} md={12}>
-              <GridCard>
-                  <GridCardBody>
-                      <h2 className='title'><b>한비로 CLOUD 서비스 주의사항</b></h2>
-                      <br/>
-                      <p className='_2gray'>백업은 고객이 별도로 보관해야 합니다. 한비로는 인프라운영의 보조목적으로 백업을 운영하며,<br/>
+        
+      <Row className='row_cloud' >
+          <Col xl={8} md={12} as={Grid} display={{xs: "none", md: "none", lg: "block", xl: "block"}}>
+                    <GridCard>
+                        <GridCardBody>
+                            <h2 className='title_main' ><b>한비로 CLOUD 서비스 주의사항</b></h2>
+                            <p className='_2gray'>백업은 고객이 별도로 보관해야 합니다. 한비로는 인프라운영의 보조목적으로 백업을 운영하며,<br/>
+                            외부의 침입으로 발생하는 데이터의 손실에 대한 책임이 없습니다.<br/>
+                            한비로 <b>Cloud</b> 관리자 콘솔에서 생성한 자원은 사용하지 않더라도 생성일자 기준으로 과금됩니다.<br/>
+                            한비로 <b>Cloud</b>  서비스의 자원 생성, 삭제, 변경은 1일 1회만 가능합니다.<br/>
+                            삭제와 변경시에는 백업을 한후 진행해야 합니다.<br/>
+                            <b>Windows</b> 운영체제의 클라우드 서버사용시 라이센스 정책은 <b>MS</b> 라이센스 정책을 따릅니다.<br/>
+                            <b>MS</b> 라이센스정책은 월단위로 과금되며, 1개월미만의 사용시에도 월단위 과금이 진행됩니다.<br/>
+                            오토스케일링으로 생성된 서버는 공유스토리지 연결만 가능합니다<br/>
+                            베어메탈서버는 오토스케일링과 블록스토리지 마운트를 지원하지 않습니다.<br/>
+                            서버 자체적으로 메일 발송은 금지됩니다. (* 별도 smtp 서버 제공, 한비로 Cloud 담당자와 상담)<br/>
+                            한비로 <b>Cloud</b> 서비스는 연산을 위한 컴퓨팅자원을 사용할 수 없습니다.<br/>
+                            타사에 피해가 발생하는 서비스 및 불법적인 사이트 운영시 동의없이 서비스가 중단될 수 있습니다.<br/>
+                            타 고객사 서버에 불법적인 접근 및 이상 트래픽 발생 시 동의 없이 서비스가 중단될 수 있습니다</p>
+                        </GridCardBody>
+                    </GridCard>
+            </Col>
+
+
+            <Col xl={4} as={Grid} display={{xs: "none", md: "none", lg: "block", xl: "block"}}>
+                <GridCard>
+                    <GridCardBody >
+                        <img className='cloud_image' alt='' src='https://www.hanbiro.com/cloud/images/detail/image-02.svg'></img>
+                    </GridCardBody>
+                </GridCard>
+            </Col>
+
+
+            <Col xl={4} as={Grid} display={{xs: "block", md: "block", lg: "none", xl: "none"}}>
+                <GridCard>
+                    <GridCardBody >
+                        <h2 className='title' ><b>한비로 CLOUD 서비스 주의사항</b></h2>
+                        <img  className='cloud_image' alt='' src='https://www.hanbiro.com/cloud/images/detail/image-02.svg'></img>
+                        <p className='_2gray'>백업은 고객이 별도로 보관해야 합니다. 한비로는 인프라운영의 보조목적으로 백업을 운영하며,<br/>
                           외부의 침입으로 발생하는 데이터의 손실에 대한 책임이 없습니다.<br/>
                           한비로 <b>Cloud</b> 관리자 콘솔에서 생성한 자원은 사용하지 않더라도 생성일자 기준으로 과금됩니다.<br/>
                           한비로 <b>Cloud</b>  서비스의 자원 생성, 삭제, 변경은 1일 1회만 가능합니다.<br/>
@@ -67,18 +109,10 @@ function CloudFeatures(){
                           서버 자체적으로 메일 발송은 금지됩니다. (* 별도 smtp 서버 제공, 한비로 Cloud 담당자와 상담)<br/>
                           한비로 <b>Cloud</b> 서비스는 연산을 위한 컴퓨팅자원을 사용할 수 없습니다.<br/>
                           타사에 피해가 발생하는 서비스 및 불법적인 사이트 운영시 동의없이 서비스가 중단될 수 있습니다.<br/>
-                          타 고객사 서버에 불법적인 접근 및 이상 트래픽 발생 시 동의 없이 서비스가 중단될 수 있습니다</p>
-                          <br/>
-                  </GridCardBody>
-              </GridCard>
-          </Col>
-          <Col xl={4} as={Grid} display={{xs: "none", md: "none", lg: "block"}}>
-              <GridCard>
-                  <GridCardBody>
-                      <img className='cloud_image' alt='' src='https://www.hanbiro.com/cloud/images/detail/image-02.svg'></img>
-                  </GridCardBody>
-              </GridCard>
-          </Col>
+                          타 고객사 서버에 불법적인 접근 및 이상 트래픽 발생 시 동의 없이 서비스가 중단될 수 있습니다.</p>
+                    </GridCardBody>
+                </GridCard>
+            </Col>
       </Row>
 
     

@@ -48,6 +48,40 @@
 }
 
 
+.phoneline{
+  text-decoration: none;
+}
+
+
+.mailline{
+  text-decoration: none;
+}
+
+
+.phoneline:hover {
+  color: #AD5251;
+  cursor: pointer;
+}
+
+.mailline:hover {
+  color: #AD5251;
+  cursor: pointer;
+}
+
+.font-title-cloud{
+  font-size: 15px;
+  padding-left: 2%;
+  
+}
+
+.icon-shape{
+  font-size: 12px;
+}
+
+
+
+
+
 
 /* Mobile & tablet :width <1024px*/
 @media only screen and (max-width: 1023px){
@@ -60,6 +94,16 @@
     border-radius:15%;
     padding:0.5%;
   }
+
+
+  .font-title-cloud{
+    font-size: 16px;
+  }
+
+  .icon-shape{
+    padding:2%;
+  }
+ 
  
   
 }

@@ -5,7 +5,6 @@ import TrafficFee from '../../homepage/header-banner/TrafficFee';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import Banner from '../../container/Banner/Banner';
-import DetailContent from '../../container/Table/Components/detail-content';
 import {
     Container, Row, Col
 } from 'react-bootstrap';
@@ -37,7 +36,6 @@ function Computeautoscale(){
                         {BoxCard("이벤트서비스, 부하분산서비스에 적합한 서비스","단기 대용량의 서비스가 필요할 경우, 대용량의 트래픽이 발생할 수 있는 서비스를 운영할 경우 저비용으로 효율적인 서비스확장을 구현할 수 있는 플랫폼입니다.")}
                         <ServerPricing title={"오토스케일링(증설된 가상서버) 요금안내"}/>
                         <TrafficFee />
-                        <DetailContent />
                     </Col>
                 </Row>
             </Container>

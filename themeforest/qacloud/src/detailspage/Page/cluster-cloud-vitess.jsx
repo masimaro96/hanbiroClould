@@ -6,7 +6,6 @@ import ServerPricing from '../../homepage/header-banner/ServerPricing';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import Banner from '../../container/Banner/Banner';
-import DetailContent from '../../container/Table/Components/detail-content';
 import {
     Container, Row, Col
 } from 'react-bootstrap';
@@ -39,7 +38,6 @@ function Clustercloudvitess(){
                       
                         <Vitess />
                         <TrafficFee />
-                        <DetailContent />
                     </Col>
                 </Row>
             </Container>

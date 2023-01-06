@@ -11,7 +11,6 @@ import {
 import Sidebar from '../../container/Sidebar/Sidebar'
 import '../../container/Sidebar/sidebar.css'
 import BoxCard from '../../container/Box/Components/Box'
-import DetailContent from '../../container/Table/Components/detail-content';
 import Titlecloudcompute from "../../container/Card/Components/Titlecloudcompute"
 import Contentcloudcompute from "../../container/Card/Components/Contentcloudcompute"
 import Contentcloudcard from "../../container/Card/Components/Contentcloudcard"
@@ -36,7 +35,6 @@ function Storeobjectstore(){
                         {BoxCard("객체단위 파일저장, 파일단위 권한설정","버킷 또는 파일단위의 권한관리가 가능합니다, 파일단위로 여러사용자에게 권한을 부여할 수 있습니다. 접근권한이 있는 사용자는 HTTPS 프로토콜로 파일에 직접 접근할 수 있습니다.")}
                         <Objectstore />
                         <TrafficFee />
-                        <DetailContent />
                     </Col>
                 </Row>
             </Container>

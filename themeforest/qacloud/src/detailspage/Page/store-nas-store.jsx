@@ -5,7 +5,6 @@ import TrafficFee from '../../homepage/header-banner/TrafficFee';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import Banner from '../../container/Banner/Banner';
-import DetailContent from '../../container/Table/Components/detail-content';
 import {
     Container, Row, Col
 } from 'react-bootstrap';
@@ -38,7 +37,6 @@ function Storenasstore(){
                         {BoxCard("프라이빗 Cloud 시스템 구축지원","기업자체 Private 클라우드 시스템 구축을 지원합니다. 공유 스토리지를 포함한 Cloud 플랫폼과 Kubernetes 클러스터 시스템 구축할 수 있습니다.")}
                         <Blockstore title={"공유 Storage 요금안내"} />
                         <TrafficFee />
-                        <DetailContent />
                     </Col>
                 </Row>
             </Container>
