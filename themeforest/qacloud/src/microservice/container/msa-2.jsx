@@ -22,7 +22,7 @@ function MSA2() {
                     <Col lg={3} md={12} xs={12}>
                         <MicroSidebar />
                     </Col>
-                    <Col lg={9} md={12} xs={12}>
+                    <Col lg={9} md={12} xs={12} className="right-content">
                         {Titlecloudcompute("한비로 마이크로서비스 기반 개발이란")}
                         <BoxTitle>• CQRS</BoxTitle>
                         <BoxContent>

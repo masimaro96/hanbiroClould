@@ -60,6 +60,10 @@
       display: none;
     }
 
+    .right-content {
+        width: 100% !important;
+    }
+
     .sidebar-detail {
         height: auto !important;
         overflow-y: scroll;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import '../../Card/Components/Contenttitlecard.css'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -22,7 +23,7 @@ function Imagecloudcompute($imagecloud) {
                 <Col sm={12} md={12}>
                     <GridCard>
                         <GridCardBody3>
-                            <CardImage src={$imagecloud}></CardImage>
+                            <CardImage className="sizeimage" src={$imagecloud}></CardImage>
                         </GridCardBody3>
                         
                     </GridCard>

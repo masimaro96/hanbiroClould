@@ -11,6 +11,8 @@ import {
 }from '@/shared/components/Card';
 import { Box } from '@mui/material';
 
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 
 
@@ -18,9 +20,10 @@ function consultlticoncloud (title) {
     return(
         <Titlecloudrow2>
              <GridCardBody>
-                <MyCardText>
-                    <Myiconcard><CloudCheckIcon className="iconstyle" size={30} /></Myiconcard>
-                    <CardTitleIcon ><TypographyCard>{title}</TypographyCard></CardTitleIcon>
+                <MyCardText >
+                    <Myiconcard className="icon-shape"><CloudCheckIcon className="iconstyle" size={24} /></Myiconcard>
+                    {/* <CardTitleIcon className="font-content-cloud" ><TypographyCard className="font-title-cloud">{title}</TypographyCard></CardTitleIcon> */}
+                    <TypographyCard className="font-title-cloud">{title}</TypographyCard>
                 </MyCardText>
             
             </GridCardBody>
@@ -28,6 +31,16 @@ function consultlticoncloud (title) {
        
     )
 }
+
+function formatPhone($phone) {
+     return 'tel:' + $phone
+    }
+
+function formatMail($mail) {
+     return 'mailto:' + $mail
+    }
+
+
 
 function columnus($username,$imageuser,$phone,$mail){
     return(
@@ -37,8 +50,10 @@ function columnus($username,$imageuser,$phone,$mail){
             <CardTitle><TypographyCard>{$username}</TypographyCard></CardTitle> 
             <CardImage src={$imageuser}></CardImage>
             <CardText>
-                <h6>{$phone}</h6>
-                <h6>{$mail}</h6>
+                <LocalPhoneIcon sx={{ fontSize: 13 }} /><a className="phoneline"  href={formatPhone($phone)}>&nbsp;&nbsp;{$phone}</a>
+            </CardText>
+            <CardText>
+                <MailOutlineIcon sx={{ fontSize: 13 }} /><a className="mailline" href={formatMail($mail)} >&nbsp;&nbsp;{$mail}</a>
             </CardText>
             
             </GridCardBody2>
@@ -64,17 +79,17 @@ function Cloudconsult() {
             <Row >
                 <Col sm={12} md={12} lg={4}>
                     <GridCard >
-                        {consultlticoncloud("컨터이너를 이용한 컴퓨팅 자원 사용으로 비용절감")} 
+                        {consultlticoncloud("컨터 이너를 이용한 컴퓨팅 자원 사용으로 비용절감")} 
                             
                     </GridCard>
                 </Col>
                 <Col sm={12} md={12} lg={4}>
-                    <GridCard>
+                    <GridCard >
                         {consultlticoncloud("마이크로서비스 도입을 위한 개발과 시스템구성 상담")}
                     </GridCard>
                 </Col>    
                 <Col sm={12} md={12} lg={4}>
-                    <GridCard>
+                    <GridCard >
                         {consultlticoncloud("최적의 비용으로 자체 독립 클라우드 구축및 운영지원")}
                     </GridCard>
                 </Col>
@@ -191,9 +206,7 @@ const CardText = styled(Card.Text)`
     width: 18rem;
     position: relative;
     text-align: left;
-    font-weight: bold;
-    
-    
+    font-size: 13px;
   
   
 `;
@@ -233,8 +246,7 @@ const Card1cloudrow3 = styled.div`
 `;
 
 
-
-
+;
 
 
 
