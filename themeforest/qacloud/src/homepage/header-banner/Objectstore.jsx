@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import TrafficFeeV1 from './TrafficFeeV1';
 function TrafficFee() {
   return (
     <Box>
@@ -48,6 +49,8 @@ function TrafficFee() {
               </div>
             </div>
           </div>
+          <div style={StySpecification.StylesCenter}></div>
+          <TrafficFeeV1/>
         </div>
       </div>
     </Box>
@@ -62,7 +65,12 @@ const StySpecification = {
     border: "1px solid #E7EAF3",
     borderRadius: "8px",
     padding: 20,
-    marginTop: 30
+    marginTop: 30,
+    marginBottom: 30,
+  },
+  StylesCenter: {
+    display: "flex",
+    width: "100%",
   },
   ListProduct: {
     fontSize: "110%",

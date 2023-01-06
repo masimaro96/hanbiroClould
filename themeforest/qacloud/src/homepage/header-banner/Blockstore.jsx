@@ -42,6 +42,8 @@ function TrafficFee({ title }) {
               </div>
             </div>
           </div>
+          <div style={StySpecification.StylesCenter}></div>
+          <TrafficFee/>
         </div>
       </div>
     </Box>
@@ -56,7 +58,12 @@ const StySpecification = {
     border: "1px solid #E7EAF3",
     borderRadius: "8px",
     padding: 20,
-    marginTop: 30
+    marginTop: 30,
+    marginBottom: 30,
+  },
+  StylesCenter: {
+    display: "flex",
+    width: "100%",
   },
   ListProduct: {
     fontSize: "110%",

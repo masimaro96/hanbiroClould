@@ -34,7 +34,7 @@ function Computeloadbalance(){
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/loadbalancer.gif")}
                         {BoxCard("부하분산 알고리즘 지원 (Round Robin, Least Connection, IP hash)","순차적부하분산(Round Robin), 최소연결부하분산(Least Connection), 소스아이피 해시(Source IP hash) 로드발랜싱 알고리즘을 지원합니다.")}
                         <LoadBalancer />
-                        <TrafficFee />
+                       
                     </Col>
                 </Row>
             </Container>

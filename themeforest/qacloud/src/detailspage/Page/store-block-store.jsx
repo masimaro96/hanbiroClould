@@ -35,7 +35,7 @@ function Storeblockstore(){
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/hanbiro_storage.gif")}
                         {BoxCard("블록 Storage 의 주요제한사항","생성된 볼륨은 한비로 Cloud 플랫폼내의 가상서버(인스턴스)에서만 사용할 수 있습니다. 블록 Storage 에서 생성된 볼륨은 2개이상의 가상서버(인스턴스)에서 엑세스 할 수 없습니다. 최대볼륨 이상의 볼륨필요시 한비로 Cloud 컨설턴트에게 문의해주세요.")}
                         <Blockstore title={"블록 Storage 요금안내"} />
-                        <TrafficFee />
+                       
                     </Col>
                 </Row>
             </Container>

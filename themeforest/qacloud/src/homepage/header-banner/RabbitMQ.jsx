@@ -3,7 +3,7 @@
 import { padding } from '@mui/system';
 import React from 'react';
 import styled from 'styled-components';
-
+import TrafficFee from './TrafficFeeV1';
 const ProtitleNew = (params) => {
   return (
 
@@ -170,9 +170,9 @@ function ServerPricing() {
               </div>
             </div>
           </div>
+          <div style={StySpecification.StylesCenter}></div>
+          <TrafficFee/>
         </div>
-
-
       </div>
     </Box>
 
@@ -191,6 +191,11 @@ const StySpecification = {
     borderRadius: "8px",
     padding: 20,
     marginTop: 30,
+    marginBottom: 30,
+  },
+  StylesCenter: {
+    display: "flex",
+    width: "100%",
   },
   StylesTitle: {
     textAlign: "center",

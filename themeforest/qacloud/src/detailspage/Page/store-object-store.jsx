@@ -34,7 +34,6 @@ function Storeobjectstore(){
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/hanbiro_storage.gif")}
                         {BoxCard("객체단위 파일저장, 파일단위 권한설정","버킷 또는 파일단위의 권한관리가 가능합니다, 파일단위로 여러사용자에게 권한을 부여할 수 있습니다. 접근권한이 있는 사용자는 HTTPS 프로토콜로 파일에 직접 접근할 수 있습니다.")}
                         <Objectstore />
-                        <TrafficFee />
                     </Col>
                 </Row>
             </Container>

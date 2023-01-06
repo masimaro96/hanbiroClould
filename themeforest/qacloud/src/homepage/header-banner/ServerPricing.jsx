@@ -2,7 +2,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-
+import TrafficFee from './TrafficFeeV1';
 const ProtitleNew = (params) => {
   return (
 
@@ -111,6 +111,7 @@ function ServerPricing({ title, content, content1 }) {
 
             </div>
           </div>
+          <TrafficFee/>
         </div>
       </div>
     </Box>
@@ -126,6 +127,7 @@ const StySpecification = {
     borderRadius: "8px",
     padding: 20,
     marginTop: 30,
+    marginBottom: 30,
   },
   StylesTitle: {
     textAlign: "center",

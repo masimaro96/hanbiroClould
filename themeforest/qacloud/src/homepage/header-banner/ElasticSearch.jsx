@@ -3,7 +3,7 @@
 import { padding } from '@mui/system';
 import React from 'react';
 import styled from 'styled-components';
-import TrafficFee from './TrafficFee'
+import TrafficFee from './TrafficFeeV1';
 const ProtitleNew = (params) => {
   return (
 
@@ -110,8 +110,10 @@ function ServerPricing() {
             한비로 클라우드 시스템 엔지니어와 상담을 통해서 다양한 방식으로 쿠베네티스 클러스터 시스템을 구축할 수 있습니다.
 
           </div>
+          <div style={StySpecification.StylesCenter}></div>
           <TrafficFee/>
         </div>
+        
       </div>
     </Box>
 
@@ -130,6 +132,11 @@ const StySpecification = {
     borderRadius: "8px",
     padding: 20,
     marginTop: 30,
+    marginBottom: 30,
+  },
+  StylesCenter: {
+    display: "flex",
+    width: "100%",
   },
   StylesTitle: {
     textAlign: "center",

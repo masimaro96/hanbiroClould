@@ -7,7 +7,7 @@ function TrafficFee() {
   return (
     <Box>
       <div >
-        <div style={StySpecification.StylesContainer}>
+        <div >
           <div >
             <div >
               <h2 style={StySpecification.Title}>트래픽요금안내</h2>
@@ -88,7 +88,6 @@ const StySpecification = {
     borderRadius: "8px",
     padding: 20,
     marginTop: 30,
-    marginBottom: 30,
   },
   ListProduct: {
     fontSize: "110%",
