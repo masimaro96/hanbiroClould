@@ -5,7 +5,6 @@ import TrafficFee from '../../homepage/header-banner/TrafficFee';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import Banner from '../../container/Banner/Banner';
-import DetailContent from '../../container/Table/Components/detail-content';
 import {
     Container, Row, Col
 } from 'react-bootstrap';
@@ -35,7 +34,6 @@ function Computems(){
                         {Imagecloudcompute("https://www.hanbiro.com/cloud/images/concept/database.gif")}
                         <MsSql />
                         <TrafficFee />
-                        <DetailContent />
                     </Col>
                 </Row>
             </Container>

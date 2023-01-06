@@ -6,7 +6,6 @@ import ServerPricing from '../../homepage/header-banner/ServerPricing';
 import Footer from '../../homepage/footer/Footer'
 import Cloudconsult from '../../homepage/consult/cloudconsult';
 import Banner from '../../container/Banner/Banner';
-import DetailContent from '../../container/Table/Components/detail-content';
 import {
     Container, Row, Col
 } from 'react-bootstrap';
@@ -36,7 +35,6 @@ function Computeloadbalance(){
                         {BoxCard("부하분산 알고리즘 지원 (Round Robin, Least Connection, IP hash)","순차적부하분산(Round Robin), 최소연결부하분산(Least Connection), 소스아이피 해시(Source IP hash) 로드발랜싱 알고리즘을 지원합니다.")}
                         <LoadBalancer />
                         <TrafficFee />
-                        <DetailContent />
                     </Col>
                 </Row>
             </Container>
