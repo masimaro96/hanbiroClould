@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import TrafficFeeV1 from './TrafficFeeV1';
 function TrafficFee({ title }) {
   return (
     <Box>
@@ -43,7 +44,7 @@ function TrafficFee({ title }) {
             </div>
           </div>
           <div style={StySpecification.StylesCenter}></div>
-          <TrafficFee/>
+          <TrafficFeeV1/>
         </div>
       </div>
     </Box>
