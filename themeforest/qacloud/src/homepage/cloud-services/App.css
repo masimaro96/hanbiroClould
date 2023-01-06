@@ -203,6 +203,7 @@
   .Card-Hidden{
     display: none;
   }
+  
 }
 
 @media only screen and (max-width: 767px){
@@ -229,6 +230,12 @@
   }
   .detailpage-title{
     font-size: 35px !important;
+  }
+  .Buttonstyle a{
+    font-size: 13px !important;
+  }
+  .data-content-description, .data-content-description-right{
+    font-size: 15px !important;
   }
 }
 
