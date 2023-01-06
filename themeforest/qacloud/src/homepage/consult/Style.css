@@ -60,13 +60,11 @@
 
 .phoneline:hover {
   color: #AD5251;
-  text-decoration: underline;
   cursor: pointer;
 }
 
 .mailline:hover {
   color: #AD5251;
-  text-decoration: underline;
   cursor: pointer;
 }
 
