@@ -71,62 +71,62 @@ function Cloudconsult() {
   return (
     <div className='coloruserdata'>
         <Container >
-            <Row>
+            <Row >
                 <Col sm={12}>
                     <Titlecloud><h2>CLOUD 구축및 운영 컨설팅</h2></Titlecloud>
                 </Col>
             </Row>
-            <Row >
-                <Col sm={12} md={12} lg={4}>
-                    <GridCard  className="box-iconcloud" >
+            <Row className='dataline'>
+                <Col sm={12} md={9} lg={4}>
+                    <GridCard >
                         {consultlticoncloud("컨터 이너를 이용한 컴퓨팅 자원 사용으로 비용절감")} 
                             
                     </GridCard>
                 </Col>
-                <Col sm={12} md={12} lg={4}>
+                <Col sm={12} md={9} lg={4}>
                     <GridCard >
                         {consultlticoncloud("마이크로서비스 도입을 위한 개발과 시스템구성 상담")}
                     </GridCard>
                 </Col>    
-                <Col sm={12} md={12} lg={4}>
+                <Col sm={12} md={9} lg={4}>
                     <GridCard >
                         {consultlticoncloud("최적의 비용으로 자체 독립 클라우드 구축및 운영지원")}
                     </GridCard>
                 </Col>
             </Row>
-            <Row>
-                <Col sm={12} md={12} lg={4} >
+            <Row className='dataline'>
+                <Col sm={12} md={9} lg={4} >
                     
                     <GridCard>
                         {columnus("신윤호 부장","https://www.hanbiro.com/images/support/pic006.jpg","070-4804-9651","kernel@hanbiro.com")}
                     
                     </GridCard>
                 </Col>
-                <Col sm={12} md={12} lg={4} >
+                <Col sm={12} md={9} lg={4} >
                 <GridCard>
                         {columnus("김정윤 부장","https://www.hanbiro.com/images/support/pic007.jpg","070-4804-9668","linuxdev@hanbiro.com")}
                     
                 </GridCard>
                 </Col>
-                <Col sm={12} md={12} lg={4}>
+                <Col sm={12} md={9} lg={4}>
                     <GridCard>
                         {columnus("조성학 이사 (해외)","https://www.hanbiro.com/images/support/pic002.jpg","+84 909 284 160","linux@hanbiro.com")}
                     </GridCard>
                 </Col>
             
             </Row>
-            <Row>
-                <Col sm={12} md={12} lg={4} >
+            <Row className='dataline'>
+                <Col sm={12} md={9} lg={4} >
                     <GridCard>
                         {columnus("신상우 부장","https://www.hanbiro.com/images/support/pic003.jpg","070-4804-9662","security@hanbiro.com")}
                     </GridCard>
                 </Col>
-                <Col sm={12} md={12} lg={4}>
+                <Col sm={12} md={9} lg={4}>
                     <GridCard>
                         {columnus("신경섭 소장","https://www.hanbiro.com/images/support/pic004.jpg","070-4804-9664","windev@hanbiro.com")}
                     </GridCard>
                 </Col>
-                <Col sm={12} md={12} lg={4}>
+                <Col sm={12} md={9} lg={4}>
                     <GridCard>
                         <p>&nbsp;</p>
                     </GridCard>
@@ -138,7 +138,6 @@ function Cloudconsult() {
     
   );
 }
-
 
 const GridCard = styled(Card)`
   padding-bottom: 20px;
