@@ -135,12 +135,14 @@ const StySpecification = {
   Title: {
     fontWeight: "bold",
     marginTop: "20px",
-    marginBottom: "30px"
+    marginBottom: "30px",
+    fontSize:"16pt"
   },
   Text: {
     fontWeight: 600,
     fontSize: 20,
-    marginBottom: "30px"
+    marginBottom: "30px",
+    fontSize:"15pt"
   },
   ColorText: {
     color: "white",

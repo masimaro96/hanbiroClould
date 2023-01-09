@@ -63,7 +63,8 @@ const StySpecification = {
   Title: {
     fontWeight: "bold",
     marginTop: "20px",
-    marginBottom: "30px"
+    marginBottom: "30px",
+    fontSize:"16pt"
   },
   Header: {
     color: "white",

@@ -96,7 +96,8 @@ const StySpecification = {
   Title: {
     fontWeight: "bold",
     marginTop: "20px",
-    marginBottom: "30px"
+    marginBottom: "30px",
+    fontSize:"16pt"
   },
   Header: {
     color: "white",
@@ -149,9 +150,7 @@ const StySpecification = {
   },
 }
 const Box = styled.div`
-  @media only screen and (max-width: 767px){
-    font-size: 80%;
-  }
+ 
 `
 
 export default TrafficFee;
