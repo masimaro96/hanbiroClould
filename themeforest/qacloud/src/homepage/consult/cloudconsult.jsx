@@ -18,7 +18,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 function consultlticoncloud (title) {
     return(
-        <Titlecloudrow2>
+        <Titlecloudrow2 >
              <GridCardBody>
                 <MyCardText >
                     <Myiconcard className="icon-shape"><CloudCheckIcon className="iconstyle" size={24} /></Myiconcard>
