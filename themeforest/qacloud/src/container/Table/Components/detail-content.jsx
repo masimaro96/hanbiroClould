@@ -17,9 +17,9 @@ function DetailContent(){
             <table width="100%">
               <tbody >
                 <tr style={StySpecification.Header}>
-                  <td  width="32%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}>구분</div></td>
-                  <td  width="36%" >내용	</td>
-                  <td  width="32%" style={StySpecification.BorRight}>요금 (/월)</td>
+                  <td  width="32%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}><b>구분</b></div></td>
+                  <td  width="36%" ><b>내용</b></td>
+                  <td  width="32%" style={StySpecification.BorRight}><b>요금 (/월)</b></td>
                 </tr>
                 <tr>
                   <td  style={StySpecification.TextLeft}>아이피추가		</td>
@@ -41,9 +41,9 @@ function DetailContent(){
             <table width="100%">
               <tbody >
                 <tr style={StySpecification.Header}>
-                  <td  width="32%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}>구분</div></td>
-                  <td  width="45%" >종류	</td>
-                  <td  width="23%" style={StySpecification.BorRight}>요금</td>
+                  <td  width="32%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}><b>구분</b></div></td>
+                  <td  width="45%" ><b>종류	</b></td>
+                  <td  width="23%" style={StySpecification.BorRight}><b>요금</b></td>
                 </tr>
                 <tr>
                   <td  style={StySpecification.TextLeft}>리눅스		</td>
