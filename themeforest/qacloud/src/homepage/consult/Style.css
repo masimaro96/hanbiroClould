@@ -37,12 +37,6 @@
   }
 }
 
-
-
-
-
-
-
 .coloruserdata{
   background-color:#F3F5F9;
 }
@@ -52,11 +46,16 @@
   text-decoration: none;
 }
 
-
+.dataline{
+  display: flex;
+  justify-content: center;
+}
 .mailline{
   text-decoration: none;
 }
-
+.jWQyZt{
+  padding: 4%;
+}
 
 .phoneline:hover {
   color: #AD5251;
@@ -69,19 +68,21 @@
 }
 
 .font-title-cloud{
-  font-size: 15px;
-  padding-left: 2%;
+  font-size: 14px !important;
+  padding-left: 4%;
   
 }
 
 .icon-shape{
   font-size: 12px;
 }
+@media only screen and (min-width: 500px) and (max-width: 990px) {
 
-
-
-
-
+  .font-title-cloud{
+    font-size: 17px !important;
+    padding-left: 5%;
+  }
+}
 
 /* Mobile & tablet :width <1024px*/
 @media only screen and (max-width: 1023px){
