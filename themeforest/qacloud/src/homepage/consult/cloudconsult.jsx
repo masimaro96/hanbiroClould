@@ -18,7 +18,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 function consultlticoncloud (title) {
     return(
-        <Titlecloudrow2>
+        <Titlecloudrow2 >
              <GridCardBody>
                 <MyCardText >
                     <Myiconcard className="icon-shape"><CloudCheckIcon className="iconstyle" size={24} /></Myiconcard>
@@ -78,7 +78,7 @@ function Cloudconsult() {
             </Row>
             <Row >
                 <Col sm={12} md={12} lg={4}>
-                    <GridCard >
+                    <GridCard  className="box-iconcloud" >
                         {consultlticoncloud("컨터 이너를 이용한 컴퓨팅 자원 사용으로 비용절감")} 
                             
                     </GridCard>
