@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function DetailContent(){
+function DetailContent() {
 
   return (
     <Box >
-      <br/>
+      <br />
       <div>
         <div >
           <div >
@@ -13,63 +13,71 @@ function DetailContent(){
               <h2 style={StySpecification.Title}>아이피 사용요금안내</h2>
             </div>
           </div>
-          <div style={StySpecification.ListProduct}>
-            <table width="100%">
-              <tbody >
-                <tr style={StySpecification.Header}>
-                  <td  width="32%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}><b>구분</b></div></td>
-                  <td  width="36%" ><b>내용</b></td>
-                  <td  width="32%" style={StySpecification.BorRight}><b>요금 (/월)</b></td>
-                </tr>
-                <tr>
-                  <td  style={StySpecification.TextLeft}>아이피추가		</td>
-                  <td style={StySpecification.BorAll}>1대의 가상서버 아이피 최대 3개추가	</td>
-                  <td style={StySpecification.BorAll}>3,000 원</td>
-                </tr>
-              </tbody>
-            </table>
+          <div style={StySpecification.TableScroll}>
+            <div style={StySpecification.TableWrap}>
+              <div style={StySpecification.ListProduct}>
+                <table width="100%">
+                  <tbody >
+                    <tr style={StySpecification.Header}>
+                      <td width="32%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}><b>구분</b></div></td>
+                      <td width="36%" ><b>내용</b></td>
+                      <td width="32%" style={StySpecification.BorRight}><b>요금 (/월)</b></td>
+                    </tr>
+                    <tr>
+                      <td style={StySpecification.TextLeft}>아이피추가		</td>
+                      <td style={StySpecification.BorAll}>1대의 가상서버 아이피 최대 3개추가	</td>
+                      <td style={StySpecification.BorAll}>3,000 원</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
-        <br/>
+        <br />
         <div >
           <div >
             <div >
               <h2 style={StySpecification.Title}>운영체제 및 데이터베이스 지원</h2>
             </div>
           </div>
-          <div style={StySpecification.ListProduct}>
-            <table width="100%">
-              <tbody >
-                <tr style={StySpecification.Header}>
-                  <td  width="32%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}><b>구분</b></div></td>
-                  <td  width="45%" ><b>종류	</b></td>
-                  <td  width="23%" style={StySpecification.BorRight}><b>요금</b></td>
-                </tr>
-                <tr>
-                  <td  style={StySpecification.TextLeft}>리눅스		</td>
-                  <td style={StySpecification.BorAll}><div style={StySpecification.KindLeft}>CentOS, Rocky Linux, Ubuntu, Debian</div></td>
-                  <td rowSpan="4" style={StySpecification.BorAll}>Microsoft<br/>라이센스<br/>요금정책별도</td>
-                </tr>
-                <tr>
-                  <td  style={StySpecification.TextLeft}>윈도우		</td>
-                  <td style={StySpecification.BorAll}><div style={StySpecification.KindLeft}>Windows 2012~2019 Server (64비트)<br/>
-                                                      MS-SQL 2012 ~ 2019 Standard (64비트)</div></td>
-                </tr>
-                <tr>
-                  <td  style={StySpecification.TextLeft}>데이터베이스</td>
-                  <td style={StySpecification.BorAll}><div style={StySpecification.KindLeft}>MySQL, PostgreSQL, Redis, MongoDB<br/>
-                                                      scyllaDB, Vitess, ClickHouse</div></td>
-                </tr>
-                <tr>
-                  <td  style={StySpecification.TextLeft}>쿠버네티스 클러스터	</td>
-                  <td style={StySpecification.BorAll}><div style={StySpecification.KindLeft}>Nginx, Kong, Envoy, Kafka, ELK stack<br/>
-                                                      Kubernetes Database Cluster</div></td>
-                </tr>
-              </tbody>
-            </table>
+          <div style={StySpecification.TableScroll}>
+            <div style={StySpecification.TableWrap}>
+              <div style={StySpecification.ListProduct}>
+                <table width="100%">
+                  <tbody >
+                    <tr style={StySpecification.Header}>
+                      <td width="32%" style={StySpecification.BorLeft}><div style={StySpecification.TextTitle}><b>구분</b></div></td>
+                      <td width="45%" ><b>종류	</b></td>
+                      <td width="23%" style={StySpecification.BorRight}><b>요금</b></td>
+                    </tr>
+                    <tr>
+                      <td style={StySpecification.TextLeft}>리눅스		</td>
+                      <td style={StySpecification.BorAll}><div style={StySpecification.KindLeft}>CentOS, Rocky Linux, Ubuntu, Debian</div></td>
+                      <td rowSpan="4" style={StySpecification.BorAll}>Microsoft<br />라이센스<br />요금정책별도</td>
+                    </tr>
+                    <tr>
+                      <td style={StySpecification.TextLeft}>윈도우		</td>
+                      <td style={StySpecification.BorAll}><div style={StySpecification.KindLeft}>Windows 2012~2019 Server (64비트)<br />
+                        MS-SQL 2012 ~ 2019 Standard (64비트)</div></td>
+                    </tr>
+                    <tr>
+                      <td style={StySpecification.TextLeft}>데이터베이스</td>
+                      <td style={StySpecification.BorAll}><div style={StySpecification.KindLeft}>MySQL, PostgreSQL, Redis, MongoDB<br />
+                        scyllaDB, Vitess, ClickHouse</div></td>
+                    </tr>
+                    <tr>
+                      <td style={StySpecification.TextLeft}>쿠버네티스 클러스터	</td>
+                      <td style={StySpecification.BorAll}><div style={StySpecification.KindLeft}>Nginx, Kong, Envoy, Kafka, ELK stack<br />
+                        Kubernetes Database Cluster</div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
-        <br/>
+        <br />
       </div>
     </Box>
 
@@ -84,59 +92,58 @@ const StySpecification = {
     border: "1px solid #E7EAF3",
     borderRadius: "8px",
     padding: 20,
-    marginBottom:30,
+    marginBottom: 30,
     marginTop: 30,
   },
-  ListProduct:{
+  ListProduct: {
     fontSize: "110%",
     paddingBottom: 20,
   },
-  Title:{
+  Title: {
     fontWeight: "bold",
     paddingBottom: 20,
     paddingTop: 10,
+    fontSize: "16pt"
   },
-  Header:{
+  Header: {
     color: "white",
     background: "#393939",
   },
-  TextTitle:{
+  TextTitle: {
     paddingTop: 8,
     paddingBottom: 8,
   },
-  BorLeft:{
+  BorLeft: {
     borderTopLeftRadius: "8px",
-    borderRight:"2px solid #F4F4F4",
+    borderRight: "2px solid #F4F4F4",
   },
-  BorRight:{
+  BorRight: {
     borderTopRightRadius: "8px",
-    borderLeft:"2px solid #F4F4F4",
+    borderLeft: "2px solid #F4F4F4",
   },
-  BorAll:{
-    borderLeft:"2px solid #DDDDDD",
-    borderRight:"2px solid #DDDDDD",
-    borderBottom:"2px solid #DDDDDD",
+  BorAll: {
+    borderLeft: "2px solid #DDDDDD",
+    borderRight: "2px solid #DDDDDD",
+    borderBottom: "2px solid #DDDDDD",
     paddingTop: 8,
     paddingBottom: 8,
   },
-  KindLeft:{
+  KindLeft: {
     textAlign: "left",
     paddingLeft: 10,
   },
-  TextLeft:{
-    borderLeft:"2px solid #DDDDDD",
-    borderRight:"2px solid #DDDDDD",
-    borderBottom:"2px solid #DDDDDD",
+  TextLeft: {
+    borderLeft: "2px solid #DDDDDD",
+    borderRight: "2px solid #DDDDDD",
+    borderBottom: "2px solid #DDDDDD",
     fontWeight: 600,
     textAlign: "left",
-    paddingLeft:"10px"
+    paddingLeft: "10px"
   }
 }
 
 const Box = styled.div`
-  @media only screen and (max-width: 767px){
-    font-size: 80%;
-  }
+  
 `
 
 export default DetailContent;
