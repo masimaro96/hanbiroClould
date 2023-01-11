@@ -221,7 +221,13 @@ code {
   margin-left: 3px;
   margin-right: 3px;
 }
+.icon-open {
+  font-size: 20px;
+  padding-bottom: 4px;
+  margin-left: 3px;
+  margin-right: 3px;
 
+}
 .box {
   background-color: #47A7FF;
 }
@@ -398,7 +404,7 @@ code {
   margin-top: auto;
   padding-right: 5px;
   margin-left: 20px;
-  font-size: 17px !important;
+  font-size: 19px !important;
 }
 .hb-modal-icon-down-win{
   color: white;
@@ -447,7 +453,7 @@ code {
 }
 .hb-modal-download-text{
   display: flex;
-  margin-top: auto;
+  margin: auto;
   font-size: 14px;
   margin-left: 10px;
   font-weight: 600;

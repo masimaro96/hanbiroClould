@@ -5,10 +5,11 @@ import "./style.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { Container, Row, Col } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { AiFillCaretDown, AiOutlineRight, AiOutlineMenu, AiOutlineInfoCircle,AiFillApple,AiOutlineClose } from "react-icons/ai";
+import { AiFillCaretDown, AiOutlineRight, AiOutlineMenu, AiOutlineInfoCircle, AiFillApple, AiOutlineClose } from "react-icons/ai";
 import { ImDownload3 } from "react-icons/im";
 import { BsWindows } from "react-icons/bs";
 import { CiCircleMore } from "react-icons/ci";
+import { IoMdOpen } from "react-icons/io";
 import Sidebar from "../../container/Sidebar/Sidebar";
 import Sidebarmobile from "../../container/Sidebar/Sidebarmobile";
 import { Link } from "react-router-dom";
@@ -60,16 +61,16 @@ function titleMenu($Kor, $Eng) {
         </div>
     );
 }
-function titlePop(link, data, mbcss) {
+function titlePop(link, data, mbcss, icon) {
     return (
         <div
             className={mbcss}
             onClick={() => {
-                window.open(link, "_blank");
+                window.open(link, "_self");
             }}
         >
             <AiOutlineRight className="icon-right" />
-            {data}
+            {data} {icon }
         </div>
     );
 }
@@ -351,9 +352,180 @@ function HostingColumn4($data) {
                 )}
                 {titlePop(
                     "https://mypage.hanbiro.com/",
-                    "신청하러 가기",
+                    "신청하러 가기 ",
+                    "mobile-menu-list",
+                    <IoMdOpen className="icon-open" />
+                )}
+            </div>
+        </>
+    );
+}
+function HostingColumn5($data) {
+    return (
+        <>
+            <div className={$data}>
+                <h3>베트남 호스팅</h3>
+                {titlePop(
+                    "https://www.hanbiro.com/overseas/vietnam-product-list.html",
+                    " 상품 구성"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/overseas/vietnam-idc.html",
+                    " IDC 소개"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/overseas/vietnam-network.html",
+                    " 네트워크 구성"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/application/index.html?Manage=mt4&Country=vt",
+                    " 신청하기"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/overseas/vietnam-office.html",
+                    " 베트남 사무실",
                     "mobile-menu-list"
                 )}
+
+            </div>
+        </>
+    );
+}
+function HostingColumn6($data) {
+    return (
+        <>
+            <div className={$data}>
+                <h3>DDos</h3>
+                {titlePop(
+                    "https://www.hanbiro.com/hosting/ddos-outline.html",
+                    " 한비로 IPS 소개"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/hosting/ddos-defend.html",
+                    " 방어 능력"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/hosting/ddos-attack-type.html",
+                    " 공격 유형과 차단"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/hosting/ddos-admin.html",
+                    " 고객 관리자 페이지",
+                    "mobile-menu-list"
+                )}
+
+
+            </div>
+        </>
+    );
+}
+function HostingColumn7($data) {
+    return (
+        <>
+            <div className={$data}>
+                <h3>네트워크 구성도 및 트래픽</h3>
+                {titlePop(
+                    "https://www.hanbiro.com/management/network-component.html",
+                    " 네트워크 구성도"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/network-traffic.html",
+                    " 네트워크와 트래픽",
+                    "mobile-menu-list"
+                )}
+
+
+            </div>
+        </>
+    );
+}
+function HostingColumn8($data) {
+    return (
+        <>
+            <div className={$data}>
+                <h3>부가 서비스</h3>
+                {titlePop(
+                    "https://www.hanbiro.com/management/ms.html",
+                    " MS-ASP 라이선스"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/backup.html",
+                    " 서버 구축 및 운영"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/sys-monitor.html",
+                    " 서버 관제 서비스"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/security.html",
+                    " 보안 서비스"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/vpn.html",
+                    " 네트워크"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/groupware.html",
+                    " 소프트웨어"
+                )}
+                {titlePop(
+                    "https://en.hanbiro.com/",
+                    " 기타"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/free-optional-services.html",
+                    " 무료 부가 서비스",
+                    "mobile-menu-list"
+                )}
+
+
+            </div>
+        </>
+    );
+}
+function HostingColumn9($data) {
+    return (
+        <>
+            <div className={$data}>
+                <h3>기술 인프라</h3>
+                {titlePop(
+                    "https://www.hanbiro.com/management/clustering-type.html",
+                    " 로드밸런싱 / 클러스터링"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/mysql-cluster.html",
+                    " DB 클러스터링"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/data-dual-processor.html",
+                    " 데이터 이중화 서비스"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/iscsi-storage.html",
+                    " 스토리지 시스템"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/drm.html",
+                    " Windows DRM"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/webcaching.html",
+                    " 웹 캐싱 서비스"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/db-secure.html",
+                    " DB 암호화 시스템 구축"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/recovery.html",
+                    " DR(재해 복구) 시스템 구축"
+                )}
+                {titlePop(
+                    "https://www.hanbiro.com/management/ipmi.html",
+                    " IPMI 서비스",
+                    "mobile-menu-list"
+                )}
+
             </div>
         </>
     );
@@ -394,7 +566,9 @@ function CustomerColumn1($data) {
                 {titlePop(
                     "https://blog.naver.com/hanbiro1999",
                     "블로그",
-                    "mobile-menu-list"
+                    "mobile-menu-list", 
+                    <IoMdOpen className="icon-open" />
+
                 )}
             </div>
         </>
@@ -507,16 +681,16 @@ function MyVerticallyCenteredModal(props) {
                                 <div className="hb-modal-item-list">
                                     <a href="/files/RemoteClient.dmg" className="hb-link">
                                         <div className="hb-modal-download-page">
-                                            <div className="hb-modal-icon-down-win"><AiFillApple /> </div> 
+                                            <div className="hb-modal-icon-down-win"><AiFillApple /> </div>
                                             <div className="hb-modal-download-text">  Mac용 원격 지원 프로그램 내려받기 </div>
-                                            <div className="hb-modal-icon-down"><ImDownload3 /> </div> 
+                                            <div className="hb-modal-icon-down"><ImDownload3 /> </div>
                                         </div>
                                     </a>
                                     <a href="/files/RemoteClient.exe" className="hb-link">
                                         <div className="hb-modal-download-page-1">
-                                            <div className="hb-modal-icon-down"><BsWindows /> </div> 
+                                            <div className="hb-modal-icon-down"><BsWindows /> </div>
                                             <div className="hb-modal-download-text">  Windows용 원격 지원 프로그램 내려받기 </div>
-                                            <div className="hb-modal-icon-down"><ImDownload3 /> </div> 
+                                            <div className="hb-modal-icon-down"><ImDownload3 /> </div>
                                         </div>
                                     </a>
                                 </div>
@@ -527,10 +701,10 @@ function MyVerticallyCenteredModal(props) {
                                     <div className="hb-modal-line-item-page">
                                         <img
                                             src={"https://www.hanbiro.com/images/remote-info-img05.gif"}
-                                           
+
                                         ></img>
                                     </div>
-                                   
+
                                 </div>
                             </li>
                             <li>파일을 실행하면 연결 아이디가 생성되는데 원격지원 생성 버튼을 클릭 후 연결 아이디를 상담자에게 알려주시면 됩니다.
@@ -538,7 +712,7 @@ function MyVerticallyCenteredModal(props) {
                                 <div className="hb-modal-line-item-3">
                                     <img
                                         src={"https://www.hanbiro.com/images/remote-info-img04.jpg"}
-                                       
+
                                     ></img>
                                 </div>
 
@@ -798,7 +972,7 @@ function NavButton() {
                     )}
                     {isShownHos && (
                         <Row className="bar-home-list-hos">
-                            <Col md={3} sm={3} className="par-list-pro">
+                            <Col className="par-list-pro">
                                 <div className="menu-list-product">
                                     <div >
                                         {HostingColumn1("menu-list-product-item")}
@@ -806,27 +980,76 @@ function NavButton() {
 
                                 </div>
                             </Col>
-                            <Col md={3} sm={3} className="par-list-pro">
+                            <Col className="par-list-pro">
                                 <div className="menu-list-product">
                                     <div >
                                         {HostingColumn2("menu-list-product-item")}
                                     </div>
                                 </div>
                             </Col>
-                            <Col md={3} sm={3} className="par-list-pro">
+                            <Col className="par-list-pro">
                                 <div className="menu-list-product">
                                     <div >
                                         {HostingColumn3("menu-list-product-item")}
                                     </div>
                                 </div>
                             </Col>
-                            <Col md={3} sm={3} >
-                                <div className="menu-list-product-left">
+                            <Col className="par-list-pro">
+                                <div className="menu-list-product">
                                     <div >
                                         {HostingColumn4("menu-list-product-item")}
                                     </div>
                                 </div>
                             </Col>
+                            <Col   >
+                                <div className="menu-list-product-left">
+                                    <div >
+                                        {HostingColumn5("menu-list-product-item")}
+                                    </div>
+                                </div>
+                            </Col>
+
+                            <Col md={12}>
+                            </Col>
+                            <Col className="par-list-pro">
+                                <div className="menu-list-product">
+                                    <div >
+                                        {HostingColumn6("menu-list-product-item")}
+                                    </div>
+
+                                </div>
+                            </Col>
+                            <Col className="par-list-pro">
+                                <div className="menu-list-product">
+                                    <div >
+                                        {HostingColumn7("menu-list-product-item")}
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col className="par-list-pro">
+                                <div className="menu-list-product">
+                                    <div >
+                                        {HostingColumn8("menu-list-product-item")}
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col className="par-list-pro">
+                                <div className="menu-list-product">
+                                    <div >
+                                        {HostingColumn9("menu-list-product-item")}
+                                    </div>
+                                </div>
+                            </Col>
+
+                            <Col  >
+                                <div className="menu-list-product-left">
+                                    <div >
+                                        
+                                    </div>
+                                </div>
+                            </Col>
+                            
+
                         </Row>
                     )}
 
@@ -944,6 +1167,41 @@ function NavButton() {
                                     <Collapse in={openmobileHo}>
                                         <div >
                                             {HostingColumn4("list-groupware")}
+                                        </div>
+                                    </Collapse>
+                                </div>
+                                <div >
+                                    <Collapse in={openmobileHo}>
+                                        <div >
+                                            {HostingColumn5("list-groupware")}
+                                        </div>
+                                    </Collapse>
+                                </div>
+                                <div >
+                                    <Collapse in={openmobileHo}>
+                                        <div >
+                                            {HostingColumn6("list-groupware")}
+                                        </div>
+                                    </Collapse>
+                                </div>
+                                <div >
+                                    <Collapse in={openmobileHo}>
+                                        <div >
+                                            {HostingColumn7("list-groupware")}
+                                        </div>
+                                    </Collapse>
+                                </div>
+                                <div >
+                                    <Collapse in={openmobileHo}>
+                                        <div >
+                                            {HostingColumn8("list-groupware")}
+                                        </div>
+                                    </Collapse>
+                                </div>
+                                <div >
+                                    <Collapse in={openmobileHo}>
+                                        <div >
+                                            {HostingColumn9("list-groupware")}
                                         </div>
                                     </Collapse>
                                 </div>
