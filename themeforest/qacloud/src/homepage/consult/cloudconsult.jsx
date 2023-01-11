@@ -45,7 +45,7 @@ function CloudConsultContent (text) {
         textAlign: "left",
         paddingBottom: "15px",
         wordBreak: "break-word",
-        '@media only screen and (min-width: 600px) and (max-width: 975px)' : {
+        '@media only screen and (min-width: 600px) and (max-width: 1180px)' : {
             width: 380,
           },
     }
@@ -59,23 +59,29 @@ function CloudConsultContent (text) {
     }
 
     const IconWrap = {
+        paddingRight: "4px",
         '@media only screen and (min-width: 600px) and (max-width: 1180px)' : {
             paddingBottom: "3px",
           },
         
-        '@media only screen and (max-width: 420px)' : {
+        '@media only screen and (max-width: 650px)' : {
             paddingTop: "6px",
         },
         
-        '@media only screen and (min-width: 1024px)' : {
+        '@media only screen and (max-width: 675px) and (min-width: 975px)' : {
+            paddingTop: "6px",
+        },
+
+        '@media only screen and (min-width: 1200px)' : {
             paddingTop: "6px",
         },
     }
+
     
     return(
-        <Grid container spacing={2} sx={ConsulWrapper}>
-            <Grid item>
-            <Box sx={IconWrap}><CloudCheckIcon color="#47A7FF" /></Box>
+        <Grid container sx={ConsulWrapper}>
+            <Grid>
+                <Box sx={IconWrap}><CloudCheckIcon color="#47A7FF" /></Box>
             </Grid>
             <Grid item>
                 <Box sx={CloudContent}><Typography sx={CloudText}>{text}</Typography></Box>
@@ -127,7 +133,7 @@ function columnus($username,$imageuser,$phone,$mail){
 
     const InfoText = {
         textAlign: "left",
-        '@media only screen and (min-width: 600px) and (max-width: 975px)' : {
+        '@media only screen and (min-width: 600px) and (max-width: 911px)' : {
             textAlign: "center",
           },
     }
@@ -185,7 +191,7 @@ function Cloudconsult() {
     const ConsultWrap = {
         width: "100%",
         padding: "30px 0px",
-        '@media only screen and (max-width: 820px)' : {
+        '@media only screen and (max-width: 975px)' : {
             display: "flex",
             justifyContent: "center",
           },
@@ -279,13 +285,13 @@ function Cloudconsult() {
                 <Box sx={ConsultBox}>
                     <Box sx={HeaderWrap}><Box sx={CloudHeader}>CLOUD 구축및 운영 컨설팅</Box></Box>
                     <Grid container>
-                        <Grid item xs={12} md={4}>
+                        <Grid item xs={12} lg={4}>
                             {CloudConsultContent("컨터 이너를 이용한 컴퓨팅 자원 사용으로 비용절감")}
                         </Grid>
-                        <Grid item xs={12} md={4}>
+                        <Grid item xs={12} lg={4}>
                             {CloudConsultContent("마이크로서비스 도입을 위한 개발과 시스템구성 상담")}
                         </Grid>    
-                        <Grid item xs={12} md={4}>
+                        <Grid item xs={12} lg={4}>
                             {CloudConsultContent("적의 비용으로 자체 독립 클라우드 구축및 운영지원")}
                         </Grid>
                     </Grid>
@@ -293,19 +299,19 @@ function Cloudconsult() {
                 
             </Box>
             <Grid container spacing={2}>
-                <Grid item xs={12} sm={6} md={4}>
+                <Grid item xs={12} sm={6} lg={4}>
                     <Box>{columnus("신윤호 부장","https://www.hanbiro.com/images/support/pic006.jpg","070-4804-9651","kernel@hanbiro.com")}</Box>
                 </Grid>
-                <Grid item xs={12} sm={6} md={4}>
+                <Grid item xs={12} sm={6} lg={4}>
                     <Box>{columnus("김정윤 부장","https://www.hanbiro.com/images/support/pic007.jpg","070-4804-9668","linuxdev@hanbiro.com")}</Box>
                 </Grid>
-                <Grid item xs={12} sm={6} md={4}>
+                <Grid item xs={12} sm={6} lg={4}>
                     <Box>{columnus("조성학 이사 (해외)","https://www.hanbiro.com/images/support/pic002.jpg","+84 909 284 160","linux@hanbiro.com")}</Box>
                 </Grid>
-                <Grid item xs={12} sm={6} md={4}>
+                <Grid item xs={12} sm={6} lg={4}>
                     <Box>{columnus("신상우 부장","https://www.hanbiro.com/images/support/pic003.jpg","070-4804-9662","security@hanbiro.com")}</Box>
                 </Grid>
-                <Grid item xs={12} sm={6} md={4}>
+                <Grid item xs={12} sm={6} lg={4}>
                     <Box>{columnus("신경섭 소장","https://www.hanbiro.com/images/support/pic004.jpg","070-4804-9664","windev@hanbiro.com")}</Box>
                 </Grid>
             </Grid>
