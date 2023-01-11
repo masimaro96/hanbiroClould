@@ -834,7 +834,7 @@ function NavButton() {
                                     }}
 
                                 >
-                                    {titleMenu("HOME", "WELCOM")}
+                                    {titleMenu("HOME", "WELCOME")}
                                 </div>
                                 <Link to="/cloud" className="mobile-link">
                                     <div className="bar-item ">
