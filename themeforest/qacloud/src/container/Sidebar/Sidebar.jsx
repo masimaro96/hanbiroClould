@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 const Mybox = styled(Box) ({
   backgroundColor: 'rgba(243, 245, 249, 0.8)',
-  padding: '10px 15px',
+  padding: '10px 10px',
   borderRadius: '10px'
 })
 
