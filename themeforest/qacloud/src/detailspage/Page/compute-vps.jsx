@@ -21,7 +21,7 @@ function Computevps() {
         <div className='App'>
             <NavButton />
             {Banner("HANBIRO CLOUD", "Compute 가상서버(인스턴스)")}
-            <Container>
+            <Container className='main-body'>
                 <Row>
                     <Col md={12} lg={3}>
                         <Sidebar />

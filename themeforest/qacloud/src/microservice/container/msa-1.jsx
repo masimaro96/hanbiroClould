@@ -29,7 +29,7 @@ function MSA1() {
         <div className='App'>
             <NavButton />
             {Banner("Hanbiro", "Microservice architecture")}
-            <Container>
+            <Container className='main-body'>
                 <Row>
                     <Col lg={3} md={12} xs={12}>
                         <MicroSidebar />

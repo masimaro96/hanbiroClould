@@ -22,7 +22,7 @@ function Storeobjectstore(){
         <div className='App'>
             <NavButton />
             {Banner("HANBIRO CLOUD","Hanbiro Cloud 오브젝트 Storage")}
-            <Container>
+            <Container className='main-body'>
                 <Row>
                     <Col md={12} lg={3}>
                         <Sidebar />

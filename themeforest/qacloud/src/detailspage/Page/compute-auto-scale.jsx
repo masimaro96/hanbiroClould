@@ -23,7 +23,7 @@ function Computeautoscale(){
         <div className='App'>
             <NavButton />
             {Banner("HANBIRO CLOUD","Compute 오토스케일링")}
-            <Container>
+            <Container className='main-body'>
                 <Row>
                     <Col md={12} lg={3}>
                         <Sidebar />

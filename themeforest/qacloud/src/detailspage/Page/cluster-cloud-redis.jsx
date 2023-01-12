@@ -22,7 +22,7 @@ function Clustercloudredis(){
         <div className='App'>
             <NavButton />
             {Banner("HANBIRO CLOUD","Kubernetes Redis")}
-            <Container>
+            <Container className='main-body'>
                 <Row>
                     <Col md={12} lg={3}>
                         <Sidebar />

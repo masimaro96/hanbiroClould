@@ -23,7 +23,7 @@ function Computeloadbalance(){
         <div className='App'>
             <NavButton />
             {Banner("HANBIRO CLOUD","Compute Load Balancer")}
-            <Container>
+            <Container className='main-body'>
                 <Row>
                     <Col md={12} lg={3}>
                         <Sidebar />

@@ -21,7 +21,7 @@ function Computebaremetal(){
         <div className='App'>
             <NavButton />
             {Banner("HANBIRO CLOUD","Compute 베어메탈 서버")}
-            <Container>
+            <Container className='main-body'>
                 <Row>
                     <Col md={12} lg={3}>
                         <Sidebar />
