@@ -25,9 +25,9 @@ function Titlecloudcompute($content1,$content2,$content3) {
                   <Box>
                     <GridCard >
                         <GridCardBody>
-                            <Titlecloud2 className="sizetitle2">{$content1}</Titlecloud2>
-                            <Titlecloud2 className="sizetitle2">{$content2}</Titlecloud2>
-                            <Card.Link href="https://www.hanbiro.com/hosting/product-list.html">{$content3}</Card.Link>
+                            <Titlecloud2  className="sizetitle2 normal narrow">{$content1}</Titlecloud2>
+                            <Titlecloud2  className="sizetitle2 normal narrow">{$content2}</Titlecloud2>
+                            <Card.Link className="sizelink" href="https://www.hanbiro.com/hosting/product-list.html">{$content3}</Card.Link>
                         </GridCardBody>
                     </GridCard>
                   </Box>
@@ -42,6 +42,12 @@ function Titlecloudcompute($content1,$content2,$content3) {
     </>
   );
 }
+
+
+
+
+
+
 
 
 
@@ -74,6 +80,14 @@ const Titlecloud2 = styled.div`
   font-size:20px; 
   
 `;
+
+const Titlecloud3 = styled.div`
+  font-weight: bold;
+  font-size:15px; 
+  
+`;
+
+
 
 const CardTitle = styled(Card.Title)`
   padding: 0;

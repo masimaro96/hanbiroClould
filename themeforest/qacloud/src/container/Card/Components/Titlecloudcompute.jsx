@@ -22,7 +22,7 @@ function Titlecloudcompute($title1) {
         <div className='App'>
             <Row>
                 <Col md={12} >
-                  <Box ><Titlecloud2 className="sizetitle">{$title1}</Titlecloud2></Box>
+                  <Box ><Titlecloud2 className="sizetitle normal fonttitle "  >{$title1}</Titlecloud2></Box>
                 </Col>
             </Row>
         </div>
